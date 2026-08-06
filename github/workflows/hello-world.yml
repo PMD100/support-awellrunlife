@@ -1,0 +1,44 @@
+# Hello World — your first GitHub Actions workflow.
+#
+# This does nothing useful on purpose. Its entire job is to let you see the
+# full loop work (commit -> push -> run -> green check) before there is
+# anything complicated that could fail.
+#
+# Copy this file to:  .github/workflows/hello-world.yml
+# in your support-awellrunlife repository.
+
+name: Hello World
+
+on:
+  # Puts a manual "Run workflow" button on the Actions tab.
+  workflow_dispatch:
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Say hello
+        run: |
+          echo "================================================"
+          echo "  GitHub Actions is working."
+          echo "================================================"
+          echo "Repository: ${{ github.repository }}"
+          echo "Triggered by: ${{ github.actor }}"
+          echo "Run number: ${{ github.run_number }}"
+          echo ""
+          echo "Current UTC time:     $(date -u '+%Y-%m-%d %H:%M:%S')"
+          echo "Current Phoenix time: $(TZ=America/Phoenix date '+%Y-%m-%d %H:%M:%S')"
+
+      - name: Prove Python is available
+        run: |
+          python3 --version
+          python3 -c "print('Python runs here too. This is what the crawler will use.')"
+
+      - name: List what is in the repository
+        run: |
+          echo "Files currently in this repo:"
+          ls -la
