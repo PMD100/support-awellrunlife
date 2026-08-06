@@ -81,10 +81,15 @@
       "anchor_cities": ["New York", "Brooklyn", "Queens", "Newark", "Jersey City", "White Plains"],
       "notes": "Largest volume, most competitive. Borough-level pages likely outperform one NYC page - test this." },
 
-    { "id": "los-angeles-ca", "name": "Los Angeles", "display": "Los Angeles-Long Beach-Anaheim", "states": ["CA"], "priority": 2,
+    { "id": "los-angeles-ca", "name": "Los Angeles", "display": "Los Angeles-Long Beach-Anaheim", "states": ["CA"], "priority": 3,
       "counties": { "CA": ["LOS ANGELES", "ORANGE"] },
       "anchor_cities": ["Los Angeles", "Long Beach", "Anaheim", "Pasadena", "Santa Monica", "Torrance"],
-      "notes": "Geographically enormous. Sub-city pages close to mandatory." },
+      "notes": "Geographically enormous. Sub-city pages close to mandatory. DEPRIORITIZED from 2 to 3 after the first ingest returned 1,402 hospices here - LA County saw a 1,500% increase in hospice agencies over a decade and is the epicenter of a documented Medicare hospice fraud wave. The overwhelming majority of these are shell entities that run no bereavement programs. Rely on crawl_priority scoring, and expect real listings to come from the handful of large legacy nonprofits and hospital systems, not from the provider count." },
+
+    { "id": "san-francisco-ca", "name": "San Francisco Bay Area", "display": "San Francisco-Oakland-San Jose", "states": ["CA"], "priority": 2,
+      "counties": { "CA": ["SAN FRANCISCO", "ALAMEDA", "CONTRA COSTA", "SAN MATEO", "MARIN", "SANTA CLARA", "SOLANO", "SONOMA", "NAPA"] },
+      "anchor_cities": ["San Francisco", "Oakland", "San Jose", "Berkeley", "Fremont", "Palo Alto", "Santa Rosa"],
+      "notes": "ADDED after the first ingest coverage report showed Alameda (50), Contra Costa (26), Santa Clara (16), San Mateo (11) and Solano (9) matching no metro. The Bay Area was simply missing from the original 25 - a straightforward oversight, and exactly what the coverage report was built to catch." },
 
     { "id": "atlanta-ga", "name": "Atlanta", "display": "Atlanta-Sandy Springs-Alpharetta", "states": ["GA"], "priority": 2,
       "counties": { "GA": ["FULTON", "DEKALB", "GWINNETT", "COBB", "CLAYTON", "CHEROKEE", "FORSYTH", "HENRY", "FAYETTE", "DOUGLAS", "PAULDING", "COWETA", "ROCKDALE", "NEWTON", "BARROW", "WALTON", "BARTOW", "CARROLL", "SPALDING", "HALL"] },

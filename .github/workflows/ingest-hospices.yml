@@ -32,10 +32,10 @@ jobs:
 
     steps:
       - name: Check out the repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -51,13 +51,28 @@ jobs:
         if: ${{ !inputs.inspect_only }}
         run: python3 scripts/ingest/cms_hospice.py
 
+      # Provider count is a poor proxy for how many bereavement groups exist.
+      # This scores each organization so the crawler starts where listings are.
+      - name: Score crawl priority
+        if: ${{ !inputs.inspect_only }}
+        run: python3 scripts/score_organizations.py
+
       - name: Summarize results
         if: ${{ !inputs.inspect_only }}
         run: |
           {
             echo "## Ingest results"
             echo ""
-            echo "**Organizations in \`data/organizations.json\`:** $(python3 -c 'import json;print(len(json.load(open("data/organizations.json"))))')"
+            echo "**Organizations found:** $(python3 -c 'import json;print(len(json.load(open("data/organizations.json"))))')"
+            echo "**High crawl priority:** $(python3 -c 'import json;print(sum(1 for o in json.load(open("data/organizations.json")) if o.get("crawl_tier")=="high"))')"
+            echo ""
+            echo "High priority is the number that predicts real listings."
+            echo ""
+            echo "<details><summary>Crawl priority report</summary>"
+            echo ""
+            cat data/priority-report.md
+            echo ""
+            echo "</details>"
             echo ""
             echo "<details><summary>Coverage report</summary>"
             echo ""
@@ -68,7 +83,7 @@ jobs:
 
       - name: Open a pull request with the changes
         if: ${{ !inputs.inspect_only }}
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v7
         with:
           branch: data/cms-hospice-refresh
           delete-branch: true
