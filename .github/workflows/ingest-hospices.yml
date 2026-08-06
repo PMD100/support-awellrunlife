@@ -1,0 +1,91 @@
+# Ingest CMS Hospices
+#
+# Downloads the federal Medicare hospice dataset, filters it to our 25 launch
+# metros by county, and writes data/organizations.json plus a coverage report.
+#
+# It does NOT commit to main. It opens a pull request so you can see exactly what
+# changed before anything lands. Green lines are additions, red are removals.
+#
+# CMS refreshes this dataset roughly quarterly, so monthly is more than enough.
+
+name: Ingest CMS Hospices
+
+on:
+  workflow_dispatch:
+    inputs:
+      inspect_only:
+        description: "Only print the dataset's columns, change nothing"
+        type: boolean
+        default: false
+
+  schedule:
+    # 09:00 UTC on the 3rd of each month = 2:00am Phoenix time
+    - cron: "0 9 3 * *"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # No pip install step: the ingest script deliberately uses only the Python
+      # standard library. Fewer dependencies means fewer things that can break
+      # unattended at 2am.
+
+      - name: Inspect dataset columns only
+        if: ${{ inputs.inspect_only }}
+        run: python3 scripts/ingest/cms_hospice.py --inspect
+
+      - name: Run ingest
+        if: ${{ !inputs.inspect_only }}
+        run: python3 scripts/ingest/cms_hospice.py
+
+      - name: Summarize results
+        if: ${{ !inputs.inspect_only }}
+        run: |
+          {
+            echo "## Ingest results"
+            echo ""
+            echo "**Organizations in \`data/organizations.json\`:** $(python3 -c 'import json;print(len(json.load(open("data/organizations.json"))))')"
+            echo ""
+            echo "<details><summary>Coverage report</summary>"
+            echo ""
+            cat data/coverage-report.md
+            echo ""
+            echo "</details>"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Open a pull request with the changes
+        if: ${{ !inputs.inspect_only }}
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: data/cms-hospice-refresh
+          delete-branch: true
+          commit-message: "Refresh CMS hospice organization data"
+          title: "Data refresh: CMS hospice organizations"
+          body: |
+            Automated refresh from the CMS Hospice - General Information dataset.
+
+            **Before merging, skim:**
+            - `data/coverage-report.md` — especially the "Metros with ZERO matches"
+              section. A zero there means a county list needs fixing, not that the
+              metro has no hospices.
+            - The "unmatched counties" table. A county with many hospices sitting
+              next to one of our metros probably belongs in it.
+
+            Nothing here is published to the site. This is the organization list
+            that the website-discovery step reads from next.
+          labels: |
+            data
+            automated

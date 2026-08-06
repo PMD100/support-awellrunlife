@@ -1,0 +1,144 @@
+{
+  "_comment": "The 25 launch metros, defined by COUNTY. County matching is far more accurate than city-name matching: a metro contains hundreds of city names but a manageable list of counties, and the federal hospice dataset includes a county field. Counties are stored uppercase without the word COUNTY - the ingest script normalizes both sides before comparing.",
+  "_review_note": "County lists were assembled from CBSA definitions and should be treated as v1. The ingest script prints a coverage report showing high-hospice-count counties in our states that did NOT match any metro - review that output and add anything obviously missing.",
+  "_priority_key": {
+    "1": "Build first. Home field or unusually dense supply.",
+    "2": "Build second. Strong supply signals.",
+    "3": "Build third. Large population, supply unproven."
+  },
+  "metros": [
+    { "id": "online-national", "name": "Online", "display": "Online (nationwide)", "states": [], "priority": 1,
+      "virtual": true, "counties": {}, "anchor_cities": [],
+      "notes": "Pseudo-metro for groups with no physical location. Never mix into city page results without a clear 'Online' label." },
+
+    { "id": "phoenix-az", "name": "Phoenix", "display": "Phoenix-Mesa-Chandler", "states": ["AZ"], "priority": 1,
+      "counties": { "AZ": ["MARICOPA", "PINAL"] },
+      "anchor_cities": ["Phoenix", "Mesa", "Chandler", "Scottsdale", "Gilbert", "Glendale", "Tempe", "Peoria"],
+      "notes": "Home market. Prototype metro - the city page template gets proven here first." },
+
+    { "id": "tampa-fl", "name": "Tampa", "display": "Tampa-St. Petersburg-Clearwater", "states": ["FL"], "priority": 1,
+      "counties": { "FL": ["HILLSBOROUGH", "PINELLAS", "PASCO", "HERNANDO"] },
+      "anchor_cities": ["Tampa", "St. Petersburg", "Clearwater", "Brandon", "Largo"],
+      "notes": "Among the highest older-adult shares of any large US metro. Expect high listing density." },
+
+    { "id": "pittsburgh-pa", "name": "Pittsburgh", "display": "Pittsburgh", "states": ["PA"], "priority": 1,
+      "counties": { "PA": ["ALLEGHENY", "WESTMORELAND", "BUTLER", "WASHINGTON", "BEAVER", "FAYETTE", "ARMSTRONG"] },
+      "anchor_cities": ["Pittsburgh", "Monroeville", "Bethel Park", "Cranberry Township"],
+      "notes": "Old population, mature nonprofit hospice sector, plus an existing PA state bereavement locator to cross-reference." },
+
+    { "id": "orlando-fl", "name": "Orlando", "display": "Orlando-Kissimmee-Sanford", "states": ["FL"], "priority": 1,
+      "counties": { "FL": ["ORANGE", "SEMINOLE", "OSCEOLA", "LAKE"] },
+      "anchor_cities": ["Orlando", "Kissimmee", "Sanford", "Winter Park", "Altamonte Springs"], "notes": "" },
+
+    { "id": "miami-fl", "name": "Miami", "display": "Miami-Fort Lauderdale-West Palm Beach", "states": ["FL"], "priority": 2,
+      "counties": { "FL": ["MIAMI-DADE", "BROWARD", "PALM BEACH"] },
+      "anchor_cities": ["Miami", "Fort Lauderdale", "West Palm Beach", "Hialeah", "Boca Raton"],
+      "notes": "Spanish-language groups are a significant share here." },
+
+    { "id": "philadelphia-pa", "name": "Philadelphia", "display": "Philadelphia-Camden-Wilmington", "states": ["PA", "NJ", "DE", "MD"], "priority": 2,
+      "counties": { "PA": ["PHILADELPHIA", "MONTGOMERY", "BUCKS", "DELAWARE", "CHESTER"],
+                    "NJ": ["CAMDEN", "BURLINGTON", "GLOUCESTER", "SALEM"],
+                    "DE": ["NEW CASTLE"], "MD": ["CECIL"] },
+      "anchor_cities": ["Philadelphia", "Camden", "Wilmington", "King of Prussia", "Cherry Hill"],
+      "notes": "Four-state metro - canonical state is PA, others 301 in." },
+
+    { "id": "st-louis-mo", "name": "St. Louis", "display": "St. Louis", "states": ["MO", "IL"], "priority": 2,
+      "counties": { "MO": ["ST. LOUIS", "ST. LOUIS CITY", "ST. CHARLES", "JEFFERSON", "FRANKLIN", "LINCOLN", "WARREN"],
+                    "IL": ["MADISON", "ST. CLAIR", "MONROE", "CLINTON", "JERSEY"] },
+      "anchor_cities": ["St. Louis", "St. Charles", "Chesterfield", "Belleville"],
+      "notes": "Watch the ST. LOUIS vs ST. LOUIS CITY distinction - they are separate jurisdictions." },
+
+    { "id": "detroit-mi", "name": "Detroit", "display": "Detroit-Warren-Dearborn", "states": ["MI"], "priority": 2,
+      "counties": { "MI": ["WAYNE", "OAKLAND", "MACOMB", "LIVINGSTON", "ST. CLAIR", "LAPEER"] },
+      "anchor_cities": ["Detroit", "Warren", "Dearborn", "Troy", "Livonia"], "notes": "" },
+
+    { "id": "baltimore-md", "name": "Baltimore", "display": "Baltimore-Columbia-Towson", "states": ["MD"], "priority": 2,
+      "counties": { "MD": ["BALTIMORE", "BALTIMORE CITY", "ANNE ARUNDEL", "HOWARD", "HARFORD", "CARROLL", "QUEEN ANNE'S"] },
+      "anchor_cities": ["Baltimore", "Columbia", "Towson", "Ellicott City"], "notes": "" },
+
+    { "id": "minneapolis-mn", "name": "Minneapolis", "display": "Minneapolis-St. Paul-Bloomington", "states": ["MN", "WI"], "priority": 2,
+      "counties": { "MN": ["HENNEPIN", "RAMSEY", "DAKOTA", "ANOKA", "WASHINGTON", "SCOTT", "CARVER", "WRIGHT", "SHERBURNE", "CHISAGO", "ISANTI", "LE SUEUR", "MILLE LACS", "SIBLEY"],
+                    "WI": ["ST. CROIX", "PIERCE"] },
+      "anchor_cities": ["Minneapolis", "St. Paul", "Bloomington", "Plymouth", "Eagan"],
+      "notes": "Strong nonprofit and faith-based support infrastructure. Likely high yield." },
+
+    { "id": "boston-ma", "name": "Boston", "display": "Boston-Cambridge-Newton", "states": ["MA", "NH"], "priority": 2,
+      "counties": { "MA": ["SUFFOLK", "MIDDLESEX", "NORFOLK", "ESSEX", "PLYMOUTH"],
+                    "NH": ["ROCKINGHAM", "STRAFFORD"] },
+      "anchor_cities": ["Boston", "Cambridge", "Newton", "Quincy", "Framingham"],
+      "notes": "Dense academic medical centers - expect hospital-run groups." },
+
+    { "id": "chicago-il", "name": "Chicago", "display": "Chicago-Naperville-Elgin", "states": ["IL", "IN", "WI"], "priority": 2,
+      "counties": { "IL": ["COOK", "DUPAGE", "LAKE", "WILL", "KANE", "MCHENRY", "KENDALL", "DEKALB", "GRUNDY"],
+                    "IN": ["LAKE", "PORTER", "JASPER", "NEWTON"], "WI": ["KENOSHA"] },
+      "anchor_cities": ["Chicago", "Naperville", "Elgin", "Aurora", "Evanston", "Oak Park"],
+      "notes": "LAKE county exists in both IL and IN - county matching must be state-scoped." },
+
+    { "id": "new-york-ny", "name": "New York", "display": "New York-Newark-Jersey City", "states": ["NY", "NJ", "PA"], "priority": 2,
+      "counties": { "NY": ["NEW YORK", "KINGS", "QUEENS", "BRONX", "RICHMOND", "WESTCHESTER", "ROCKLAND", "NASSAU", "SUFFOLK", "PUTNAM", "ORANGE", "DUTCHESS"],
+                    "NJ": ["BERGEN", "HUDSON", "PASSAIC", "ESSEX", "UNION", "MIDDLESEX", "MONMOUTH", "OCEAN", "MORRIS", "SOMERSET", "SUSSEX", "HUNTERDON"],
+                    "PA": ["PIKE"] },
+      "anchor_cities": ["New York", "Brooklyn", "Queens", "Newark", "Jersey City", "White Plains"],
+      "notes": "Largest volume, most competitive. Borough-level pages likely outperform one NYC page - test this." },
+
+    { "id": "los-angeles-ca", "name": "Los Angeles", "display": "Los Angeles-Long Beach-Anaheim", "states": ["CA"], "priority": 2,
+      "counties": { "CA": ["LOS ANGELES", "ORANGE"] },
+      "anchor_cities": ["Los Angeles", "Long Beach", "Anaheim", "Pasadena", "Santa Monica", "Torrance"],
+      "notes": "Geographically enormous. Sub-city pages close to mandatory." },
+
+    { "id": "atlanta-ga", "name": "Atlanta", "display": "Atlanta-Sandy Springs-Alpharetta", "states": ["GA"], "priority": 2,
+      "counties": { "GA": ["FULTON", "DEKALB", "GWINNETT", "COBB", "CLAYTON", "CHEROKEE", "FORSYTH", "HENRY", "FAYETTE", "DOUGLAS", "PAULDING", "COWETA", "ROCKDALE", "NEWTON", "BARROW", "WALTON", "BARTOW", "CARROLL", "SPALDING", "HALL"] },
+      "anchor_cities": ["Atlanta", "Sandy Springs", "Alpharetta", "Marietta", "Decatur"],
+      "notes": "Very strong faith-based presence - faith_affiliation fields will do heavy lifting." },
+
+    { "id": "dallas-tx", "name": "Dallas", "display": "Dallas-Fort Worth-Arlington", "states": ["TX"], "priority": 2,
+      "counties": { "TX": ["DALLAS", "TARRANT", "COLLIN", "DENTON", "ELLIS", "JOHNSON", "PARKER", "ROCKWALL", "KAUFMAN", "HUNT", "WISE"] },
+      "anchor_cities": ["Dallas", "Fort Worth", "Arlington", "Plano", "Irving", "Frisco"], "notes": "" },
+
+    { "id": "houston-tx", "name": "Houston", "display": "Houston-Pasadena-The Woodlands", "states": ["TX"], "priority": 3,
+      "counties": { "TX": ["HARRIS", "FORT BEND", "MONTGOMERY", "BRAZORIA", "GALVESTON", "LIBERTY", "WALLER", "CHAMBERS", "AUSTIN"] },
+      "anchor_cities": ["Houston", "Pasadena", "The Woodlands", "Sugar Land", "Katy"], "notes": "" },
+
+    { "id": "washington-dc", "name": "Washington", "display": "Washington-Arlington-Alexandria", "states": ["DC", "VA", "MD", "WV"], "priority": 3,
+      "counties": { "DC": ["DISTRICT OF COLUMBIA"],
+                    "VA": ["FAIRFAX", "ARLINGTON", "LOUDOUN", "PRINCE WILLIAM", "ALEXANDRIA CITY", "FAIRFAX CITY", "FALLS CHURCH CITY", "MANASSAS CITY", "MANASSAS PARK CITY", "STAFFORD", "SPOTSYLVANIA", "FAUQUIER"],
+                    "MD": ["MONTGOMERY", "PRINCE GEORGE'S", "FREDERICK", "CHARLES", "CALVERT"],
+                    "WV": ["JEFFERSON"] },
+      "anchor_cities": ["Washington", "Arlington", "Alexandria", "Bethesda", "Silver Spring", "Fairfax"],
+      "notes": "Virginia independent cities are separate from counties of the same name - watch this." },
+
+    { "id": "seattle-wa", "name": "Seattle", "display": "Seattle-Tacoma-Bellevue", "states": ["WA"], "priority": 3,
+      "counties": { "WA": ["KING", "PIERCE", "SNOHOMISH"] },
+      "anchor_cities": ["Seattle", "Tacoma", "Bellevue", "Everett", "Kent"], "notes": "" },
+
+    { "id": "denver-co", "name": "Denver", "display": "Denver-Aurora-Centennial", "states": ["CO"], "priority": 3,
+      "counties": { "CO": ["DENVER", "ARAPAHOE", "JEFFERSON", "ADAMS", "DOUGLAS", "BROOMFIELD", "ELBERT", "PARK", "CLEAR CREEK", "GILPIN"] },
+      "anchor_cities": ["Denver", "Aurora", "Centennial", "Lakewood", "Boulder"], "notes": "" },
+
+    { "id": "san-diego-ca", "name": "San Diego", "display": "San Diego-Chula Vista-Carlsbad", "states": ["CA"], "priority": 3,
+      "counties": { "CA": ["SAN DIEGO"] },
+      "anchor_cities": ["San Diego", "Chula Vista", "Carlsbad", "Escondido", "Oceanside"],
+      "notes": "Large veteran population - veterans and military_service values matter here." },
+
+    { "id": "charlotte-nc", "name": "Charlotte", "display": "Charlotte-Concord-Gastonia", "states": ["NC", "SC"], "priority": 3,
+      "counties": { "NC": ["MECKLENBURG", "UNION", "CABARRUS", "GASTON", "IREDELL", "ROWAN", "LINCOLN", "ANSON"],
+                    "SC": ["YORK", "LANCASTER", "CHESTER"] },
+      "anchor_cities": ["Charlotte", "Concord", "Gastonia", "Huntersville"], "notes": "" },
+
+    { "id": "portland-or", "name": "Portland", "display": "Portland-Vancouver-Hillsboro", "states": ["OR", "WA"], "priority": 3,
+      "counties": { "OR": ["MULTNOMAH", "WASHINGTON", "CLACKAMAS", "YAMHILL", "COLUMBIA"],
+                    "WA": ["CLARK", "SKAMANIA"] },
+      "anchor_cities": ["Portland", "Vancouver", "Hillsboro", "Beaverton", "Gresham"],
+      "notes": "Home of the Dougy Center - unusually strong children's grief infrastructure." },
+
+    { "id": "riverside-ca", "name": "Riverside", "display": "Riverside-San Bernardino-Ontario", "states": ["CA"], "priority": 3,
+      "counties": { "CA": ["RIVERSIDE", "SAN BERNARDINO"] },
+      "anchor_cities": ["Riverside", "San Bernardino", "Ontario", "Temecula", "Palm Springs"],
+      "notes": "Huge and genuinely underserved by existing directories." },
+
+    { "id": "san-antonio-tx", "name": "San Antonio", "display": "San Antonio-New Braunfels", "states": ["TX"], "priority": 3,
+      "counties": { "TX": ["BEXAR", "COMAL", "GUADALUPE", "WILSON", "ATASCOSA", "BANDERA", "KENDALL", "MEDINA"] },
+      "anchor_cities": ["San Antonio", "New Braunfels", "Schertz"],
+      "notes": "Large military and veteran population." }
+  ]
+}

@@ -1,0 +1,23 @@
+"""Generate a synthetic CSV that mimics the real CMS hospice dataset,
+including its quirks: renamed columns, messy county spellings, ZIP+4,
+duplicate providers, and rows outside our metros."""
+import csv, sys
+rows = [
+    # ccn, name, addr, addr2, city, state, zip, county, phone, ownership, cert
+    ("031234","Hospice of the Valley","1510 E Flower St","","Phoenix","AZ","85014","Maricopa County","(602) 555-0100","Non - Profit","1/15/1985"),
+    ("031235","Chandler Compassion Hospice","900 W Chandler Blvd","Suite 4","Chandler","AZ","85224-1234","MARICOPA","602-555-0142","Proprietary","3/2/2004"),
+    ("031236","Pinal Care Hospice","55 Main St","","Casa Grande","AZ","85122","Pinal","1-520-555-0199","Non - Profit","6/1/2011"),
+    ("031234","Hospice of the Valley","1510 E Flower St","","Phoenix","AZ","85014","Maricopa County","(602) 555-0100","Non - Profit","1/15/1985"),  # exact dup
+    ("261100","BJC Hospice","4901 Forest Park Ave","","St. Louis","MO","63108","St. Louis City","314-555-0110","Non - Profit","9/9/1990"),
+    ("261101","Gateway Hospice","1 Plaza Dr","","Chesterfield","MO","63017","Saint Louis","(314) 555-0120","Proprietary","4/4/2001"),
+    ("141200","Northshore Hospice","1000 Central St","","Evanston","IL","60201","Cook","847-555-0130","Non - Profit","2/2/1995"),
+    ("151200","Dunes Hospice","500 Lake Ave","","Valparaiso","IN","46383","Lake","219-555-0140","Proprietary","7/7/2007"),
+    ("211300","Gilchrist Hospice Care","11311 McCormick Rd","","Hunt Valley","MD","21031","Baltimore","410-555-0150","Non - Profit","5/5/1994"),
+    ("211301","Capital Caring","3180 Fairview Park Dr","","Falls Church","VA","22042","Falls Church City","703-555-0160","Non - Profit","8/8/1977"),
+    ("999999","Rural Plains Hospice","12 County Rd","","Dodge City","KS","67801","Ford","620-555-0170","Proprietary","1/1/2000"),   # outside our states
+    ("888888","Yuma Desert Hospice","3 Palm Dr","","Yuma","AZ","85364","Yuma","928-555-0180","Proprietary","1/1/2003"),          # our state, not our metro
+    ("777777","","9 Nowhere Ln","","Phoenix","AZ","85015","Maricopa","602-555-0190","Proprietary","1/1/2015"),                    # no name
+]
+hdr = ["CMS Certification Number (CCN)","Facility Name","Address Line 1","Address Line 2",
+       "City/Town","State","ZIP Code","County/Parish","Telephone Number","Ownership Type","Certification Date"]
+w = csv.writer(sys.stdout); w.writerow(hdr); w.writerows(rows)
