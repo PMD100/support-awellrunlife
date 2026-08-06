@@ -38,6 +38,45 @@ find than to prevent. A chain that stops cleanly costs one session.
 
 ---
 
+## The target
+
+**400–500 high-quality institutions published across the 26 metros.** Set 2026-08-05.
+
+This is a *quality bar with an expected count*, not a quota. We publish every organization
+that clears the bar and none that don't. If the bar yields 380, we publish 380.
+
+### The bar
+
+An institution qualifies only if all five are true:
+
+1. Runs at least one identifiable bereavement or grief support group
+2. That group is **open to the community**, not restricted to its own patient families
+3. There is a **live source page** on the organization's own domain that names the group
+4. There is a **working phone number** a person can call to confirm before travelling
+5. The organization's name is **verifiable on its own website** — this is the "links go to
+   the actual business" guarantee, enforced in code, not by eye
+
+### Where 400–500 comes from
+
+| Source | Expected qualifying institutions |
+|---|---|
+| High-tier hospices (incl. Bay Area) | ~235 |
+| Best of medium-tier hospices | ~100 |
+| National org directories (Compassionate Friends, AFSP, NACG, GRASP, TAPS, Bereaved Parents) | ~120 |
+| Large hospital systems, 3–5 per metro | ~100 |
+| **Before the bar is applied** | **~555** |
+| **After the bar** (expect 20–25% attrition) | **~420–460** |
+
+At roughly 1.5–2.5 groups per institution, that produces **700–1,100 published listings** —
+about 27–42 per metro, comfortably clearing the 8-listing metro gate everywhere.
+
+**Why capping at quality rather than maximizing volume is the right call:** completeness is
+copyable and freshness is not. Every competitor in this space is bigger than they can
+maintain, which is exactly why they're all stale. 450 institutions we can actually keep
+current beats 3,000 we can't.
+
+---
+
 ## Current state
 
 **Phase:** 0 — Foundation
@@ -76,9 +115,110 @@ find than to prevent. A chain that stops cleanly costs one session.
 
 ---
 
+## THE BIG FINDING — read before doing anything else
+
+The first ingest returned **3,308 organizations**, roughly three times the estimate.
+The distribution is what matters:
+
+| Metro | Hospices |
+|---|---|
+| Los Angeles | **1,402** |
+| Houston | 307 |
+| Dallas | 253 |
+| ... | |
+| Tampa | **9** |
+| Orlando | **5** |
+
+Tampa and Orlando have among the highest older-adult populations in the country. That
+inversion is not a bug in our county lists. Two real forces produce it:
+
+1. **Fraud-driven proliferation.** LA County saw roughly a 1,500% increase in hospice
+   agencies over a decade. California imposed a moratorium on new hospice licenses in
+   2021 (SB 664) after finding 93% of applications came from LA/Southern California and
+   72% shared an address with other applicants — one LA address was tied to 191 separate
+   applications. These entities have no clinical staff and no community programs.
+
+2. **Certificate of Need laws.** Florida restricts hospice entry through CON review. It
+   ranks 2nd nationally in hospice patients served but 37th in provider count. Its
+   hospices are few, large, old, and exactly the kind that run free community grief groups.
+
+**Consequence: provider count is a poor proxy for group supply, and in fraud-affected
+markets it is actively misleading. Tampa's 9 will likely out-produce LA's 1,402.**
+
+### What changed as a result
+
+- `scripts/score_organizations.py` — scores every org on ownership type, certification
+  age, and **shared-address density** (the shell detector — legitimate hospices occupy
+  their own premises). Crawl `high` tier first, likely never crawl `low`.
+- LA demoted from priority 2 to 3 in `metros.json`.
+- **San Francisco Bay Area added** — the coverage report exposed Alameda (50),
+  Contra Costa (26), Santa Clara (16), San Mateo (11) matching nothing. The Bay Area was
+  simply missing from the original 25. We now have 26 metros.
+- Ingest workflow now runs scoring automatically and reports high-tier counts.
+
+### Scoring results against the real 3,308 records
+
+| | Count | Share |
+|---|---|---|
+| **high** — crawl these | **220** | 6.7% |
+| medium — crawl second | 696 | 21.0% |
+| low — shells and micro-providers | 2,392 | 72.3% |
+
+**Signal ratio by metro** (high ÷ total) — this is the number that matters:
+
+| Best signal | | Worst signal | |
+|---|---|---|---|
+| New York | 33 of 59 (56%) | Los Angeles | 8 of 1,402 (**0.6%**) |
+| Baltimore | 6 of 11 (55%) | Houston | 4 of 307 (1.3%) |
+| Charlotte | 7 of 15 (47%) | Dallas | 7 of 253 (2.8%) |
+| Tampa | 4 of 9 (44%) | Riverside | 7 of 231 (3.0%) |
+| Seattle | 8 of 21 (38%) | Phoenix | 5 of 161 (3.1%) |
+
+**Spot check confirms the scorer works.** High tier surfaced Hospice of the Valley,
+Suncoast Hospice, Gulfside, Kaiser, MemorialCare, Providence, Barnabas Health — real,
+established institutions. Low tier in LA surfaced "1 Heart Hospice," "24 Care Hospice,"
+"5 Star Hospice," "7 Angeles Hospice" — all certified 2019–2023, all at suite numbers.
+The most-shared address hosts **24 separate hospices**; the top eight clusters are all
+San Fernando Valley strip malls. That is the documented fraud signature, visible in our
+own data with no external lookup.
+
+**Note: Phoenix is a fraud-affected market too** (5 high of 161). The home-field metro
+has thin hospice supply and will depend on other sources.
+
+### What this means for the roadmap
+
+**220 high-tier hospices across 25 metros is about 9 per metro.** At a plausible 1–3
+groups each, that is 9–27 groups per metro from hospices — and the metro publish gate
+needs 8 published listings. So hospices alone barely clear the gate in strong metros and
+will not clear it in weak ones.
+
+**This demotes hospices from primary supply to one contributor among several.** The
+national organization directories (GriefShare, Compassionate Friends, AFSP, the Dougy
+Center network, Bereaved Parents, GRASP) and large hospital systems now have to carry
+the load. Doc 05's yield model needs revising down: the realistic hospice contribution is
+roughly 220 orgs × ~1.5 groups ≈ **330 listings**, not the 900–1,300 originally modeled,
+and only where those orgs have a findable bereavement page.
+
+**Crawl budget note:** at one request per second, crawling everything is 55 minutes and
+high+medium is 15 minutes. Crawl time is not the constraint — LLM extraction cost is.
+So crawl **high + medium (916 orgs)** and skip the 2,392 low. Skipping them is also the
+polite choice; they are mostly shells and there is nothing to gain from touching them.
+
+---
+
 ## Next up
 
-### Piece 1 — Run the ingest for real *(needs Peggie)*
+### Piece 0 — Commit the scored data *(needs Peggie)*
+
+The scorer has been run locally against the real 3,308 records. `organizations.json` and
+`priority-report.md` are updated on the Mac but not committed.
+
+1. Commit and push: `Add crawl priority scores`
+2. **Bay Area is still missing** (0 organizations) — the merged data predates the metro
+   being added. Re-run **Ingest CMS Hospices** to pick it up, then merge that PR too.
+   Expect roughly 100–150 additional Bay Area organizations.
+
+### Piece 1 — Run the ingest for real *(DONE 2026-08-05)*
 
 1. Do the two blocked items above.
 2. Actions tab → **Ingest CMS Hospices** → **Run workflow**.
@@ -129,6 +269,27 @@ of records.
 ## Log
 
 Newest first. One entry per session. Keep them short and factual.
+
+### 2026-08-05 (later) — First real ingest, and a strategy correction
+
+- **Ingest workflow ran green in Actions.** 6,852 rows in the CMS dataset (May 2026
+  release), 3,308 matched to our metros. Column resolution worked — no manual fixes needed.
+- Coverage report revealed the LA/Tampa inversion described above. Verified against
+  reporting on the California hospice fraud crisis and Florida's CON restrictions;
+  both hypotheses confirmed.
+- Wrote `scripts/score_organizations.py`. Tested against a synthetic set of 35 orgs
+  designed to mimic the real pattern: 25 shells sharing one address (new, for-profit),
+  3 established nonprofits, 1 hospital system, 6 old independent for-profits.
+  **All assertions passed** — every shell scored `low` (0/100), every established
+  nonprofit scored `high` (100/100), old independents landed `medium`.
+  LA in that test: 1 high-priority org out of 26.
+- Added San Francisco Bay Area metro (9 counties). Demoted LA to priority 3.
+- Bumped action versions to clear the Node 20 deprecation warning
+  (checkout@v5, setup-python@v6, create-pull-request@v7).
+
+**Not yet verified:** the scorer has never run against the real 3,308 records — only
+synthetic data. The bumped action versions have never run. If the next workflow run
+fails with "unable to resolve action," revert those three version numbers by one.
 
 ### 2026-08-05 — Ingest pipeline built
 
