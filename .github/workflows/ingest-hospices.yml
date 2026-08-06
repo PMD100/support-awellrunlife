@@ -26,6 +26,12 @@ permissions:
   contents: write
   pull-requests: write
 
+env:
+  # Stop Python writing .pyc files. Without this the runner generates __pycache__
+  # directories that get swept into the pull request and cause merge conflicts on
+  # the next run - binary files that can't be resolved through the GitHub UI.
+  PYTHONDONTWRITEBYTECODE: "1"
+
 jobs:
   ingest:
     runs-on: ubuntu-latest
