@@ -56,7 +56,34 @@ An institution qualifies only if all five are true:
 5. The organization's name is **verifiable on its own website** — this is the "links go to
    the actual business" guarantee, enforced in code, not by eye
 
-### Where 400–500 comes from
+### Measured against real data (2026-08-05, 3,435 orgs, all scored)
+
+| Source | Candidates | Basis |
+|---|---|---|
+| High-tier hospices | **236** | measured |
+| Medium-tier hospices scoring 55–64 | **42** | measured |
+| National org directories | ~120 | estimated |
+| Hospital systems, 3–5 per metro | ~100 | estimated |
+| **Total candidates** | **~498** | |
+| **After the 5-point bar (~22% attrition)** | **~388** | |
+
+**We land just under the target.** The medium tier turned out to be a much smaller
+reservoir than assumed — only 42 of 723 score above 55, so there is no large pool of
+"almost good enough" hospices to draw on.
+
+**The national directories are now the decisive lever.** They are the only source that
+can move ~388 to ~450, and they should be worked before hospital systems.
+
+**Seven metros cannot clear the 8-listing gate on hospices alone:**
+Orlando (1), San Diego (3), Houston (4), San Antonio (4), Tampa (4), Denver (5),
+**Phoenix (5)**. The home market is on that list.
+
+**Important counterweight for CON states:** Orlando has 5 hospices total and Tampa 9,
+because Florida restricts entry. The survivors are enormous — a single Florida hospice may
+run six or more distinct bereavement groups. **Institution count understates listing yield
+in CON states and overstates it in fraud-affected ones.** Do not judge Orlando by its 1.
+
+### Where 400–500 comes from (original estimate)
 
 | Source | Expected qualifying institutions |
 |---|---|
@@ -234,7 +261,40 @@ too wide.
 **If the run fails:** copy the last ~15 lines of the failed step's log. That is
 almost always enough to diagnose.
 
-### Piece 2 — Website discovery *(next session)*
+### Piece 2 — Website discovery *(BUILT 2026-08-05, not yet run)*
+
+`scripts/lib/politefetch.py` and `scripts/ingest/discover_websites.py`, plus the
+**Discover Websites** workflow.
+
+**How "links go to the actual business" is enforced.** A website attaches to an
+organization only on proof, never on similarity:
+
+| Status | Meaning |
+|---|---|
+| `verified_phone` | The CMS-registered phone number was found in the page text. Near-conclusive — unrelated businesses do not share a phone number. |
+| `verified_name` | Every distinctive word of the org's name appeared on a page recognizably about hospice care. "Distinctive" excludes filler like HOSPICE, CARE, HEALTH, SERVICES. |
+| `mismatch` | Site found, ownership not proved. **Never published.** |
+| `not_found` | No candidate domain resolved. |
+| `robots_disallowed` | Site asked not to be crawled. We comply and stop. |
+
+Offline tests assert the rejection cases specifically: a page for *Suncoast Hospice* is
+correctly refused for *Gulfside Hospice* even though both are real Florida hospices with
+near-identical vocabulary. Right industry, wrong organization, rejected.
+
+**Domain discovery without a search API.** CMS has no website column. The script generates
+candidate domains from the organization's name (full name, connectors dropped, distinctive
+words only, initials) across `.org/.com/.net/.health`, DNS-checks each cheaply, then
+verifies. Recall is decent for established nonprofits — which is exactly the high tier.
+Adding a `BRAVE_API_KEY` secret later would improve recall; nothing depends on it.
+
+**Politeness is in code, not convention:** robots.txt honored without exception, 1 second
+between requests to the same host, honest user agent with a contact URL, no aggressive
+retries. These organizations are our future outreach targets.
+
+**Run it:** Actions → Discover Websites → Run workflow. Start with tier `high`,
+limit `150`. Expect 30–55 minutes for the full 236.
+
+### Piece 2b — Website discovery, original notes
 
 Organizations currently have `website: null`. Build `scripts/ingest/discover_websites.py` to:
 

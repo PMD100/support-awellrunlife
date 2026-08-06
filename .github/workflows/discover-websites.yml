@@ -1,0 +1,99 @@
+# Discover Websites
+#
+# Finds each organization's real website and proves it belongs to them, then looks for
+# a bereavement page on that site.
+#
+# Nothing is attached on similarity. A website is recorded only when the CMS-registered
+# phone number is found in the page text, or every distinctive word of the organization's
+# name appears on a page that is recognizably about hospice care. Everything else is
+# recorded as a mismatch and never published.
+#
+# Politeness is enforced in code, not by convention: robots.txt is honored, requests to
+# the same domain are spaced one second apart, and the bot identifies itself with a
+# contact URL. These organizations are also our future outreach targets - being a good
+# guest is both right and strategically necessary.
+
+name: Discover Websites
+
+on:
+  workflow_dispatch:
+    inputs:
+      tier:
+        description: "Which organizations to process"
+        type: choice
+        options: ["high", "high+medium", "all"]
+        default: "high"
+      limit:
+        description: "Max organizations this run (blank = no limit)"
+        type: string
+        default: "150"
+      recheck:
+        description: "Re-check organizations already checked"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    # Crawling is deliberately slow. A generous ceiling, well under the 6-hour job limit.
+    timeout-minutes: 120
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Verify discovery logic before touching the network
+        run: python3 scripts/ingest/discover_websites.py --offline-test
+
+      - name: Discover and verify websites
+        run: |
+          ARGS="--tier ${{ inputs.tier }}"
+          if [ -n "${{ inputs.limit }}" ]; then ARGS="$ARGS --limit ${{ inputs.limit }}"; fi
+          if [ "${{ inputs.recheck }}" = "true" ]; then ARGS="$ARGS --recheck"; fi
+          echo "Running with: $ARGS"
+          python3 scripts/ingest/discover_websites.py $ARGS
+
+      - name: Summarize
+        if: always()
+        run: |
+          {
+            echo "## Website discovery"
+            echo ""
+            cat data/website-discovery-report.md
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Open a pull request with the results
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: data/website-discovery
+          delete-branch: true
+          commit-message: "Website discovery results"
+          title: "Data: verified organization websites"
+          body: |
+            Website discovery run.
+
+            Every website in this diff was **proved** to belong to its organization:
+            either the CMS-registered phone number was found in the page text
+            (`verified_phone`), or every distinctive word of the organization's name
+            appeared on a page about hospice care (`verified_name`).
+
+            **Before merging, spot-check five entries.** Open a few `website` values and
+            confirm the site really is that organization. If any are wrong, say so rather
+            than merging — a wrong link is the one error this whole design exists to prevent.
+
+            Organizations with a `bereavement_page` are the ones that become listings.
+          labels: |
+            data
+            automated
