@@ -1,0 +1,84 @@
+# Check Source Access
+#
+# Establishes what each national grief directory permits BEFORE any adapter is written
+# against it. Reads robots.txt and terms-of-service pages only - it never fetches
+# directory content.
+#
+# Adapters may only be written for sources this marks `automate`. Everything else goes
+# through the manual CSV path, which breaches nobody's terms.
+#
+# Cheap and safe, so it also runs monthly to catch policy changes.
+
+name: Check Source Access
+
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: "Single source id to check (blank = all)"
+        type: string
+        default: ""
+  schedule:
+    # 08:00 UTC on the 5th of each month = 1:00am Phoenix
+    - cron: "0 8 5 * *"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Verify the CSV importer still enforces its rules
+        run: python3 scripts/ingest/import_csv.py --self-test
+
+      - name: Check what each source permits
+        run: |
+          if [ -n "${{ inputs.source }}" ]; then
+            python3 scripts/ingest/check_source_access.py --source "${{ inputs.source }}"
+          else
+            python3 scripts/ingest/check_source_access.py
+          fi
+
+      - name: Summarize
+        if: always()
+        run: |
+          {
+            echo "## Source access"
+            echo ""
+            cat data/source-access-report.md
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Open a pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: data/source-access
+          delete-branch: true
+          commit-message: "Source access check"
+          title: "Data: national directory access check"
+          body: |
+            What each national grief directory permits.
+
+            **This decides how we get each source's data.** Only sources marked
+            `automate` may have a scraper written for them. `manual_only` and
+            `contact_first` go through `scripts/ingest/import_csv.py` or an email.
+
+            Read the "Notes requiring a human" section — anything flagged there needs
+            a person to actually read the terms before we build against it.
+          labels: |
+            data
+            automated

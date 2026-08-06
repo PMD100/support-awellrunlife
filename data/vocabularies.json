@@ -1,0 +1,94 @@
+{
+  "_comment": "Controlled values. The `slug` becomes a URL segment, `h1` becomes the page headline, and `search_phrasings` are the real-world queries this value should capture - use them for copy, not for keyword stuffing. Never add a value here without also deciding its slug and h1.",
+
+  "loss_types": [
+    { "value": "general", "slug": "general", "label": "General grief support", "h1": "Grief Support Groups", "search_phrasings": ["grief support group", "bereavement group", "loss support group"], "landing_page": false },
+    { "value": "spouse_partner", "slug": "loss-of-a-spouse", "label": "Loss of a spouse or partner", "h1": "Spouse & Partner Loss Support Groups", "search_phrasings": ["widow support group", "widower support group", "young widows group", "loss of husband support"], "landing_page": true },
+    { "value": "child", "slug": "loss-of-a-child", "label": "Loss of a child", "h1": "Child Loss Support Groups", "search_phrasings": ["bereaved parents group", "loss of a child support group", "grieving parents"], "landing_page": true },
+    { "value": "pregnancy_infant", "slug": "pregnancy-and-infant-loss", "label": "Pregnancy and infant loss", "h1": "Pregnancy & Infant Loss Support Groups", "search_phrasings": ["miscarriage support group", "stillbirth support", "SIDS support group", "infant loss"], "landing_page": true },
+    { "value": "parent", "slug": "loss-of-a-parent", "label": "Loss of a parent", "h1": "Parent Loss Support Groups", "search_phrasings": ["loss of mother support group", "loss of father support group", "grieving a parent"], "landing_page": true },
+    { "value": "sibling", "slug": "loss-of-a-sibling", "label": "Loss of a sibling", "h1": "Sibling Loss Support Groups", "search_phrasings": ["sibling grief support", "loss of a brother", "loss of a sister"], "landing_page": true },
+    { "value": "grandparent", "slug": "loss-of-a-grandparent", "label": "Loss of a grandparent", "h1": "Grandparent Loss Support", "search_phrasings": [], "landing_page": false },
+    { "value": "friend", "slug": "loss-of-a-friend", "label": "Loss of a friend", "h1": "Friend Loss Support", "search_phrasings": [], "landing_page": false },
+    { "value": "suicide", "slug": "suicide-loss", "label": "Suicide loss", "h1": "Suicide Loss Survivor Support Groups", "search_phrasings": ["survivors of suicide loss", "SOS support group", "lost someone to suicide"], "landing_page": true, "sensitivity": "high" },
+    { "value": "overdose_substance", "slug": "overdose-loss", "label": "Overdose and substance-related loss", "h1": "Overdose Loss Support Groups", "search_phrasings": ["overdose grief support", "GRASP group", "lost child to addiction"], "landing_page": true, "sensitivity": "high" },
+    { "value": "homicide", "slug": "homicide-loss", "label": "Homicide loss", "h1": "Homicide Loss Support Groups", "search_phrasings": ["parents of murdered children", "homicide survivors group"], "landing_page": true, "sensitivity": "high" },
+    { "value": "accident_sudden", "slug": "sudden-loss", "label": "Sudden or accidental death", "h1": "Sudden Loss Support Groups", "search_phrasings": ["traumatic loss support", "sudden death grief"], "landing_page": true },
+    { "value": "illness_long", "slug": "loss-after-illness", "label": "Loss after long illness", "h1": "Support After a Long Illness", "search_phrasings": ["cancer loss support group"], "landing_page": false },
+    { "value": "military_service", "slug": "military-loss", "label": "Military and service loss", "h1": "Military Loss Support Groups", "search_phrasings": ["TAPS support group", "gold star family support"], "landing_page": true },
+    { "value": "pet", "slug": "pet-loss", "label": "Pet loss", "h1": "Pet Loss Support Groups", "search_phrasings": ["pet loss support group", "grieving a dog", "pet bereavement"], "landing_page": true },
+    { "value": "caregiver_anticipatory", "slug": "anticipatory-grief", "label": "Anticipatory grief and caregiving", "h1": "Anticipatory Grief & Caregiver Support", "search_phrasings": ["anticipatory grief support", "caregiver grief"], "landing_page": true },
+    { "value": "ambiguous_loss", "slug": "ambiguous-loss", "label": "Ambiguous loss", "h1": "Ambiguous Loss Support", "search_phrasings": ["dementia grief support", "missing person family support"], "landing_page": false }
+  ],
+
+  "org_type": [
+    { "value": "hospice", "label": "Hospice" },
+    { "value": "hospital_health_system", "label": "Hospital or health system" },
+    { "value": "funeral_home", "label": "Funeral home" },
+    { "value": "church_faith_org", "label": "Church or faith organization" },
+    { "value": "nonprofit", "label": "Nonprofit" },
+    { "value": "peer_network_chapter", "label": "Peer network chapter" },
+    { "value": "counseling_practice", "label": "Counseling practice" },
+    { "value": "community_center", "label": "Community center" },
+    { "value": "government_public_health", "label": "Government or public health" },
+    { "value": "school_university", "label": "School or university" },
+    { "value": "other", "label": "Other" }
+  ],
+
+  "age_groups": [
+    { "value": "children", "label": "Children (under 13)" },
+    { "value": "teens", "label": "Teens (13–17)" },
+    { "value": "young_adults", "label": "Young adults (18–30)" },
+    { "value": "adults", "label": "Adults" },
+    { "value": "older_adults", "label": "Older adults" },
+    { "value": "families", "label": "Whole families" }
+  ],
+
+  "populations": [
+    { "value": "lgbtq", "label": "LGBTQ+" },
+    { "value": "veterans", "label": "Veterans and military families" },
+    { "value": "spanish_speaking", "label": "Spanish-speaking" },
+    { "value": "men", "label": "Men" },
+    { "value": "women", "label": "Women" },
+    { "value": "caregivers", "label": "Caregivers" },
+    { "value": "healthcare_workers", "label": "Healthcare workers" }
+  ],
+
+  "cost": [
+    { "value": "free", "label": "Free", "badge": "Free", "badge_style": "positive" },
+    { "value": "donation_suggested", "label": "Free, donation suggested", "badge": "Free · donation optional", "badge_style": "positive" },
+    { "value": "sliding_scale", "label": "Sliding scale", "badge": "Sliding scale", "badge_style": "neutral" },
+    { "value": "paid", "label": "Paid", "badge": "Fee", "badge_style": "neutral" },
+    { "value": "unknown", "label": "Cost not listed", "badge": "Cost not listed — ask when you call", "badge_style": "caution" }
+  ],
+
+  "format": [
+    { "value": "in_person", "label": "In person" },
+    { "value": "online", "label": "Online" },
+    { "value": "hybrid", "label": "In person and online" }
+  ],
+
+  "structure": [
+    { "value": "drop_in", "label": "Ongoing — join anytime", "help": "You can start attending any week." },
+    { "value": "closed_series", "label": "Fixed series", "help": "Runs for a set number of weeks; usually you need to start at session one." },
+    { "value": "unknown", "label": "Not specified" }
+  ],
+
+  "faith_affiliation": [
+    { "value": "none", "label": "Secular" },
+    { "value": "christian", "label": "Christian" },
+    { "value": "catholic", "label": "Catholic" },
+    { "value": "jewish", "label": "Jewish" },
+    { "value": "muslim", "label": "Muslim" },
+    { "value": "interfaith", "label": "Interfaith" },
+    { "value": "other", "label": "Other faith tradition" },
+    { "value": "unknown", "label": "Not specified" }
+  ],
+
+  "verification_status": [
+    { "value": "org_confirmed", "label": "Confirmed by the organization", "badge_style": "positive" },
+    { "value": "source_verified", "label": "Listed from a current public source", "badge_style": "neutral" },
+    { "value": "needs_review", "label": "Unconfirmed — call ahead", "badge_style": "caution" },
+    { "value": "retired", "label": "No longer listed", "badge_style": "retired" }
+  ]
+}

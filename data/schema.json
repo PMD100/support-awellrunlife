@@ -1,0 +1,108 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://support.awellrunlife.com/schema/listing.json",
+  "title": "Grief Support Group Listing",
+  "description": "One record per distinct group, not per organization. See docs/02-data-model.md.",
+  "type": "object",
+  "required": [
+    "id", "slug", "name", "organization", "org_type",
+    "loss_types", "age_groups", "format", "cost", "structure",
+    "registration_required", "faith_affiliation", "schedule_text",
+    "metro_id", "source_url", "source_type", "verification_status",
+    "first_seen", "last_checked", "source_link_status"
+  ],
+  "properties": {
+    "id": { "type": "string", "format": "uuid" },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "name": { "type": "string", "minLength": 3, "maxLength": 140 },
+    "organization": { "type": "string", "minLength": 2 },
+    "org_type": { "enum": ["hospice", "hospital_health_system", "funeral_home", "church_faith_org", "nonprofit", "peer_network_chapter", "counseling_practice", "community_center", "government_public_health", "school_university", "other"] },
+    "description": { "type": "string", "maxLength": 600 },
+
+    "loss_types": { "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": { "enum": ["general", "spouse_partner", "child", "pregnancy_infant", "parent", "sibling", "grandparent", "friend", "suicide", "overdose_substance", "homicide", "accident_sudden", "illness_long", "military_service", "pet", "caregiver_anticipatory", "ambiguous_loss"] } },
+    "age_groups": { "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": { "enum": ["children", "teens", "young_adults", "adults", "older_adults", "families"] } },
+    "populations": { "type": "array", "uniqueItems": true,
+      "items": { "enum": ["lgbtq", "veterans", "spanish_speaking", "men", "women", "caregivers", "healthcare_workers"] } },
+    "languages": { "type": "array", "items": { "type": "string", "pattern": "^[a-z]{2}$" }, "default": ["en"] },
+
+    "format": { "enum": ["in_person", "online", "hybrid"] },
+    "cost": { "enum": ["free", "donation_suggested", "sliding_scale", "paid", "unknown"] },
+    "cost_notes": { "type": "string", "maxLength": 200 },
+    "structure": { "enum": ["drop_in", "closed_series", "unknown"] },
+    "series_length_weeks": { "type": "integer", "minimum": 1, "maximum": 104 },
+    "registration_required": { "enum": ["yes", "no", "unknown"] },
+    "faith_affiliation": { "enum": ["none", "christian", "catholic", "jewish", "muslim", "interfaith", "other", "unknown"] },
+    "faith_participation_required": { "type": "boolean" },
+    "facilitator_type": { "enum": ["licensed_clinician", "trained_peer", "chaplain", "mixed", "unknown"] },
+
+    "schedule_text": { "type": "string", "minLength": 3, "maxLength": 300,
+      "description": "Verbatim from source wherever possible. This is what we display. Never synthesize it from the structured fields." },
+    "cadence": { "enum": ["weekly", "biweekly", "monthly", "varies", "unknown"] },
+    "days_of_week": { "type": "array", "uniqueItems": true,
+      "items": { "enum": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"] } },
+    "time_of_day": { "type": "array", "uniqueItems": true, "items": { "enum": ["morning", "afternoon", "evening"] } },
+    "timezone": { "type": "string" },
+
+    "venue_name": { "type": "string" },
+    "street": { "type": "string" },
+    "city": { "type": "string" },
+    "state": { "type": "string", "pattern": "^[A-Z]{2}$" },
+    "zip": { "type": "string", "pattern": "^[0-9]{5}$" },
+    "lat": { "type": "number", "minimum": -90, "maximum": 90 },
+    "lng": { "type": "number", "minimum": -180, "maximum": 180 },
+    "metro_id": { "type": "string" },
+    "accessibility_notes": { "type": "string", "maxLength": 300 },
+
+    "phone": { "type": "string" },
+    "email": { "type": "string", "format": "email" },
+    "contact_name": { "type": "string" },
+    "url": { "type": "string", "format": "uri" },
+    "registration_url": { "type": "string", "format": "uri" },
+
+    "source_url": { "type": "string", "format": "uri" },
+    "source_urls": { "type": "array", "items": { "type": "string", "format": "uri" },
+      "description": "All sources this record was merged from, after dedupe." },
+    "source_type": { "enum": ["cms_dataset", "national_org_directory", "org_website", "state_association", "org_submitted", "user_submitted"] },
+    "verification_status": { "enum": ["org_confirmed", "source_verified", "needs_review", "retired"] },
+    "first_seen": { "type": "string", "format": "date" },
+    "last_checked": { "type": "string", "format": "date" },
+    "last_confirmed_by_org": { "type": "string", "format": "date" },
+    "source_link_status": { "enum": ["ok", "redirect", "broken", "content_changed"] },
+    "claimed_by": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "role": { "type": "string" },
+        "claimed_at": { "type": "string", "format": "date" }
+      },
+      "required": ["name", "email", "claimed_at"]
+    },
+    "internal_notes": { "type": "string" },
+
+    "published": { "type": "boolean" },
+    "noindex": { "type": "boolean", "default": false },
+    "retired_reason": { "type": "string" }
+  },
+
+  "allOf": [
+    {
+      "$comment": "In-person and hybrid groups must have a physical location.",
+      "if": { "properties": { "format": { "enum": ["in_person", "hybrid"] } } },
+      "then": { "required": ["city", "state"] }
+    },
+    {
+      "$comment": "At least one way to reach the group. Phone is strongly preferred - see verification policy.",
+      "anyOf": [ { "required": ["phone"] }, { "required": ["url"] } ]
+    },
+    {
+      "$comment": "series_length_weeks only meaningful for a fixed series.",
+      "if": { "properties": { "structure": { "const": "closed_series" } } },
+      "then": { "required": ["series_length_weeks"] }
+    }
+  ],
+
+  "additionalProperties": false
+}
