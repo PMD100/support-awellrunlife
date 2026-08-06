@@ -27,8 +27,12 @@ on:
         description: "Max organizations this run (blank = no limit)"
         type: string
         default: "150"
+      retry_failed:
+        description: "Retry previous failures (use after a logic fix)"
+        type: boolean
+        default: false
       recheck:
-        description: "Re-check organizations already checked"
+        description: "Re-check everything, including already-verified orgs"
         type: boolean
         default: false
 
@@ -61,6 +65,7 @@ jobs:
         run: |
           ARGS="--tier ${{ inputs.tier }}"
           if [ -n "${{ inputs.limit }}" ]; then ARGS="$ARGS --limit ${{ inputs.limit }}"; fi
+          if [ "${{ inputs.retry_failed }}" = "true" ]; then ARGS="$ARGS --retry-failed"; fi
           if [ "${{ inputs.recheck }}" = "true" ]; then ARGS="$ARGS --recheck"; fi
           echo "Running with: $ARGS"
           python3 scripts/ingest/discover_websites.py $ARGS

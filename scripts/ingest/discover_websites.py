@@ -89,19 +89,36 @@ def clean_org_name(name):
     """
     Strip CMS artifacts so the name resembles how the organization writes it.
 
+    CMS records are per-location, so names carry branch qualifiers that are not part
+    of the brand: "(BALTIMORE)", "- GAINESVILLE", "(031515)". Left in, they wreck
+    domain guessing — "HEARTLAND HOSPICE (BALTIMORE)" yielded initials "hhb.com".
+
     >>> clean_org_name("HOSPICE OF THE VALLEY - WEST (031515)")
     'HOSPICE OF THE VALLEY'
+    >>> clean_org_name("HEARTLAND HOSPICE (BALTIMORE)")
+    'HEARTLAND HOSPICE'
+    >>> clean_org_name("AFFINIS HOSPICE, LLC- GAINESVILLE")
+    'AFFINIS HOSPICE'
     """
     if not name:
         return ""
     s = name.upper()
-    s = re.sub(r"\(\s*\d{5,}\s*\)", " ", s)          # trailing CCN in parentheses
+    s = re.sub(r"\([^)]*\)", " ", s)                  # ANY parenthetical, not just CCNs
     s = re.sub(r"\bD/?B/?A\b.*", " ", s)              # "DBA Something"
     s = re.sub(r"[,\.]", " ", s)
-    s = re.sub(r"\s+-\s+(WEST|EAST|NORTH|SOUTH|CENTRAL)\b.*", " ", s)
-    s = re.sub(r"\b(LLC|L L C|INC|CORP|LP|LLP|PC|PLLC|LTD)\b", " ", s)
+    s = re.sub(r"\b(LLC|L L C|INC|CORP|LP|LLP|PC|PLLC|LTD|INCORPORATED)\b", " ", s)
+    s = re.sub(r"\s*-\s*[A-Z0-9][A-Z0-9 ]*$", " ", s)  # trailing branch qualifier after a dash
     s = re.sub(r"[^A-Z0-9 ]", " ", s)
-    return re.sub(r"\s+", " ", s).strip()
+    s = re.sub(r"\s+", " ", s).strip()
+
+    # Trailing compass qualifier with no dash: "HOSPICE OF THE VALLEY EAST".
+    # Only strip if enough of the name survives - we don't want "HOSPICE OF THE NORTH"
+    # collapsing to "HOSPICE OF THE".
+    stripped = re.sub(r"\s+(NORTH|SOUTH|EAST|WEST|CENTRAL|NORTHEAST|NORTHWEST|"
+                      r"SOUTHEAST|SOUTHWEST)$", "", s)
+    if stripped != s and len(stripped.split()) >= 2:
+        s = stripped
+    return s.strip()
 
 
 def tokens_of(name):
@@ -173,32 +190,77 @@ def strip_html(html):
     return re.sub(r"\s+", " ", text)
 
 
-def page_contains_phone(text, phone_normalized):
-    """True if the org's 10-digit phone appears in the page, in any common format."""
+def extract_metadata_text(html):
+    """
+    Pull organization names out of places that survive a JavaScript-rendered page.
+
+    Many nonprofit sites render body copy with JS, so stripping tags yields almost
+    nothing — Gilchrist Hospice's real site matched zero words for exactly this reason.
+    But the name almost always survives in the <title>, the Open Graph tags, the logo's
+    alt text, or JSON-LD. Those are legitimate page content.
+
+    Deliberately EXCLUDES href values. The domain we guessed appears in the page's own
+    links, so searching raw HTML would match the name against our own guess and verify
+    everything. That would defeat the entire point.
+    """
+    parts = []
+    for m in re.finditer(r"(?is)<title[^>]*>(.*?)</title>", html):
+        parts.append(m.group(1))
+    for m in re.finditer(
+            r'(?is)<meta[^>]+(?:name|property)=["\'](?:description|og:site_name|og:title|'
+            r'twitter:title|application-name)["\'][^>]*content=["\']([^"\']*)["\']', html):
+        parts.append(m.group(1))
+    for m in re.finditer(
+            r'(?is)<meta[^>]+content=["\']([^"\']*)["\'][^>]*(?:name|property)=["\']'
+            r'(?:description|og:site_name|og:title)["\']', html):
+        parts.append(m.group(1))
+    for m in re.finditer(r'(?is)<img[^>]+alt=["\']([^"\']{2,120})["\']', html):
+        parts.append(m.group(1))
+    for m in re.finditer(r'(?is)aria-label=["\']([^"\']{2,120})["\']', html):
+        parts.append(m.group(1))
+    for m in re.finditer(r'"(?:name|legalName|alternateName)"\s*:\s*"([^"]{2,120})"', html):
+        parts.append(m.group(1))
+    return " ".join(strip_html(p) for p in parts)
+
+
+def extract_tel_links(html):
+    """`tel:` hrefs are stripped along with all other markup, but they carry phone numbers."""
+    return " ".join(m.group(1) for m in
+                    re.finditer(r'(?i)href=["\']tel:([^"\']+)["\']', html))
+
+
+def page_contains_phone(haystack, phone_normalized):
+    """True if the org's 10-digit phone appears, in any format."""
     if not phone_normalized:
         return False
-    digits_only = re.sub(r"\D", "", text)
-    return phone_normalized in digits_only
+    return phone_normalized in re.sub(r"\D", "", haystack)
 
 
-def verify_ownership(org, page_text):
+def verify_ownership(org, page_text, html=""):
     """
     Return (status, evidence) where status is one of:
       verified_phone | verified_name | mismatch
     """
-    text_upper = page_text.upper()
+    meta_text = extract_metadata_text(html) if html else ""
+    haystack = f"{page_text} {meta_text}".upper()
+    phone_haystack = f"{page_text} {extract_tel_links(html) if html else ''}"
 
-    if page_contains_phone(page_text, org.get("phone_normalized")):
+    if page_contains_phone(phone_haystack, org.get("phone_normalized")):
         return "verified_phone", f"phone {org.get('phone')} found on page"
 
     distinct = distinctive_tokens(org.get("name", ""))
     if distinct:
-        found = [t for t in distinct if re.search(rf"\b{re.escape(t)}\b", text_upper)]
+        found = [t for t in distinct if re.search(rf"\b{re.escape(t)}\b", haystack)]
         ratio = len(found) / len(distinct)
-        looks_like_hospice = any(k in text_upper for k in
-                                 ("HOSPICE", "PALLIATIVE", "BEREAVEMENT", "END OF LIFE"))
+        looks_like_hospice = any(k in haystack for k in
+                                 ("HOSPICE", "PALLIATIVE", "BEREAVEMENT", "END OF LIFE",
+                                  "GRIEF", "END-OF-LIFE"))
         if ratio >= 0.8 and looks_like_hospice:
-            return "verified_name", f"matched {len(found)}/{len(distinct)}: {', '.join(found[:4])}"
+            where = "page text" if re.search(rf"\b{re.escape(found[0])}\b", page_text.upper()) else "page title/metadata"
+            return "verified_name", f"matched {len(found)}/{len(distinct)} in {where}: {', '.join(found[:4])}"
+        if ratio >= 0.8:
+            return "mismatch", (f"name matched {len(found)}/{len(distinct)} but page is not "
+                                f"about hospice or grief care")
         return "mismatch", f"only matched {len(found)}/{len(distinct)} distinctive words"
 
     return "mismatch", "organization name has no distinctive words to match on"
@@ -239,7 +301,7 @@ def discover_one(org, verbose=False):
                 continue
 
             text = strip_html(result.text)
-            status, evidence = verify_ownership(org, text)
+            status, evidence = verify_ownership(org, text, result.text)
 
             if status.startswith("verified"):
                 org["website"] = result.final_url
@@ -277,6 +339,53 @@ def discover_one(org, verbose=False):
     org["website_status"] = "not_found"
     org["website_evidence"] = "; ".join(org.pop("_rejected", [])[:3]) or "no candidate domain resolved"
     return "not_found"
+
+
+def inherit_from_siblings(orgs):
+    """
+    Branch offices inherit their brand's verified website.
+
+    CMS lists one record per location, so "Hospice of the Valley - West", "- East" and
+    "- Central" are three records for one organization with one website. Once any of
+    them verifies, the others should not be searched from scratch — and in practice
+    their branch-specific names generate bad domain guesses that fail.
+
+    Scoped to the same state, so unrelated national chains sharing a name in different
+    markets don't cross-contaminate.
+
+    Returns the number of organizations updated.
+    """
+    verified_by_brand = {}
+    for org in orgs:
+        if not str(org.get("website_status", "")).startswith("verified"):
+            continue
+        key = (clean_org_name(org.get("name", "")), org.get("state"))
+        # Prefer phone-verified parents; they're the strongest evidence
+        existing = verified_by_brand.get(key)
+        if not existing or (org["website_status"] == "verified_phone"
+                            and existing["website_status"] != "verified_phone"):
+            verified_by_brand[key] = org
+
+    updated = 0
+    for org in orgs:
+        if org.get("website_status") not in ("not_found", None):
+            continue
+        if org.get("website_status") is None and "crawl_tier" not in org:
+            continue
+        key = (clean_org_name(org.get("name", "")), org.get("state"))
+        parent = verified_by_brand.get(key)
+        if not parent or parent is org:
+            continue
+        org["website"] = parent["website"]
+        org["bereavement_page"] = parent.get("bereavement_page")
+        org["website_status"] = "verified_sibling"
+        org["website_evidence"] = (
+            f"same brand and state as {parent['name']} "
+            f"({parent['city']}), which verified via {parent['website_status']}"
+        )
+        org["website_checked_at"] = date.today().isoformat()
+        updated += 1
+    return updated
 
 
 # --------------------------------------------------------------------------
@@ -331,6 +440,56 @@ def offline_test():
     assert status == "mismatch"
     print(f"  correctly rejected: {ev}")
 
+    print("\n=== FIX 1: branch qualifiers stripped ===")
+    for raw, expected in [("HEARTLAND HOSPICE (BALTIMORE)", "HEARTLAND HOSPICE"),
+                          ("AFFINIS HOSPICE, LLC- GAINESVILLE", "AFFINIS HOSPICE"),
+                          ("HOSPICE OF THE VALLEY - WEST (031515)", "HOSPICE OF THE VALLEY")]:
+        got = clean_org_name(raw)
+        assert got == expected, f"{raw!r} -> {got!r}, expected {expected!r}"
+        print(f"  {raw[:38]:40s} -> {got}")
+    assert "heartlandhospice.org" in candidate_domains("HEARTLAND HOSPICE (BALTIMORE)")
+    print("  and now generates heartlandhospice.org")
+
+    print("\n=== FIX 2: name found in title/metadata when body is JS-rendered ===")
+    js_page = ('<html><head><title>Gulfside Hospice | Pasco County</title>'
+               '<meta property="og:site_name" content="Gulfside Hospice">'
+               '</head><body><div id="root"></div></body></html>')
+    status, ev = verify_ownership(org2, strip_html(js_page), js_page)
+    assert status == "verified_name", f"got {status}: {ev}"
+    print(f"  {ev}")
+
+    print("\n=== FIX 2 safety: our own guessed domain must NOT self-verify ===")
+    link_only = '<html><body><a href="https://gulfsidehospice.org">Home</a> Hospice care</body></html>'
+    status, ev = verify_ownership(org2, strip_html(link_only), link_only)
+    assert status == "mismatch", f"SELF-VERIFICATION BUG: {status} / {ev}"
+    print(f"  correctly rejected: {ev}")
+
+    print("\n=== FIX 3: tel: links checked for phone ===")
+    tel_page = '<html><body><a href="tel:+1-727-555-0100">Call</a></body></html>'
+    status, ev = verify_ownership(org, strip_html(tel_page), tel_page)
+    assert status == "verified_phone", f"got {status}"
+    print(f"  {ev}")
+
+    print("\n=== FIX 4: branch offices inherit a verified parent ===")
+    fleet = [
+        {"name": "HOSPICE OF THE VALLEY - WEST", "state": "AZ", "city": "Phoenix",
+         "website": "https://hov.org", "bereavement_page": "https://hov.org/grief",
+         "website_status": "verified_phone", "crawl_tier": "high"},
+        {"name": "HOSPICE OF THE VALLEY EAST", "state": "AZ", "city": "Mesa",
+         "website_status": "not_found", "crawl_tier": "high"},
+        {"name": "UNRELATED HOSPICE", "state": "AZ", "city": "Tucson",
+         "website_status": "not_found", "crawl_tier": "high"},
+        {"name": "HOSPICE OF THE VALLEY", "state": "CA", "city": "San Jose",
+         "website_status": "not_found", "crawl_tier": "high"},
+    ]
+    n = inherit_from_siblings(fleet)
+    assert n == 1, f"expected exactly 1 inheritance, got {n}"
+    assert fleet[1]["website"] == "https://hov.org"
+    assert fleet[1]["website_status"] == "verified_sibling"
+    assert fleet[2]["website_status"] == "not_found", "unrelated org wrongly inherited"
+    assert fleet[3]["website_status"] == "not_found", "cross-STATE inheritance leaked"
+    print(f"  1 branch inherited; unrelated org and same-name-different-state both refused")
+
     print("\n=== bereavement link detection ===")
     html = '''<a href="/about">About Us</a>
               <a href="/services/grief-support">Grief Support Groups</a>
@@ -361,7 +520,10 @@ def main():
     parser.add_argument("--min-score", type=int, default=0,
                         help="Only process organizations at or above this crawl_priority")
     parser.add_argument("--recheck", action="store_true",
-                        help="Re-check organizations already checked")
+                        help="Re-check every organization, including ones already verified")
+    parser.add_argument("--retry-failed", action="store_true",
+                        help="Re-check only previous failures. Preferred after a logic fix: "
+                             "it avoids re-requesting sites we already verified.")
     parser.add_argument("--offline-test", action="store_true",
                         help="Run logic tests with no network access and exit")
     args = parser.parse_args()
@@ -375,10 +537,20 @@ def main():
     tiers = {"high": {"high"}, "high+medium": {"high", "medium"},
              "all": {"high", "medium", "low"}}[args.tier]
 
+    RETRYABLE = {"not_found", "mismatch", None, "not_checked"}
+
+    def wanted(o):
+        status = o.get("website_status")
+        if args.recheck:
+            return True
+        if args.retry_failed:
+            return status in RETRYABLE
+        return status in (None, "not_checked")
+
     queue = [o for o in orgs
              if o.get("crawl_tier") in tiers
              and o.get("crawl_priority", 0) >= args.min_score
-             and (args.recheck or o.get("website_status") in (None, "not_checked"))]
+             and wanted(o)]
     queue.sort(key=lambda o: -o.get("crawl_priority", 0))
     if args.limit:
         queue = queue[:args.limit]
@@ -394,6 +566,11 @@ def main():
         results[status] += 1
         if status == "not_found":
             print(f"    -- {org.get('website_evidence','')[:90]}")
+
+    inherited = inherit_from_siblings(orgs)
+    if inherited:
+        results["verified_sibling"] += inherited
+        print(f"\nBranch offices inheriting a verified parent site: {inherited}")
 
     with open(ORGS_PATH, "w") as fh:
         json.dump(orgs, fh, indent=2, ensure_ascii=False)
