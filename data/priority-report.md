@@ -1,8 +1,8 @@
 # Crawl Priority Report
 
-_Generated 2026-08-06 04:19 UTC_
+_Generated 2026-08-06 04:50 UTC_
 
-**Organizations scored:** 3,308
+**Organizations scored:** 3,435
 
 Scoring reflects likelihood of running a real community bereavement program. 
 See the docstring in `scripts/score_organizations.py` for why raw provider counts mislead.
@@ -11,9 +11,9 @@ See the docstring in `scripts/score_organizations.py` for why raw provider count
 
 | Tier | Count | Share | Meaning |
 |---|---|---|---|
-| high | 220 | 6.7% | Crawl first - established nonprofits, hospital systems |
-| medium | 696 | 21.0% | Crawl second |
-| low | 2,392 | 72.3% | Crawl last or never - likely shell or micro-provider |
+| high | 236 | 6.9% | Crawl first - established nonprofits, hospital systems |
+| medium | 723 | 21.0% | Crawl second |
+| low | 2,476 | 72.1% | Crawl last or never - likely shell or micro-provider |
 
 ## By metro, sorted by high-priority count
 
@@ -25,6 +25,7 @@ Compare it against total - where they diverge sharply, provider count is noise.
 | new-york-ny | **33** | 16 | 10 | 59 |
 | chicago-il | **18** | 35 | 33 | 86 |
 | philadelphia-pa | **18** | 33 | 14 | 65 |
+| san-francisco-ca | **16** | 27 | 84 | 127 |
 | minneapolis-mn | **13** | 10 | 15 | 38 |
 | boston-ma | **12** | 17 | 18 | 47 |
 | st-louis-mo | **12** | 15 | 13 | 40 |
