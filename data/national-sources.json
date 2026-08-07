@@ -22,10 +22,15 @@
       "est_us_chapters": 500,
       "est_in_our_metros": 110,
       "priority": 1,
-      "access_status": "automate",
+      "access_status": "contact_first",
       "notes": "The authority on child loss. Highest-value single source we have - child loss is our best long-tail page and hospices barely serve it. Peer-led chapters, almost always free, usually monthly.",
       "robots_checked": "2026-08-06",
-      "robots_note": "robots.txt has 'User-agent: * / Disallow:' with an empty value, which permits all crawling. Terms of service still need a human read before we build an adapter."
+      "robots_note": "robots.txt permits crawling, BUT: (1) the chapter locator is JavaScript-rendered - the HTML contains no chapter data, only a widget calling an internal API; (2) the page states the locator 'is not to be used for any kind of solicitation of TCF's Chapters'. We would not be soliciting, but reverse-engineering an internal API to extract their chapter database is a different act from crawling public pages. Moved to contact_first 2026-08-06. Write to the national office.",
+      "render": "javascript",
+      "contact": {
+        "phone": "877-969-0010",
+        "email": "nationaloffice@compassionatefriends.org"
+      }
     },
     {
       "id": "afsp",
