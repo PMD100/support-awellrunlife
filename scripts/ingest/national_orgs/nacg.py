@@ -43,6 +43,7 @@ USAGE
 """
 
 import argparse
+import html as html_module
 import json
 import os
 import re
@@ -84,13 +85,59 @@ AGE_TAG_MAP = {
 }
 
 
-def strip_tags(html):
-    text = re.sub(r"(?is)<(script|style|noscript)[^>]*>.*?</\1>", " ", html)
+def strip_tags(markup):
+    """
+    Text content of an HTML fragment.
+
+    Uses html.unescape rather than hand-rolled replacements - the first inspection run
+    surfaced "Resilience Counseling &#038; Play Therapy", a numeric entity my manual
+    list didn't cover. unescape handles every named and numeric entity.
+    """
+    text = re.sub(r"(?is)<(script|style|noscript)[^>]*>.*?</\1>", " ", markup)
     text = re.sub(r"(?s)<[^>]+>", " ", text)
-    text = (text.replace("&amp;", "&").replace("&nbsp;", " ").replace("&#39;", "'")
-                .replace("&quot;", '"').replace("&lt;", "<").replace("&gt;", ">")
-                .replace("&#8217;", "'").replace("&rsquo;", "'"))
+    text = html_module.unescape(text)
     return re.sub(r"[ \t]+", " ", text)
+
+
+def extract_page_coordinates(page_html):
+    """
+    Map links sit in a single block at the bottom of the page, not inside each entry,
+    which is why the first run recovered coordinates for only 1 of 25 blocks. Pull them
+    all out once and key them by provider name.
+    """
+    coords = {}
+    for m in re.finditer(
+            r'(?is)<a[^>]+href=["\']https?://maps\.google\.com/\?q=(-?[\d.]+),(-?[\d.]+)["\'][^>]*>(.*?)</a>',
+            page_html):
+        label = strip_tags(m.group(3)).strip()
+        name = clean_text(label.split("  ")[0]) if label else None
+        if name:
+            coords.setdefault(name.upper(), (float(m.group(1)), float(m.group(2))))
+    return coords
+
+
+def dedupe_entries(entries):
+    """
+    NACG renders each provider twice: a visible card and a hidden "View More" modal.
+    The modal repeats the name, phone, website and email but omits city and state -
+    hence 25 blocks for ~12 providers, with city/state at 11/25.
+
+    Collapse them, preferring whichever copy actually carries a location.
+    """
+    best = {}
+    for e in entries:
+        key = (e["name"].upper(), e.get("phone_normalized") or "")
+        current = best.get(key)
+        if current is None:
+            best[key] = e
+            continue
+        # Merge: keep any field the incumbent is missing
+        for field in ("city", "state", "street", "lat", "lng", "email", "website"):
+            if not current.get(field) and e.get(field):
+                current[field] = e[field]
+        if len(e["tags"]) > len(current["tags"]):
+            current["tags"] = e["tags"]
+    return list(best.values())
 
 
 def fetch_page(n):
@@ -164,7 +211,10 @@ def parse_entry(block):
         lat, lng = float(geo.group(1)), float(geo.group(2))
 
     tags = [t for t in ALL_TAGS if t.lower() in text.lower()]
-    ages = sorted({AGE_TAG_MAP[k] for k in AGE_TAG_MAP if k in text.lower()})
+    # NACG exposes age groups only as a search filter, never on the entry itself -
+    # the first inspection run returned ages=[] for all 25 blocks. Rather than guess,
+    # we leave this empty and fall back to the audience NACG exists to serve.
+    ages = []
 
     return {
         "name": name, "phone_normalized": phone_digits, "email": email,
@@ -262,8 +312,17 @@ def inspect():
             print(page.text[max(0, m.start() - 1500):m.start() + 500])
         return 1
 
-    parsed = [p for p in (parse_entry(b) for b in blocks) if p]
-    print(f"Entries parsed:     {len(parsed)}\n")
+    raw = [p for p in (parse_entry(b) for b in blocks) if p]
+    coords = extract_page_coordinates(page.text)
+    parsed = dedupe_entries(raw)
+    for e in parsed:
+        if not e.get("lat"):
+            geo = coords.get(e["name"].upper())
+            if geo:
+                e["lat"], e["lng"] = geo
+    print(f"Raw blocks parsed:  {len(raw)}  (card + hidden modal per provider)")
+    print(f"After dedupe:       {len(parsed)}  <- actual providers")
+    print(f"Coordinates on page:{len(coords)}\n")
 
     fields = ["name", "phone_normalized", "city", "state", "website", "email", "lat"]
     print("Field completeness:")
@@ -318,9 +377,15 @@ def main():
         if not page.ok:
             print(f"  page {n}: FAILED ({page.error})")
             continue
-        entries = [p for p in (parse_entry(b) for b in split_entries(page.text)) if p]
+        coords = extract_page_coordinates(page.text)
+        entries = dedupe_entries(
+            [p for p in (parse_entry(b) for b in split_entries(page.text)) if p])
         for e in entries:
             e["_source_url"] = page_url
+            if not e.get("lat"):
+                geo = coords.get(e["name"].upper())
+                if geo:
+                    e["lat"], e["lng"] = geo
         all_entries.extend(entries)
         pages_ok += 1
         if n % 10 == 0 or n == total:
