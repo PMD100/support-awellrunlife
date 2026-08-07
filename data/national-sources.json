@@ -1,143 +1,183 @@
 {
   "_comment": "National organizations that publish chapter or group directories. These matter more than hospices for two reasons: they cover the loss types hospices don't (child, suicide, overdose, infant, military), and those are exactly our highest-intent, lowest-competition search pages.",
-
   "_access_policy": "Check each source's robots.txt and terms of service BEFORE writing an adapter. Where automated access is not clearly permitted, use the manual CSV path in scripts/ingest/import_csv.py instead. Several of these organizations would likely welcome a data-sharing conversation - asking costs one email and is the better first move for the large ones.",
-
   "_status_key": {
     "unchecked": "No robots.txt or ToS review yet. Run check_source_access.py.",
     "automate": "robots.txt permits our paths; adapter may be written.",
     "manual_only": "Automated access unclear or disallowed. Curate by hand.",
     "contact_first": "Large enough that a data-sharing request should be sent before anything else."
   },
-
   "sources": [
     {
       "id": "compassionate-friends",
       "name": "The Compassionate Friends",
       "domain": "compassionatefriends.org",
       "directory_path": "/find-support/chapters/chapter-locator/",
-      "loss_types": ["child", "sibling", "grandparent"],
+      "loss_types": [
+        "child",
+        "sibling",
+        "grandparent"
+      ],
       "structure": "chapter",
       "est_us_chapters": 500,
       "est_in_our_metros": 110,
       "priority": 1,
-      "access_status": "unchecked",
-      "notes": "The authority on child loss. Highest-value single source we have - child loss is our best long-tail page and hospices barely serve it. Peer-led chapters, almost always free, usually monthly."
+      "access_status": "automate",
+      "notes": "The authority on child loss. Highest-value single source we have - child loss is our best long-tail page and hospices barely serve it. Peer-led chapters, almost always free, usually monthly.",
+      "access_checked": "2026-08-07",
+      "terms_url": "https://www.compassionatefriends.org/privacy-policy/"
     },
     {
       "id": "afsp",
       "name": "American Foundation for Suicide Prevention",
       "domain": "afsp.org",
       "directory_path": "/find-a-support-group",
-      "loss_types": ["suicide"],
+      "loss_types": [
+        "suicide"
+      ],
       "structure": "group_finder",
       "est_us_chapters": 400,
       "est_in_our_metros": 90,
       "priority": 1,
-      "access_status": "unchecked",
+      "access_status": "human_review",
       "sensitivity": "high",
-      "notes": "Well-maintained finder. Suicide loss is high-intent and almost unserved by hospices. Requires the crisis banner and careful copy - see the sensitivity rules in the verification policy."
+      "notes": "Well-maintained finder. Suicide loss is high-intent and almost unserved by hospices. Requires the crisis banner and careful copy - see the sensitivity rules in the verification policy.",
+      "access_checked": "2026-08-07",
+      "terms_url": "https://afsp.org/privacy-notice/"
     },
     {
       "id": "nacg",
       "name": "National Alliance for Children's Grief",
       "domain": "childrengrieve.org",
       "directory_path": "/find-support",
-      "loss_types": ["general", "parent", "sibling"],
-      "audience": ["children", "teens", "families"],
+      "loss_types": [
+        "general",
+        "parent",
+        "sibling"
+      ],
+      "audience": [
+        "children",
+        "teens",
+        "families"
+      ],
       "structure": "member_directory",
       "est_us_chapters": 200,
       "est_in_our_metros": 55,
       "priority": 1,
-      "access_status": "unchecked",
-      "notes": "The Dougy Center network. Nearly the only structured source for children's and teen grief support, which almost no directory covers well."
+      "access_status": "automate",
+      "notes": "The Dougy Center network. Nearly the only structured source for children's and teen grief support, which almost no directory covers well.",
+      "access_checked": "2026-08-07",
+      "terms_url": "https://childrengrieve.org/terms-of-use/"
     },
     {
       "id": "bereaved-parents-usa",
       "name": "Bereaved Parents of the USA",
       "domain": "bereavedparentsusa.org",
       "directory_path": "/chapters",
-      "loss_types": ["child"],
+      "loss_types": [
+        "child"
+      ],
       "structure": "chapter",
       "est_us_chapters": 60,
       "est_in_our_metros": 20,
       "priority": 2,
-      "access_status": "unchecked",
-      "notes": "Complements Compassionate Friends. Expect overlap - dedupe on address and meeting time."
+      "access_status": "automate",
+      "notes": "Complements Compassionate Friends. Expect overlap - dedupe on address and meeting time.",
+      "access_checked": "2026-08-07"
     },
     {
       "id": "grasp",
       "name": "GRASP (Grief Recovery After Substance Passing)",
       "domain": "grasphelp.org",
       "directory_path": "/find-a-meeting",
-      "loss_types": ["overdose_substance"],
+      "loss_types": [
+        "overdose_substance"
+      ],
       "structure": "chapter",
       "est_us_chapters": 130,
       "est_in_our_metros": 40,
       "priority": 1,
-      "access_status": "unchecked",
+      "access_status": "automate",
       "sensitivity": "high",
-      "notes": "Overdose loss is badly underserved and carries heavy stigma, so people search privately rather than ask. High-intent, near-zero competition."
+      "notes": "Overdose loss is badly underserved and carries heavy stigma, so people search privately rather than ask. High-intent, near-zero competition.",
+      "access_checked": "2026-08-07"
     },
     {
       "id": "share-pregnancy-infant-loss",
       "name": "Share Pregnancy & Infant Loss Support",
       "domain": "nationalshare.org",
       "directory_path": "/find-support",
-      "loss_types": ["pregnancy_infant"],
+      "loss_types": [
+        "pregnancy_infant"
+      ],
       "structure": "chapter",
       "est_us_chapters": 75,
       "est_in_our_metros": 25,
       "priority": 2,
-      "access_status": "unchecked",
+      "access_status": "automate",
       "sensitivity": "high",
-      "notes": "Often hospital-affiliated, so cross-reference with health system pages."
+      "notes": "Often hospital-affiliated, so cross-reference with health system pages.",
+      "access_checked": "2026-08-07"
     },
     {
       "id": "miss-foundation",
       "name": "MISS Foundation",
       "domain": "missfoundation.org",
       "directory_path": "/support",
-      "loss_types": ["child", "pregnancy_infant"],
+      "loss_types": [
+        "child",
+        "pregnancy_infant"
+      ],
       "structure": "chapter",
       "est_us_chapters": 40,
       "est_in_our_metros": 12,
       "priority": 2,
-      "access_status": "unchecked",
-      "notes": "Founded in Arizona. Natural first outreach call - a local relationship is worth more than a scraped page, and they may share data directly."
+      "access_status": "automate",
+      "notes": "Founded in Arizona. Natural first outreach call - a local relationship is worth more than a scraped page, and they may share data directly.",
+      "access_checked": "2026-08-07"
     },
     {
       "id": "soaring-spirits",
       "name": "Soaring Spirits International",
       "domain": "soaringspirits.org",
       "directory_path": "/programs/regional-social-groups",
-      "loss_types": ["spouse_partner"],
+      "loss_types": [
+        "spouse_partner"
+      ],
       "structure": "chapter",
       "est_us_chapters": 50,
       "est_in_our_metros": 20,
       "priority": 2,
-      "access_status": "unchecked",
-      "notes": "Widowed community, skews younger than hospice bereavement groups. Fills a real gap."
+      "access_status": "automate",
+      "notes": "Widowed community, skews younger than hospice bereavement groups. Fills a real gap.",
+      "access_checked": "2026-08-07",
+      "required_crawl_delay": 5.0
     },
     {
       "id": "taps",
       "name": "TAPS (Tragedy Assistance Program for Survivors)",
       "domain": "taps.org",
       "directory_path": "/programs",
-      "loss_types": ["military_service"],
+      "loss_types": [
+        "military_service"
+      ],
       "structure": "national_program",
       "est_us_chapters": 30,
       "est_in_our_metros": 15,
       "priority": 3,
-      "access_status": "unchecked",
-      "notes": "Mostly national rather than local, but matters for San Diego and San Antonio."
+      "access_status": "human_review",
+      "notes": "Mostly national rather than local, but matters for San Diego and San Antonio.",
+      "access_checked": "2026-08-07",
+      "terms_url": "https://www.taps.org/terms"
     },
     {
       "id": "griefshare",
       "name": "GriefShare",
       "domain": "griefshare.org",
       "directory_path": "/findagroup",
-      "loss_types": ["general"],
+      "loss_types": [
+        "general"
+      ],
       "structure": "chapter",
       "est_us_chapters": 8000,
       "est_in_our_metros": 900,
@@ -145,7 +185,8 @@
       "access_status": "contact_first",
       "faith_affiliation": "christian",
       "faith_participation_required": null,
-      "notes": "By far the largest network, but three cautions. (1) Volume would swamp everything else and unbalance our metro pages. (2) Christian and curriculum-based - must be tagged accurately so people who want secular support aren't misled. (3) Large enough that we should ask before taking anything. Deliberately last."
+      "notes": "By far the largest network, but three cautions. (1) Volume would swamp everything else and unbalance our metro pages. (2) Christian and curriculum-based - must be tagged accurately so people who want secular support aren't misled. (3) Large enough that we should ask before taking anything. Deliberately last.",
+      "access_checked": "2026-08-07"
     }
   ]
 }
