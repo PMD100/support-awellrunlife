@@ -47,7 +47,17 @@ jobs:
 
       - name: Inspect one page only
         if: ${{ inputs.inspect_only }}
-        run: python3 scripts/ingest/national_orgs/nacg.py --inspect
+        run: |
+          python3 scripts/ingest/national_orgs/nacg.py --inspect | tee /tmp/inspect.txt
+          {
+            echo "## NACG parser inspection"
+            echo ""
+            echo "Reads one page and reports what parsed. Nothing was written."
+            echo ""
+            echo '```'
+            cat /tmp/inspect.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Ingest the full directory
         if: ${{ !inputs.inspect_only }}
