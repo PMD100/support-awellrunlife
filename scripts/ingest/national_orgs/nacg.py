@@ -109,11 +109,31 @@ def extract_page_coordinates(page_html):
     for m in re.finditer(
             r'(?is)<a[^>]+href=["\']https?://maps\.google\.com/\?q=(-?[\d.]+),(-?[\d.]+)["\'][^>]*>(.*?)</a>',
             page_html):
-        label = strip_tags(m.group(3)).strip()
-        name = clean_text(label.split("  ")[0]) if label else None
-        if name:
-            coords.setdefault(name.upper(), (float(m.group(1)), float(m.group(2))))
+        label = clean_text(strip_tags(m.group(3)))
+        if label:
+            # The link label is "<name> <street address>" run together, so the whole
+            # string is stored and matched by prefix - see lookup_coordinates.
+            coords[label.upper()] = (float(m.group(1)), float(m.group(2)))
     return coords
+
+
+def lookup_coordinates(name, coords):
+    """
+    Match a provider to its map link.
+
+    The link label concatenates name and street address, so an exact key lookup finds
+    almost nothing - the second inspection run attached coordinates to 1 provider out of
+    12 despite all 12 being present on the page. Match by prefix instead.
+    """
+    if not name:
+        return None
+    key = name.upper()
+    if key in coords:
+        return coords[key]
+    for label, geo in coords.items():
+        if label.startswith(key):
+            return geo
+    return None
 
 
 def dedupe_entries(entries):
@@ -317,7 +337,7 @@ def inspect():
     parsed = dedupe_entries(raw)
     for e in parsed:
         if not e.get("lat"):
-            geo = coords.get(e["name"].upper())
+            geo = lookup_coordinates(e["name"], coords)
             if geo:
                 e["lat"], e["lng"] = geo
     print(f"Raw blocks parsed:  {len(raw)}  (card + hidden modal per provider)")
@@ -383,7 +403,7 @@ def main():
         for e in entries:
             e["_source_url"] = page_url
             if not e.get("lat"):
-                geo = coords.get(e["name"].upper())
+                geo = lookup_coordinates(e["name"], coords)
                 if geo:
                     e["lat"], e["lng"] = geo
         all_entries.extend(entries)
