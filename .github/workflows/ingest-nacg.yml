@@ -1,0 +1,93 @@
+# Ingest NACG
+#
+# Pulls the National Alliance for Children's Grief member directory - 652 grief support
+# centers, camps, and counseling services for children, teens, and families.
+#
+# Run with "inspect only" checked FIRST. That fetches a single page and reports what
+# parsed, without writing anything. Only run for real once the inspection output looks
+# right - writing 652 badly-parsed records is much more expensive than one extra run.
+
+name: Ingest NACG
+
+on:
+  workflow_dispatch:
+    inputs:
+      inspect_only:
+        description: "Fetch one page and report what parsed. Changes nothing."
+        type: boolean
+        default: true
+      pages:
+        description: "Limit pages (blank = all 55)"
+        type: string
+        default: ""
+  schedule:
+    # 08:30 UTC on the 7th of each month = 1:30am Phoenix
+    - cron: "30 8 7 * *"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Inspect one page only
+        if: ${{ inputs.inspect_only }}
+        run: python3 scripts/ingest/national_orgs/nacg.py --inspect
+
+      - name: Ingest the full directory
+        if: ${{ !inputs.inspect_only }}
+        run: |
+          ARGS=""
+          if [ -n "${{ inputs.pages }}" ]; then ARGS="--pages ${{ inputs.pages }}"; fi
+          python3 scripts/ingest/national_orgs/nacg.py $ARGS
+
+      - name: Summarize
+        if: ${{ !inputs.inspect_only }}
+        run: |
+          {
+            echo "## NACG ingest"
+            echo ""
+            cat data/nacg-report.md
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Open a pull request
+        if: ${{ !inputs.inspect_only }}
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: data/nacg-ingest
+          delete-branch: true
+          commit-message: "NACG directory ingest"
+          title: "Data: NACG children's grief providers"
+          body: |
+            Children's and teen grief support providers from the NACG member directory.
+
+            **These all arrive as `needs_review` on purpose.** NACG publishes no schedule
+            and no cost for its members, so every listing carries `cost: unknown` and a
+            schedule of "Contact the organization for current meeting times". They will
+            display with the *Unconfirmed — call ahead* badge and cannot count toward a
+            metro's publish threshold until the details are confirmed.
+
+            Inventing a meeting time we were never given is the one error this project
+            cannot afford, so this is the correct outcome rather than a shortfall.
+
+            Only entries NACG tags "Peer Support Groups" are kept. Counseling practices,
+            school programs, and plain resource pages are dropped — a grieving parent
+            looking for a group should not be sent to a private therapy practice.
+          labels: |
+            data
+            automated
