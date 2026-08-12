@@ -1,0 +1,329 @@
+[
+  {
+    "id": "2007d14a-2936-44ac-aec3-123cfd153a6b",
+    "slug": "compass-regional-hospice-inc-monthly-grief-support-group-for-adults-centreville",
+    "name": "Monthly Grief Support Group for Adults",
+    "organization": "COMPASS REGIONAL HOSPICE, INC",
+    "org_type": "hospice",
+    "loss_types": [
+      "general"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "free",
+    "structure": "unknown",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the organization for current meeting times",
+    "city": "CENTREVILLE",
+    "state": "MD",
+    "metro_id": "baltimore-md",
+    "source_url": "https://compassregionalhospice.org/what-we-do/grief-support.html",
+    "source_type": "org_website",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-12",
+    "last_checked": "2026-08-12",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "extraction_confidence": "low",
+    "phone": "443-262-4100",
+    "phone_normalized": "4432624100",
+    "street": "160 COURSEVALL DRIVE",
+    "cost_notes": "There is no requirement for your loved one to have been a hospice patient.",
+    "description": "Monthly grief support groups for adults",
+    "facilitator_type": "mixed",
+    "cadence": "monthly",
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"All of our grief services are free of charge and open to anyone in our community struggling with the loss of a loved one.\""
+  },
+  {
+    "id": "e0704895-5077-4808-8a97-7184977d2d87",
+    "slug": "compass-regional-hospice-inc-specialized-grief-support-groups-centreville",
+    "name": "Specialized Grief Support Groups",
+    "organization": "COMPASS REGIONAL HOSPICE, INC",
+    "org_type": "hospice",
+    "loss_types": [
+      "child",
+      "spouse_partner",
+      "suicide",
+      "overdose_substance"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "free",
+    "structure": "unknown",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the organization for current meeting times",
+    "city": "CENTREVILLE",
+    "state": "MD",
+    "metro_id": "baltimore-md",
+    "source_url": "https://compassregionalhospice.org/what-we-do/grief-support.html",
+    "source_type": "org_website",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-12",
+    "last_checked": "2026-08-12",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "extraction_confidence": "low",
+    "phone": "443-262-4100",
+    "phone_normalized": "4432624100",
+    "street": "160 COURSEVALL DRIVE",
+    "cost_notes": "There is no requirement for your loved one to have been a hospice patient.",
+    "description": "Specialized grief support groups tailored to those who have lost a child or a partner, or those who have lost a loved one to suicide or a substance passing",
+    "facilitator_type": "mixed",
+    "cadence": "unknown",
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"All of our grief services are free of charge and open to anyone in our community struggling with the loss of a loved one.\" | loss_types: \"Specialized grief support groups tailored to those who have lost a child or a partner, or those who have lost a loved one to suicide or a substance passing\""
+  },
+  {
+    "id": "2a8bed7f-3ac2-4704-ae3e-053aeeeb7db1",
+    "slug": "care-dimensions-inc-grupo-de-apoyo-en-espanol-spanish-support-group-danvers",
+    "name": "Grupo de Apoyo en Español (Spanish Support Group)",
+    "organization": "CARE DIMENSIONS, INC",
+    "org_type": "hospice",
+    "loss_types": [
+      "general"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "online",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Online second Saturday of the month",
+    "city": "DANVERS",
+    "state": "MA",
+    "metro_id": "boston-ma",
+    "source_url": "https://www.caredimensions.org/grief-support/",
+    "source_type": "org_website",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-12",
+    "last_checked": "2026-08-12",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "extraction_confidence": "medium",
+    "phone": "888-283-1722",
+    "phone_normalized": "8882831722",
+    "street": "75 SYLVAN STREET, SUITE B-102",
+    "description": "Drop-in support group in Spanish, offered online.",
+    "facilitator_type": "unknown",
+    "cadence": "monthly",
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Online second Saturday of the month\""
+  },
+  {
+    "id": "be21722f-ff4c-404c-a487-510b12ce32cd",
+    "slug": "carolina-caring-good-mourning-coffee-group-gastonia",
+    "name": "Good Mourning Coffee Group",
+    "organization": "CAROLINA CARING",
+    "org_type": "hospice",
+    "loss_types": [
+      "general"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "free",
+    "structure": "drop_in",
+    "registration_required": "no",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Wednesdays, July 14th & August 12th from 9:00-10:00am",
+    "city": "GASTONIA",
+    "state": "NC",
+    "metro_id": "charlotte-nc",
+    "source_url": "https://www.carolinacaring.org/grief-and-healing/",
+    "source_type": "org_website",
+    "verification_status": "source_verified",
+    "first_seen": "2026-08-12",
+    "last_checked": "2026-08-12",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "extraction_confidence": "medium",
+    "phone": "828-466-0466",
+    "phone_normalized": "8284660466",
+    "street": "2240 REMOUNT ROAD",
+    "description": "Grab a cup of coffee, enjoy light breakfast, and join us for an informal time of sharing and connecting with others who are also on a journey of healing.",
+    "facilitator_type": "unknown",
+    "cadence": "varies",
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Wednesdays, July 14th & August 12th from 9:00-10:00am\" | cost: \"All grief support groups are free and open to Carolina Caring clients as well as those in the community who have experienced loss.\""
+  },
+  {
+    "id": "2245be07-1966-42ba-b3b0-2c13f67fcfd4",
+    "slug": "carolina-caring-one-stitch-at-a-time-gastonia",
+    "name": "One Stitch at A Time",
+    "organization": "CAROLINA CARING",
+    "org_type": "hospice",
+    "loss_types": [
+      "general"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "free",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Thursday, July 2nd & 16th, August 6th & 20th from 10:00-11:00am",
+    "city": "GASTONIA",
+    "state": "NC",
+    "metro_id": "charlotte-nc",
+    "source_url": "https://www.carolinacaring.org/grief-and-healing/",
+    "source_type": "org_website",
+    "verification_status": "source_verified",
+    "first_seen": "2026-08-12",
+    "last_checked": "2026-08-12",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "extraction_confidence": "medium",
+    "phone": "828-466-0466",
+    "phone_normalized": "8284660466",
+    "street": "2240 REMOUNT ROAD",
+    "description": "A knitting & crocheting circle where we will share experiences, reflect, and find healing.",
+    "facilitator_type": "unknown",
+    "cadence": "biweekly",
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Thursday, July 2nd & 16th, August 6th & 20th from 10:00-11:00am\" | cost: \"All grief support groups are free and open to Carolina Caring clients as well as those in the community who have experienced loss.\""
+  },
+  {
+    "id": "bd1c5bb1-3209-4dda-a4e4-361ae01ad36d",
+    "slug": "carolina-caring-brighter-days-camp-for-children-gastonia",
+    "name": "Brighter Days Camp for Children",
+    "organization": "CAROLINA CARING",
+    "org_type": "hospice",
+    "loss_types": [
+      "general"
+    ],
+    "age_groups": [
+      "children"
+    ],
+    "format": "in_person",
+    "cost": "free",
+    "structure": "drop_in",
+    "registration_required": "yes",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Tuesday, August 4th from 9:00am-1:00pm",
+    "city": "GASTONIA",
+    "state": "NC",
+    "metro_id": "charlotte-nc",
+    "source_url": "https://www.carolinacaring.org/grief-and-healing/",
+    "source_type": "org_website",
+    "verification_status": "source_verified",
+    "first_seen": "2026-08-12",
+    "last_checked": "2026-08-12",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "extraction_confidence": "medium",
+    "phone": "828-466-0466",
+    "phone_normalized": "8284660466",
+    "street": "2240 REMOUNT ROAD",
+    "description": "Brighter Days Camp is designed for youth ages 5-16 who have experienced the death or loss of a significant person in their life.",
+    "facilitator_type": "unknown",
+    "cadence": "varies",
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Tuesday, August 4 th from 9:00am-1:00pm\" | cost: \"All grief support groups are free and open to Carolina Caring clients as well as those in the community who have experienced loss.\""
+  },
+  {
+    "id": "d174e14f-bceb-47fc-b7ae-0a55d09d7e16",
+    "slug": "carolina-caring-loss-of-spouse-or-significant-other-newton-gastonia",
+    "name": "Loss of Spouse or Significant Other (Newton)",
+    "organization": "CAROLINA CARING",
+    "org_type": "hospice",
+    "loss_types": [
+      "spouse_partner"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "free",
+    "structure": "closed_series",
+    "registration_required": "yes",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Monday, August 3rd, 10th, 17th, 24th, & 31st from 5:30-7:00pm",
+    "city": "GASTONIA",
+    "state": "NC",
+    "metro_id": "charlotte-nc",
+    "source_url": "https://www.carolinacaring.org/grief-and-healing/",
+    "source_type": "org_website",
+    "verification_status": "source_verified",
+    "first_seen": "2026-08-12",
+    "last_checked": "2026-08-12",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "extraction_confidence": "medium",
+    "phone": "828-466-0466",
+    "phone_normalized": "8284660466",
+    "street": "2240 REMOUNT ROAD",
+    "description": "Comfort, hope, and connection with those who understand the gravity of this major life change.",
+    "facilitator_type": "unknown",
+    "cadence": "weekly",
+    "series_length_weeks": 5,
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Monday, August 3rd, 10th, 17th, 24th, & 31st from 5:30-7:00pm\" | cost: \"All grief support groups are free and open to Carolina Caring clients as well as those in the community who have experienced loss.\" | loss_types: \"Loss of Spouse or Significant Other\""
+  },
+  {
+    "id": "ac251f66-bf50-4c85-8522-d106c04f37e7",
+    "slug": "carolina-caring-loss-of-spouse-or-significant-other-gastonia-gastonia",
+    "name": "Loss of Spouse or Significant Other (Gastonia)",
+    "organization": "CAROLINA CARING",
+    "org_type": "hospice",
+    "loss_types": [
+      "spouse_partner"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "free",
+    "structure": "closed_series",
+    "registration_required": "yes",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Tuesday, September 1st, 8th, 15th, & 22nd from 1:00-2:30pm",
+    "city": "GASTONIA",
+    "state": "NC",
+    "metro_id": "charlotte-nc",
+    "source_url": "https://www.carolinacaring.org/grief-and-healing/",
+    "source_type": "org_website",
+    "verification_status": "source_verified",
+    "first_seen": "2026-08-12",
+    "last_checked": "2026-08-12",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "extraction_confidence": "medium",
+    "phone": "828-466-0466",
+    "phone_normalized": "8284660466",
+    "street": "2240 REMOUNT ROAD",
+    "description": "Comfort, hope, and connection with those who understand the gravity of this major life change.",
+    "facilitator_type": "unknown",
+    "cadence": "weekly",
+    "series_length_weeks": 4,
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Tuesday, September 1st, 8th, 15th, & 22nd from 1:00-2:30pm\" | cost: \"All grief support groups are free and open to Carolina Caring clients as well as those in the community who have experienced loss.\" | loss_types: \"Loss of Spouse or Significant Other\""
+  }
+]
