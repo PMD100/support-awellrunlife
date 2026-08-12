@@ -157,6 +157,63 @@ def quote_is_real(quote, page_text):
     return normalize_for_quote_match(quote) in normalize_for_quote_match(page_text)
 
 
+MONTHS = {m: i for i, m in enumerate(
+    ["january", "february", "march", "april", "may", "june", "july",
+     "august", "september", "october", "november", "december"], start=1)}
+MONTHS.update({m[:3]: i for m, i in list(MONTHS.items())})
+
+
+def parse_dated_schedule(schedule_text, today=None):
+    """
+    Detect schedules that name specific calendar dates rather than a recurring pattern.
+
+    WHY THIS EXISTS
+    ---------------
+    The first real extraction returned schedules like "Monday, August 3rd, 10th, 17th,
+    24th & 31st" and "Wednesdays, July 14th & August 12th". Quote verification passed
+    them, correctly - that text really is on the page. But those are fixed series, not
+    recurring schedules, and by the time someone reads our listing the dates have gone.
+
+    A hallucination check cannot catch this. It is not a lie; it is an expiry.
+
+    Returns (is_dated, dates, all_past). Years are absent from these strings, so the
+    current year is assumed, with a rollover to next year only if that would place every
+    date more than six months in the past.
+    """
+    if not schedule_text:
+        return False, [], False
+    today = today or date.today()
+
+    found, current_month = [], None
+    pattern = (r"(?i)\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?\s+"
+               r"(\d{1,2})(?:st|nd|rd|th)?|\b(\d{1,2})(?:st|nd|rd|th)\b")
+    for m in re.finditer(pattern, schedule_text):
+        if m.group(1):
+            current_month = MONTHS.get(m.group(1).lower())
+            day = int(m.group(2))
+        else:
+            day = int(m.group(3))
+            if current_month is None:
+                continue          # a bare ordinal with no month, e.g. "2nd Tuesday"
+        if not current_month or not 1 <= day <= 31:
+            continue
+        for year in (today.year, today.year + 1):
+            try:
+                found.append(date(year, current_month, day))
+                break
+            except ValueError:
+                continue
+
+    if not found:
+        return False, [], False
+
+    # If every date looks long past, the page probably means next year.
+    if all((today - d).days > 180 for d in found):
+        found = [date(d.year + 1, d.month, d.day) for d in found]
+
+    return True, sorted(found), all(d < today for d in found)
+
+
 def call_api(page_text, org_name, api_key):
     body = json.dumps({
         "model": MODEL,
@@ -224,8 +281,21 @@ def validate(group, page_text, vocab, org):
         rejections.append(f"{name}: schedule quote not found on page - schedule discarded")
         schedule = None
 
+    # --- dated series: a schedule that expires ---
+    is_dated, dates, all_past = parse_dated_schedule(schedule)
+    schedule_expires = None
+    if is_dated and all_past:
+        rejections.append(
+            f"{name}: schedule names specific dates that have all passed "
+            f"({dates[0]} to {dates[-1]}) - discarded")
+        schedule = None
+    elif is_dated:
+        schedule_expires = dates[-1].isoformat()
+        rejections.append(
+            f"{name}: dated series, not a recurring schedule - expires {schedule_expires}")
+
     confidence = group.get("confidence", "low")
-    needs_review = (not schedule) or confidence == "low" or cost == "unknown"
+    needs_review = (not schedule) or confidence == "low" or cost == "unknown" or is_dated
 
     listing = {
         "id": str(uuid.uuid4()),
@@ -254,6 +324,9 @@ def validate(group, page_text, vocab, org):
         "languages": ["en"],
         "extraction_confidence": confidence,
     }
+    if schedule_expires:
+        listing["schedule_expires"] = schedule_expires
+        listing["schedule_is_dated_series"] = True
 
     phone = normalize_phone(group.get("phone")) or org.get("phone_normalized")
     if phone:
@@ -342,6 +415,32 @@ def offline_test():
     listing, rej = validate(bad, page, vocab, org)
     assert listing["loss_types"] == ["general"]
     print(f"  rejected -> {rej[0]}")
+
+    print("\n=== DATED SERIES — the failure quote-checking cannot catch ===")
+    import datetime as _dt
+    today = _dt.date(2026, 8, 12)
+    for text, expect_dated, expect_past in [
+        ("Monday, August 3rd, 10th, 17th, 24th, & 31st from 5:30-7:00pm", True, False),
+        ("Wednesdays, July 14th & August 12th from 9:00-10:00am", True, False),
+        ("Thursday, July 2nd & 16th from 10:00-11:00am", True, True),
+        ("2nd and 4th Tuesday of each month, 6:30pm", False, False),
+        ("Every Wednesday at 7pm", False, False),
+    ]:
+        dated, dates, past = parse_dated_schedule(text, today)
+        assert dated == expect_dated, f"{text!r} dated={dated}"
+        assert past == expect_past, f"{text!r} all_past={past}"
+        kind = "DATED" if dated else "recurring"
+        state = " ALL PASSED" if past else (f" last={dates[-1]}" if dates else "")
+        print(f"  {kind:9s}{state:22s} {text[:52]}")
+
+    print("\n  -> a fully-past dated series is discarded:")
+    past_page = page + " Thursday, July 2nd & 16th from 10:00-11:00am"
+    listing, rej = validate(dict(good, schedule_text="Thursday, July 2nd & 16th from 10:00-11:00am",
+                                 schedule_quote="Thursday, July 2nd & 16th from 10:00-11:00am"),
+                            past_page, vocab, org)
+    assert "Contact the organization" in listing["schedule_text"]
+    assert listing["verification_status"] == "needs_review"
+    print(f"     {[r for r in rej if 'passed' in r][0][:100]}")
 
     print("\n=== low confidence is always flagged ===")
     listing, _ = validate(dict(good, confidence="low"), page, vocab, org)
