@@ -70,12 +70,17 @@
       "est_us_chapters": 200,
       "est_in_our_metros": 55,
       "priority": 1,
-      "access_status": "automate",
+      "access_status": "contact_first",
       "notes": "The Dougy Center network. Nearly the only structured source for children's and teen grief support, which almost no directory covers well.",
       "robots_checked": "2026-08-06",
       "former_domain": "childrengrieve.org",
-      "robots_note": "IMPORTANT: childrengrieve.org's robots.txt points its sitemaps at nacg.org - the organization has moved domains. Registry updated. Only WooCommerce and wp-admin paths are disallowed; the directory is permitted.",
-      "sitemap": "https://nacg.org/sitemap.xml"
+      "robots_note": "CLIENT-SIDE PAGINATION. Confirmed 2026-08-07: /page/2/ and ?sf_paged=2 both return byte-identical content to page 1 - only the first 12 of 652 are ever in the HTML. The pagination links are decorative; the real paging is an AJAX call. Same category as TCF and AFSP. Reachable only via a headless browser or by asking NACG directly. They publish a 'add or update your listing' form, so they clearly want the directory used - ask before engineering around it.",
+      "sitemap": "https://nacg.org/sitemap.xml",
+      "render": "javascript",
+      "contact": {
+        "phone": "866-432-1542",
+        "email": "info@nacg.org"
+      }
     },
     {
       "id": "bereaved-parents-usa",
