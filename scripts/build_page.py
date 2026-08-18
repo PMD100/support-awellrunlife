@@ -159,6 +159,18 @@ def build(listings):
     live = [l for l in listings
             if l.get("name") and l.get("organization") and not is_expired(l, today)]
 
+    # Safety net: collapse groups that appear more than once because several CMS
+    # organization records share one bereavement page (branch offices of one brand).
+    # Extraction dedupes too, but a page must never show the same group three times.
+    seen, deduped = {}, []
+    for l in live:
+        key = (l.get("source_url"), (l.get("name") or "").strip().lower())
+        if key in seen:
+            continue
+        seen[key] = True
+        deduped.append(l)
+    live = deduped
+
     by_state = defaultdict(list)
     for l in live:
         by_state[l.get("state") or "Other"].append(l)
@@ -185,7 +197,7 @@ def build(listings):
 <p class="awrl-jump">{jump}</p>
 {"".join(sections)}
 <div class="awrl-foot">
-<p><strong>Please call before you go.</strong> Support groups change meeting times, pause, and sometimes stop entirely. Every listing shows the date we last checked it. If you find something out of date, <a href="mailto:tbbcamp@gmail.com?subject=Directory%20correction">tell us</a> and we will fix it within 72 hours.</p>
+<p><strong>Please call before you go.</strong> Support groups change meeting times, pause, and sometimes stop entirely. Every listing shows the date we last checked it. If you find something out of date, <a href="mailto:info@awellrunlife.com?subject=Directory%20correction">tell us</a> and we will fix it within 72 hours.</p>
 <p class="awrl-fund">This directory is free and always will be. It is built and paid for by A Well Run Life, which makes handmade bronze memorial charms. We would rather say that plainly than have you wonder.</p>
 </div>
 </div>

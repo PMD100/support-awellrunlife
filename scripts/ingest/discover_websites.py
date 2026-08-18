@@ -80,6 +80,22 @@ BEREAVEMENT_HINTS = [
 
 TLD_ORDER = [".org", ".com", ".net", ".health"]
 
+# Used by the location check in verify_ownership. Sites write "Ohio" as often as "OH".
+STATE_NAMES = {
+    "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas", "CA": "California",
+    "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware", "DC": "District of Columbia",
+    "FL": "Florida", "GA": "Georgia", "HI": "Hawaii", "ID": "Idaho", "IL": "Illinois",
+    "IN": "Indiana", "IA": "Iowa", "KS": "Kansas", "KY": "Kentucky", "LA": "Louisiana",
+    "ME": "Maine", "MD": "Maryland", "MA": "Massachusetts", "MI": "Michigan",
+    "MN": "Minnesota", "MS": "Mississippi", "MO": "Missouri", "MT": "Montana",
+    "NE": "Nebraska", "NV": "Nevada", "NH": "New Hampshire", "NJ": "New Jersey",
+    "NM": "New Mexico", "NY": "New York", "NC": "North Carolina", "ND": "North Dakota",
+    "OH": "Ohio", "OK": "Oklahoma", "OR": "Oregon", "PA": "Pennsylvania",
+    "RI": "Rhode Island", "SC": "South Carolina", "SD": "South Dakota", "TN": "Tennessee",
+    "TX": "Texas", "UT": "Utah", "VT": "Vermont", "VA": "Virginia", "WA": "Washington",
+    "WV": "West Virginia", "WI": "Wisconsin", "WY": "Wyoming",
+}
+
 
 # --------------------------------------------------------------------------
 # Name handling
@@ -256,8 +272,49 @@ def verify_ownership(org, page_text, html=""):
                                  ("HOSPICE", "PALLIATIVE", "BEREAVEMENT", "END OF LIFE",
                                   "GRIEF", "END-OF-LIFE"))
         if ratio >= 0.8 and looks_like_hospice:
-            where = "page text" if re.search(rf"\b{re.escape(found[0])}\b", page_text.upper()) else "page title/metadata"
-            return "verified_name", f"matched {len(found)}/{len(distinct)} in {where}: {', '.join(found[:4])}"
+            # LOCATION CHECK. Added 2026-08-18 after three listings went live pointing at
+            # entirely different organizations:
+            #
+            #   Hope Hospice (Pittsburgh PA)     -> Hope Hospice of Pleasanton, California
+            #   Valley Hospice (Paramus NJ)      -> Valley Hospice of Steubenville, Ohio
+            #   Hospice of Lancaster (SC)        -> Hospice & Community Care of Lancaster, PA
+            #
+            # Each matched on a single word - HOPE, VALLEY, LANCASTER - which the code
+            # treated as "distinctive" but which are in fact among the commonest words in
+            # American hospice names, and in Lancaster's case a place name shared by two
+            # states. Name alone is not identity.
+            #
+            # A name match must now be corroborated by the organization's own city or
+            # state appearing on the page. Phone matches are exempt: a shared phone
+            # number is conclusive on its own.
+            # State is the reliable signal. City alone is not, because a city name that
+            # also appears in the organization's name makes the check circular:
+            # "Hospice of Lancaster" (SC) matched Lancaster, PENNSYLVANIA's site, and
+            # "LANCASTER" was present on the page purely because of the Pennsylvania city.
+            city = (org.get("city") or "").upper()
+            state = (org.get("state") or "").upper()
+            state_full = STATE_NAMES.get(state, "").upper()
+            org_name_upper = clean_org_name(org.get("name", ""))
+
+            location_found = []
+            if state and (re.search(rf"\b{re.escape(state)}\b", haystack)
+                          or (state_full and state_full in haystack)):
+                location_found.append(state)
+            elif city and len(city) > 3 and city not in org_name_upper \
+                    and re.search(rf"\b{re.escape(city)}\b", haystack):
+                location_found.append(city)
+
+            if not location_found:
+                return "mismatch", (
+                    f"name matched ({', '.join(found[:3])}) but neither the city "
+                    f"({org.get('city') or '?'}) nor the state ({state or '?'}) appears "
+                    f"on the page - probably a different organization with a similar name")
+
+            where = ("page text" if re.search(rf"\b{re.escape(found[0])}\b", page_text.upper())
+                     else "page title/metadata")
+            return "verified_name", (f"matched {len(found)}/{len(distinct)} in {where}: "
+                                     f"{', '.join(found[:4])}; location confirmed by "
+                                     f"{'/'.join(location_found)}")
         if ratio >= 0.8:
             return "mismatch", (f"name matched {len(found)}/{len(distinct)} but page is not "
                                 f"about hospice or grief care")
@@ -425,8 +482,10 @@ def offline_test():
         print(f"  matched in: {fmt!r}")
 
     print("\n=== name verification ===")
-    org2 = {"name": "GULFSIDE HOSPICE", "phone_normalized": None}
-    status, ev = verify_ownership(org2, "Gulfside Hospice provides palliative care in Pasco County")
+    org2 = {"name": "GULFSIDE HOSPICE", "city": "LAND O LAKES", "state": "FL",
+            "phone_normalized": None}
+    status, ev = verify_ownership(org2, "Gulfside Hospice provides palliative care in "
+                                        "Land O Lakes, FL, serving Pasco County")
     assert status == "verified_name", status
     print(f"  verified_name: {ev}")
 
@@ -434,6 +493,28 @@ def offline_test():
     status, ev = verify_ownership(org2, "Suncoast Hospice provides palliative care in Pinellas")
     assert status == "mismatch", f"should have rejected, got {status}"
     print(f"  correctly rejected: {ev}")
+
+    print("\n=== REJECTION: same name, WRONG STATE (the live bug) ===")
+    for label, org_loc, page_txt in [
+        ("Hope Hospice PA vs CA site",
+         {"name": "HOPE HOSPICE", "city": "PITTSBURGH", "state": "PA", "phone_normalized": None},
+         "Hope Hospice provides compassionate hospice care in Pleasanton, California."),
+        ("Valley Hospice NJ vs OH site",
+         {"name": "VALLEY HOSPICE", "city": "PARAMUS", "state": "NJ", "phone_normalized": None},
+         "Valley Hospice serves Steubenville, Ohio and Wheeling, West Virginia with palliative care."),
+        ("Hospice of Lancaster SC vs PA site",
+         {"name": "HOSPICE OF LANCASTER", "city": "LANCASTER", "state": "SC", "phone_normalized": None},
+         "Hospice & Community Care of Lancaster, Pennsylvania provides hospice and bereavement services."),
+    ]:
+        st, ev = verify_ownership(org_loc, page_txt, "")
+        assert st == "mismatch", f"{label} WRONGLY ACCEPTED: {ev}"
+        print(f"  rejected {label}")
+
+    print("\n  ...and the SAME organization at its OWN site is still accepted:")
+    right = {"name": "VALLEY HOSPICE", "city": "STEUBENVILLE", "state": "OH", "phone_normalized": None}
+    st, ev = verify_ownership(right, "Valley Hospice serves Steubenville, Ohio with hospice and bereavement care.", "")
+    assert st == "verified_name", f"got {st}: {ev}"
+    print(f"     {ev}")
 
     print("\n=== rejection: parked domain ===")
     status, ev = verify_ownership(org2, "This domain is for sale. Buy now.")
@@ -451,7 +532,7 @@ def offline_test():
     print("  and now generates heartlandhospice.org")
 
     print("\n=== FIX 2: name found in title/metadata when body is JS-rendered ===")
-    js_page = ('<html><head><title>Gulfside Hospice | Pasco County</title>'
+    js_page = ('<html><head><title>Gulfside Hospice | Land O Lakes, FL</title>'
                '<meta property="og:site_name" content="Gulfside Hospice">'
                '</head><body><div id="root"></div></body></html>')
     status, ev = verify_ownership(org2, strip_html(js_page), js_page)
