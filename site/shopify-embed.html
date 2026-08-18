@@ -1,0 +1,303 @@
+<!--
+  Grief Support Directory — embeddable widget
+  ===========================================
+
+  Paste this whole block into the Shopify page editor in HTML mode
+  (page: support-center-sponsored-by-a-well-run-life).
+
+  IT PULLS LISTINGS LIVE FROM THE REPOSITORY. Merge a data pull request and this page
+  updates on its own — no re-pasting. The only reason to touch this code again is to
+  change how it looks or behaves.
+
+  DESIGN NOTES
+  - Everything is scoped under .awrl-dir so it cannot collide with your theme's CSS.
+  - No external scripts, no fonts, no analytics, no tracking of any kind.
+  - Works without JavaScript only in the sense of showing a fallback message; the data
+    is fetched client-side. That is acceptable for a Shopify page and NOT acceptable for
+    the eventual subdomain, where listings must be server-rendered to be indexable.
+  - Every card shows how current the information is and tells people to call ahead.
+    That is not decoration; it is the promise the whole directory rests on.
+-->
+
+<div class="awrl-dir" id="awrl-dir">
+
+  <div class="awrl-crisis" role="note">
+    <strong>If you are in crisis, call or text 988</strong> — the Suicide &amp; Crisis Lifeline,
+    available 24 hours a day. This directory is not a crisis service and is not monitored.
+  </div>
+
+  <header class="awrl-head">
+    <h2>Find a grief support group near you</h2>
+    <p>
+      Free and low-cost bereavement groups across the United States. We list them as a
+      public service — no advertising, nothing behind an email signup, and placement is
+      never for sale.
+    </p>
+  </header>
+
+  <div class="awrl-controls">
+    <label class="awrl-field awrl-grow">
+      <span>Search by city, organization, or ZIP</span>
+      <input type="search" id="awrl-q" placeholder="e.g. Phoenix, or Hospice of the Valley"
+             autocomplete="off">
+    </label>
+    <label class="awrl-field">
+      <span>Type of loss</span>
+      <select id="awrl-loss"><option value="">All</option></select>
+    </label>
+    <label class="awrl-field">
+      <span>Location</span>
+      <select id="awrl-metro"><option value="">Anywhere</option></select>
+    </label>
+    <label class="awrl-check">
+      <input type="checkbox" id="awrl-free"> <span>Free only</span>
+    </label>
+  </div>
+
+  <p class="awrl-count" id="awrl-count" aria-live="polite">Loading…</p>
+  <div id="awrl-results"></div>
+
+  <footer class="awrl-foot">
+    <p>
+      <strong>Please call before you go.</strong> Support groups change meeting times,
+      pause, and sometimes stop entirely. Every listing shows the date we last checked it.
+      If you find something out of date,
+      <a href="mailto:tbbcamp@gmail.com?subject=Directory%20correction">tell us</a> and we
+      will fix it within 72 hours.
+    </p>
+    <p class="awrl-fund">
+      This directory is free and always will be. It is built and paid for by
+      A Well Run Life, which makes handmade bronze memorial charms. We would rather say
+      that plainly than have you wonder.
+    </p>
+  </footer>
+</div>
+
+<style>
+.awrl-dir{--awrl-ink:#2b2b2b;--awrl-soft:#6b6b6b;--awrl-line:#e2ded8;--awrl-bg:#faf8f5;
+  --awrl-accent:#8b5a2b;--awrl-ok:#2f6b4f;--awrl-warn:#8a6d1f;
+  max-width:56rem;margin:0 auto;padding:1rem;color:var(--awrl-ink);
+  font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.awrl-dir *{box-sizing:border-box}
+.awrl-crisis{background:#fff6f4;border:1px solid #f0d6cf;border-left:4px solid #b4553f;
+  padding:.85rem 1rem;border-radius:6px;margin-bottom:1.5rem;font-size:.95rem}
+.awrl-head h2{margin:0 0 .4rem;font-size:1.6rem;line-height:1.25}
+.awrl-head p{margin:0 0 1.25rem;color:var(--awrl-soft);max-width:44rem}
+.awrl-controls{display:flex;flex-wrap:wrap;gap:.75rem;align-items:end;
+  background:var(--awrl-bg);border:1px solid var(--awrl-line);border-radius:8px;padding:1rem}
+.awrl-field{display:flex;flex-direction:column;gap:.3rem;min-width:11rem}
+.awrl-grow{flex:1 1 16rem}
+.awrl-field span{font-size:.8rem;font-weight:600;color:var(--awrl-soft);
+  text-transform:uppercase;letter-spacing:.03em}
+.awrl-field input,.awrl-field select{font:inherit;font-size:.95rem;padding:.55rem .7rem;
+  border:1px solid #cfc9c1;border-radius:6px;background:#fff;color:inherit;width:100%}
+.awrl-field input:focus,.awrl-field select:focus{outline:2px solid var(--awrl-accent);
+  outline-offset:1px;border-color:var(--awrl-accent)}
+.awrl-check{display:flex;align-items:center;gap:.45rem;font-size:.95rem;padding-bottom:.6rem;
+  white-space:nowrap;cursor:pointer}
+.awrl-check input{width:1.05rem;height:1.05rem;accent-color:var(--awrl-accent)}
+.awrl-count{margin:1.25rem 0 .75rem;font-size:.9rem;color:var(--awrl-soft)}
+.awrl-card{border:1px solid var(--awrl-line);border-radius:8px;padding:1.1rem 1.2rem;
+  margin-bottom:.85rem;background:#fff}
+.awrl-card h3{margin:0 0 .15rem;font-size:1.1rem;line-height:1.3}
+.awrl-org{margin:0 0 .7rem;color:var(--awrl-soft);font-size:.92rem}
+.awrl-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.7rem}
+.awrl-tag{font-size:.75rem;padding:.18rem .5rem;border-radius:99px;border:1px solid var(--awrl-line);
+  background:var(--awrl-bg);color:var(--awrl-soft);white-space:nowrap}
+.awrl-tag.pos{color:var(--awrl-ok);border-color:#c3ddcd;background:#f2f9f5}
+.awrl-tag.caution{color:var(--awrl-warn);border-color:#e6dcb8;background:#fdfaef}
+.awrl-row{display:flex;gap:.5rem;margin:.3rem 0;font-size:.95rem}
+.awrl-row b{flex:0 0 5.5rem;font-weight:600;color:var(--awrl-soft);font-size:.85rem;
+  text-transform:uppercase;letter-spacing:.03em;padding-top:.15rem}
+.awrl-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.85rem;
+  padding-top:.85rem;border-top:1px solid var(--awrl-line);align-items:center}
+.awrl-actions a{color:var(--awrl-accent);font-weight:600;text-decoration:none;font-size:.95rem}
+.awrl-actions a:hover,.awrl-actions a:focus{text-decoration:underline}
+.awrl-checked{margin-left:auto;font-size:.78rem;color:var(--awrl-soft)}
+.awrl-callahead{font-size:.85rem;color:var(--awrl-warn);margin:.55rem 0 0}
+.awrl-empty{border:1px dashed var(--awrl-line);border-radius:8px;padding:2rem 1.5rem;
+  text-align:center;color:var(--awrl-soft)}
+.awrl-foot{margin-top:2rem;padding-top:1.25rem;border-top:1px solid var(--awrl-line);
+  font-size:.9rem;color:var(--awrl-soft)}
+.awrl-foot a{color:var(--awrl-accent)}
+.awrl-fund{font-size:.85rem;margin-bottom:0}
+@media (max-width:640px){
+  .awrl-controls{flex-direction:column;align-items:stretch}
+  .awrl-field{min-width:0}
+  .awrl-row{flex-direction:column;gap:.1rem}
+  .awrl-row b{flex:none}
+  .awrl-checked{margin-left:0;width:100%}
+}
+</style>
+
+<script>
+(function () {
+  "use strict";
+
+  // Live data. Merging a data pull request updates this page automatically.
+  var DATA_URL = "https://raw.githubusercontent.com/PMD100/support-awellrunlife/main/data/listings.json";
+
+  var LOSS_LABELS = {
+    general: "General grief", spouse_partner: "Loss of a spouse or partner",
+    child: "Loss of a child", pregnancy_infant: "Pregnancy or infant loss",
+    parent: "Loss of a parent", sibling: "Loss of a sibling",
+    suicide: "Suicide loss", overdose_substance: "Overdose loss",
+    homicide: "Homicide loss", accident_sudden: "Sudden loss",
+    illness_long: "Loss after illness", military_service: "Military loss",
+    pet: "Pet loss", caregiver_anticipatory: "Anticipatory grief",
+    grandparent: "Loss of a grandparent", friend: "Loss of a friend",
+    ambiguous_loss: "Ambiguous loss"
+  };
+  var COST_LABELS = {
+    free: ["Free", "pos"], donation_suggested: ["Free · donation optional", "pos"],
+    sliding_scale: ["Sliding scale", ""], paid: ["Fee", ""],
+    unknown: ["Cost not listed — ask when you call", "caution"]
+  };
+  var STATUS_LABELS = {
+    org_confirmed: ["Confirmed by the organization", "pos"],
+    source_verified: ["Listed from a current public source", ""],
+    needs_review: ["Unconfirmed — call ahead", "caution"]
+  };
+
+  var qEl = document.getElementById("awrl-q"),
+      lossEl = document.getElementById("awrl-loss"),
+      metroEl = document.getElementById("awrl-metro"),
+      freeEl = document.getElementById("awrl-free"),
+      countEl = document.getElementById("awrl-count"),
+      outEl = document.getElementById("awrl-results");
+
+  var listings = [];
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g,
+      function (c) { return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]; });
+  }
+
+  function metroName(id) {
+    if (!id) return "";
+    return id.replace(/-([a-z]{2})$/, ", $1").split("-").map(function (w) {
+      return w.charAt(0).toUpperCase() + w.slice(1);
+    }).join(" ").replace(/, ([a-z]{2})$/i, function (m, s) { return ", " + s.toUpperCase(); });
+  }
+
+  function humanDate(iso) {
+    if (!iso) return "";
+    var d = new Date(iso + "T00:00:00");
+    if (isNaN(d)) return iso;
+    return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+  }
+
+  // Expired dated series must never be shown. The pipeline already discards schedules
+  // whose dates have all passed, but a listing merged before that guardrail existed -
+  // or one whose last session passes while the page sits live - would otherwise linger.
+  function isExpired(l) {
+    if (!l.schedule_expires) return false;
+    return new Date(l.schedule_expires + "T23:59:59") < new Date();
+  }
+
+  function card(l) {
+    var cost = COST_LABELS[l.cost] || COST_LABELS.unknown;
+    var stat = STATUS_LABELS[l.verification_status] || STATUS_LABELS.needs_review;
+    var tags = (l.loss_types || []).map(function (t) {
+      return '<span class="awrl-tag">' + esc(LOSS_LABELS[t] || t) + "</span>";
+    }).join("");
+
+    var phone = l.phone
+      ? '<a href="tel:' + esc(l.phone.replace(/\D/g, "")) + '">Call ' + esc(l.phone) + "</a>" : "";
+    var site = (l.url || l.source_url)
+      ? '<a href="' + esc(l.url || l.source_url) + '" target="_blank" rel="noopener noreferrer">Visit website</a>' : "";
+    var reg = l.registration_url
+      ? '<a href="' + esc(l.registration_url) + '" target="_blank" rel="noopener noreferrer">Register</a>' : "";
+
+    var where = [l.venue_name, l.city, l.state].filter(Boolean).join(", ");
+
+    return '<article class="awrl-card">'
+      + "<h3>" + esc(l.name) + "</h3>"
+      + '<p class="awrl-org">' + esc(l.organization) + (where ? " · " + esc(where) : "") + "</p>"
+      + '<div class="awrl-tags">' + tags
+        + '<span class="awrl-tag ' + cost[1] + '">' + esc(cost[0]) + "</span>"
+        + '<span class="awrl-tag ' + stat[1] + '">' + esc(stat[0]) + "</span>"
+      + "</div>"
+      + '<div class="awrl-row"><b>Meets</b><span>' + esc(l.schedule_text) + "</span></div>"
+      + (l.description ? '<div class="awrl-row"><b>About</b><span>' + esc(l.description) + "</span></div>" : "")
+      + (l.verification_status !== "org_confirmed"
+          ? '<p class="awrl-callahead">Groups change often. Please call before you go.</p>' : "")
+      + '<div class="awrl-actions">' + phone + site + reg
+        + '<span class="awrl-checked">Last checked ' + esc(humanDate(l.last_checked)) + "</span>"
+      + "</div></article>";
+  }
+
+  function matches(l, q, loss, metro, freeOnly) {
+    if (loss && (l.loss_types || []).indexOf(loss) === -1) return false;
+    if (metro && l.metro_id !== metro) return false;
+    if (freeOnly && l.cost !== "free" && l.cost !== "donation_suggested") return false;
+    if (!q) return true;
+    var hay = [l.name, l.organization, l.city, l.state, l.zip, l.venue_name,
+               metroName(l.metro_id)].filter(Boolean).join(" ").toLowerCase();
+    return q.toLowerCase().split(/\s+/).every(function (t) { return hay.indexOf(t) !== -1; });
+  }
+
+  function render() {
+    var q = qEl.value.trim(), loss = lossEl.value,
+        metro = metroEl.value, freeOnly = freeEl.checked;
+    var hits = listings.filter(function (l) { return matches(l, q, loss, metro, freeOnly); });
+
+    // Confirmed first, then verified, then unconfirmed.
+    var rank = { org_confirmed: 0, source_verified: 1, needs_review: 2 };
+    hits.sort(function (a, b) {
+      return (rank[a.verification_status] ?? 3) - (rank[b.verification_status] ?? 3)
+          || (a.organization || "").localeCompare(b.organization || "");
+    });
+
+    countEl.textContent = hits.length === 0 ? "No groups match those filters."
+      : hits.length + (hits.length === 1 ? " group" : " groups");
+
+    outEl.innerHTML = hits.length
+      ? hits.map(card).join("")
+      : '<div class="awrl-empty"><p><strong>Nothing matched.</strong></p>'
+        + "<p>Try widening the filters, or clear the location to search everywhere. "
+        + "You can also call the 988 Lifeline at any hour to be pointed toward local support.</p></div>";
+  }
+
+  function populate() {
+    var losses = {}, metros = {};
+    listings.forEach(function (l) {
+      (l.loss_types || []).forEach(function (t) { losses[t] = (losses[t] || 0) + 1; });
+      if (l.metro_id) metros[l.metro_id] = (metros[l.metro_id] || 0) + 1;
+    });
+    Object.keys(losses).sort(function (a, b) { return losses[b] - losses[a]; })
+      .forEach(function (t) {
+        lossEl.insertAdjacentHTML("beforeend",
+          '<option value="' + esc(t) + '">' + esc(LOSS_LABELS[t] || t)
+          + " (" + losses[t] + ")</option>");
+      });
+    Object.keys(metros).sort(function (a, b) { return metros[b] - metros[a]; })
+      .forEach(function (m) {
+        metroEl.insertAdjacentHTML("beforeend",
+          '<option value="' + esc(m) + '">' + esc(metroName(m)) + " (" + metros[m] + ")</option>");
+      });
+  }
+
+  [qEl, lossEl, metroEl, freeEl].forEach(function (el) {
+    el.addEventListener("input", render);
+    el.addEventListener("change", render);
+  });
+
+  fetch(DATA_URL, { cache: "no-cache" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (rows) {
+      // Only publishable listings reach the page.
+      listings = rows.filter(function (l) {
+        return l && l.name && l.organization && l.metro_id && !isExpired(l);
+      });
+      populate();
+      render();
+    })
+    .catch(function () {
+      countEl.textContent = "";
+      outEl.innerHTML = '<div class="awrl-empty"><p><strong>The directory could not load '
+        + "just now.</strong></p><p>Please try again in a moment. If you need support "
+        + "immediately, call or text 988 at any hour.</p></div>";
+    });
+})();
+</script>
