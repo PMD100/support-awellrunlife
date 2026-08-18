@@ -532,12 +532,22 @@ def main():
     if os.path.exists(LISTINGS_PATH):
         with open(LISTINGS_PATH) as fh:
             existing = json.load(fh)
-    seen = {(l.get("organization"), l.get("name")) for l in existing}
-    new = [l for l in listings if (l["organization"], l["name"]) not in seen]
+
+    # Re-extraction REPLACES, it does not append.
+    #
+    # An append-only merge would be actively harmful here: when a guardrail improves and
+    # we re-read a page, the corrected records would be discarded as duplicates and the
+    # flawed originals would survive. That is exactly backwards - it means a listing can
+    # never be fixed, only added to. So every page we just read has its previous
+    # listings dropped first.
+    reread = {org["bereavement_page"] for org in queue}
+    kept = [l for l in existing if l.get("source_url") not in reread]
+    replaced = len(existing) - len(kept)
 
     with open(LISTINGS_PATH, "w") as fh:
-        json.dump(existing + new, fh, indent=2, ensure_ascii=False)
+        json.dump(kept + listings, fh, indent=2, ensure_ascii=False)
         fh.write("\n")
+    new = listings
 
     by_metro = Counter(l["metro_id"] for l in listings)
     verified = sum(1 for l in listings if l["verification_status"] == "source_verified")
@@ -548,7 +558,7 @@ def main():
              f"- Groups extracted: **{len(listings)}**",
              f"- Fully verified (`source_verified`): **{verified}**",
              f"- Flagged `needs_review`: **{len(listings) - verified}**",
-             f"- New to the file: **{len(new)}**\n",
+             f"- Previous listings replaced by this run: **{replaced}**\n",
              "## Outcomes\n", "| Outcome | Count |", "|---|---|"]
     for k, v in stats.most_common():
         lines.append(f"| {k} | {v} |")
@@ -581,6 +591,7 @@ def main():
     print(f"  source_verified:    {verified}")
     print(f"  needs_review:       {len(listings) - verified}")
     print(f"  Claims rejected:    {len(all_rejections)}")
+    print(f"  Stale records replaced: {replaced}")
     print("=" * 60)
     print(f"\nWrote {REPORT_PATH} and {AUDIT_PATH}")
     return 0
