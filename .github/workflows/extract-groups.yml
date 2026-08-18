@@ -16,9 +16,12 @@ on:
   workflow_dispatch:
     inputs:
       limit:
-        description: "Max organizations this run (start with 5)"
+        # Default deliberately blank. It used to prefill with "5", which meant three
+        # separate runs all quietly processed five pages instead of sixty. A prefilled
+        # cap that has to be cleared is a trap; blank means "do all of them".
+        description: "Max organizations (LEAVE BLANK to process all)"
         type: string
-        default: "5"
+        default: ""
       dry_run:
         description: "Extract and report, but write nothing"
         type: boolean
