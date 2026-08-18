@@ -544,6 +544,26 @@ def main():
     kept = [l for l in existing if l.get("source_url") not in reread]
     replaced = len(existing) - len(kept)
 
+    # Collapse groups extracted more than once from the same page.
+    #
+    # Branch offices inherit their parent's bereavement page (see discover_websites),
+    # so "Hospice of the Valley - West/East/Central" are three organization records
+    # pointing at one URL. Extraction then read that page three times and produced three
+    # copies of every group. Same for organizations CMS lists twice under slightly
+    # different names.
+    #
+    # Keep the copy attached to the shortest organization name - that is reliably the
+    # parent brand rather than a branch, so the listing reads "Hospice of the Valley"
+    # instead of "Hospice of the Valley - West (031515)".
+    by_group = {}
+    for listing in listings:
+        key = (listing.get("source_url"), (listing.get("name") or "").strip().lower())
+        incumbent = by_group.get(key)
+        if incumbent is None or len(listing["organization"]) < len(incumbent["organization"]):
+            by_group[key] = listing
+    duplicates_removed = len(listings) - len(by_group)
+    listings = list(by_group.values())
+
     with open(LISTINGS_PATH, "w") as fh:
         json.dump(kept + listings, fh, indent=2, ensure_ascii=False)
         fh.write("\n")
@@ -558,6 +578,7 @@ def main():
              f"- Groups extracted: **{len(listings)}**",
              f"- Fully verified (`source_verified`): **{verified}**",
              f"- Flagged `needs_review`: **{len(listings) - verified}**",
+             f"- Duplicates collapsed (shared pages): **{duplicates_removed}**",
              f"- Previous listings replaced by this run: **{replaced}**\n",
              "## Outcomes\n", "| Outcome | Count |", "|---|---|"]
     for k, v in stats.most_common():
@@ -591,6 +612,7 @@ def main():
     print(f"  source_verified:    {verified}")
     print(f"  needs_review:       {len(listings) - verified}")
     print(f"  Claims rejected:    {len(all_rejections)}")
+    print(f"  Duplicates collapsed:   {duplicates_removed}")
     print(f"  Stale records replaced: {replaced}")
     print("=" * 60)
     print(f"\nWrote {REPORT_PATH} and {AUDIT_PATH}")
