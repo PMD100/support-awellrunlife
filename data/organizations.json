@@ -173,7 +173,7 @@
       "certified 2008 (+10)",
       "address shared with 1 other(s) (-12)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -815,7 +815,7 @@
       "nonprofit (+30)",
       "certified 2012 (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -2463,7 +2463,7 @@
     "priority_signals": [
       "certified 1994, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -2493,7 +2493,7 @@
     "priority_signals": [
       "certified 1986, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "hngm.com: only matched 0/3 distinctive words"
   },
   {
@@ -3906,8 +3906,8 @@
       "nonprofit (+30)",
       "certified 1992, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
-    "website_evidence": "bridginglife.com: only matched 0/1 distinctive words"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "bridginglife.org: only matched 0/1 distinctive words; bridginglife.com: only matched 0/1 distinctive words"
   },
   {
     "org_id": "cms-211529",
@@ -3968,7 +3968,7 @@
       "nonprofit (+30)",
       "certified 1994, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "gilchrist.org: only matched 0/1 distinctive words; gilchrist.com: name matched 1/1 but page is not about hospice or grief care; ghc.com: only matched 0/1 distinctive words"
   },
   {
@@ -4030,7 +4030,7 @@
       "nonprofit (+30)",
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "chesapeake.org: name matched 1/1 but page is not about hospice or grief care; chesapeake.com: name matched 1/1 but page is not about hospice or grief care; chesapeake.net: name matched 1/1 but page is not about hospice or grief care"
   },
   {
@@ -4357,8 +4357,8 @@
       "nonprofit (+30)",
       "certified 1993, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
-    "website_evidence": "bethisraellahey.com: only matched 0/3 distinctive words; bethisraellahey.net: only matched 0/3 distinctive words"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "bethisraellahey.org: only matched 0/3 distinctive words; bethisraellahey.com: only matched 0/3 distinctive words"
   },
   {
     "org_id": "cms-301510",
@@ -4388,8 +4388,8 @@
       "nonprofit (+30)",
       "certified 1993, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
-    "website_evidence": "bethisraellahey.org: only matched 0/3 distinctive words; bethisraellahey.com: only matched 0/3 distinctive words; bethisraellahey.net: only matched 0/3 distinctive words"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "bethisraellahey.org: only matched 0/3 distinctive words; bethisraellahey.com: only matched 0/3 distinctive words"
   },
   {
     "org_id": "cms-221616",
@@ -4706,7 +4706,7 @@
       "nonprofit (+30)",
       "certified 2011 (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "cornerstonevna.com: name matched 2/2 but page is not about hospice or grief care"
   },
   {
@@ -4737,7 +4737,7 @@
       "nonprofit (+30)",
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "cranberryhospice.org: only matched 0/1 distinctive words; cranberryhospice.com: only matched 0/1 distinctive words; cranberry.com: only matched 0/1 distinctive words"
   },
   {
@@ -4938,7 +4938,7 @@
       "nonprofit (+30)",
       "certified 1984, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "goodshepherdcommunity.com: name matched 3/3 but page is not about hospice or grief care; gscc.org: only matched 1/3 distinctive words; gscc.net: name matched 3/3 but page is not about hospice or grief care"
   },
   {
@@ -5432,7 +5432,7 @@
       "nonprofit (+30)",
       "certified 2009 (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "vncc.org: only matched 0/3 distinctive words"
   },
   {
@@ -5852,7 +5852,7 @@
     "priority_signals": [
       "nonprofit (+30)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "novant.org: name matched 1/1 but page is not about hospice or grief care; novant.health: only matched 0/1 distinctive words; nhh.com: only matched 0/1 distinctive words"
   },
   {
@@ -5883,7 +5883,7 @@
       "nonprofit (+30)",
       "certified 1995, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -6029,7 +6029,7 @@
       "nonprofit (+30)",
       "certified 1985, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "asth.org: only matched 0/3 distinctive words"
   },
   {
@@ -6937,7 +6937,7 @@
       "nonprofit (+30)",
       "certified 1989, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "hca.org: only matched 0/2 distinctive words; hca.net: only matched 0/2 distinctive words; hca.health: only matched 0/2 distinctive words"
   },
   {
@@ -7200,7 +7200,7 @@
       "nonprofit (+30)",
       "certified 1990, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -7231,7 +7231,7 @@
       "nonprofit (+30)",
       "certified 1994, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "loyolamedicine.org: name matched 2/2 but page is not about hospice or grief care; loyolamedicine.com: name matched 2/2 but page is not about hospice or grief care; lmh.org: only matched 1/2 distinctive words"
   },
   {
@@ -7436,7 +7436,7 @@
     "priority_signals": [
       "certified 1986, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -7590,7 +7590,7 @@
       "nonprofit (+30)",
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "rainbowhospice.org: only matched 0/1 distinctive words; rainbowhospice.com: only matched 0/1 distinctive words; rainbow.org: name matched 1/1 but page is not about hospice or grief care"
   },
   {
@@ -8344,7 +8344,7 @@
     "priority_signals": [
       "certified 1994, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "vhci.com: only matched 0/3 distinctive words; vhci.net: only matched 0/3 distinctive words"
   },
   {
@@ -8375,7 +8375,7 @@
       "nonprofit (+30)",
       "certified 1993, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -8405,7 +8405,7 @@
     "priority_signals": [
       "certified 1989, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "vhhc.org: only matched 0/1 distinctive words; vhhc.com: only matched 0/1 distinctive words; vhhc.net: only matched 0/1 distinctive words"
   },
   {
@@ -11689,7 +11689,7 @@
       "nonprofit (+30)",
       "certified 2004, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "faithpresbyterian.org: name matched 2/2 but page is not about hospice or grief care; faithpresbyterian.com: only matched 0/2 distinctive words; fph.org: only matched 0/2 distinctive words"
   },
   {
@@ -14774,7 +14774,7 @@
       "nonprofit (+30)",
       "address shared with 1 other(s) (-12)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "stgabriel.com: only matched 0/2 distinctive words; stgabriel.net: name matched 2/2 but page is not about hospice or grief care"
   },
   {
@@ -14888,8 +14888,8 @@
     "priority_signals": [
       "certified 2005, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
-    "website_evidence": "tenderheart.org: only matched 0/2 distinctive words; tenderheart.com: name matched 2/2 but page is not about hospice or grief care; thhc.org: only matched 0/2 distinctive words"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "tenderheart.org: only matched 0/2 distinctive words; tenderheart.com: name matched 2/2 but page is not about hospice or grief care; tenderheart.net: only matched 0/2 distinctive words"
   },
   {
     "org_id": "cms-741604",
@@ -15666,7 +15666,7 @@
       "nonprofit (+30)",
       "certified 1984, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -15897,7 +15897,7 @@
       "nonprofit (+30)",
       "certified 1987, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "ahcp.com: only matched 0/2 distinctive words; ahcp.net: only matched 0/2 distinctive words"
   },
   {
@@ -16444,7 +16444,7 @@
       "nonprofit (+30)",
       "certified 2023, recent entrant (-15)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "phone 303-322-1413 found on page"
   },
   {
@@ -16713,7 +16713,7 @@
       "nonprofit (+30)",
       "certified 1985, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "ihhd.org: only matched 0/2 distinctive words; ihhd.com: only matched 0/2 distinctive words"
   },
   {
@@ -17217,7 +17217,7 @@
       "nonprofit (+30)",
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "angela.org: name matched 1/1 but page is not about hospice or grief care; angela.com: name matched 1/1 but page is not about hospice or grief care; angela.net: only matched 0/1 distinctive words"
   },
   {
@@ -17774,7 +17774,7 @@
       "nonprofit (+30)",
       "certified 2021, recent entrant (-15)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -18153,7 +18153,7 @@
       "nonprofit (+30)",
       "certified 1986, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "henryford.org: name matched 2/2 but page is not about hospice or grief care; henryford.com: name matched 2/2 but page is not about hospice or grief care; henryford.net: name matched 2/2 but page is not about hospice or grief care"
   },
   {
@@ -18242,7 +18242,7 @@
       "nonprofit (+30)",
       "certified 1983, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "southeasternmichigan.com: only matched 0/2 distinctive words; hsm.org: only matched 0/2 distinctive words; hsm.com: only matched 0/2 distinctive words"
   },
   {
@@ -18418,7 +18418,7 @@
     "priority_signals": [
       "certified 1986, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "michigan.com: only matched 0/1 distinctive words; michigan.net: name matched 1/1 but page is not about hospice or grief care; michigan.health: name matched 1/1 but page is not about hospice or grief care"
   },
   {
@@ -19134,7 +19134,7 @@
     "priority_signals": [
       "certified 1985, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -19656,7 +19656,7 @@
       "nonprofit (+30)",
       "certified 1992, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -46014,7 +46014,7 @@
       "nonprofit (+30)",
       "certified 2012 (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "hoag.org: name matched 1/1 but page is not about hospice or grief care"
   },
   {
@@ -47294,7 +47294,7 @@
     "priority_signals": [
       "certified 1989, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "presbyterian.org: only matched 0/1 distinctive words; presbyterian.com: only matched 0/1 distinctive words; presbyterian.health: only matched 0/1 distinctive words"
   },
   {
@@ -48781,7 +48781,7 @@
       "certified 2011 (+10)",
       "hospital/health system affiliated (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -57714,7 +57714,7 @@
     "priority_signals": [
       "certified 1984, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -57774,7 +57774,7 @@
       "nonprofit (+30)",
       "certified 2012 (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -69265,7 +69265,7 @@
       "nonprofit (+30)",
       "certified 1984, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "goldcoast.org: only matched 0/2 distinctive words; goldcoast.com: name matched 2/2 but page is not about hospice or grief care; goldcoast.net: name matched 2/2 but page is not about hospice or grief care"
   },
   {
@@ -69416,7 +69416,7 @@
     "priority_signals": [
       "nonprofit (+30)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -69796,7 +69796,7 @@
       "nonprofit (+30)",
       "certified 2014 (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "gracehospice.org: only matched 0/1 distinctive words; gracehospice.com: only matched 0/1 distinctive words; grace.org: name matched 1/1 but page is not about hospice or grief care"
   },
   {
@@ -70065,7 +70065,7 @@
       "certified 2010 (+10)",
       "hospital/health system affiliated (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "millelacs.org: name matched 2/2 but page is not about hospice or grief care; millelacs.com: name matched 2/2 but page is not about hospice or grief care; millelacs.net: name matched 2/2 but page is not about hospice or grief care"
   },
   {
@@ -70153,7 +70153,7 @@
       "nonprofit (+30)",
       "certified 1986, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -70212,7 +70212,7 @@
       "nonprofit (+30)",
       "certified 2001, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "ourladypeace.com: name matched 3/3 but page is not about hospice or grief care; ourladypeace.net: name matched 3/3 but page is not about hospice or grief care; olph.com: only matched 0/3 distinctive words"
   },
   {
@@ -70244,7 +70244,7 @@
       "certified 1987, long-established (+20)",
       "hospital/health system affiliated (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -70275,7 +70275,7 @@
       "nonprofit (+30)",
       "certified 2010 (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "presbyterian.org: only matched 0/1 distinctive words; presbyterian.com: only matched 0/1 distinctive words; presbyterian.health: only matched 0/1 distinctive words"
   },
   {
@@ -70424,7 +70424,7 @@
       "nonprofit (+30)",
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "schh.com: only matched 0/3 distinctive words"
   },
   {
@@ -70655,7 +70655,7 @@
       "nonprofit (+30)",
       "certified 1984, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "avn.com: only matched 0/3 distinctive words; avn.net: only matched 0/3 distinctive words"
   },
   {
@@ -70780,7 +70780,7 @@
     "priority_signals": [
       "certified 2002, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -70810,7 +70810,7 @@
     "priority_signals": [
       "certified 2003, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "caringnewyork.com: only matched 0/3 distinctive words; chsny.org: only matched 1/3 distinctive words"
   },
   {
@@ -70841,7 +70841,7 @@
       "nonprofit (+30)",
       "certified 1984, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "hope.org: name matched 1/1 but page is not about hospice or grief care; hope.com: name matched 1/1 but page is not about hospice or grief care; hope.net: name matched 1/1 but page is not about hospice or grief care"
   },
   {
@@ -70961,7 +70961,7 @@
       "nonprofit (+30)",
       "certified 1997, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -71408,7 +71408,7 @@
       "nonprofit (+30)",
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -71496,7 +71496,7 @@
     "priority_signals": [
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "hosc.org: only matched 0/3 distinctive words"
   },
   {
@@ -71619,7 +71619,7 @@
       "nonprofit (+30)",
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "jansen.com: name matched 1/1 but page is not about hospice or grief care; jansen.health: only matched 0/1 distinctive words; jhpc.org: only matched 0/1 distinctive words"
   },
   {
@@ -71800,7 +71800,7 @@
       "certified 1989, long-established (+20)",
       "hospital/health system affiliated (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -71989,7 +71989,7 @@
       "certified 1992, long-established (+20)",
       "hospital/health system affiliated (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -72169,7 +72169,7 @@
       "nonprofit (+30)",
       "certified 1989, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -72260,7 +72260,7 @@
       "nonprofit (+30)",
       "certified 1987, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -72291,7 +72291,7 @@
       "nonprofit (+30)",
       "certified 1989, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "vhs.com: only matched 0/2 distinctive words; vhs.net: only matched 0/2 distinctive words"
   },
   {
@@ -72322,7 +72322,7 @@
       "nonprofit (+30)",
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "vnsny.org: only matched 0/1 distinctive words; vnsny.com: only matched 0/1 distinctive words; vhpc.org: only matched 0/1 distinctive words"
   },
   {
@@ -72528,7 +72528,7 @@
       "nonprofit (+30)",
       "certified 2007 (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "ahp.org: only matched 0/2 distinctive words; ahp.com: only matched 0/2 distinctive words"
   },
   {
@@ -72558,8 +72558,8 @@
     "priority_signals": [
       "nonprofit (+30)"
     ],
-    "website_checked_at": "2026-08-18",
-    "website_evidence": "ashd.org: only matched 0/3 distinctive words; ashd.com: only matched 0/3 distinctive words"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "ashd.org: only matched 0/3 distinctive words; ashd.com: only matched 0/3 distinctive words; ashd.net: only matched 0/3 distinctive words"
   },
   {
     "org_id": "cms-731501",
@@ -72677,7 +72677,7 @@
       "certified 1995, long-established (+20)",
       "address shared with 1 other(s) (-12)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -72965,7 +72965,7 @@
     "priority_signals": [
       "certified 1997, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "chsj.org: only matched 1/3 distinctive words; chsj.com: only matched 0/3 distinctive words"
   },
   {
@@ -73291,7 +73291,7 @@
       "certified 1990, long-established (+20)",
       "hospital/health system affiliated (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "doylestownhospital.org: only matched 0/2 distinctive words; dhh.com: only matched 0/2 distinctive words"
   },
   {
@@ -73648,7 +73648,7 @@
       "nonprofit (+30)",
       "certified 1985, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "holyredeemer.org: only matched 0/2 distinctive words; holyredeemer.com: only matched 1/2 distinctive words; holyredeemer.net: name matched 2/2 but page is not about hospice or grief care"
   },
   {
@@ -73679,7 +73679,7 @@
       "nonprofit (+30)",
       "certified 1985, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "holyredeemer.org: only matched 0/2 distinctive words; holyredeemer.com: only matched 1/2 distinctive words; holyredeemer.net: name matched 2/2 but page is not about hospice or grief care"
   },
   {
@@ -73797,7 +73797,7 @@
       "nonprofit (+30)",
       "certified 1987, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -73828,7 +73828,7 @@
       "nonprofit (+30)",
       "certified 2024, recent entrant (-15)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "phone 215-649-7200 found on page"
   },
   {
@@ -73919,7 +73919,7 @@
       "nonprofit (+30)",
       "certified 1994, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "mainlinehomecare.com: only matched 2/3 distinctive words"
   },
   {
@@ -74036,8 +74036,8 @@
       "nonprofit (+30)",
       "certified 1983, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
-    "website_evidence": "pennmedicine.org: name matched 2/2 but page is not about hospice or grief care; pennmedicine.com: name matched 2/2 but page is not about hospice or grief care; pmh.com: only matched 0/2 distinctive words"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "pennmedicine.org: name matched 2/2 but page is not about hospice or grief care; pennmedicine.com: name matched 2/2 but page is not about hospice or grief care; pennmedicine.net: only matched 0/2 distinctive words"
   },
   {
     "org_id": "cms-311504",
@@ -74355,7 +74355,7 @@
       "nonprofit (+30)",
       "certified 2023, recent entrant (-15)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "wellness.com: name matched (WELLNESS) but neither the city (NORTH WALES) nor the state (PA) appears on the page - probably a different organization with a similar name; wellness.net: only matched 0/1 distinctive words; wellness.health: only matched 0/1 distinctive words"
   },
   {
@@ -78208,8 +78208,8 @@
       "nonprofit (+30)",
       "certified 1992, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
-    "website_evidence": "scottsdalevalley.com: only matched 0/2 distinctive words; shv.org: only matched 0/2 distinctive words; shv.com: only matched 1/2 distinctive words"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "scottsdalevalley.com: only matched 0/2 distinctive words; shv.org: only matched 0/2 distinctive words; shv.com: only matched 0/2 distinctive words"
   },
   {
     "org_id": "cms-001549",
@@ -79513,7 +79513,7 @@
     "priority_signals": [
       "certified 1996, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "excela.org: only matched 0/1 distinctive words; excela.com: only matched 0/1 distinctive words; excela.net: only matched 0/1 distinctive words"
   },
   {
@@ -79629,8 +79629,8 @@
     "priority_signals": [
       "certified 1999, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
-    "website_evidence": "gshp.org: only matched 1/3 distinctive words; gshp.com: only matched 0/3 distinctive words"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "gshp.org: only matched 0/3 distinctive words; gshp.com: only matched 0/3 distinctive words"
   },
   {
     "org_id": "cms-391674",
@@ -79979,7 +79979,7 @@
       "nonprofit (+30)",
       "certified 1996, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "sjh.org: only matched 0/2 distinctive words; sjh.com: only matched 0/2 distinctive words"
   },
   {
@@ -80010,7 +80010,7 @@
       "nonprofit (+30)",
       "certified 2008 (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "stbarnabas.org: name matched 2/2 but page is not about hospice or grief care; stbarnabas.net: name matched 2/2 but page is not about hospice or grief care; sbh.org: only matched 1/2 distinctive words"
   },
   {
@@ -80213,7 +80213,7 @@
     "priority_signals": [
       "certified 1984, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "vhwp.com: only matched 0/3 distinctive words; vhwp.net: only matched 0/3 distinctive words"
   },
   {
@@ -80244,8 +80244,8 @@
       "nonprofit (+30)",
       "certified 2022, recent entrant (-15)"
     ],
-    "website_checked_at": "2026-08-18",
-    "website_evidence": "whc.org: only matched 0/1 distinctive words; whc.com: only matched 0/1 distinctive words"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "whc.org: only matched 0/1 distinctive words; whc.com: only matched 0/1 distinctive words; whc.net: only matched 0/1 distinctive words"
   },
   {
     "org_id": "cms-381561",
@@ -80303,7 +80303,7 @@
       "nonprofit (+30)",
       "certified 1989, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "adventist.health: name matched 1/1 but page is not about hospice or grief care; ahh.org: only matched 0/1 distinctive words; ahh.net: only matched 0/1 distinctive words"
   },
   {
@@ -80681,7 +80681,7 @@
       "nonprofit (+30)",
       "certified 1984, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -80800,7 +80800,7 @@
     "priority_signals": [
       "certified 1984, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "psh.org: only matched 0/2 distinctive words; psh.com: only matched 0/2 distinctive words; psh.net: only matched 0/2 distinctive words"
   },
   {
@@ -80830,7 +80830,7 @@
     "priority_signals": [
       "nonprofit (+30)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "pinnacleportland.com: name matched 2/2 but page is not about hospice or grief care; phcp.org: only matched 0/2 distinctive words; phcp.com: only matched 0/2 distinctive words"
   },
   {
@@ -80888,7 +80888,7 @@
     "priority_signals": [
       "certified 1984, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "matched 1/1 in page text: PROVIDENCE; location confirmed by OR"
   },
   {
@@ -85109,7 +85109,7 @@
       "certified 2012 (+10)",
       "hospital/health system affiliated (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "kfh.org: only matched 0/3 distinctive words; kfh.com: only matched 0/3 distinctive words; kfh.net: only matched 0/3 distinctive words"
   },
   {
@@ -85141,7 +85141,7 @@
       "certified 1985, long-established (+20)",
       "hospital/health system affiliated (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -86445,7 +86445,7 @@
       "nonprofit (+30)",
       "certified 2015 (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "phie.org: only matched 0/3 distinctive words; phie.com: only matched 0/3 distinctive words; phie.net: only matched 0/3 distinctive words"
   },
   {
@@ -88893,7 +88893,7 @@
     "priority_signals": [
       "certified 1986, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "cvhsa.com: only matched 0/4 distinctive words"
   },
   {
@@ -89735,7 +89735,7 @@
       "government (+30)",
       "certified 1990, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "grh.org: only matched 1/2 distinctive words; grh.net: only matched 0/2 distinctive words"
   },
   {
@@ -92507,7 +92507,7 @@
     "priority_signals": [
       "certified 1999, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "phone 760-431-4100 found on page"
   },
   {
@@ -92596,7 +92596,7 @@
       "certified 1986, long-established (+20)",
       "hospital/health system affiliated (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -95011,7 +95011,7 @@
       "nonprofit (+30)",
       "certified 2023, recent entrant (-15)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -95277,7 +95277,7 @@
       "certified 1989, long-established (+20)",
       "hospital/health system affiliated (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -95308,7 +95308,7 @@
       "certified 1990, long-established (+20)",
       "hospital/health system affiliated (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -95340,7 +95340,7 @@
       "certified 1989, long-established (+20)",
       "hospital/health system affiliated (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -95402,7 +95402,7 @@
       "certified 1991, long-established (+20)",
       "hospital/health system affiliated (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -95434,7 +95434,7 @@
       "certified 1992, long-established (+20)",
       "hospital/health system affiliated (+10)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -95810,7 +95810,7 @@
       "nonprofit (+30)",
       "certified 1995, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "mission.org: name matched 1/1 but page is not about hospice or grief care; mission.com: name matched 1/1 but page is not about hospice or grief care; mission.net: name matched 1/1 but page is not about hospice or grief care"
   },
   {
@@ -95954,7 +95954,7 @@
     "priority_signals": [
       "certified 1995, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "nhb.net: only matched 0/2 distinctive words"
   },
   {
@@ -96202,7 +96202,7 @@
     "priority_signals": [
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -96233,7 +96233,7 @@
       "nonprofit (+30)",
       "certified 1989, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -96871,7 +96871,7 @@
     "priority_signals": [
       "certified 2003, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "matched 1/1 in page text: SUTTER; location confirmed by CA"
   },
   {
@@ -97453,7 +97453,7 @@
       "nonprofit (+30)",
       "certified 1990, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "evergreen.org: name matched 1/1 but page is not about hospice or grief care; evergreen.com: name matched 1/1 but page is not about hospice or grief care; evergreen.net: name matched 1/1 but page is not about hospice or grief care"
   },
   {
@@ -97484,7 +97484,7 @@
       "nonprofit (+30)",
       "certified 1993, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "franciscan.org: name matched 1/1 but page is not about hospice or grief care; franciscan.com: name matched 1/1 but page is not about hospice or grief care; franciscan.net: only matched 0/1 distinctive words"
   },
   {
@@ -97634,7 +97634,7 @@
     "priority_signals": [
       "certified 1984, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "multicare.net: only matched 0/1 distinctive words"
   },
   {
@@ -97665,7 +97665,7 @@
       "nonprofit (+30)",
       "certified 1987, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -97696,7 +97696,7 @@
       "nonprofit (+30)",
       "certified 1987, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
@@ -97755,7 +97755,7 @@
     "priority_signals": [
       "nonprofit (+30)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "wesley.org: name matched 1/1 but page is not about hospice or grief care; wesley.com: name matched 1/1 but page is not about hospice or grief care; wesley.net: name matched 1/1 but page is not about hospice or grief care"
   },
   {
@@ -97901,7 +97901,7 @@
       "certified 2002, long-established (+20)",
       "address shared with 1 other(s) (-12)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "bethesda.org: name matched 1/1 but page is not about hospice or grief care; bethesda.com: name matched 1/1 but page is not about hospice or grief care; bethesda.net: name matched 1/1 but page is not about hospice or grief care"
   },
   {
@@ -98109,7 +98109,7 @@
     "priority_signals": [
       "certified 2003, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "communityloving.org: name matched 2/2 but page is not about hospice or grief care; clch.com: only matched 0/2 distinctive words; clch.net: only matched 0/2 distinctive words"
   },
   {
@@ -98284,7 +98284,7 @@
       "nonprofit (+30)",
       "certified 1991, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "fhba.org: only matched 1/3 distinctive words; fhba.com: only matched 0/3 distinctive words"
   },
   {
@@ -98492,7 +98492,7 @@
       "certified 1988, long-established (+20)",
       "address shared with 1 other(s) (-12)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "mercyhospice.org: only matched 0/1 distinctive words; mercyhospice.com: only matched 0/1 distinctive words; mercy.org: name matched 1/1 but page is not about hospice or grief care"
   },
   {
@@ -98522,7 +98522,7 @@
     "priority_signals": [
       "nonprofit (+30)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "newhaven.org: name matched 2/2 but page is not about hospice or grief care; newhaven.net: only matched 0/2 distinctive words; nhhc.org: only matched 1/2 distinctive words"
   },
   {
@@ -98729,7 +98729,7 @@
     "priority_signals": [
       "certified 1989, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "shhh.org: only matched 0/1 distinctive words; shhh.com: only matched 0/1 distinctive words; shhh.net: only matched 0/1 distinctive words"
   },
   {
@@ -98789,8 +98789,8 @@
       "nonprofit (+30)",
       "certified 2007 (+10)"
     ],
-    "website_checked_at": "2026-08-18",
-    "website_evidence": "slhs.com: only matched 0/2 distinctive words"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "stluke.net: name matched 2/2 but page is not about hospice or grief care; slhs.com: only matched 0/2 distinctive words; slhs.net: only matched 0/2 distinctive words"
   },
   {
     "org_id": "cms-261660",
@@ -99106,7 +99106,7 @@
       "nonprofit (+30)",
       "certified 1984, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "hphhospice.com: only matched 0/1 distinctive words; hphhospice.net: only matched 0/1 distinctive words"
   },
   {
@@ -99197,7 +99197,7 @@
       "nonprofit (+30)",
       "certified 2022, recent entrant (-15)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "matched 2/2 in page text: SUNCOAST, HILLSBOROUGH; location confirmed by FL"
   },
   {
@@ -99313,7 +99313,7 @@
     "priority_signals": [
       "certified 2001, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "matched 2/2 in page text: CAPITAL, CARING; location confirmed by MD"
   },
   {
@@ -99344,7 +99344,7 @@
       "nonprofit (+30)",
       "certified 1986, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "capital.org: only matched 0/1 distinctive words; capital.com: name matched 1/1 but page is not about hospice or grief care; capital.health: name matched 1/1 but page is not about hospice or grief care"
   },
   {
@@ -99639,7 +99639,7 @@
       "nonprofit (+30)",
       "certified 1986, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "holycross.org: name matched 2/2 but page is not about hospice or grief care; holycross.com: name matched 2/2 but page is not about hospice or grief care; holycross.net: name matched 2/2 but page is not about hospice or grief care"
   },
   {
@@ -99766,7 +99766,7 @@
       "nonprofit (+30)",
       "certified 1986, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-18",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "no candidate domain resolved"
   },
   {
