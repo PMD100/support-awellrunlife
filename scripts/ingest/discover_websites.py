@@ -80,6 +80,21 @@ BEREAVEMENT_HINTS = [
 
 TLD_ORDER = [".org", ".com", ".net", ".health"]
 
+# VERIFICATION RULE VERSION
+# ------------------------
+# Bump this whenever the rules in verify_ownership change. Every organization records
+# the version it was last checked under, and anything checked under an older version is
+# re-queued automatically - no checkbox, no one having to remember.
+#
+# This exists because the location rule (v2) shipped three times without taking effect:
+# each run used "retry failures", which skips records that are already `verified`. But a
+# record that is verified-but-wrong is precisely what a rule change needs to revisit.
+# Relying on the operator to pick the right checkbox was the bug.
+#
+#   1  name or phone match
+#   2  name match must also be corroborated by the organization's state (2026-08-18)
+VERIFICATION_RULE_VERSION = 2
+
 # Used by the location check in verify_ownership. Sites write "Ohio" as often as "OH".
 STATE_NAMES = {
     "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas", "CA": "California",
@@ -343,6 +358,7 @@ def find_bereavement_links(html, base_url):
 def discover_one(org, verbose=False):
     """Mutates org in place. Returns the resulting website_status."""
     org["website_checked_at"] = date.today().isoformat()
+    org["verification_rule"] = VERIFICATION_RULE_VERSION
 
     # A suggested domain is tried FIRST but is never trusted - it still has to pass
     # phone-or-name matching plus the location check like any guessed domain. Used for
@@ -450,6 +466,7 @@ def inherit_from_siblings(orgs):
             f"({parent['city']}), which verified via {parent['website_status']}"
         )
         org["website_checked_at"] = date.today().isoformat()
+        org["verification_rule"] = VERIFICATION_RULE_VERSION
         updated += 1
     return updated
 
@@ -631,6 +648,9 @@ def main():
 
     def wanted(o):
         status = o.get("website_status")
+        # Checked under a superseded rule -> always re-check, whatever the flags say.
+        if o.get("verification_rule", 0) < VERIFICATION_RULE_VERSION:
+            return True
         if args.recheck:
             return True
         if args.retry_failed:
