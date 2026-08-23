@@ -1,6 +1,6 @@
 # Website Discovery Report
 
-_Generated 2026-08-06 06:44 UTC_
+_Generated 2026-08-23 18:08 UTC_
 
 Every website below was **proved** to belong to its organization, either by 
 finding the CMS-registered phone number in the page text or by matching every 
@@ -11,16 +11,15 @@ Unproven matches are recorded as `mismatch` and never published.
 
 | Outcome | Count |
 |---|---|
-| `not_found` | 108 |
-| `verified_name` | 27 |
-| `verified_phone` | 11 |
-| `robots_disallowed` | 4 |
+| `not_found` | 120 |
+| `verified_name` | 4 |
+| `verified_phone` | 3 |
 
 ## Cumulative
 
-- Organizations checked: **217**
-- Website verified: **89** (41%)
-- Bereavement page found: **60**
+- Organizations checked: **236**
+- Website verified: **96** (41%)
+- Bereavement page found: **65**
 
 **Organizations with a bereavement page are the ones that become listings.**
 
