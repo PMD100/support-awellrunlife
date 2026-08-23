@@ -5773,9 +5773,9 @@
     "phone_normalized": "8032861472",
     "ownership_type": "Other",
     "certification_date": "06/19/1992",
-    "website": "https://www.hospiceandcommunitycare.org/",
-    "website_status": "verified_name",
-    "bereavement_page": "https://www.hospiceandcommunitycare.org/grief-and-loss/",
+    "website": null,
+    "website_status": "mismatch",
+    "bereavement_page": null,
     "source": "CMS Hospice - General Information",
     "source_dataset_id": "yc9t-dgbk",
     "first_seen": "2026-08-06",
@@ -5786,7 +5786,8 @@
       "certified 1992, long-established (+20)"
     ],
     "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1 in page text: LANCASTER"
+    "website_evidence": "Manually invalidated 2026-08-23: hospiceandcommunitycare.org is Hospice & Community Care of Lancaster, PENNSYLVANIA. This organization is in Lancaster, SOUTH CAROLINA. Matched only on the shared place name.",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-341513",

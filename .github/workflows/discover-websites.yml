@@ -24,9 +24,12 @@ on:
         options: ["high", "high+medium", "all"]
         default: "high"
       limit:
-        description: "Max organizations this run (blank = no limit)"
+        # Blank by default. A prefilled cap silently truncated a full re-check to the
+        # first 150 organizations, leaving 93 unverified under the new rule - the same
+        # trap the extraction workflow had.
+        description: "Max organizations (LEAVE BLANK to process all)"
         type: string
-        default: "150"
+        default: ""
       retry_failed:
         description: "Retry previous failures (use after a logic fix)"
         type: boolean

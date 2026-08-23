@@ -116,6 +116,19 @@ def human_date(iso):
         return iso or ""
 
 
+def trim(text, limit):
+    """Shorten to a sentence boundary where possible - a card should be scannable."""
+    text = (text or "").strip()
+    if len(text) <= limit:
+        return text
+    cut = text[:limit]
+    for stop in (". ", "? ", "! "):
+        i = cut.rfind(stop)
+        if i > limit * 0.5:
+            return cut[:i + 1]
+    return cut.rsplit(" ", 1)[0] + "\u2026"
+
+
 def card(l):
     cost_label, cost_cls = COST.get(l.get("cost"), COST["unknown"])
     stat_label, stat_cls = STATUS.get(l.get("verification_status"), STATUS["needs_review"])
@@ -144,7 +157,7 @@ def card(l):
     ]
     if l.get("description"):
         parts.append(f'<div class="awrl-row"><b>About</b>'
-                     f'<span>{e(l["description"][:400])}</span></div>')
+                     f'<span>{e(trim(l["description"], 190))}</span></div>')
     if l.get("verification_status") != "org_confirmed":
         parts.append('<p class="awrl-callahead">Groups change often. '
                      "Please call before you go.</p>")
@@ -154,10 +167,55 @@ def card(l):
     return "".join(parts)
 
 
+def load_verified_sources():
+    """
+    Source URLs belonging to organizations whose website is currently verified.
+
+    A listing only exists because an organization's website was verified and a
+    bereavement page found on it. If that verification is later withdrawn - as happened
+    when the location rule unmasked three organizations linked to same-named bodies in
+    other states - the listings built from that page are equally invalid.
+
+    Nothing removed them. Invalidating the organization left eight listings on the page,
+    including a Pittsburgh hospice showing a California phone number. So the page now
+    derives what it may show from the organization record, rather than trusting that
+    listings.json was cleaned up.
+    """
+    path = os.path.join(REPO_ROOT, "data", "organizations.json")
+    if not os.path.exists(path):
+        return None                      # organizations file absent: fall back to trusting listings
+    with open(path) as fh:
+        orgs = json.load(fh)
+    # Keyed by organization AND location, not by URL alone.
+    #
+    # Two organizations can share a source_url - one legitimately, one because it was
+    # wrongly matched to the same site. Filtering on URL let six listings labelled
+    # "Hope Hospice, Pittsburgh PA" onto the page, because a *different* Hope Hospice
+    # (Rolling Meadows, IL) was still verified against that same California website.
+    # The listing has to be traceable to a verified organization in its own city.
+    return {(o["name"].strip().upper(), (o.get("city") or "").strip().upper(),
+             o["bereavement_page"])
+            for o in orgs
+            if o.get("bereavement_page")
+            and str(o.get("website_status", "")).startswith("verified")}
+
+
 def build(listings):
     today = date.today()
     live = [l for l in listings
             if l.get("name") and l.get("organization") and not is_expired(l, today)]
+
+    # Drop listings whose organization no longer has a verified website.
+    allowed = load_verified_sources()
+    if allowed is not None:
+        before = len(live)
+        live = [l for l in live
+                if ((l.get("organization") or "").strip().upper(),
+                    (l.get("city") or "").strip().upper(),
+                    l.get("source_url")) in allowed]
+        if before != len(live):
+            print(f"  withheld {before - len(live)} listing(s): "
+                  f"organization's website is no longer verified")
 
     # Safety net: collapse groups that appear more than once because several CMS
     # organization records share one bereavement page (branch offices of one brand).
