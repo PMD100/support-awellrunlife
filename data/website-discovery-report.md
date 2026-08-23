@@ -1,6 +1,6 @@
 # Website Discovery Report
 
-_Generated 2026-08-23 18:08 UTC_
+_Generated 2026-08-23 21:27 UTC_
 
 Every website below was **proved** to belong to its organization, either by 
 finding the CMS-registered phone number in the page text or by matching every 
@@ -11,15 +11,16 @@ Unproven matches are recorded as `mismatch` and never published.
 
 | Outcome | Count |
 |---|---|
-| `not_found` | 120 |
-| `verified_name` | 4 |
-| `verified_phone` | 3 |
+| `not_found` | 82 |
+| `verified_name` | 32 |
+| `verified_phone` | 21 |
+| `robots_disallowed` | 15 |
 
 ## Cumulative
 
-- Organizations checked: **236**
-- Website verified: **96** (41%)
-- Bereavement page found: **65**
+- Organizations checked: **243**
+- Website verified: **90** (37%)
+- Bereavement page found: **63**
 
 **Organizations with a bereavement page are the ones that become listings.**
 
@@ -27,8 +28,6 @@ Unproven matches are recorded as `mismatch` and never published.
 
 | Organization | Metro | How verified | Bereavement page |
 |---|---|---|---|
-| AFFINIS HOSPICE | atlanta-ga | `verified_name` | https://www.affinishospice.org/bereavement |
-| AFFINIS HOSPICE, LLC- GAINESVILLE | atlanta-ga | `verified_name` | https://www.affinishospice.org/bereavement |
 | THE WEINSTEIN HOSPICE | atlanta-ga | `verified_name` | https://www.jewishhomelife.org/living-options/weinstein-hosp |
 | COMPASS REGIONAL HOSPICE, INC | baltimore-md | `verified_phone` | https://compassregionalhospice.org/what-we-do/grief-support. |
 | STELLA MARIS INC | baltimore-md | `verified_phone` | https://stellamaris.org/2020/01/10/grief-support-programs/ |
@@ -43,17 +42,19 @@ Unproven matches are recorded as `mismatch` and never published.
 | JOURNEYCARE - BARRINGTON | chicago-il | `verified_name` | https://journeycare.org/grief-support/ |
 | PROVIDENCE HOSPICE | chicago-il | `verified_phone` | https://www.providencelifeservices.com/resources/blog/hospic |
 | RESIDENTIAL HOSPICE | chicago-il | `verified_name` | https://residentialhealthcaregroup.com/services/bereavement/ |
+| MOUNT EVANS HOSPICE, INC | denver-co | `verified_phone` | https://mtevans.org/services/emotional-support/ |
 | COMPASSUS-NORTHERN DETROIT | detroit-mi | `verified_name` | https://www.compassus.com/for-caregivers/hospice-grief-suppo |
 | HOUSTON HOSPICE | houston-tx | `verified_phone` | https://www.houstonhospice.org/what-we-do/services/bereaveme |
-| MEMORIALCARE HOSPICE AND PALLIATIVE SERV | los-angeles-ca | `verified_name` | https://www.memorialcare.org/bereavement |
 | SKIRBALL HOSPICE | los-angeles-ca | `verified_name` | https://www.vnacare.com/grief-support/ |
 | CATHOLIC HOSPICE INC | miami-fl | `verified_name` | https://www.catholichealthservices.org/hospice/grief-support |
 | HOSPICE BY THE SEA INC | miami-fl | `verified_name` | https://hospicebythesea.org/bereavement-support-death-and-dy |
 | ADORAY HOME HEALTH AND HOSPICE | minneapolis-mn | `verified_phone` | https://adoray.org/caregiver-grief-support |
 | ALLINA HEALTH HOSPICE & PALLIATIVE CARE | minneapolis-mn | `verified_name` | https://www.allinahealth.org/health-conditions-and-treatment |
 | ECUMEN HOSPICE | minneapolis-mn | `verified_name` | https://ecumen.org/hospice/hospice-care/#1771442872-1-34 |
-| COMMUNITY CARE HOSPICE | new-york-ny | `verified_name` | https://www.ohioshospice.org/grief-support/ |
 | EAST END HOSPICE, INC | new-york-ny | `verified_phone` | https://www.eehcampgoodgrief.org/ |
-| GOOD SHEPHERD HOSPICE | new-york-ny | `verified_name` | https://www.goodshepherdhospice.com/bereavement/ |
 | HOLY NAME HOSPICE | new-york-ny | `verified_name` | https://www.holyname.org/events/August.aspx?events=Bereaveme |
 | HOSPICE OF WESTCHESTER | new-york-ny | `verified_name` | https://hospiceofwestchester.org/bereavement-services/ |
+| HUDSON VALLEY HOSPICE | new-york-ny | `verified_phone` | https://www.hvhospice.org/grief-support-services/ |
+| KAREN ANN QUINLAN HOSPICE | new-york-ny | `verified_name` | https://karenannquinlanhospice.org/bereavement-center/ |
+| KAREN ANN QUINLAN HOSPICE | new-york-ny | `verified_name` | https://karenannquinlanhospice.org/bereavement-center/ |
+| ROBERT WOOD JOHNSON VISITING NURSE, INC | new-york-ny | `verified_name` | https://vnahg.org/bereavement-support-for-loved-ones/ |

@@ -191,8 +191,8 @@
     "phone_normalized": "4048324232",
     "ownership_type": "Non-Profit",
     "certification_date": "09/27/2012",
-    "website": "https://www.affinishospice.org/",
-    "website_status": "verified_name",
+    "website": null,
+    "website_status": "not_found",
     "bereavement_page": "https://www.affinishospice.org/bereavement",
     "source": "CMS Hospice - General Information",
     "source_dataset_id": "yc9t-dgbk",
@@ -204,8 +204,9 @@
       "nonprofit (+30)",
       "certified 2012 (+10)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1: AFFINIS"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "affinishospice.org: name matched (AFFINIS) but neither the city (NEWNAN) nor the state (GA) appears on the page - probably a different organization with a similar name; affinishospice.com: only matched 0/1 distinctive words; affinishospice.net: only matched 0/1 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-111719",
@@ -222,8 +223,8 @@
     "phone_normalized": "6789890981",
     "ownership_type": "Non-Profit",
     "certification_date": "01/05/2012",
-    "website": "https://www.affinishospice.org/",
-    "website_status": "verified_name",
+    "website": null,
+    "website_status": "not_found",
     "bereavement_page": "https://www.affinishospice.org/bereavement",
     "source": "CMS Hospice - General Information",
     "source_dataset_id": "yc9t-dgbk",
@@ -235,8 +236,9 @@
       "nonprofit (+30)",
       "certified 2012 (+10)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1 in page text: AFFINIS"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "affinishospice.org: name matched (AFFINIS) but neither the city (GAINESVILLE) nor the state (GA) appears on the page - probably a different organization with a similar name; affinishospice.com: only matched 0/1 distinctive words; affinishospice.net: only matched 0/1 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-851587",
@@ -816,7 +818,8 @@
       "certified 2012 (+10)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-851594",
@@ -2429,12 +2432,15 @@
       "nonprofit (+30)",
       "certified 1983, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
+    "website_checked_at": "2026-08-23",
     "_rejected": [
       "hospiceatlanta.net: only matched 0/1 distinctive words",
-      "atlanta.org: only matched 1/1 distinctive words"
+      "atlanta.org: only matched 1/1 distinctive words",
+      "hospiceatlanta.net: only matched 0/1 distinctive words",
+      "atlanta.org: name matched 1/1 but page is not about hospice or grief care"
     ],
-    "website_evidence": "matched 1/1: ATLANTA"
+    "website_evidence": "matched 1/1 in page text: ATLANTA; location confirmed by GA",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-111534",
@@ -3586,8 +3592,9 @@
       "nonprofit (+30)",
       "certified 1999, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1: WEINSTEIN"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "matched 1/1 in page text: WEINSTEIN; location confirmed by GA",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-851576",
@@ -3907,7 +3914,8 @@
       "certified 1992, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "bridginglife.org: only matched 0/1 distinctive words; bridginglife.com: only matched 0/1 distinctive words"
+    "website_evidence": "bridginglife.org: only matched 0/1 distinctive words; bridginglife.com: only matched 0/1 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-211529",
@@ -3937,8 +3945,9 @@
       "nonprofit (+30)",
       "certified 1994, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "phone 443-262-4100 found on page"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "phone 443-262-4100 found on page",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-211526",
@@ -3969,7 +3978,8 @@
       "certified 1994, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "gilchrist.org: only matched 0/1 distinctive words; gilchrist.com: name matched 1/1 but page is not about hospice or grief care; ghc.com: only matched 0/1 distinctive words"
+    "website_evidence": "gilchrist.org: only matched 0/1 distinctive words; gilchrist.com: name matched 1/1 but page is not about hospice or grief care; ghc.com: only matched 0/1 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-211533",
@@ -3986,8 +3996,8 @@
     "phone_normalized": "4102472900",
     "ownership_type": "Non-Profit",
     "certification_date": "07/08/1995",
-    "website": "https://www.gentivahs.com/services/hospice-care/heartland-hospice/",
-    "website_status": "verified_name",
+    "website": null,
+    "website_status": "not_found",
     "bereavement_page": null,
     "source": "CMS Hospice - General Information",
     "source_dataset_id": "yc9t-dgbk",
@@ -3999,8 +4009,9 @@
       "nonprofit (+30)",
       "certified 1995, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1 in page text: HEARTLAND"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "heartlandhospice.org: name matched (HEARTLAND) but neither the city (WINDSOR MILL) nor the state (MD) appears on the page - probably a different organization with a similar name; heartlandhospice.com: name matched (HEARTLAND) but neither the city (WINDSOR MILL) nor the state (MD) appears on the page - probably a different organization with a similar name; heartland.org: name matched 1/1 but page is not about hospice or grief care",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-211509",
@@ -4031,7 +4042,8 @@
       "certified 1988, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "chesapeake.org: name matched 1/1 but page is not about hospice or grief care; chesapeake.com: name matched 1/1 but page is not about hospice or grief care; chesapeake.net: name matched 1/1 but page is not about hospice or grief care"
+    "website_evidence": "chesapeake.org: name matched 1/1 but page is not about hospice or grief care; chesapeake.com: name matched 1/1 but page is not about hospice or grief care; chesapeake.net: name matched 1/1 but page is not about hospice or grief care",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-211546",
@@ -4194,8 +4206,8 @@
     "phone_normalized": "7815861608",
     "ownership_type": "Non-Profit",
     "certification_date": "04/12/2005",
-    "website": "https://www.allcarehospice.com/",
-    "website_status": "verified_name",
+    "website": null,
+    "website_status": "not_found",
     "bereavement_page": null,
     "source": "CMS Hospice - General Information",
     "source_dataset_id": "yc9t-dgbk",
@@ -4207,11 +4219,9 @@
       "nonprofit (+30)",
       "certified 2005, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "_rejected": [
-      "allcarehospice.org: only matched 1/1 distinctive words"
-    ],
-    "website_evidence": "matched 1/1: ALL"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "allcarehospice.org: only matched 1/1 distinctive words; allcarehospice.org: name matched 1/1 but page is not about hospice or grief care; allcarehospice.com: name matched (ALL) but neither the city (LYNN) nor the state (MA) appears on the page - probably a different organization with a similar name",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-221599",
@@ -4358,7 +4368,8 @@
       "certified 1993, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "bethisraellahey.org: only matched 0/3 distinctive words; bethisraellahey.com: only matched 0/3 distinctive words"
+    "website_evidence": "bethisraellahey.org: only matched 0/3 distinctive words; bethisraellahey.net: only matched 0/3 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-301510",
@@ -4389,7 +4400,8 @@
       "certified 1993, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "bethisraellahey.org: only matched 0/3 distinctive words; bethisraellahey.com: only matched 0/3 distinctive words"
+    "website_evidence": "bethisraellahey.org: only matched 0/3 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-221616",
@@ -4474,8 +4486,9 @@
       "nonprofit (+30)",
       "certified 1989, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "phone 978-774-7566 found on page"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "phone 978-774-7566 found on page",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-221611",
@@ -4738,7 +4751,8 @@
       "certified 1988, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "cranberryhospice.org: only matched 0/1 distinctive words; cranberryhospice.com: only matched 0/1 distinctive words; cranberry.com: only matched 0/1 distinctive words"
+    "website_evidence": "cranberryhospice.org: only matched 0/1 distinctive words; cranberryhospice.com: only matched 0/1 distinctive words; cranberry.com: only matched 0/1 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-221583",
@@ -4939,7 +4953,8 @@
       "certified 1984, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "goodshepherdcommunity.com: name matched 3/3 but page is not about hospice or grief care; gscc.org: only matched 1/3 distinctive words; gscc.net: name matched 3/3 but page is not about hospice or grief care"
+    "website_evidence": "goodshepherdcommunity.com: name matched 3/3 but page is not about hospice or grief care; gscc.org: only matched 1/3 distinctive words; gscc.net: name matched 3/3 but page is not about hospice or grief care",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-221606",
@@ -5199,8 +5214,9 @@
       "nonprofit (+30)",
       "certified 1986, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 2/2: OLD, COLONY"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "matched 2/2 in page text: OLD, COLONY; location confirmed by MA",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-221614",
@@ -5373,8 +5389,9 @@
       "nonprofit (+30)",
       "certified 1985, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 2/2: TUFTS, MEDICINE"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "matched 2/2 in page text: TUFTS, MEDICINE; location confirmed by MA",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-301539",
@@ -5548,8 +5565,9 @@
       "nonprofit (+30)",
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 2/2: CAROLINA, CARING"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "matched 2/2 in page text: CAROLINA, CARING; location confirmed by NC",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-421644",
@@ -5608,11 +5626,13 @@
       "nonprofit (+30)",
       "certified 1984, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
+    "website_checked_at": "2026-08-23",
     "_rejected": [
-      "charlotteregion.com: only matched 2/2 distinctive words"
+      "charlotteregion.com: only matched 2/2 distinctive words",
+      "charlotteregion.com: name matched 2/2 but page is not about hospice or grief care"
     ],
-    "website_evidence": "phone 704-375-0100 found on page"
+    "website_evidence": "phone 704-375-0100 found on page",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-421626",
@@ -5731,11 +5751,12 @@
       "nonprofit (+30)",
       "certified 1987, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
+    "website_checked_at": "2026-08-23",
     "_rejected": [
       "iredellcounty.org: only matched 0/2 distinctive words"
     ],
-    "website_evidence": "iredellcounty.com disallows crawling"
+    "website_evidence": "iredellcounty.com disallows crawling",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-421515",
@@ -5884,7 +5905,8 @@
       "certified 1995, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-421605",
@@ -6030,7 +6052,8 @@
       "certified 1985, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "asth.org: only matched 0/3 distinctive words"
+    "website_evidence": "asth.org: only matched 0/3 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-141516",
@@ -6047,8 +6070,8 @@
     "phone_normalized": "6309636800",
     "ownership_type": "Combination Government & Non-Profit",
     "certification_date": "04/26/1988",
-    "website": "https://www.hugedomains.com/domain_profile.cfm?d=advocatehospice.com",
-    "website_status": "verified_name",
+    "website": null,
+    "website_status": "not_found",
     "bereavement_page": null,
     "source": "CMS Hospice - General Information",
     "source_dataset_id": "yc9t-dgbk",
@@ -6060,8 +6083,9 @@
       "nonprofit (+30)",
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1: ADVOCATE"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "advocatehospice.com: name matched (ADVOCATE) but neither the city (OAK BROOK) nor the state (IL) appears on the page - probably a different organization with a similar name; advocate.org: name matched 1/1 but page is not about hospice or grief care; advocate.com: name matched 1/1 but page is not about hospice or grief care",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-141668",
@@ -6906,8 +6930,9 @@
       "nonprofit (+30)",
       "certified 1984, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "phone 262-652-4400 found on page"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "phone 262-652-4400 found on page",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-141529",
@@ -6938,7 +6963,8 @@
       "certified 1989, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "hca.org: only matched 0/2 distinctive words; hca.net: only matched 0/2 distinctive words; hca.health: only matched 0/2 distinctive words"
+    "website_evidence": "hca.org: only matched 0/2 distinctive words; hca.net: only matched 0/2 distinctive words; hca.health: only matched 0/2 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-151500",
@@ -7054,8 +7080,9 @@
       "nonprofit (+30)",
       "certified 1989, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1 in page text: JOURNEYCARE"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "matched 1/1 in page text: JOURNEYCARE; location confirmed by BARRINGTON",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-141527",
@@ -7201,7 +7228,8 @@
       "certified 1990, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-141566",
@@ -7232,7 +7260,8 @@
       "certified 1994, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "loyolamedicine.org: name matched 2/2 but page is not about hospice or grief care; loyolamedicine.com: name matched 2/2 but page is not about hospice or grief care; lmh.org: only matched 1/2 distinctive words"
+    "website_evidence": "loyolamedicine.org: name matched 2/2 but page is not about hospice or grief care; loyolamedicine.com: name matched 2/2 but page is not about hospice or grief care; lmh.org: only matched 1/2 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-141740",
@@ -7468,11 +7497,13 @@
       "certified 1997, long-established (+20)",
       "hospital/health system affiliated (+10)"
     ],
-    "website_checked_at": "2026-08-06",
+    "website_checked_at": "2026-08-23",
     "_rejected": [
+      "pchh.org: only matched 1/3 distinctive words",
       "pchh.org: only matched 1/3 distinctive words"
     ],
-    "website_evidence": "pchh.com disallows crawling"
+    "website_evidence": "pchh.com disallows crawling",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-141701",
@@ -7530,8 +7561,9 @@
       "nonprofit (+30)",
       "certified 2003, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "phone 800-509-2800 found on page"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "phone 800-509-2800 found on page",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-141738",
@@ -7591,7 +7623,8 @@
       "certified 1988, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "rainbowhospice.org: only matched 0/1 distinctive words; rainbowhospice.com: only matched 0/1 distinctive words; rainbow.org: name matched 1/1 but page is not about hospice or grief care"
+    "website_evidence": "rainbowhospice.org: only matched 0/1 distinctive words; rainbowhospice.com: only matched 0/1 distinctive words; rainbow.org: name matched 1/1 but page is not about hospice or grief care",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-141522",
@@ -7621,8 +7654,9 @@
       "nonprofit (+30)",
       "certified 1989, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1: RESIDENTIAL"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "matched 1/1 in page text: RESIDENTIAL; location confirmed by IL",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-141655",
@@ -7967,11 +8001,13 @@
       "nonprofit (+30)",
       "certified 1996, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
+    "website_checked_at": "2026-08-23",
     "_rejected": [
+      "traditionshealth.org: only matched 0/1 distinctive words",
       "traditionshealth.org: only matched 0/1 distinctive words"
     ],
-    "website_evidence": "matched 1/1: TRADITIONS"
+    "website_evidence": "matched 1/1 in page text: TRADITIONS; location confirmed by IN",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-151653",
@@ -8376,7 +8412,8 @@
       "certified 1993, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-151505",
@@ -10784,8 +10821,9 @@
       "nonprofit (+30)",
       "certified 2005, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 2/2 in page text: CC, YOUNG"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "matched 2/2 in page text: CC, YOUNG; location confirmed by TX",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-971773",
@@ -11048,12 +11086,15 @@
       "nonprofit (+30)",
       "certified 1984, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
+    "website_checked_at": "2026-08-23",
     "_rejected": [
+      "cht.org: only matched 0/2 distinctive words",
+      "cht.com: only matched 0/2 distinctive words",
       "cht.org: only matched 0/2 distinctive words",
       "cht.com: only matched 0/2 distinctive words"
     ],
-    "website_evidence": "cht.net disallows crawling"
+    "website_evidence": "cht.net disallows crawling",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-451791",
@@ -11690,7 +11731,8 @@
       "certified 2004, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "faithpresbyterian.org: name matched 2/2 but page is not about hospice or grief care; faithpresbyterian.com: only matched 0/2 distinctive words; fph.org: only matched 0/2 distinctive words"
+    "website_evidence": "faithpresbyterian.org: name matched 2/2 but page is not about hospice or grief care; faithpresbyterian.com: only matched 0/2 distinctive words; fph.org: only matched 0/2 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-971717",
@@ -15667,7 +15709,8 @@
       "certified 1984, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-971524",
@@ -15898,7 +15941,8 @@
       "certified 1987, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "ahcp.com: only matched 0/2 distinctive words; ahcp.net: only matched 0/2 distinctive words"
+    "website_evidence": "ahcp.com: only matched 0/2 distinctive words; ahcp.net: only matched 0/2 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-061632",
@@ -16677,13 +16721,17 @@
       "nonprofit (+30)",
       "certified 1985, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
+    "website_checked_at": "2026-08-23",
     "_rejected": [
       "denver.org: only matched 1/1 distinctive words",
       "denver.com: only matched 1/1 distinctive words",
+      "hhd.com: only matched 0/1 distinctive words",
+      "denver.org: name matched 1/1 but page is not about hospice or grief care",
+      "denver.com: name matched 1/1 but page is not about hospice or grief care",
       "hhd.com: only matched 0/1 distinctive words"
     ],
-    "website_evidence": "hhd.net disallows crawling"
+    "website_evidence": "hhd.net disallows crawling",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-061508",
@@ -16714,7 +16762,8 @@
       "certified 1985, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "ihhd.org: only matched 0/2 distinctive words; ihhd.com: only matched 0/2 distinctive words"
+    "website_evidence": "ihhd.org: only matched 0/2 distinctive words; ihhd.com: only matched 0/2 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-061638",
@@ -16819,9 +16868,9 @@
     "phone_normalized": "3036746400",
     "ownership_type": "Non-Profit",
     "certification_date": "06/06/1985",
-    "website": null,
-    "website_status": "robots_disallowed",
-    "bereavement_page": null,
+    "website": "https://mtevans.org/",
+    "website_status": "verified_phone",
+    "bereavement_page": "https://mtevans.org/services/emotional-support/",
     "source": "CMS Hospice - General Information",
     "source_dataset_id": "yc9t-dgbk",
     "first_seen": "2026-08-06",
@@ -16832,13 +16881,14 @@
       "nonprofit (+30)",
       "certified 1985, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
+    "website_checked_at": "2026-08-23",
     "_rejected": [
       "mountevans.org: only matched 0/2 distinctive words",
       "mountevans.com: only matched 2/2 distinctive words",
       "meh.com: only matched 0/2 distinctive words"
     ],
-    "website_evidence": "meh.net disallows crawling"
+    "website_evidence": "phone 303-674-6400 found on page",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-061545",
@@ -17218,7 +17268,8 @@
       "certified 1988, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "angela.org: name matched 1/1 but page is not about hospice or grief care; angela.com: name matched 1/1 but page is not about hospice or grief care; angela.net: only matched 0/1 distinctive words"
+    "website_evidence": "angela.org: name matched 1/1 but page is not about hospice or grief care; angela.com: name matched 1/1 but page is not about hospice or grief care; angela.net: only matched 0/1 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-231711",
@@ -17479,13 +17530,16 @@
       "nonprofit (+30)",
       "certified 1991, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
+    "website_checked_at": "2026-08-23",
     "_rejected": [
       "bluewater.org: only matched 2/2 distinctive words",
       "bluewater.net: only matched 0/2 distinctive words",
+      "bluewater.health: only matched 0/2 distinctive words",
+      "bluewater.org: name matched 2/2 but page is not about hospice or grief care",
       "bluewater.health: only matched 0/2 distinctive words"
     ],
-    "website_evidence": "bwh.org disallows crawling"
+    "website_evidence": "bwh.org disallows crawling",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-231726",
@@ -18154,7 +18208,8 @@
       "certified 1986, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "henryford.org: name matched 2/2 but page is not about hospice or grief care; henryford.com: name matched 2/2 but page is not about hospice or grief care; henryford.net: name matched 2/2 but page is not about hospice or grief care"
+    "website_evidence": "henryford.org: name matched 2/2 but page is not about hospice or grief care; henryford.com: name matched 2/2 but page is not about hospice or grief care; henryford.net: name matched 2/2 but page is not about hospice or grief care",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-231687",
@@ -18243,7 +18298,8 @@
       "certified 1983, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "southeasternmichigan.com: only matched 0/2 distinctive words; hsm.org: only matched 0/2 distinctive words; hsm.com: only matched 0/2 distinctive words"
+    "website_evidence": "southeasternmichigan.com: only matched 0/2 distinctive words; hsm.org: only matched 0/2 distinctive words; hsm.com: only matched 0/2 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-231701",
@@ -19657,7 +19713,8 @@
       "certified 1992, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-671559",
@@ -24270,8 +24327,9 @@
       "nonprofit (+30)",
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "phone 713-467-7423 found on page"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "phone 713-467-7423 found on page",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-971589",
@@ -52341,8 +52399,8 @@
     "phone_normalized": "9494601500",
     "ownership_type": "Non-Profit",
     "certification_date": "09/03/1992",
-    "website": "https://www.memorialcare.org/",
-    "website_status": "verified_name",
+    "website": null,
+    "website_status": "not_found",
     "bereavement_page": "https://www.memorialcare.org/bereavement",
     "source": "CMS Hospice - General Information",
     "source_dataset_id": "yc9t-dgbk",
@@ -52354,8 +52412,9 @@
       "nonprofit (+30)",
       "certified 1992, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1: MEMORIALCARE"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "memorialcare.org: name matched (MEMORIALCARE) but neither the city (LAGUNA HILLS) nor the state (CA) appears on the page - probably a different organization with a similar name; memorialcare.com: name matched (MEMORIALCARE) but neither the city (LAGUNA HILLS) nor the state (CA) appears on the page - probably a different organization with a similar name; mhps.org: only matched 0/1 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-A11630",
@@ -69086,8 +69145,9 @@
       "nonprofit (+30)",
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1: CATHOLIC"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "matched 1/1 in page text: CATHOLIC; location confirmed by FL",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-101562",
@@ -69191,8 +69251,8 @@
     "phone_normalized": "7046642876",
     "ownership_type": "Non-Profit",
     "certification_date": "11/01/1983",
-    "website": "https://www.gentivahs.com/services/hospice-care/heartland-hospice/",
-    "website_status": "verified_name",
+    "website": null,
+    "website_status": "not_found",
     "bereavement_page": null,
     "source": "CMS Hospice - General Information",
     "source_dataset_id": "yc9t-dgbk",
@@ -69204,8 +69264,9 @@
       "nonprofit (+30)",
       "certified 1983, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1 in page text: HEARTLAND"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "heartlandhospice.org: name matched (HEARTLAND) but neither the city (PLANTATION) nor the state (FL) appears on the page - probably a different organization with a similar name; heartlandhospice.com: name matched (HEARTLAND) but neither the city (PLANTATION) nor the state (FL) appears on the page - probably a different organization with a similar name; heartland.org: name matched 1/1 but page is not about hospice or grief care",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-101504",
@@ -69266,7 +69327,8 @@
       "certified 1984, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "goldcoast.org: only matched 0/2 distinctive words; goldcoast.com: name matched 2/2 but page is not about hospice or grief care; goldcoast.net: name matched 2/2 but page is not about hospice or grief care"
+    "website_evidence": "goldcoast.org: only matched 0/2 distinctive words; goldcoast.com: name matched 2/2 but page is not about hospice or grief care; goldcoast.net: name matched 2/2 but page is not about hospice or grief care",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-101512",
@@ -69296,11 +69358,13 @@
       "nonprofit (+30)",
       "certified 1984, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
+    "website_checked_at": "2026-08-23",
     "_rejected": [
+      "hospiceofpalmbeachcounty.com: only matched 0/3 distinctive words",
       "hospiceofpalmbeachcounty.com: only matched 0/3 distinctive words"
     ],
-    "website_evidence": "palmbeachcounty.org disallows crawling"
+    "website_evidence": "palmbeachcounty.org disallows crawling",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-101563",
@@ -69476,8 +69540,9 @@
       "nonprofit (+30)",
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "phone 715-629-1888 found on page"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "phone 715-629-1888 found on page",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-241513",
@@ -69507,8 +69572,9 @@
       "nonprofit (+30)",
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1 in page text: ALLINA"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "matched 1/1 in page text: ALLINA; location confirmed by MN",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-241627",
@@ -69652,8 +69718,9 @@
       "nonprofit (+30)",
       "certified 1996, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1: ECUMEN"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "matched 1/1 in page text: ECUMEN; location confirmed by MN",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-241626",
@@ -70154,7 +70221,8 @@
       "certified 1986, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-241603",
@@ -70213,7 +70281,8 @@
       "certified 2001, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "ourladypeace.com: name matched 3/3 but page is not about hospice or grief care; ourladypeace.net: name matched 3/3 but page is not about hospice or grief care; olph.com: only matched 0/3 distinctive words"
+    "website_evidence": "ourladypeace.com: name matched 3/3 but page is not about hospice or grief care; ourladypeace.net: name matched 3/3 but page is not about hospice or grief care; olph.com: only matched 0/3 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-241512",
@@ -70245,7 +70314,8 @@
       "hospital/health system affiliated (+10)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-241589",
@@ -70306,11 +70376,13 @@
       "nonprofit (+30)",
       "certified 1997, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
+    "website_checked_at": "2026-08-23",
     "website_evidence": "ridgeview.com disallows crawling",
     "_rejected": [
+      "ridgeview.org: only matched 0/1 distinctive words",
       "ridgeview.org: only matched 0/1 distinctive words"
-    ]
+    ],
+    "verification_rule": 2
   },
   {
     "org_id": "cms-241621",
@@ -70425,7 +70497,8 @@
       "certified 1988, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "schh.com: only matched 0/3 distinctive words"
+    "website_evidence": "schh.com: only matched 0/3 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-241623",
@@ -70656,7 +70729,8 @@
       "certified 1984, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "avn.com: only matched 0/3 distinctive words; avn.net: only matched 0/3 distinctive words"
+    "website_evidence": "avn.com: only matched 0/3 distinctive words; avn.net: only matched 0/3 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-311507",
@@ -70673,8 +70747,8 @@
     "phone_normalized": "8556194448",
     "ownership_type": "Non-Profit",
     "certification_date": "03/07/1984",
-    "website": "https://barnabas.net/",
-    "website_status": "verified_name",
+    "website": null,
+    "website_status": "not_found",
     "bereavement_page": null,
     "source": "CMS Hospice - General Information",
     "source_dataset_id": "yc9t-dgbk",
@@ -70686,12 +70760,9 @@
       "nonprofit (+30)",
       "certified 1984, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1 in page text: BARNABAS",
-    "_rejected": [
-      "barnabas.org: name matched 1/1 but page is not about hospice or grief care",
-      "barnabas.com: name matched 1/1 but page is not about hospice or grief care"
-    ]
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "barnabas.org: name matched 1/1 but page is not about hospice or grief care; barnabas.com: name matched 1/1 but page is not about hospice or grief care; barnabas.org: name matched 1/1 but page is not about hospice or grief care",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-311580",
@@ -70842,7 +70913,8 @@
       "certified 1984, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "hope.org: name matched 1/1 but page is not about hospice or grief care; hope.com: name matched 1/1 but page is not about hospice or grief care; hope.net: name matched 1/1 but page is not about hospice or grief care"
+    "website_evidence": "hope.org: name matched 1/1 but page is not about hospice or grief care; hope.com: name matched 1/1 but page is not about hospice or grief care; hope.net: name matched 1/1 but page is not about hospice or grief care",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-311530",
@@ -70859,8 +70931,8 @@
     "phone_normalized": "9087259355",
     "ownership_type": "Non-Profit",
     "certification_date": "05/07/1990",
-    "website": "https://www.ohioshospice.org/wilmington/",
-    "website_status": "verified_name",
+    "website": null,
+    "website_status": "not_found",
     "bereavement_page": "https://www.ohioshospice.org/grief-support/",
     "source": "CMS Hospice - General Information",
     "source_dataset_id": "yc9t-dgbk",
@@ -70872,8 +70944,9 @@
       "nonprofit (+30)",
       "certified 1990, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1: COMMUNITY"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "communitycarehospice.com: name matched (COMMUNITY) but neither the city (SOMERVILLE) nor the state (NJ) appears on the page - probably a different organization with a similar name; communitycarehospice.net: name matched (COMMUNITY) but neither the city (SOMERVILLE) nor the state (NJ) appears on the page - probably a different organization with a similar name; community.com: name matched 1/1 but page is not about hospice or grief care",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-311542",
@@ -70962,7 +71035,8 @@
       "certified 1997, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-311590",
@@ -71021,8 +71095,9 @@
       "nonprofit (+30)",
       "certified 1991, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "phone 631-288-8400 found on page"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "phone 631-288-8400 found on page",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-311556",
@@ -71184,8 +71259,8 @@
     "phone_normalized": "6314656300",
     "ownership_type": "Non-Profit",
     "certification_date": "06/21/1991",
-    "website": "https://www.goodshepherdhospice.com/",
-    "website_status": "verified_name",
+    "website": null,
+    "website_status": "not_found",
     "bereavement_page": "https://www.goodshepherdhospice.com/bereavement/",
     "source": "CMS Hospice - General Information",
     "source_dataset_id": "yc9t-dgbk",
@@ -71197,11 +71272,9 @@
       "nonprofit (+30)",
       "certified 1991, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "_rejected": [
-      "goodshepherdhospice.org: only matched 0/2 distinctive words"
-    ],
-    "website_evidence": "matched 2/2: GOOD, SHEPHERD"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "goodshepherdhospice.org: only matched 0/2 distinctive words; goodshepherdhospice.org: only matched 0/2 distinctive words; goodshepherdhospice.com: name matched (GOOD, SHEPHERD) but neither the city (FARMINGDALE) nor the state (NY) appears on the page - probably a different organization with a similar name",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-311563",
@@ -71318,8 +71391,9 @@
       "nonprofit (+30)",
       "certified 1999, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 2/2: HOLY, NAME"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "matched 2/2 in page text: HOLY, NAME; location confirmed by NJ",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-311559",
@@ -71409,7 +71483,8 @@
       "certified 1988, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-311540",
@@ -71527,8 +71602,9 @@
       "nonprofit (+30)",
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1: WESTCHESTER"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "matched 1/1 in page text: WESTCHESTER; location confirmed by NY",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-331521",
@@ -71588,8 +71664,9 @@
       "nonprofit (+30)",
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "phone 908-788-6600 found on page"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "phone 908-788-6600 found on page",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-331525",
@@ -71620,7 +71697,8 @@
       "certified 1988, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "jansen.com: name matched 1/1 but page is not about hospice or grief care; jansen.health: only matched 0/1 distinctive words; jhpc.org: only matched 0/1 distinctive words"
+    "website_evidence": "jansen.com: name matched 1/1 but page is not about hospice or grief care; jansen.health: only matched 0/1 distinctive words; jhpc.org: only matched 0/1 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-311509",
@@ -71650,8 +71728,9 @@
       "nonprofit (+30)",
       "certified 1984, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 3/3: KAREN, ANN, QUINLAN"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "matched 3/3 in page text: KAREN, ANN, QUINLAN; location confirmed by NJ",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-391704",
@@ -71801,7 +71880,8 @@
       "hospital/health system affiliated (+10)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-331529",
@@ -71865,11 +71945,13 @@
       "nonprofit (+30)",
       "certified 2005, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
+    "website_checked_at": "2026-08-23",
     "_rejected": [
+      "mesh.net: only matched 0/3 distinctive words",
       "mesh.net: only matched 0/3 distinctive words"
     ],
-    "website_evidence": "mesh.health disallows crawling"
+    "website_evidence": "mesh.health disallows crawling",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-311501",
@@ -71899,8 +71981,9 @@
       "nonprofit (+30)",
       "certified 1983, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 5/5 in page text: ROBERT, WOOD, JOHNSON, VISITING"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "matched 5/5 in page text: ROBERT, WOOD, JOHNSON, VISITING; location confirmed by NJ",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-311577",
@@ -71990,7 +72073,8 @@
       "hospital/health system affiliated (+10)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-311595",
@@ -72078,8 +72162,9 @@
       "nonprofit (+30)",
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "unitedhospice.org disallows crawling"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "unitedhospice.org disallows crawling",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-311522",
@@ -72096,8 +72181,8 @@
     "phone_normalized": "2012916000",
     "ownership_type": "Non-Profit",
     "certification_date": "12/31/1987",
-    "website": "https://www.valleyhospice.org/",
-    "website_status": "verified_name",
+    "website": null,
+    "website_status": "not_found",
     "bereavement_page": "https://www.valleyhospice.org/grief-and-loss",
     "source": "CMS Hospice - General Information",
     "source_dataset_id": "yc9t-dgbk",
@@ -72109,8 +72194,9 @@
       "nonprofit (+30)",
       "certified 1987, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1: VALLEY"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "valleyhospice.org: name matched (VALLEY) but neither the city (PARAMUS) nor the state (NJ) appears on the page - probably a different organization with a similar name; valley.org: name matched 1/1 but page is not about hospice or grief care; valley.com: name matched 1/1 but page is not about hospice or grief care",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-311508",
@@ -72170,7 +72256,8 @@
       "certified 1989, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-311543",
@@ -72200,8 +72287,9 @@
       "nonprofit (+30)",
       "certified 1996, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 6/6: VISITING, NURSE, ASSOCIATION, NORTHERN"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "matched 6/6 in page text: VISITING, NURSE, ASSOCIATION, NORTHERN; location confirmed by NJ",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-311558",
@@ -72261,7 +72349,8 @@
       "certified 1987, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-331535",
@@ -72292,7 +72381,8 @@
       "certified 1989, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "vhs.com: only matched 0/2 distinctive words; vhs.net: only matched 0/2 distinctive words"
+    "website_evidence": "vhs.com: only matched 0/2 distinctive words; vhs.net: only matched 0/2 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-331519",
@@ -72323,7 +72413,8 @@
       "certified 1988, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "vnsny.org: only matched 0/1 distinctive words; vnsny.com: only matched 0/1 distinctive words; vhpc.org: only matched 0/1 distinctive words"
+    "website_evidence": "vnsny.org: only matched 0/1 distinctive words; vnsny.com: only matched 0/1 distinctive words; vhpc.org: only matched 0/1 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-101533",
@@ -72353,8 +72444,9 @@
       "nonprofit (+30)",
       "certified 1990, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 3/3: ADVENTHEALTH, CENTRAL, FLORIDA"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "matched 3/3 in page text: ADVENTHEALTH, CENTRAL, FLORIDA; location confirmed by FL",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-101575",
@@ -73200,8 +73292,9 @@
       "nonprofit (+30)",
       "certified 1984, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1 in page text: DELAWARE"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "matched 1/1 in page text: DELAWARE; location confirmed by DE",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-391747",
@@ -73292,7 +73385,8 @@
       "hospital/health system affiliated (+10)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "doylestownhospital.org: only matched 0/2 distinctive words; dhh.com: only matched 0/2 distinctive words"
+    "website_evidence": "dhh.com: only matched 0/2 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-391799",
@@ -73411,11 +73505,13 @@
       "nonprofit (+30)",
       "certified 1991, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
+    "website_checked_at": "2026-08-23",
     "_rejected": [
+      "grandview.com: only matched 0/2 distinctive words",
       "grandview.com: only matched 0/2 distinctive words"
     ],
-    "website_evidence": "matched 2/2: GRAND, VIEW"
+    "website_evidence": "matched 2/2 in page text: GRAND, VIEW; location confirmed by PA",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-391765",
@@ -73649,7 +73745,8 @@
       "certified 1985, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "holyredeemer.org: only matched 0/2 distinctive words; holyredeemer.com: only matched 1/2 distinctive words; holyredeemer.net: name matched 2/2 but page is not about hospice or grief care"
+    "website_evidence": "holyredeemer.org: only matched 0/2 distinctive words; holyredeemer.com: only matched 1/2 distinctive words; holyredeemer.net: name matched 2/2 but page is not about hospice or grief care",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-311513",
@@ -73680,7 +73777,8 @@
       "certified 1985, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "holyredeemer.org: only matched 0/2 distinctive words; holyredeemer.com: only matched 1/2 distinctive words; holyredeemer.net: name matched 2/2 but page is not about hospice or grief care"
+    "website_evidence": "holyredeemer.org: only matched 0/2 distinctive words; holyredeemer.com: only matched 1/2 distinctive words; holyredeemer.net: name matched 2/2 but page is not about hospice or grief care",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-391604",
@@ -73798,7 +73896,8 @@
       "certified 1987, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-731512",
@@ -73846,8 +73945,8 @@
     "phone_normalized": "2158362440",
     "ownership_type": "Non-Profit",
     "certification_date": "02/10/1995",
-    "website": "https://keystonehospice.org/",
-    "website_status": "verified_name",
+    "website": null,
+    "website_status": "not_found",
     "bereavement_page": "https://keystonehospice.org/grief-counseling",
     "source": "CMS Hospice - General Information",
     "source_dataset_id": "yc9t-dgbk",
@@ -73859,8 +73958,9 @@
       "nonprofit (+30)",
       "certified 1995, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1: KEYSTONE"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "keystonehospice.org: name matched (KEYSTONE) but neither the city (WYNDMOOR) nor the state (PA) appears on the page - probably a different organization with a similar name; keystonehospice.com: only matched 0/1 distinctive words; keystone.org: name matched 1/1 but page is not about hospice or grief care",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-311536",
@@ -73920,7 +74020,8 @@
       "certified 1994, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "mainlinehomecare.com: only matched 2/3 distinctive words"
+    "website_evidence": "mainlinehomecare.com: only matched 2/3 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-391723",
@@ -74037,7 +74138,8 @@
       "certified 1983, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "pennmedicine.org: name matched 2/2 but page is not about hospice or grief care; pennmedicine.com: name matched 2/2 but page is not about hospice or grief care; pennmedicine.net: only matched 0/2 distinctive words"
+    "website_evidence": "pennmedicine.org: name matched 2/2 but page is not about hospice or grief care; pennmedicine.com: name matched 2/2 but page is not about hospice or grief care; pennmedicine.net: only matched 0/2 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-311504",
@@ -77144,8 +77246,9 @@
       "nonprofit (+30)",
       "certified 1992, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1: VALLEY"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "matched 1/1 in page text: VALLEY; location confirmed by AZ",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-031505",
@@ -77175,8 +77278,9 @@
       "nonprofit (+30)",
       "certified 1989, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1 in page text: VALLEY"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "matched 1/1 in page text: VALLEY; location confirmed by AZ",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-031592",
@@ -78209,7 +78313,8 @@
       "certified 1992, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "scottsdalevalley.com: only matched 0/2 distinctive words; shv.org: only matched 0/2 distinctive words; shv.com: only matched 0/2 distinctive words"
+    "website_evidence": "scottsdalevalley.com: only matched 0/2 distinctive words; shv.org: only matched 0/2 distinctive words; shv.com: only matched 0/2 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-001549",
@@ -79734,8 +79839,8 @@
     "phone_normalized": "4123673685",
     "ownership_type": "Non-Profit",
     "certification_date": "11/08/1996",
-    "website": "https://www.hopehospice.com/",
-    "website_status": "verified_name",
+    "website": null,
+    "website_status": "not_found",
     "bereavement_page": "https://www.hopehospice.com/services/grief/",
     "source": "CMS Hospice - General Information",
     "source_dataset_id": "yc9t-dgbk",
@@ -79747,8 +79852,9 @@
       "nonprofit (+30)",
       "certified 1996, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1: HOPE"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "hopehospice.org: name matched (HOPE) but neither the city (PITTSBURGH) nor the state (PA) appears on the page - probably a different organization with a similar name; hopehospice.com: name matched (HOPE) but neither the city (PITTSBURGH) nor the state (PA) appears on the page - probably a different organization with a similar name; hopehospice.net: only matched 0/1 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-391718",
@@ -79980,7 +80086,8 @@
       "certified 1996, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "sjh.org: only matched 0/2 distinctive words; sjh.com: only matched 0/2 distinctive words"
+    "website_evidence": "sjh.org: only matched 0/2 distinctive words; sjh.com: only matched 0/2 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-391705",
@@ -80304,7 +80411,8 @@
       "certified 1989, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "adventist.health: name matched 1/1 but page is not about hospice or grief care; ahh.org: only matched 0/1 distinctive words; ahh.net: only matched 0/1 distinctive words"
+    "website_evidence": "adventist.health: name matched 1/1 but page is not about hospice or grief care; ahh.org: only matched 0/1 distinctive words; ahh.net: only matched 0/1 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-381577",
@@ -80504,8 +80612,9 @@
       "nonprofit (+30)",
       "certified 1990, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "carepartners.org disallows crawling"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "carepartners.org disallows crawling",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-381579",
@@ -80682,7 +80791,8 @@
       "certified 1984, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-381505",
@@ -84873,8 +84983,9 @@
       "nonprofit (+30)",
       "certified 1998, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "phone 951-200-7800 found on page"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "phone 951-200-7800 found on page",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-A11575",
@@ -85142,7 +85253,8 @@
       "hospital/health system affiliated (+10)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-A11675",
@@ -87574,11 +87686,13 @@
       "nonprofit (+30)",
       "certified 1987, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
+    "website_checked_at": "2026-08-23",
     "_rejected": [
+      "vnacare.org: only matched 0/1 distinctive words",
       "vnacare.org: only matched 0/1 distinctive words"
     ],
-    "website_evidence": "matched 1/1: VNACARE"
+    "website_evidence": "matched 1/1 in page text: VNACARE; location confirmed by CA",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-051535",
@@ -87608,11 +87722,13 @@
       "nonprofit (+30)",
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
+    "website_checked_at": "2026-08-23",
     "_rejected": [
+      "vnacare.org: only matched 0/1 distinctive words",
       "vnacare.org: only matched 0/1 distinctive words"
     ],
-    "website_evidence": "matched 1/1: VNACARE"
+    "website_evidence": "matched 1/1 in page text: VNACARE; location confirmed by CA",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-051708",
@@ -87642,11 +87758,13 @@
       "nonprofit (+30)",
       "certified 1997, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
+    "website_checked_at": "2026-08-23",
     "_rejected": [
+      "vnacare.org: only matched 0/1 distinctive words",
       "vnacare.org: only matched 0/1 distinctive words"
     ],
-    "website_evidence": "matched 1/1: VNACARE"
+    "website_evidence": "matched 1/1 in page text: VNACARE; location confirmed by CA",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-751655",
@@ -89736,7 +89854,8 @@
       "certified 1990, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "grh.org: only matched 1/2 distinctive words; grh.net: only matched 0/2 distinctive words"
+    "website_evidence": "grh.org: only matched 1/2 distinctive words; grh.net: only matched 0/2 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-741503",
@@ -90043,8 +90162,8 @@
     "phone_normalized": "8306257500",
     "ownership_type": "Non-Profit",
     "certification_date": "05/24/1988",
-    "website": "https://www.hopehospice.com/",
-    "website_status": "verified_name",
+    "website": null,
+    "website_status": "not_found",
     "bereavement_page": "https://www.hopehospice.com/services/grief/",
     "source": "CMS Hospice - General Information",
     "source_dataset_id": "yc9t-dgbk",
@@ -90056,8 +90175,9 @@
       "nonprofit (+30)",
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1: HOPE"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "hopehospice.org: name matched (HOPE) but neither the city (NEW BRAUNFELS) nor the state (TX) appears on the page - probably a different organization with a similar name; hopehospice.com: name matched (HOPE) but neither the city (NEW BRAUNFELS) nor the state (TX) appears on the page - probably a different organization with a similar name; hope.org: name matched 1/1 but page is not about hospice or grief care",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-971689",
@@ -92303,8 +92423,9 @@
       "nonprofit (+30)",
       "certified 1987, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1: ELIZABETH"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "matched 1/1 in page text: ELIZABETH; location confirmed by CA",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-A11750",
@@ -92597,7 +92718,8 @@
       "hospital/health system affiliated (+10)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-D61537",
@@ -94376,8 +94498,9 @@
       "nonprofit (+30)",
       "certified 1984, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "phone 415-927-2273 found on page"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "phone 415-927-2273 found on page",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-051523",
@@ -95156,8 +95279,12 @@
       "nonprofit (+30)",
       "certified 1992, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "phone 925-829-8770 found on page"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "phone 925-829-8770 found on page",
+    "verification_rule": 2,
+    "_rejected": [
+      "hopehospice.org: name matched (HOPE) but neither the city (PLEASANTON) nor the state (CA) appears on the page - probably a different organization with a similar name"
+    ]
   },
   {
     "org_id": "cms-551751",
@@ -95216,8 +95343,9 @@
       "nonprofit (+30)",
       "certified 1989, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "phone 925-887-5678 found on page"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "phone 925-887-5678 found on page",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-B31569",
@@ -95278,7 +95406,8 @@
       "hospital/health system affiliated (+10)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-051565",
@@ -95341,7 +95470,8 @@
       "hospital/health system affiliated (+10)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-051551",
@@ -95403,7 +95533,8 @@
       "hospital/health system affiliated (+10)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-051589",
@@ -95435,7 +95566,8 @@
       "hospital/health system affiliated (+10)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-B41628",
@@ -95811,7 +95943,8 @@
       "certified 1995, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "mission.org: name matched 1/1 but page is not about hospice or grief care; mission.com: name matched 1/1 but page is not about hospice or grief care; mission.net: name matched 1/1 but page is not about hospice or grief care"
+    "website_evidence": "mission.org: name matched 1/1 but page is not about hospice or grief care; mission.com: name matched 1/1 but page is not about hospice or grief care; mission.net: name matched 1/1 but page is not about hospice or grief care",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-A11731",
@@ -96013,14 +96146,19 @@
       "nonprofit (+30)",
       "certified 1984, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
+    "website_checked_at": "2026-08-23",
     "_rejected": [
       "pathways.org: only matched 1/1 distinctive words",
       "pathways.com: only matched 0/1 distinctive words",
       "pathways.net: only matched 0/1 distinctive words",
+      "phhh.org: only matched 0/1 distinctive words",
+      "pathways.org: name matched 1/1 but page is not about hospice or grief care",
+      "pathways.com: only matched 0/1 distinctive words",
+      "pathways.net: only matched 0/1 distinctive words",
       "phhh.org: only matched 0/1 distinctive words"
     ],
-    "website_evidence": "phhh.com disallows crawling"
+    "website_evidence": "phhh.com disallows crawling",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-051580",
@@ -96050,14 +96188,19 @@
       "nonprofit (+30)",
       "certified 1991, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
+    "website_checked_at": "2026-08-23",
     "_rejected": [
       "pathways.org: only matched 1/1 distinctive words",
       "pathways.com: only matched 0/1 distinctive words",
       "pathways.net: only matched 0/1 distinctive words",
+      "phhh.org: only matched 0/1 distinctive words",
+      "pathways.org: name matched 1/1 but page is not about hospice or grief care",
+      "pathways.com: only matched 0/1 distinctive words",
+      "pathways.net: only matched 0/1 distinctive words",
       "phhh.org: only matched 0/1 distinctive words"
     ],
-    "website_evidence": "phhh.com disallows crawling"
+    "website_evidence": "phhh.com disallows crawling",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-B31612",
@@ -96234,7 +96377,8 @@
       "certified 1989, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-B21709",
@@ -97454,7 +97598,8 @@
       "certified 1990, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "evergreen.org: name matched 1/1 but page is not about hospice or grief care; evergreen.com: name matched 1/1 but page is not about hospice or grief care; evergreen.net: name matched 1/1 but page is not about hospice or grief care"
+    "website_evidence": "evergreen.org: name matched 1/1 but page is not about hospice or grief care; evergreen.com: name matched 1/1 but page is not about hospice or grief care; evergreen.net: name matched 1/1 but page is not about hospice or grief care",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-501526",
@@ -97485,7 +97630,8 @@
       "certified 1993, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "franciscan.org: name matched 1/1 but page is not about hospice or grief care; franciscan.com: name matched 1/1 but page is not about hospice or grief care; franciscan.net: only matched 0/1 distinctive words"
+    "website_evidence": "franciscan.org: name matched 1/1 but page is not about hospice or grief care; franciscan.com: name matched 1/1 but page is not about hospice or grief care; franciscan.net: only matched 0/1 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-501541",
@@ -97604,8 +97750,9 @@
       "nonprofit (+30)",
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "kpwa.org disallows crawling"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "kpwa.org disallows crawling",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-501508",
@@ -97666,7 +97813,8 @@
       "certified 1987, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-501514",
@@ -97697,7 +97845,8 @@
       "certified 1987, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-501550",
@@ -97963,8 +98112,9 @@
       "nonprofit (+30)",
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1: BJC"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "matched 1/1 in page text: BJC; location confirmed by MO",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-141659",
@@ -98285,7 +98435,8 @@
       "certified 1991, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "fhba.org: only matched 1/3 distinctive words; fhba.com: only matched 0/3 distinctive words"
+    "website_evidence": "fhba.org: only matched 1/3 distinctive words; fhba.com: only matched 0/3 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-261706",
@@ -98431,8 +98582,9 @@
       "nonprofit (+30)",
       "certified 1984, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "phone 618-235-1703 found on page"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "phone 618-235-1703 found on page",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-261626",
@@ -98568,8 +98720,8 @@
     "phone_normalized": "6184635683",
     "ownership_type": "Non-Profit",
     "certification_date": "09/15/1994",
-    "website": null,
-    "website_status": "robots_disallowed",
+    "website": "https://www.osfhealthcare.org/hospitals/saint-anthony",
+    "website_status": "verified_name",
     "bereavement_page": null,
     "source": "CMS Hospice - General Information",
     "source_dataset_id": "yc9t-dgbk",
@@ -98581,11 +98733,12 @@
       "nonprofit (+30)",
       "certified 1994, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
+    "website_checked_at": "2026-08-23",
     "_rejected": [
       "osfsaintanthony.org: only matched 3/3 distinctive words"
     ],
-    "website_evidence": "osah.org disallows crawling"
+    "website_evidence": "matched 3/3 in page text: OSF, SAINT, ANTHONY; location confirmed by IL",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-261575",
@@ -99075,8 +99228,9 @@
       "nonprofit (+30)",
       "certified 1989, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 1/1: GULFSIDE"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "matched 1/1 in page text: GULFSIDE; location confirmed by FL",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-101511",
@@ -99107,7 +99261,8 @@
       "certified 1984, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "hphhospice.com: only matched 0/1 distinctive words; hphhospice.net: only matched 0/1 distinctive words"
+    "website_evidence": "hphhospice.com: only matched 0/1 distinctive words; hphhospice.net: only matched 0/1 distinctive words",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-101507",
@@ -99166,8 +99321,9 @@
       "nonprofit (+30)",
       "certified 1984, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "phone 727-467-7423 found on page"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "phone 727-467-7423 found on page",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-101567",
@@ -99345,7 +99501,8 @@
       "certified 1986, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "capital.org: only matched 0/1 distinctive words; capital.com: name matched 1/1 but page is not about hospice or grief care; capital.health: name matched 1/1 but page is not about hospice or grief care"
+    "website_evidence": "capital.org: only matched 0/1 distinctive words; capital.com: name matched 1/1 but page is not about hospice or grief care; capital.health: name matched 1/1 but page is not about hospice or grief care",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-491500",
@@ -99490,8 +99647,9 @@
       "nonprofit (+30)",
       "certified 1990, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "phone 240-566-3030 found on page"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "phone 240-566-3030 found on page",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-491602",
@@ -99550,8 +99708,9 @@
       "nonprofit (+30)",
       "certified 1999, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
-    "website_evidence": "matched 2/2: GOODWIN, HOUSE"
+    "website_checked_at": "2026-08-23",
+    "website_evidence": "matched 2/2 in page text: GOODWIN, HOUSE; location confirmed by VA",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-211542",
@@ -99640,7 +99799,8 @@
       "certified 1986, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "holycross.org: name matched 2/2 but page is not about hospice or grief care; holycross.com: name matched 2/2 but page is not about hospice or grief care; holycross.net: name matched 2/2 but page is not about hospice or grief care"
+    "website_evidence": "holycross.org: name matched 2/2 but page is not about hospice or grief care; holycross.com: name matched 2/2 but page is not about hospice or grief care; holycross.net: name matched 2/2 but page is not about hospice or grief care",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-511507",
@@ -99670,11 +99830,13 @@
       "nonprofit (+30)",
       "certified 1990, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
+    "website_checked_at": "2026-08-23",
     "_rejected": [
+      "hospiceofthepanhandle.org: only matched 0/1 distinctive words",
       "hospiceofthepanhandle.org: only matched 0/1 distinctive words"
     ],
-    "website_evidence": "panhandle.org disallows crawling"
+    "website_evidence": "panhandle.org disallows crawling",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-491654",
@@ -99732,11 +99894,13 @@
       "nonprofit (+30)",
       "certified 1988, long-established (+20)"
     ],
-    "website_checked_at": "2026-08-06",
+    "website_checked_at": "2026-08-23",
     "_rejected": [
+      "jewishsocial.org: only matched 0/2 distinctive words",
       "jewishsocial.org: only matched 0/2 distinctive words"
     ],
-    "website_evidence": "jewishsocial.com disallows crawling"
+    "website_evidence": "jewishsocial.com disallows crawling",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-211503",
@@ -99767,7 +99931,8 @@
       "certified 1986, long-established (+20)"
     ],
     "website_checked_at": "2026-08-23",
-    "website_evidence": "no candidate domain resolved"
+    "website_evidence": "no candidate domain resolved",
+    "verification_rule": 2
   },
   {
     "org_id": "cms-491635",
@@ -100009,9 +100174,9 @@
     "metro_id": "portland-or",
     "phone": "503-775-5683",
     "phone_normalized": "5037755683",
-    "website": null,
-    "website_status": "not_checked",
-    "bereavement_page": null,
+    "website": "https://www.dougy.org/",
+    "website_status": "verified_phone",
+    "bereavement_page": "https://www.dougy.org/professionals-trainings",
     "source": "Lead from user-supplied CSV (LLM-generated, unverified)",
     "provenance_note": "Organization name and phone came from an AI-generated list with no source verification. Nothing about this org is trusted until discovery proves the website and extraction reads a real page.",
     "crawl_tier": "high",
@@ -100019,7 +100184,10 @@
     "first_seen": "2026-08-23",
     "last_checked": "2026-08-23",
     "hint_domain": "dougy.org",
-    "internal_notes": "Founding organization of the children's grief movement; the NACG network is named for it."
+    "internal_notes": "Founding organization of the children's grief movement; the NACG network is named for it.",
+    "website_checked_at": "2026-08-23",
+    "verification_rule": 2,
+    "website_evidence": "phone 503-775-5683 found on page"
   },
   {
     "org_id": "lead-b08a51058f",
@@ -100032,7 +100200,7 @@
     "phone": "253-301-6400",
     "phone_normalized": "2533016400",
     "website": null,
-    "website_status": "not_checked",
+    "website_status": "not_found",
     "bereavement_page": null,
     "source": "Lead from user-supplied CSV (LLM-generated, unverified)",
     "provenance_note": "Organization name and phone came from an AI-generated list with no source verification. Nothing about this org is trusted until discovery proves the website and extraction reads a real page.",
@@ -100040,7 +100208,10 @@
     "crawl_priority": 100,
     "first_seen": "2026-08-23",
     "last_checked": "2026-08-23",
-    "hint_domain": "multicare.org"
+    "hint_domain": "multicare.org",
+    "website_checked_at": "2026-08-23",
+    "verification_rule": 2,
+    "website_evidence": "no candidate domain resolved"
   },
   {
     "org_id": "lead-a4239b3382",
@@ -100052,16 +100223,19 @@
     "metro_id": "other-us",
     "phone": "575-523-4700",
     "phone_normalized": "5755234700",
-    "website": null,
-    "website_status": "not_checked",
-    "bereavement_page": null,
+    "website": "https://www.mvhospice.org/",
+    "website_status": "verified_phone",
+    "bereavement_page": "https://www.mvhospice.org/bereavement-services/",
     "source": "Lead from user-supplied CSV (LLM-generated, unverified)",
     "provenance_note": "Organization name and phone came from an AI-generated list with no source verification. Nothing about this org is trusted until discovery proves the website and extraction reads a real page.",
     "crawl_tier": "high",
     "crawl_priority": 100,
     "first_seen": "2026-08-23",
     "last_checked": "2026-08-23",
-    "hint_domain": "mvhospice.org"
+    "hint_domain": "mvhospice.org",
+    "website_checked_at": "2026-08-23",
+    "verification_rule": 2,
+    "website_evidence": "phone 575-523-4700 found on page"
   },
   {
     "org_id": "lead-b6261644b8",
@@ -100073,9 +100247,9 @@
     "metro_id": "other-us",
     "phone": "915-532-6004",
     "phone_normalized": "9155326004",
-    "website": null,
-    "website_status": "not_checked",
-    "bereavement_page": null,
+    "website": "https://cgcelpaso.org/",
+    "website_status": "verified_name",
+    "bereavement_page": "https://cgcelpaso.org/why-childrens-grief-center-is-important/",
     "source": "Lead from user-supplied CSV (LLM-generated, unverified)",
     "provenance_note": "Organization name and phone came from an AI-generated list with no source verification. Nothing about this org is trusted until discovery proves the website and extraction reads a real page.",
     "crawl_tier": "high",
@@ -100083,7 +100257,10 @@
     "first_seen": "2026-08-23",
     "last_checked": "2026-08-23",
     "hint_domain": "cgcelpaso.org",
-    "internal_notes": "Children's grief - our thinnest category."
+    "internal_notes": "Children's grief - our thinnest category.",
+    "website_checked_at": "2026-08-23",
+    "verification_rule": 2,
+    "website_evidence": "matched 2/2 in page text: CHILDREN, GRIEF; location confirmed by TX"
   },
   {
     "org_id": "lead-595cd81063",
@@ -100095,9 +100272,9 @@
     "metro_id": "other-us",
     "phone": "505-323-0478",
     "phone_normalized": "5053230478",
-    "website": null,
-    "website_status": "not_checked",
-    "bereavement_page": null,
+    "website": "https://griefnm.org/",
+    "website_status": "verified_phone",
+    "bereavement_page": "https://griefnm.org/",
     "source": "Lead from user-supplied CSV (LLM-generated, unverified)",
     "provenance_note": "Organization name and phone came from an AI-generated list with no source verification. Nothing about this org is trusted until discovery proves the website and extraction reads a real page.",
     "crawl_tier": "high",
@@ -100105,7 +100282,10 @@
     "first_seen": "2026-08-23",
     "last_checked": "2026-08-23",
     "hint_domain": "griefnm.org",
-    "internal_notes": "Children's grief - our thinnest category."
+    "internal_notes": "Children's grief - our thinnest category.",
+    "website_checked_at": "2026-08-23",
+    "verification_rule": 2,
+    "website_evidence": "phone 505-323-0478 found on page"
   },
   {
     "org_id": "lead-b09e698af4",
@@ -100117,9 +100297,9 @@
     "metro_id": "other-us",
     "phone": "805-544-2266",
     "phone_normalized": "8055442266",
-    "website": null,
-    "website_status": "not_checked",
-    "bereavement_page": null,
+    "website": "https://hospiceslo.org/",
+    "website_status": "verified_phone",
+    "bereavement_page": "https://hospiceslo.org/services/grief-counseling",
     "source": "Lead from user-supplied CSV (LLM-generated, unverified)",
     "provenance_note": "Organization name and phone came from an AI-generated list with no source verification. Nothing about this org is trusted until discovery proves the website and extraction reads a real page.",
     "crawl_tier": "high",
@@ -100127,7 +100307,10 @@
     "first_seen": "2026-08-23",
     "last_checked": "2026-08-23",
     "hint_domain": "hospiceslo.org",
-    "internal_notes": "CSV claimed a pet-loss group here - unverified, must be confirmed from their own page."
+    "internal_notes": "CSV claimed a pet-loss group here - unverified, must be confirmed from their own page.",
+    "website_checked_at": "2026-08-23",
+    "verification_rule": 2,
+    "website_evidence": "phone 805-544-2266 found on page"
   },
   {
     "org_id": "lead-1f1a0303b5",
@@ -100139,14 +100322,17 @@
     "metro_id": "other-us",
     "phone": "317-528-2636",
     "phone_normalized": "3175282636",
-    "website": null,
-    "website_status": "not_checked",
-    "bereavement_page": null,
+    "website": "https://reflectionslsc.org/",
+    "website_status": "verified_name",
+    "bereavement_page": "https://reflectionslsc.org/services/#grief",
     "source": "Lead from user-supplied CSV (LLM-generated, unverified)",
     "provenance_note": "Organization name and phone came from an AI-generated list with no source verification. Nothing about this org is trusted until discovery proves the website and extraction reads a real page.",
     "crawl_tier": "high",
     "crawl_priority": 100,
     "first_seen": "2026-08-23",
-    "last_checked": "2026-08-23"
+    "last_checked": "2026-08-23",
+    "website_checked_at": "2026-08-23",
+    "verification_rule": 2,
+    "website_evidence": "matched 2/2 in page text: ST, FRANCIS; location confirmed by IN"
   }
 ]
