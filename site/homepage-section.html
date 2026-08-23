@@ -1,0 +1,108 @@
+<!--
+  HOMEPAGE SECTION - grief support directory
+  ==========================================
+
+  WHERE THIS GOES
+  Shopify admin -> Online Store -> Themes -> Customize
+    -> on the Home page, "Add section" -> "Custom Liquid"
+    -> drag it directly below the "Carry it. Gift it. Believe in it." section
+    -> paste everything below into the Liquid box -> Save
+
+  WHY IT READS THE WAY IT DOES
+  This sits on a shop homepage, directly beneath a product call-to-action. The risk is
+  that it reads as marketing - "look how good we are" - which would cheapen both the
+  directory and the shop. So:
+
+    * It opens with the reader's situation, not ours.
+    * It states what the directory withholds (no ads, no signup, no paid placement)
+      rather than boasting about what it has.
+    * The funding line is a disclosure, not a brag.
+    * No listing counts. They go stale, and this section should never need maintaining.
+    * 988 appears here, not only on the directory page. Someone in crisis may never
+      click through.
+
+  Colours are pulled from the section above it: near-black ground, warm gold accent,
+  serif display face inherited from the theme.
+-->
+
+<div class="awrl-home">
+  <div class="awrl-home-inner">
+    <span class="awrl-home-mark">&#10022;</span>
+
+    <h2 class="awrl-home-title">Looking for a grief<br>support group?</h2>
+
+    <p class="awrl-home-body">
+      We keep a free directory of local bereavement groups across the country — who each
+      one is for, whether it costs anything, and the date we last checked it was still
+      meeting.
+    </p>
+
+    <p class="awrl-home-body awrl-home-quiet">
+      No advertising. Nothing behind an email signup. Placement is never for sale.
+    </p>
+
+    <a class="awrl-home-btn"
+       href="/pages/support-center-sponsored-by-a-well-run-life">Find a Support Group</a>
+
+    <p class="awrl-home-fine">
+      A free public service from A Well Run Life.<br>
+      If you are in crisis, call or text <a href="tel:988">988</a> at any hour.
+    </p>
+  </div>
+</div>
+
+<style>
+.awrl-home{
+  background:#12141c;
+  padding:5rem 1.5rem 5.5rem;
+  text-align:center;
+  color:#e8e4dd;
+}
+.awrl-home-inner{max-width:34rem;margin:0 auto}
+.awrl-home-mark{
+  display:block;color:#c9a06a;font-size:1.05rem;margin-bottom:2rem;line-height:1;
+}
+.awrl-home-title{
+  font-family:inherit;
+  font-size:clamp(1.9rem,4.4vw,2.9rem);
+  line-height:1.18;
+  margin:0 0 1.4rem;
+  color:#f2efe9;
+  font-weight:400;
+  letter-spacing:.01em;
+  text-transform:none;
+}
+.awrl-home-body{
+  font-size:1.02rem;
+  line-height:1.7;
+  margin:0 0 1rem;
+  color:#b9b4ab;
+}
+.awrl-home-quiet{font-size:.93rem;color:#8f8a82;margin-bottom:2.2rem}
+.awrl-home-btn{
+  display:inline-block;
+  background:#c9a06a;
+  color:#12141c !important;
+  font-size:.82rem;
+  font-weight:700;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  text-decoration:none;
+  padding:1.05rem 2.4rem;
+  border-radius:2px;
+  transition:background .18s ease;
+}
+.awrl-home-btn:hover,.awrl-home-btn:focus{background:#dcb47f;color:#12141c !important}
+.awrl-home-btn:focus-visible{outline:2px solid #f2efe9;outline-offset:3px}
+.awrl-home-fine{
+  font-size:.8rem;
+  line-height:1.75;
+  color:#7b766e;
+  margin:2.2rem 0 0;
+}
+.awrl-home-fine a{color:#c9a06a;text-decoration:underline}
+@media (max-width:600px){
+  .awrl-home{padding:3.5rem 1.25rem 4rem}
+  .awrl-home-title br{display:none}
+}
+</style>
