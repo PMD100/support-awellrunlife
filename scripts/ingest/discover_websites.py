@@ -344,7 +344,16 @@ def discover_one(org, verbose=False):
     """Mutates org in place. Returns the resulting website_status."""
     org["website_checked_at"] = date.today().isoformat()
 
-    for domain in candidate_domains(org.get("name", "")):
+    # A suggested domain is tried FIRST but is never trusted - it still has to pass
+    # phone-or-name matching plus the location check like any guessed domain. Used for
+    # leads that arrived with a website attached from an unverified source.
+    domains = candidate_domains(org.get("name", ""))
+    hint = (org.get("hint_domain") or "").strip().lower()
+    if hint:
+        hint = hint.replace("https://", "").replace("http://", "").strip("/")
+        domains = [hint] + [d for d in domains if d != hint]
+
+    for domain in domains:
         if not politefetch.domain_resolves(domain):
             continue
 
