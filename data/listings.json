@@ -1,6 +1,6 @@
 [
   {
-    "id": "36d98026-da0e-4bcd-82ff-96e86d3aa2a6",
+    "id": "d8c39ad4-6fde-4b69-b285-10d2c7818f06",
     "slug": "compass-regional-hospice-inc-monthly-grief-support-group-for-adults-centreville",
     "name": "Monthly Grief Support Group for Adults",
     "organization": "COMPASS REGIONAL HOSPICE, INC",
@@ -15,7 +15,7 @@
     "cost": "free",
     "structure": "drop_in",
     "registration_required": "unknown",
-    "faith_affiliation": "none",
+    "faith_affiliation": "unknown",
     "schedule_text": "Monthly grief support groups for adults",
     "city": "CENTREVILLE",
     "state": "MD",
@@ -35,15 +35,15 @@
     "phone_normalized": "4432624100",
     "street": "160 COURSEVALL DRIVE",
     "cost_notes": "There is no requirement for your loved one to have been a hospice patient.",
-    "description": "Monthly grief support group offered to adults in the community by Compass Regional Hospice.",
+    "description": "Monthly grief support groups for adults offered by Compass Regional Hospice.",
     "facilitator_type": "mixed",
     "cadence": "monthly",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Monthly grief support groups for adults\" | cost: \"All of our grief services are free of charge and open to anyone in our community struggling with the loss of a loved one.\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Monthly grief support groups for adults\" | cost: \"All of our grief services are free of charge and open to anyone in our community struggling with the loss of a loved one.\" | loss_types: \"Monthly grief support groups for adults\""
   },
   {
-    "id": "42c66d5a-1bce-4cbe-95d9-03b24e42e14e",
-    "slug": "compass-regional-hospice-inc-specialized-grief-support-groups-child-partner",
-    "name": "Specialized Grief Support Groups (Child/Partner/Suicide/Substance Loss)",
+    "id": "6a7037a9-fb98-4445-aba5-eb0d50924dd8",
+    "slug": "compass-regional-hospice-inc-specialized-grief-support-groups-centreville",
+    "name": "Specialized Grief Support Groups",
     "organization": "COMPASS REGIONAL HOSPICE, INC",
     "org_type": "hospice",
     "loss_types": [
@@ -59,7 +59,7 @@
     "cost": "free",
     "structure": "unknown",
     "registration_required": "unknown",
-    "faith_affiliation": "none",
+    "faith_affiliation": "unknown",
     "schedule_text": "Contact the organization for current meeting times",
     "city": "CENTREVILLE",
     "state": "MD",
@@ -79,15 +79,15 @@
     "phone_normalized": "4432624100",
     "street": "160 COURSEVALL DRIVE",
     "cost_notes": "There is no requirement for your loved one to have been a hospice patient.",
-    "description": "Specialized grief support groups for those who have lost a child or partner, or lost a loved one to suicide or substance-related death.",
+    "description": "Specialized grief support groups for those who have lost a child, a partner, or a loved one to suicide or substance-related death.",
     "facilitator_type": "mixed",
     "cadence": "unknown",
     "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"All of our grief services are free of charge and open to anyone in our community struggling with the loss of a loved one.\" | loss_types: \"Specialized grief support groups tailored to those who have lost a child or a partner, or those who have lost a loved one to suicide or a substance passing\""
   },
   {
-    "id": "1b07cc91-9bd0-4757-95f6-b42717c361d1",
-    "slug": "care-dimensions-inc-grupo-de-apoyo-en-espanol-spanish-support-group-danvers",
-    "name": "Grupo de apoyo en español (Spanish Support Group)",
+    "id": "445f967d-3b18-425e-96ee-3b842caab896",
+    "slug": "care-dimensions-inc-spanish-language-drop-in-support-group-danvers",
+    "name": "Spanish Language Drop-In Support Group",
     "organization": "CARE DIMENSIONS, INC",
     "org_type": "hospice",
     "loss_types": [
@@ -100,7 +100,7 @@
     "cost": "unknown",
     "structure": "drop_in",
     "registration_required": "unknown",
-    "faith_affiliation": "none",
+    "faith_affiliation": "unknown",
     "schedule_text": "Online second Saturday of the month",
     "city": "DANVERS",
     "state": "MA",
@@ -119,13 +119,13 @@
     "phone": "888-283-1722",
     "phone_normalized": "8882831722",
     "street": "75 SYLVAN STREET, SUITE B-102",
-    "description": "Drop-in support group in Spanish, described as 'un grupo de apoyo en español'.",
+    "description": "Drop-in support group in Spanish",
     "facilitator_type": "unknown",
     "cadence": "monthly",
     "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Online second Saturday of the month\""
   },
   {
-    "id": "7aacf62f-5763-4efa-bc79-70f60351247f",
+    "id": "3c118b74-48a6-4627-892d-7869c29cfc89",
     "slug": "carolina-caring-good-mourning-coffee-group-gastonia",
     "name": "Good Mourning Coffee Group",
     "organization": "CAROLINA CARING",
@@ -140,7 +140,7 @@
     "cost": "free",
     "structure": "drop_in",
     "registration_required": "no",
-    "faith_affiliation": "none",
+    "faith_affiliation": "unknown",
     "schedule_text": "Contact the organization for current meeting times",
     "city": "GASTONIA",
     "state": "NC",
@@ -165,7 +165,7 @@
     "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Wednesdays, July 14th & August 12th from 9:00-10:00am\" | cost: \"All grief support groups are free and open to Carolina Caring clients as well as those in the community who have experienced loss.\""
   },
   {
-    "id": "8e5ccfd9-5d38-46ed-abd0-7c1de99c24f1",
+    "id": "bb4ff982-ffae-44e9-8a9a-0285347848dd",
     "slug": "carolina-caring-one-stitch-at-a-time-gastonia",
     "name": "One Stitch at A Time",
     "organization": "CAROLINA CARING",
@@ -180,7 +180,7 @@
     "cost": "free",
     "structure": "unknown",
     "registration_required": "unknown",
-    "faith_affiliation": "none",
+    "faith_affiliation": "unknown",
     "schedule_text": "Thursday, July 2nd & 16th, August 6th & 20th from 10:00-11:00am",
     "city": "GASTONIA",
     "state": "NC",
@@ -207,7 +207,7 @@
     "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Thursday, July 2nd & 16th, August 6th & 20th from 10:00-11:00am\" | cost: \"All grief support groups are free and open to Carolina Caring clients as well as those in the community who have experienced loss.\""
   },
   {
-    "id": "c23bd967-9c08-4f7e-9719-afc2d0036042",
+    "id": "66ee103f-3be2-4492-aa45-361db29c49f7",
     "slug": "carolina-caring-loss-of-spouse-or-significant-other-gastonia",
     "name": "Loss of Spouse or Significant Other",
     "organization": "CAROLINA CARING",
@@ -222,8 +222,8 @@
     "cost": "free",
     "structure": "closed_series",
     "registration_required": "yes",
-    "faith_affiliation": "none",
-    "schedule_text": "Monday, August 3rd, 10th, 17th, 24th, & 31st from 5:30-7:00pm; Tuesday, September 1st, 8th, 15th, & 22nd from 1:00-2:30pm",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Monday, August 3rd, 10th, 17th, 24th, & 31st from 5:30-7:00pm",
     "city": "GASTONIA",
     "state": "NC",
     "metro_id": "charlotte-nc",
@@ -238,7 +238,7 @@
       "en"
     ],
     "extraction_confidence": "high",
-    "schedule_expires": "2026-09-22",
+    "schedule_expires": "2026-08-31",
     "schedule_is_dated_series": true,
     "phone": "704-861-8405",
     "phone_normalized": "7048618405",
@@ -246,10 +246,11 @@
     "description": "Comfort, hope, and connection with those who understand the gravity of this major life change.",
     "facilitator_type": "unknown",
     "cadence": "weekly",
+    "series_length_weeks": 5,
     "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Monday, August 3rd, 10th, 17th, 24th, & 31st from 5:30-7:00pm\" | cost: \"All grief support groups are free and open to Carolina Caring clients as well as those in the community who have experienced loss.\" | loss_types: \"Loss of Spouse or Significant Other\""
   },
   {
-    "id": "55b2dcdd-b842-4797-acc8-94c75129c26d",
+    "id": "7e469b0f-f2e2-4df6-a625-26a23a75f0cb",
     "slug": "carolina-caring-brighter-days-gastonia",
     "name": "Brighter Days",
     "organization": "CAROLINA CARING",
@@ -264,7 +265,7 @@
     "cost": "free",
     "structure": "unknown",
     "registration_required": "unknown",
-    "faith_affiliation": "none",
+    "faith_affiliation": "unknown",
     "schedule_text": "Contact the organization for current meeting times",
     "city": "GASTONIA",
     "state": "NC",
@@ -283,13 +284,13 @@
     "phone": "704-861-8405",
     "phone_normalized": "7048618405",
     "street": "2240 REMOUNT ROAD",
-    "description": "Brighter Days is a special program for children who have experienced the loss of someone significant in their life. Using art, play, and memory-making activities, Brighter Days provides a safe, nurturing space where children can explore their feelings in ways that feel natural to them.",
+    "description": "Using art, play, and memory-making activities, Brighter Days provides a safe, nurturing space where children can explore their feelings in ways that feel natural to them.",
     "facilitator_type": "unknown",
     "cadence": "unknown",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"All grief support groups are free and open to Carolina Caring clients as well as those in the community who have experienced loss.\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"All grief support groups are free and open to Carolina Caring clients as well as those in the community who have experienced loss.\" | loss_types: \"children who have experienced the loss of someone significant in their life\""
   },
   {
-    "id": "cf1d56a0-82f8-4235-bbf5-8e9dc57687b0",
+    "id": "aa667e79-2a63-4859-922c-dbbc6d16b4f9",
     "slug": "hospice-palliative-care-charlotte-region-grief-the-reluctant-journey-charlotte",
     "name": "Grief: The Reluctant Journey",
     "organization": "HOSPICE & PALLIATIVE CARE CHARLOTTE REGION",
@@ -304,7 +305,7 @@
     "cost": "free",
     "structure": "closed_series",
     "registration_required": "yes",
-    "faith_affiliation": "unknown",
+    "faith_affiliation": "none",
     "schedule_text": "Contact the organization for current meeting times",
     "city": "CHARLOTTE",
     "state": "NC",
@@ -319,19 +320,20 @@
     "languages": [
       "en"
     ],
-    "extraction_confidence": "low",
+    "extraction_confidence": "medium",
     "phone": "704-375-0100",
     "phone_normalized": "7043750100",
     "street": "7845 LITTLE AVENUE",
-    "description": "Grief: The Reluctant Journey is a structured grief support group that meets for a defined length of time, usually 6 – 8 weeks.",
-    "facilitator_type": "unknown",
-    "cadence": "unknown",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"usually 6 – 8 weeks\" | cost: \"we will offer our services free of charge to anyone who is struggling with loss\""
+    "cost_notes": "Statement applies to community grief support services generally, including groups.",
+    "description": "A structured grief support group that meets for a defined length of time, usually 6–8 weeks, allowing members a safe environment for empathetic support. A pre-group interview with a grief counselor is required.",
+    "facilitator_type": "licensed_clinician",
+    "cadence": "varies",
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"we will offer our services free of charge to anyone who is struggling with loss.\" | loss_types: \"Grief: The Reluctant Journey is a structured grief support group that meets for a defined length of time, usually 6 – 8 weeks.\""
   },
   {
-    "id": "ffef3988-6cb3-4732-964d-489670b7031c",
-    "slug": "hospice-palliative-care-charlotte-region-in-good-company-monthly-drop-ins",
-    "name": "\"In Good Company\" Monthly Drop-ins",
+    "id": "635c657c-2fb0-4e81-aa2b-6c2d31556dcc",
+    "slug": "hospice-palliative-care-charlotte-region-in-good-company-charlotte",
+    "name": "In Good Company",
     "organization": "HOSPICE & PALLIATIVE CARE CHARLOTTE REGION",
     "org_type": "hospice",
     "loss_types": [
@@ -344,14 +346,14 @@
     "cost": "free",
     "structure": "drop_in",
     "registration_required": "unknown",
-    "faith_affiliation": "unknown",
-    "schedule_text": "Contact the organization for current meeting times",
+    "faith_affiliation": "none",
+    "schedule_text": "We have groups that meet monthly throughout our service area.",
     "city": "CHARLOTTE",
     "state": "NC",
     "metro_id": "charlotte-nc",
     "source_url": "https://www.hpccr.org/grief-counseling",
     "source_type": "org_website",
-    "verification_status": "needs_review",
+    "verification_status": "source_verified",
     "first_seen": "2026-08-18",
     "last_checked": "2026-08-18",
     "source_link_status": "ok",
@@ -359,57 +361,18 @@
     "languages": [
       "en"
     ],
-    "extraction_confidence": "low",
+    "extraction_confidence": "medium",
     "phone": "704-375-0100",
     "phone_normalized": "7043750100",
     "street": "7845 LITTLE AVENUE",
-    "description": "\"In Good Company\" support groups offer camaraderie and an opportunity to check in with a grief counselor and others.",
-    "facilitator_type": "unknown",
+    "cost_notes": "Statement applies to community grief support services generally, including groups.",
+    "description": "A relaxed, informal drop-in support group offering camaraderie and an opportunity to check in with a grief counselor and others who are grieving.",
+    "facilitator_type": "mixed",
     "cadence": "monthly",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"We have groups that meet monthly throughout our service area.\" | cost: \"we will offer our services free of charge to anyone who is struggling with loss\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"We have groups that meet monthly throughout our service area.\" | cost: \"we will offer our services free of charge to anyone who is struggling with loss.\""
   },
   {
-    "id": "e4e8b847-e35c-46aa-bbde-ebacabced660",
-    "slug": "hospice-palliative-care-charlotte-region-in-school-grief-groups-charlotte",
-    "name": "In School Grief Groups",
-    "organization": "HOSPICE & PALLIATIVE CARE CHARLOTTE REGION",
-    "org_type": "hospice",
-    "loss_types": [
-      "general"
-    ],
-    "age_groups": [
-      "adults"
-    ],
-    "format": "in_person",
-    "cost": "unknown",
-    "structure": "closed_series",
-    "registration_required": "unknown",
-    "faith_affiliation": "unknown",
-    "schedule_text": "Contact the organization for current meeting times",
-    "city": "CHARLOTTE",
-    "state": "NC",
-    "metro_id": "charlotte-nc",
-    "source_url": "https://www.hpccr.org/grief-counseling",
-    "source_type": "org_website",
-    "verification_status": "needs_review",
-    "first_seen": "2026-08-18",
-    "last_checked": "2026-08-18",
-    "source_link_status": "ok",
-    "published": false,
-    "languages": [
-      "en"
-    ],
-    "extraction_confidence": "low",
-    "phone": "704-375-0100",
-    "phone_normalized": "7043750100",
-    "street": "7845 LITTLE AVENUE",
-    "description": "In-school grief support groups offered at school during regular school hours over a period of several sessions.",
-    "facilitator_type": "unknown",
-    "cadence": "unknown",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Groups are offered at school during regular school hours over a period of several sessions.\""
-  },
-  {
-    "id": "acf1e00d-4479-4547-bad5-379e4992af67",
+    "id": "93a7d30b-599a-4702-8293-57ffa1cd26a3",
     "slug": "journeycare-barrington-grief-to-hope-general-barrington",
     "name": "Grief to Hope – General",
     "organization": "JOURNEYCARE - BARRINGTON",
@@ -424,7 +387,7 @@
     "cost": "unknown",
     "structure": "closed_series",
     "registration_required": "yes",
-    "faith_affiliation": "none",
+    "faith_affiliation": "unknown",
     "schedule_text": "Contact the organization for current meeting times",
     "city": "BARRINGTON",
     "state": "IL",
@@ -447,10 +410,10 @@
     "facilitator_type": "licensed_clinician",
     "cadence": "weekly",
     "series_length_weeks": 8,
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Tuesdays, June 16 – July 14 6:00 – 7:30 p.m. (Virtual Teams)\" | loss_types: \"adults who have lost a loved one recently\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Tuesdays, June 16 – July 14 6:00 – 7:30 p.m. (Virtual Teams)\" | loss_types: \"Grief to Hope is an 8-week support group for adults who have lost a loved one recently.\""
   },
   {
-    "id": "945542f0-e35e-4ea4-af82-b32f78060f3c",
+    "id": "a832ae9d-11b4-47d7-8871-f14a7ed352b8",
     "slug": "memorialcare-hospice-and-palliative-services-bereavement-support-group-laguna",
     "name": "Bereavement Support Group",
     "organization": "MEMORIALCARE HOSPICE AND PALLIATIVE SERVICES",
@@ -487,94 +450,12 @@
     "description": "We offer both virtual and in person support groups. Our support groups offer a safe and caring atmosphere to help you on your journey to healing.",
     "facilitator_type": "unknown",
     "cadence": "unknown",
-    "internal_notes": "Extracted from bereavement page. No quotes verified."
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> loss_types: \"The death of a loved one and the journey through grief may be very painful and frightening.\""
   },
   {
-    "id": "6478d331-a406-4490-b08a-4ffd0518c7fe",
-    "slug": "catholic-hospice-inc-adult-grief-support-groups-miami-lakes",
-    "name": "Adult Grief Support Groups",
-    "organization": "CATHOLIC HOSPICE INC",
-    "org_type": "hospice",
-    "loss_types": [
-      "general"
-    ],
-    "age_groups": [
-      "adults"
-    ],
-    "format": "in_person",
-    "cost": "free",
-    "structure": "unknown",
-    "registration_required": "unknown",
-    "faith_affiliation": "unknown",
-    "schedule_text": "Contact the organization for current meeting times",
-    "city": "MIAMI LAKES",
-    "state": "FL",
-    "metro_id": "miami-fl",
-    "source_url": "https://www.catholichealthservices.org/hospice/grief-support/",
-    "source_type": "org_website",
-    "verification_status": "needs_review",
-    "first_seen": "2026-08-18",
-    "last_checked": "2026-08-18",
-    "source_link_status": "ok",
-    "published": false,
-    "languages": [
-      "en"
-    ],
-    "extraction_confidence": "low",
-    "phone": "305-351-7025",
-    "phone_normalized": "3053517025",
-    "street": "14875 NW 77TH AVE STE 100",
-    "description": "Free support groups offered to adults (ages 18+) through Catholic Health Services' bereavement program.",
-    "facilitator_type": "unknown",
-    "cadence": "unknown",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"We also offer free support groups to adults (ages 18+)\""
-  },
-  {
-    "id": "0eae5136-7986-40a3-ba94-9f12f638d2fc",
-    "slug": "catholic-hospice-inc-camp-erin-miami-lakes",
-    "name": "Camp Erin",
-    "organization": "CATHOLIC HOSPICE INC",
-    "org_type": "hospice",
-    "loss_types": [
-      "general"
-    ],
-    "age_groups": [
-      "children",
-      "teens",
-      "families"
-    ],
-    "format": "in_person",
-    "cost": "free",
-    "structure": "unknown",
-    "registration_required": "unknown",
-    "faith_affiliation": "unknown",
-    "schedule_text": "Contact the organization for current meeting times",
-    "city": "MIAMI LAKES",
-    "state": "FL",
-    "metro_id": "miami-fl",
-    "source_url": "https://www.catholichealthservices.org/hospice/grief-support/",
-    "source_type": "org_website",
-    "verification_status": "needs_review",
-    "first_seen": "2026-08-18",
-    "last_checked": "2026-08-18",
-    "source_link_status": "ok",
-    "published": false,
-    "languages": [
-      "en"
-    ],
-    "extraction_confidence": "low",
-    "phone": "305-351-7025",
-    "phone_normalized": "3053517025",
-    "street": "14875 NW 77TH AVE STE 100",
-    "description": "A free camp program, offered in partnership with Eluna Network, for grieving youth (ages 6-17) and their families.",
-    "facilitator_type": "unknown",
-    "cadence": "unknown",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"our Bereavement Team also offers a free camp program, Camp Erin , to youth (ages 6-17) and their families\""
-  },
-  {
-    "id": "a69a9983-b092-4e3f-bb1d-772e4c47cbad",
-    "slug": "adoray-home-health-and-hospice-grief-book-clubs-baldwin",
-    "name": "Grief Book Clubs",
+    "id": "ab8ed514-b62c-4016-a1b8-f614f22ba263",
+    "slug": "adoray-home-health-and-hospice-grief-book-club-baldwin",
+    "name": "Grief Book Club",
     "organization": "ADORAY HOME HEALTH AND HOSPICE",
     "org_type": "hospice",
     "loss_types": [
@@ -606,13 +487,13 @@
     "phone": "715-928-9983",
     "phone_normalized": "7159289983",
     "street": "990 MAIN ST SUITE 1",
-    "description": "A grief book club discussion group open to the public, held at the Adoray Office.",
+    "description": "All are welcome. The goal is to have the book completed before the meeting. However, those who are not able to finish the book can still find value in the discussion and are encouraged to attend.",
     "facilitator_type": "unknown",
     "cadence": "varies",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"These free events are held from 3:00pm - 4:30pm at the Adoray Office (990 Main Street, Suite 1, Baldwin, WI) and open to the public, thanks to our generous dono\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"These free events are held from 3:00pm - 4:30pm at the Adoray Office (990 Main Street, Suite 1, Baldwin, WI) and open to the public, thanks to our generous dono\" | cost: \"These free events are held from 3:00pm - 4:30pm at the Adoray Office (990 Main Street, Suite 1, Baldwin, WI) and open to the public, thanks to our generous dono\" | loss_types: \"All are welcome.\""
   },
   {
-    "id": "c3347ca2-6c89-46a1-b2a3-4b08e84f33d5",
+    "id": "b33d9fbc-2323-4266-bce1-16b5f92851ec",
     "slug": "adoray-home-health-and-hospice-grief-support-group-online-baldwin",
     "name": "Grief Support Group (Online)",
     "organization": "ADORAY HOME HEALTH AND HOSPICE",
@@ -646,14 +527,14 @@
     "phone": "715-629-1888",
     "phone_normalized": "7156291888",
     "street": "990 MAIN ST SUITE 1",
-    "description": "An online Facebook grief support group providing mutual support through sharing grief experience, education and a medium to keep the memory of those lost alive.",
+    "description": "This group is meant to provide mutual support through sharing grief experience, education and a medium to keep the memory of those we have lost alive.",
     "facilitator_type": "unknown",
     "cadence": "unknown",
     "registration_url": "https://www.facebook.com/groups/710197834553012",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> loss_types: \"Grief is a universal experience, however, is unique to every individual and loss.\""
+    "internal_notes": "Extracted from bereavement page. No quotes verified."
   },
   {
-    "id": "c410e027-ba70-41b9-817c-68b7eb2d9cd1",
+    "id": "5a3a1438-9edd-494c-a15f-1858ae6e511d",
     "slug": "adoray-home-health-and-hospice-adoray-grief-support-group-in-person-baldwin",
     "name": "Adoray Grief Support Group (In Person)",
     "organization": "ADORAY HOME HEALTH AND HOSPICE",
@@ -669,7 +550,7 @@
     "structure": "drop_in",
     "registration_required": "no",
     "faith_affiliation": "unknown",
-    "schedule_text": "Meets every 4th Thursday of the month at 3:00 PM (Jan. through Oct.); Holiday Season Dates: Nov. 18th and Dec. 16th",
+    "schedule_text": "Meets every 4th Thursday of the month at 3:00 PM (Jan. through Oct.) *Holiday Season Dates: Nov. 18th and Dec. 16th",
     "city": "BALDWIN",
     "state": "WI",
     "metro_id": "minneapolis-mn",
@@ -689,13 +570,13 @@
     "phone": "715-928-9983",
     "phone_normalized": "7159289983",
     "street": "990 MAIN ST SUITE 1",
-    "description": "A monthly in-person grief support group providing connection, comfort, and compassionate understanding to those who are grieving.",
+    "description": "Together, we will create a safe and supportive space to share your story, reflect, and connect with others walking a similar path.",
     "facilitator_type": "unknown",
     "cadence": "monthly",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Meets every 4th Thursday of the month at 3:00 PM (Jan. through Oct.)\" | loss_types: \"This group is open to anyone experiencing the loss of a loved one, whether your grief is fresh or something you've carried for years, you are welcome here.\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Meets every 4th Thursday of the month at 3:00 PM (Jan. through Oct.)\" | loss_types: \"This group is open to anyone experiencing the loss of a loved one, whether your grief is fresh or something you’ve carried for years, you are welcome here.\""
   },
   {
-    "id": "b3247585-2f63-4b9f-8c5e-6d5b5cb6c0b0",
+    "id": "a60820b4-87b6-43b2-bb5a-85c04a888403",
     "slug": "ecumen-hospice-caregiver-support-groups-in-mn-shoreview",
     "name": "Caregiver Support Groups in MN",
     "organization": "ECUMEN HOSPICE",
@@ -708,10 +589,10 @@
     ],
     "format": "in_person",
     "cost": "unknown",
-    "structure": "unknown",
+    "structure": "drop_in",
     "registration_required": "no",
     "faith_affiliation": "unknown",
-    "schedule_text": "Spring 2026",
+    "schedule_text": "Contact the organization for current meeting times",
     "city": "SHOREVIEW",
     "state": "MN",
     "metro_id": "minneapolis-mn",
@@ -732,10 +613,10 @@
     "description": "Join us for this caregiver support group to connect with others in the role of caring for someone. Led by Ecumen staff who will provide information and tools to support you as caregivers.",
     "facilitator_type": "unknown",
     "cadence": "unknown",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Spring 2026 — Caregiver Support Groups in MN\" | loss_types: \"people who care for others, often loved ones with chronic illnesses, disabilities, or age-related conditions, can come together to share their experiences, chal\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> loss_types: \"people who care for others, often loved ones with chronic illnesses, disabilities, or age-related conditions, can come together to share their experiences, chal\""
   },
   {
-    "id": "b99d468a-91d8-4dcd-9351-f68d8ab42435",
+    "id": "41590583-ed3c-47a6-b4af-8c6830404245",
     "slug": "ecumen-hospice-transitions-in-life-new-beginnings-shoreview",
     "name": "Transitions in Life & New Beginnings",
     "organization": "ECUMEN HOSPICE",
@@ -748,7 +629,7 @@
     ],
     "format": "in_person",
     "cost": "free",
-    "structure": "unknown",
+    "structure": "drop_in",
     "registration_required": "no",
     "faith_affiliation": "unknown",
     "schedule_text": "Contact the organization for current meeting times",
@@ -772,10 +653,10 @@
     "description": "Join us as we explore the many transitions life brings—both the challenges and the opportunities for growth. This supportive gathering offers space for grief support, education, and meaningful connection with others who have experienced losses of various kinds.",
     "facilitator_type": "unknown",
     "cadence": "unknown",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"There is no cost to attend and is open to the community.\" | loss_types: \"others who have experienced losses of various kinds, including the death of a loved one, shifts in independence and residence, changes in relationships, and oth\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"There is no cost to attend and is open to the community.\" | loss_types: \"including the death of a loved one, shifts in independence and residence, changes in relationships, and other significant life changes\""
   },
   {
-    "id": "e80e3135-8762-42a7-bd3e-673fdf976b25",
+    "id": "f0aade2d-a922-414c-a04e-38da1e7158c8",
     "slug": "east-end-hospice-inc-camp-good-grief-westhampton-beach",
     "name": "Camp Good Grief",
     "organization": "EAST END HOSPICE, INC",
@@ -791,7 +672,7 @@
     "cost": "free",
     "structure": "closed_series",
     "registration_required": "yes",
-    "faith_affiliation": "unknown",
+    "faith_affiliation": "none",
     "schedule_text": "Contact the organization for current meeting times",
     "city": "WESTHAMPTON BEACH",
     "state": "NY",
@@ -810,15 +691,15 @@
     "phone": "631-288-8400",
     "phone_normalized": "6312888400",
     "street": "481 WESTHAMPTON-RIVERHEAD ROAD",
-    "description": "A bereavement day camp for grieving children and teenagers held over four days each summer at Camp Pa-Qua-Tuck, Center Moriches, NY.",
+    "description": "A bereavement day camp for grieving children and teenagers held at Camp Pa-Qua-Tuck in Center Moriches, NY, limited to 150 campers with priority given to first-time campers.",
     "facilitator_type": "unknown",
-    "cadence": "varies",
+    "cadence": "unknown",
     "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Camp Dates: July 20–23, 2026\" | cost: \"Camp is provided free of charge thanks to our generous donors.\""
   },
   {
-    "id": "95e3b48e-f750-4ffc-9ac6-2127d44673d6",
-    "slug": "hospice-of-westchester-adult-loss-of-parent-white-plains",
-    "name": "Adult Loss of Parent",
+    "id": "62d885e4-d960-4c5d-8afe-980d04a26e1f",
+    "slug": "hospice-of-westchester-adult-loss-of-parent-group-white-plains",
+    "name": "Adult Loss of Parent Group",
     "organization": "HOSPICE OF WESTCHESTER",
     "org_type": "hospice",
     "loss_types": [
@@ -831,8 +712,8 @@
     "cost": "unknown",
     "structure": "closed_series",
     "registration_required": "yes",
-    "faith_affiliation": "unknown",
-    "schedule_text": "Contact the organization for current meeting times",
+    "faith_affiliation": "none",
+    "schedule_text": "Adult loss of Parent - 8 weeks",
     "city": "WHITE PLAINS",
     "state": "NY",
     "metro_id": "new-york-ny",
@@ -850,17 +731,16 @@
     "phone": "914-682-1484",
     "phone_normalized": "9146821484",
     "street": "1025 WESTCHESTER AVENUE, SUITE 200",
-    "cost_notes": "Our bereavement program operates primarily on funds from contributions and grants.",
-    "description": "Adult loss of Parent - 8 weeks",
+    "description": "All of our support groups are facilitated by licensed professionals with experience in grief counseling. Groups are loss-specific, and are repeated every few months. An assessment is required for group participation.",
     "facilitator_type": "licensed_clinician",
-    "cadence": "varies",
+    "cadence": "unknown",
     "series_length_weeks": 8,
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> loss_types: \"Adult loss of Parent - 8 weeks\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Adult loss of Parent - 8 weeks\" | loss_types: \"Adult loss of Parent - 8 weeks\""
   },
   {
-    "id": "c539a1f2-db43-48dd-a6ee-377954001ccf",
-    "slug": "hospice-of-westchester-loss-of-spouse-or-life-partner-white-plains",
-    "name": "Loss of Spouse or Life Partner",
+    "id": "c5adbf56-70e2-4d3f-9b41-412166f09274",
+    "slug": "hospice-of-westchester-loss-of-spouse-or-life-partner-group-white-plains",
+    "name": "Loss of Spouse or Life Partner Group",
     "organization": "HOSPICE OF WESTCHESTER",
     "org_type": "hospice",
     "loss_types": [
@@ -873,8 +753,8 @@
     "cost": "unknown",
     "structure": "closed_series",
     "registration_required": "yes",
-    "faith_affiliation": "unknown",
-    "schedule_text": "Contact the organization for current meeting times",
+    "faith_affiliation": "none",
+    "schedule_text": "Loss of Spouse or Life Partner – 10 weeks",
     "city": "WHITE PLAINS",
     "state": "NY",
     "metro_id": "new-york-ny",
@@ -892,15 +772,14 @@
     "phone": "914-682-1484",
     "phone_normalized": "9146821484",
     "street": "1025 WESTCHESTER AVENUE, SUITE 200",
-    "cost_notes": "Our bereavement program operates primarily on funds from contributions and grants.",
-    "description": "Loss of Spouse or Life Partner – 10 weeks",
+    "description": "All of our support groups are facilitated by licensed professionals with experience in grief counseling. Groups are loss-specific, and are repeated every few months. An assessment is required for group participation.",
     "facilitator_type": "licensed_clinician",
-    "cadence": "varies",
+    "cadence": "unknown",
     "series_length_weeks": 10,
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> loss_types: \"Loss of Spouse or Life Partner – 10 weeks\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Loss of Spouse or Life Partner – 10 weeks\" | loss_types: \"Loss of Spouse or Life Partner – 10 weeks\""
   },
   {
-    "id": "c61217f5-6ad7-48f6-aecc-b1961b8d320b",
+    "id": "0702babd-e14a-46ae-8bc0-fa3f64fc0fe2",
     "slug": "hospice-of-westchester-flying-solo-white-plains",
     "name": "Flying Solo",
     "organization": "HOSPICE OF WESTCHESTER",
@@ -909,15 +788,14 @@
       "spouse_partner"
     ],
     "age_groups": [
-      "adults",
-      "older_adults"
+      "adults"
     ],
     "format": "in_person",
     "cost": "unknown",
     "structure": "closed_series",
     "registration_required": "yes",
-    "faith_affiliation": "unknown",
-    "schedule_text": "Contact the organization for current meeting times",
+    "faith_affiliation": "none",
+    "schedule_text": "Flying Solo – for women who have been widowed for at least one year, with the focus on adapting to both challenges and opportunities in their new lives. - 12 weeks.",
     "city": "WHITE PLAINS",
     "state": "NY",
     "metro_id": "new-york-ny",
@@ -935,15 +813,14 @@
     "phone": "914-682-1484",
     "phone_normalized": "9146821484",
     "street": "1025 WESTCHESTER AVENUE, SUITE 200",
-    "cost_notes": "Our bereavement program operates primarily on funds from contributions and grants.",
-    "description": "For women who have been widowed for at least one year, with the focus on adapting to both challenges and opportunities in their new lives.",
+    "description": "All of our support groups are facilitated by licensed professionals with experience in grief counseling. Groups are loss-specific, and are repeated every few months. An assessment is required for group participation.",
     "facilitator_type": "licensed_clinician",
-    "cadence": "varies",
+    "cadence": "unknown",
     "series_length_weeks": 12,
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> loss_types: \"Flying Solo – for women who have been widowed for at least one year, with the focus on adapting to both challenges and opportunities in their new lives. - 12 we\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Flying Solo – for women who have been widowed for at least one year, with the focus on adapting to both challenges and opportunities in their new lives. - 12 we\" | loss_types: \"Flying Solo – for women who have been widowed for at least one year, with the focus on adapting to both challenges and opportunities in their new lives. - 12 we\""
   },
   {
-    "id": "30995fb3-8213-4418-a3ab-59c28ef26c8a",
+    "id": "63a6e3f5-2615-47f8-a3f5-876f4b22be5b",
     "slug": "karen-ann-quinlan-hospice-coping-with-loss-support-group-sussex-county-newton",
     "name": "Coping with Loss Support Group – Sussex County",
     "organization": "KAREN ANN QUINLAN HOSPICE",
@@ -959,7 +836,7 @@
     "structure": "drop_in",
     "registration_required": "no",
     "faith_affiliation": "unknown",
-    "schedule_text": "Sussex County Monthly Meeting – Third Wednesday of each month: 12:30-2:00 p.m. Location: Joseph T. Quinlan Bereavement Center, 99 Sparta Avenue, Newton NJ 07860",
+    "schedule_text": "Monthly Meeting – Third Wednesday of each month: 12:30-2:00 p.m. Location: Joseph T. Quinlan Bereavement Center, 99 Sparta Avenue, Newton NJ 07860",
     "city": "NEWTON",
     "state": "NJ",
     "metro_id": "new-york-ny",
@@ -973,17 +850,17 @@
     "languages": [
       "en"
     ],
-    "extraction_confidence": "medium",
+    "extraction_confidence": "high",
     "phone": "973-948-2283",
     "phone_normalized": "9739482283",
     "street": "99 SPARTA AVENUE",
-    "description": "Adult peer support group for anyone who has lost a loved one through death, meeting monthly at the Joseph T. Quinlan Bereavement Center in Newton, NJ.",
+    "description": "Adult peer support group for anyone who has lost a loved one through death, meeting monthly in Sussex County.",
     "facilitator_type": "unknown",
     "cadence": "monthly",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Third Wednesday of each month: 12:30-2:00 p.m.\" | cost: \"This program is on-going, free of charge and no pre-registration is required.\" | loss_types: \"Support Groups are open to anyone who is suffering a loss of loved one through death.\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Monthly Meeting – Third Wednesday of each month: 12:30-2:00 p.m.\" | cost: \"This program is on-going, free of charge and no pre-registration is required.\" | loss_types: \"Support Groups are open to anyone who is suffering a loss of loved one through death.\""
   },
   {
-    "id": "ffecdd4e-e7ca-4e61-b7fc-37d3240c28ab",
+    "id": "94145257-cfc8-45d3-b376-eeb5bd2c7a52",
     "slug": "karen-ann-quinlan-hospice-coping-with-loss-support-group-pike-county-newton",
     "name": "Coping with Loss Support Group – Pike County",
     "organization": "KAREN ANN QUINLAN HOSPICE",
@@ -1013,17 +890,17 @@
     "languages": [
       "en"
     ],
-    "extraction_confidence": "medium",
+    "extraction_confidence": "high",
     "phone": "973-948-2283",
     "phone_normalized": "9739482283",
     "street": "99 SPARTA AVENUE",
-    "description": "Adult peer support group for anyone who has lost a loved one through death, meeting monthly at the Karen Ann Quinlan Hospice Milford Office in Pike County, PA.",
+    "description": "Adult peer support group for anyone who has lost a loved one through death, meeting monthly in Pike County.",
     "facilitator_type": "unknown",
     "cadence": "monthly",
     "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Fourth Tuesday of each month: 10:00 – 11:30 a.m.\" | cost: \"This program is on-going, free of charge and no pre-registration is required.\" | loss_types: \"Support Groups are open to anyone who is suffering a loss of loved one through death.\""
   },
   {
-    "id": "1974fa1c-f556-485f-9d1b-74ac79cc8984",
+    "id": "dee2fce6-ae9b-46f7-8ecd-c4eb0d6a4326",
     "slug": "karen-ann-quinlan-hospice-coping-with-loss-support-group-warren-county",
     "name": "Coping with Loss Support Group – Warren County/Hackettstown",
     "organization": "KAREN ANN QUINLAN HOSPICE",
@@ -1053,17 +930,17 @@
     "languages": [
       "en"
     ],
-    "extraction_confidence": "medium",
+    "extraction_confidence": "high",
     "phone": "973-948-2283",
     "phone_normalized": "9739482283",
     "street": "99 SPARTA AVENUE",
-    "description": "Adult peer support group for anyone who has lost a loved one through death, meeting monthly at the Joseph T. Quinlan Bereavement Center in Hackettstown, NJ.",
+    "description": "Adult peer support group for anyone who has lost a loved one through death, meeting monthly in Warren County/Hackettstown.",
     "facilitator_type": "unknown",
     "cadence": "monthly",
     "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Third Tuesday of every month: 10:00-11:30 a.m.\" | cost: \"This program is on-going, free of charge and no pre-registration is required.\" | loss_types: \"Support Groups are open to anyone who is suffering a loss of loved one through death.\""
   },
   {
-    "id": "20fe25c3-d1b2-431f-a931-f9bb9bb616d6",
+    "id": "bdeb2721-7078-4c88-ae6b-c0849ff015c1",
     "slug": "robert-wood-johnson-visiting-nurse-inc-spouse-s-in-person-west-orange-grief",
     "name": "Spouse's In-person West Orange Grief Group",
     "organization": "ROBERT WOOD JOHNSON VISITING NURSE, INC",
@@ -1097,12 +974,13 @@
     "phone": "800-862-3330",
     "phone_normalized": "8008623330",
     "street": "972 SHOPPES BOULEVARD",
+    "description": "A downloadable flyer referenced on the VNA Health Group bereavement page for an in-person spousal loss grief group in West Orange.",
     "facilitator_type": "unknown",
     "cadence": "unknown",
     "internal_notes": "Extracted from bereavement page. Verified quotes -> loss_types: \"Spouse’s In-person West Orange Grief Group\""
   },
   {
-    "id": "7e50a524-02b5-438d-9b27-cd79d9215327",
+    "id": "c4d10ec2-eda4-4c0b-a76b-bd31a38cb98f",
     "slug": "robert-wood-johnson-visiting-nurse-inc-loss-of-a-spouse-virtual-grief-group",
     "name": "Loss of a Spouse Virtual Grief Group",
     "organization": "ROBERT WOOD JOHNSON VISITING NURSE, INC",
@@ -1136,12 +1014,13 @@
     "phone": "800-862-3330",
     "phone_normalized": "8008623330",
     "street": "972 SHOPPES BOULEVARD",
+    "description": "A downloadable flyer referenced on the VNA Health Group bereavement page for a virtual grief group for those who lost a spouse.",
     "facilitator_type": "unknown",
     "cadence": "unknown",
     "internal_notes": "Extracted from bereavement page. Verified quotes -> loss_types: \"Loss of a Spouse Virtual Grief Group\""
   },
   {
-    "id": "bc25abf5-adc5-474f-b924-de72154510f9",
+    "id": "33f91b87-8125-46e1-b14c-49f22dd1a243",
     "slug": "robert-wood-johnson-visiting-nurse-inc-healing-hearts-an-8-week-spiritual",
     "name": "Healing Hearts: An 8 Week Spiritual Bereavement Group",
     "organization": "ROBERT WOOD JOHNSON VISITING NURSE, INC",
@@ -1152,7 +1031,7 @@
     "age_groups": [
       "adults"
     ],
-    "format": "unknown",
+    "format": "in_person",
     "cost": "unknown",
     "structure": "closed_series",
     "registration_required": "unknown",
@@ -1175,16 +1054,16 @@
     "phone": "800-862-3330",
     "phone_normalized": "8008623330",
     "street": "972 SHOPPES BOULEVARD",
-    "description": "Healing Hearts: An 8 Week Spiritual Bereavement Group",
+    "description": "A downloadable flyer referenced on the VNA Health Group bereavement page for an 8-week spiritual bereavement group called Healing Hearts.",
     "facilitator_type": "unknown",
     "cadence": "unknown",
     "series_length_weeks": 8,
     "internal_notes": "Extracted from bereavement page. No quotes verified."
   },
   {
-    "id": "be2330cd-a688-430d-9ef1-8fd42272f457",
-    "slug": "valley-hospice-valley-hospice-drop-in-support-groups-paramus",
-    "name": "Valley Hospice Drop-In Support Groups",
+    "id": "da3583d9-acb9-42a3-8933-e2433203ba25",
+    "slug": "valley-hospice-valley-hospice-drop-in-support-group-steubenville-paramus",
+    "name": "Valley Hospice Drop-In Support Group (Steubenville)",
     "organization": "VALLEY HOSPICE",
     "org_type": "hospice",
     "loss_types": [
@@ -1198,7 +1077,7 @@
     "structure": "drop_in",
     "registration_required": "unknown",
     "faith_affiliation": "unknown",
-    "schedule_text": "1st Monday of Each Month, 2:00 p.m. - 3:30 p.m. at First West Presbyterian Church, Steubenville, OH; 3rd Monday of Each Month, 2:00 p.m. - 3:30 p.m. at First Christian Church, Wheeling, WV",
+    "schedule_text": "1st Monday of Each Month 2:00 p.m. - 3:30 p.m. First West Presbyterian Church 235 N. 4th St., Steubenville, OH",
     "city": "PARAMUS",
     "state": "NJ",
     "metro_id": "new-york-ny",
@@ -1216,16 +1095,16 @@
     "phone": "740-859-5660",
     "phone_normalized": "7408595660",
     "street": "15 ESSEX ROAD",
-    "description": "Drop-in bereavement support groups open to the public and free of charge, held at two different church locations on alternating Mondays.",
+    "description": "Drop-in bereavement support group open to the public, held monthly at First West Presbyterian Church in Steubenville, OH.",
     "facilitator_type": "unknown",
     "cadence": "monthly",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"1st Monday of Each Month 2:00 p.m. - 3:30 p.m. First West Presbyterian Church 235 N. 4th St., Steubenville, OH 3rd Monday of Each Month 2:00 p.m. - 3:30 p.m. Fi\" | cost: \"All groups are open to the public and free of charge.\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"1st Monday of Each Month 2:00 p.m. - 3:30 p.m. First West Presbyterian Church 235 N. 4th St., Steubenville, OH\" | cost: \"All groups are open to the public and free of charge.\" | loss_types: \"Valley Hospice is committed to providing resources to help you cope with any loss in your life.\""
   },
   {
-    "id": "3d1aeaf4-f11b-4707-9cad-fc4d72abb50c",
-    "slug": "hospice-of-the-valley-west-031515-hospice-of-the-valley-grief-support-groups",
-    "name": "Hospice of the Valley Grief Support Groups",
-    "organization": "HOSPICE OF THE VALLEY - WEST (031515)",
+    "id": "72a04808-f86e-4738-b640-6ca456061d2a",
+    "slug": "valley-hospice-valley-hospice-drop-in-support-group-wheeling-paramus",
+    "name": "Valley Hospice Drop-In Support Group (Wheeling)",
+    "organization": "VALLEY HOSPICE",
     "org_type": "hospice",
     "loss_types": [
       "general"
@@ -1233,59 +1112,18 @@
     "age_groups": [
       "adults"
     ],
-    "format": "hybrid",
-    "cost": "free",
-    "structure": "unknown",
-    "registration_required": "unknown",
-    "faith_affiliation": "none",
-    "schedule_text": "Contact the organization for current meeting times",
-    "city": "PEORIA",
-    "state": "AZ",
-    "metro_id": "phoenix-az",
-    "source_url": "https://hov.org/our-care/grief-support/",
-    "source_type": "org_website",
-    "verification_status": "needs_review",
-    "first_seen": "2026-08-18",
-    "last_checked": "2026-08-18",
-    "source_link_status": "ok",
-    "published": false,
-    "languages": [
-      "en"
-    ],
-    "extraction_confidence": "low",
-    "phone": "602-530-6970",
-    "phone_normalized": "6025306970",
-    "street": "9435 W PEORIA",
-    "description": "In-person and virtual help for adults experiencing grief from the loss of a loved one.",
-    "facilitator_type": "unknown",
-    "cadence": "unknown",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"Hospice of the Valley also provides group grief support to our community at no charge.\" | loss_types: \"Groups are open to any adult grieving the death of a loved one.\""
-  },
-  {
-    "id": "567e6183-132a-4ad6-9ee8-a5f27b5b98d2",
-    "slug": "hospice-of-the-valley-west-031515-new-song-center-for-grieving-children-peoria",
-    "name": "New Song Center for Grieving Children",
-    "organization": "HOSPICE OF THE VALLEY - WEST (031515)",
-    "org_type": "hospice",
-    "loss_types": [
-      "general"
-    ],
-    "age_groups": [
-      "children",
-      "families"
-    ],
     "format": "in_person",
     "cost": "free",
-    "structure": "unknown",
+    "structure": "drop_in",
     "registration_required": "unknown",
     "faith_affiliation": "unknown",
-    "schedule_text": "Contact the organization for current meeting times",
-    "city": "PEORIA",
-    "state": "AZ",
-    "metro_id": "phoenix-az",
-    "source_url": "https://hov.org/our-care/grief-support/",
+    "schedule_text": "3rd Monday of Each Month 2:00 p.m. - 3:30 p.m. First Christian Church 1343 National Rd., Wheeling, WV",
+    "city": "PARAMUS",
+    "state": "NJ",
+    "metro_id": "new-york-ny",
+    "source_url": "https://www.valleyhospice.org/grief-and-loss",
     "source_type": "org_website",
-    "verification_status": "needs_review",
+    "verification_status": "source_verified",
     "first_seen": "2026-08-18",
     "last_checked": "2026-08-18",
     "source_link_status": "ok",
@@ -1293,17 +1131,17 @@
     "languages": [
       "en"
     ],
-    "extraction_confidence": "low",
-    "phone": "480-951-8985",
-    "phone_normalized": "4809518985",
-    "street": "9435 W PEORIA",
-    "description": "Tools to assist families with children who are grieving a death.",
+    "extraction_confidence": "medium",
+    "phone": "740-859-5660",
+    "phone_normalized": "7408595660",
+    "street": "15 ESSEX ROAD",
+    "description": "Drop-in bereavement support group open to the public, held monthly at First Christian Church in Wheeling, WV.",
     "facilitator_type": "unknown",
-    "cadence": "unknown",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"No cost.\" | loss_types: \"offers up to 24 months of pediatric and family bereavement support for those grieving the death of a family member.\""
+    "cadence": "monthly",
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"3rd Monday of Each Month 2:00 p.m. - 3:30 p.m. First Christian Church 1343 National Rd., Wheeling, WV\" | cost: \"All groups are open to the public and free of charge.\" | loss_types: \"Valley Hospice is committed to providing resources to help you cope with any loss in your life.\""
   },
   {
-    "id": "989eb75d-a8d9-4fb7-a213-15a597b9fbd7",
+    "id": "8667a26d-6a5d-492b-a9a9-dee2b6a9e9aa",
     "slug": "hospice-of-the-valley-east-hospice-of-the-valley-grief-support-groups-gilbert",
     "name": "Hospice of the Valley Grief Support Groups",
     "organization": "HOSPICE OF THE VALLEY EAST",
@@ -1337,13 +1175,13 @@
     "phone": "602-530-6970",
     "phone_normalized": "6025306970",
     "street": "2020 E WOODSIDE CT",
-    "description": "In-person and virtual help for adults experiencing grief from the loss of a loved one, held at locations Valleywide and through virtual groups.",
+    "description": "In-person and virtual grief support groups for adults grieving the death of a loved one, described as diverse, inclusive, multi-cultural and non-sectarian.",
     "facilitator_type": "unknown",
     "cadence": "unknown",
     "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"Hospice of the Valley also provides group grief support to our community at no charge.\" | loss_types: \"Groups are open to any adult grieving the death of a loved one.\""
   },
   {
-    "id": "d89782f5-bc1b-40af-86e8-aef4e8e84c00",
+    "id": "72311c56-6385-46c4-b46e-668f8e9717de",
     "slug": "hospice-of-the-valley-east-new-song-center-for-grieving-children-gilbert",
     "name": "New Song Center for Grieving Children",
     "organization": "HOSPICE OF THE VALLEY EAST",
@@ -1359,7 +1197,7 @@
     "cost": "free",
     "structure": "unknown",
     "registration_required": "unknown",
-    "faith_affiliation": "unknown",
+    "faith_affiliation": "none",
     "schedule_text": "Contact the organization for current meeting times",
     "city": "GILBERT",
     "state": "AZ",
@@ -1378,35 +1216,116 @@
     "phone": "480-951-8985",
     "phone_normalized": "4809518985",
     "street": "2020 E WOODSIDE CT",
-    "description": "A program of Hospice of the Valley offering pediatric and family bereavement support for families with children grieving the death of a family member.",
+    "description": "A program of Hospice of the Valley offering tools and bereavement support to assist families with children who are grieving a death.",
     "facilitator_type": "unknown",
     "cadence": "unknown",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"Tools to assist families with children who are grieving a death. No cost.\" | loss_types: \"offers up to 24 months of pediatric and family bereavement support for those grieving the death of a family member\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"No cost.\" | loss_types: \"offers up to 24 months of pediatric and family bereavement support for those grieving the death of a family member\""
   },
   {
-    "id": "b9ad6295-9cbd-4a3f-8aaa-cb2344605150",
-    "slug": "hospice-of-the-valleys-hospice-of-the-valleys-support-groups-murrieta",
-    "name": "Hospice of the Valleys Support Groups",
-    "organization": "HOSPICE OF THE VALLEYS",
+    "id": "3dfded5d-4c2e-42fc-9236-3d40b403f9df",
+    "slug": "hope-hospice-inc-general-loss-support-group-pittsburgh",
+    "name": "General Loss Support Group",
+    "organization": "HOPE HOSPICE INC",
     "org_type": "hospice",
     "loss_types": [
-      "general"
+      "general",
+      "parent"
     ],
     "age_groups": [
-      "adults",
-      "children",
-      "families"
+      "adults"
+    ],
+    "format": "online",
+    "cost": "free",
+    "structure": "closed_series",
+    "registration_required": "yes",
+    "faith_affiliation": "unknown",
+    "schedule_text": "This group will meet virtually, over Zoom. Call (925) 829-8770 to be placed on the interest list for the following quarter.",
+    "city": "PITTSBURGH",
+    "state": "PA",
+    "metro_id": "pittsburgh-pa",
+    "source_url": "https://www.hopehospice.com/services/grief/",
+    "source_type": "org_website",
+    "verification_status": "source_verified",
+    "first_seen": "2026-08-18",
+    "last_checked": "2026-08-18",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "extraction_confidence": "medium",
+    "phone": "925-829-8770",
+    "phone_normalized": "9258298770",
+    "street": "3356 BABCOCK BOULEVARD SUITE B",
+    "description": "Eight-week support group for adults discussing the impact of loss, intended for those grieving a parent, family member, or friend.",
+    "facilitator_type": "unknown",
+    "cadence": "unknown",
+    "series_length_weeks": 8,
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"This group will meet virtually, over Zoom. Call (925) 829-8770 to be placed on the interest list for the following quarter.\" | cost: \"our grief support programs are offered at no charge\" | loss_types: \"This group is intended for anyone experiencing the loss of a parent, family member, or friend.\""
+  },
+  {
+    "id": "110d10ec-50e3-4035-bfca-4acb3bbfcada",
+    "slug": "hope-hospice-inc-spousal-partner-loss-support-group-pittsburgh",
+    "name": "Spousal/Partner Loss Support Group",
+    "organization": "HOPE HOSPICE INC",
+    "org_type": "hospice",
+    "loss_types": [
+      "spouse_partner"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "free",
+    "structure": "closed_series",
+    "registration_required": "yes",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Call (925) 829-8770 to be placed on the interest list for the following quarter.",
+    "city": "PITTSBURGH",
+    "state": "PA",
+    "metro_id": "pittsburgh-pa",
+    "source_url": "https://www.hopehospice.com/services/grief/",
+    "source_type": "org_website",
+    "verification_status": "source_verified",
+    "first_seen": "2026-08-18",
+    "last_checked": "2026-08-18",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "extraction_confidence": "medium",
+    "phone": "925-829-8770",
+    "phone_normalized": "9258298770",
+    "street": "3356 BABCOCK BOULEVARD SUITE B",
+    "description": "Eight-week support group for adults grieving the loss of a spouse or partner.",
+    "facilitator_type": "unknown",
+    "cadence": "unknown",
+    "series_length_weeks": 8,
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Call (925) 829-8770 to be placed on the interest list for the following quarter.\" | cost: \"our grief support programs are offered at no charge\" | loss_types: \"Spousal/partner loss is a complete reorientation to life and the process can often feel overwhelming and unbearable.\""
+  },
+  {
+    "id": "c6304434-9d10-4b75-9528-d91629250e1a",
+    "slug": "hope-hospice-inc-loss-of-a-child-support-group-pittsburgh",
+    "name": "Loss of a Child Support Group",
+    "organization": "HOPE HOSPICE INC",
+    "org_type": "hospice",
+    "loss_types": [
+      "child"
+    ],
+    "age_groups": [
+      "adults"
     ],
     "format": "in_person",
     "cost": "free",
     "structure": "unknown",
-    "registration_required": "unknown",
+    "registration_required": "yes",
     "faith_affiliation": "unknown",
-    "schedule_text": "offered several times a year",
-    "city": "MURRIETA",
-    "state": "CA",
-    "metro_id": "riverside-ca",
-    "source_url": "https://hospiceofthevalleys.org/patients-and-families/#griefsup",
+    "schedule_text": "Contact our staff (925) 829-8770 or via the interest form for next available dates.",
+    "city": "PITTSBURGH",
+    "state": "PA",
+    "metro_id": "pittsburgh-pa",
+    "source_url": "https://www.hopehospice.com/services/grief/",
     "source_type": "org_website",
     "verification_status": "needs_review",
     "first_seen": "2026-08-18",
@@ -1417,18 +1336,140 @@
       "en"
     ],
     "extraction_confidence": "low",
-    "phone": "951-200-7800",
-    "phone_normalized": "9512007800",
-    "street": "25240 HANCOCK AVENUE #120",
-    "description": "Grief support groups offered by Hospice of the Valleys for adults, children and families coping with the death of a loved one, led by staff with master's degrees in counseling, social work or spiritual care.",
-    "facilitator_type": "mixed",
-    "cadence": "varies",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"The groups are offered several times a year\" | cost: \"are free of charge\" | loss_types: \"the loss of a loved one\""
+    "phone": "925-829-8770",
+    "phone_normalized": "9258298770",
+    "street": "3356 BABCOCK BOULEVARD SUITE B",
+    "description": "Support group for parents experiencing the loss of a child.",
+    "facilitator_type": "unknown",
+    "cadence": "unknown",
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Contact our staff (925) 829-8770 or via the interest form for next available dates.\" | cost: \"our grief support programs are offered at no charge\" | loss_types: \"This group creates a space where participants feel the safety and freedom to be open and vulnerable with their pain and to give voice to the experience of child\""
   },
   {
-    "id": "661941ad-36f6-456d-adb4-83962b75c896",
-    "slug": "vnacare-journey-of-hope-bereavement-program-grief-support-groups-murrieta",
-    "name": "Journey of Hope Bereavement Program Grief Support Groups",
+    "id": "bc291d94-e61d-43b4-92d8-5ee5c02656b2",
+    "slug": "hope-hospice-inc-introduction-to-grief-workshop-pittsburgh",
+    "name": "Introduction to Grief Workshop",
+    "organization": "HOPE HOSPICE INC",
+    "org_type": "hospice",
+    "loss_types": [
+      "general"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "free",
+    "structure": "unknown",
+    "registration_required": "yes",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the organization for current meeting times",
+    "city": "PITTSBURGH",
+    "state": "PA",
+    "metro_id": "pittsburgh-pa",
+    "source_url": "https://www.hopehospice.com/services/grief/",
+    "source_type": "org_website",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-18",
+    "last_checked": "2026-08-18",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "extraction_confidence": "low",
+    "phone": "925-829-8770",
+    "phone_normalized": "9258298770",
+    "street": "3356 BABCOCK BOULEVARD SUITE B",
+    "description": "One-hour workshop introducing grief concepts for those new to the grief process and their supporters.",
+    "facilitator_type": "unknown",
+    "cadence": "unknown",
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"our grief support programs are offered at no charge\" | loss_types: \"This one-hour class is intended for adults new to the grief process.\""
+  },
+  {
+    "id": "213bdb62-66a6-482f-9581-ed5484dd90e1",
+    "slug": "hope-hospice-inc-support-for-teenagers-pittsburgh",
+    "name": "Support for Teenagers",
+    "organization": "HOPE HOSPICE INC",
+    "org_type": "hospice",
+    "loss_types": [
+      "general"
+    ],
+    "age_groups": [
+      "teens"
+    ],
+    "format": "in_person",
+    "cost": "free",
+    "structure": "unknown",
+    "registration_required": "yes",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the organization for current meeting times",
+    "city": "PITTSBURGH",
+    "state": "PA",
+    "metro_id": "pittsburgh-pa",
+    "source_url": "https://www.hopehospice.com/services/grief/",
+    "source_type": "org_website",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-18",
+    "last_checked": "2026-08-18",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "extraction_confidence": "low",
+    "phone": "925-829-8770",
+    "phone_normalized": "9258298770",
+    "street": "3356 BABCOCK BOULEVARD SUITE B",
+    "description": "Peer support group for teenagers navigating grief.",
+    "facilitator_type": "unknown",
+    "cadence": "unknown",
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"our grief support programs are offered at no charge\""
+  },
+  {
+    "id": "274f80d5-860a-4753-bcf0-ed593b8b2c8f",
+    "slug": "hope-hospice-inc-handling-the-holidays-workshop-pittsburgh",
+    "name": "Handling the Holidays Workshop",
+    "organization": "HOPE HOSPICE INC",
+    "org_type": "hospice",
+    "loss_types": [
+      "general"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "free",
+    "structure": "drop_in",
+    "registration_required": "yes",
+    "faith_affiliation": "unknown",
+    "schedule_text": "December 2 nd , Tuesday, daytime meeting 12:00 – 1:30 pm, AND evening 6:00 to 7:30 p.m.",
+    "city": "PITTSBURGH",
+    "state": "PA",
+    "metro_id": "pittsburgh-pa",
+    "source_url": "https://www.hopehospice.com/services/grief/",
+    "source_type": "org_website",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-18",
+    "last_checked": "2026-08-18",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "extraction_confidence": "medium",
+    "schedule_expires": "2026-12-02",
+    "schedule_is_dated_series": true,
+    "phone": "925-829-8770",
+    "phone_normalized": "9258298770",
+    "street": "3356 BABCOCK BOULEVARD SUITE B",
+    "description": "Fall workshop discussing healthy coping strategies for the winter holiday season after a loss.",
+    "facilitator_type": "unknown",
+    "cadence": "unknown",
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"December 2 nd , Tuesday, daytime meeting 12:00 – 1:30 pm, AND evening 6:00 to 7:30 p.m.\" | cost: \"our grief support programs are offered at no charge\""
+  },
+  {
+    "id": "c237397f-e4e6-471f-98a6-9a4830109198",
+    "slug": "vnacare-vnacare-grief-support-groups-murrieta",
+    "name": "VNAcare Grief Support Groups",
     "organization": "VNACARE",
     "org_type": "hospice",
     "loss_types": [
@@ -1442,7 +1483,7 @@
     "structure": "unknown",
     "registration_required": "unknown",
     "faith_affiliation": "unknown",
-    "schedule_text": "Each week we offer grief support groups, free of charge, throughout our community.",
+    "schedule_text": "Each week",
     "city": "MURRIETA",
     "state": "CA",
     "metro_id": "riverside-ca",
@@ -1460,15 +1501,15 @@
     "phone": "909-447-7241",
     "phone_normalized": "9094477241",
     "street": "25220 HANCOCK AVE, SUITE 100",
-    "description": "VNAcare's Journey of Hope Bereavement Program offers weekly grief support groups, free of charge, led by trained facilitators, with both online and in-person options.",
+    "description": "General bereavement/grief support groups offered by VNAcare, available both online and in-person, led by trained facilitators, free of charge.",
     "facilitator_type": "trained_peer",
     "cadence": "weekly",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Each week we offer grief support groups, free of charge, throughout our community.\" | cost: \"Each week we offer grief support groups, free of charge, throughout our community.\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Each week we offer grief support groups, free of charge, throughout our community.\" | cost: \"Each week we offer grief support groups, free of charge, throughout our community.\" | loss_types: \"if you have recently experienced the death of someone or are anticipating the loss of a close friend or relative\""
   },
   {
-    "id": "d43feed8-d3d7-4904-a11f-8b9ce96c7cf5",
-    "slug": "vnacare-vnacare-grief-support-groups-apple-valley",
-    "name": "VNAcare Grief Support Groups",
+    "id": "6f24d17e-2c6c-46f6-bc10-d7ac0ca27b07",
+    "slug": "vnacare-grief-support-groups-online-apple-valley",
+    "name": "Grief Support Groups (Online)",
     "organization": "VNACARE",
     "org_type": "hospice",
     "loss_types": [
@@ -1477,12 +1518,12 @@
     "age_groups": [
       "adults"
     ],
-    "format": "hybrid",
+    "format": "online",
     "cost": "free",
     "structure": "unknown",
     "registration_required": "yes",
     "faith_affiliation": "unknown",
-    "schedule_text": "Each week we offer grief support groups, free of charge, throughout our community.",
+    "schedule_text": "Each week we offer grief support groups",
     "city": "APPLE VALLEY",
     "state": "CA",
     "metro_id": "riverside-ca",
@@ -1497,16 +1538,56 @@
       "en"
     ],
     "extraction_confidence": "low",
-    "phone": "833-367-2273",
-    "phone_normalized": "8333672273",
+    "phone": "909-447-7241",
+    "phone_normalized": "9094477241",
     "street": "16147 KAMANA ROAD",
-    "description": "General community grief support groups led by trained facilitators, offered both online and in-person, free of charge, for anyone who has recently lost a loved one.",
+    "description": "Weekly grief support groups offered online, led by trained facilitators to offer support, education, and connection for those who have recently lost a loved one.",
     "facilitator_type": "trained_peer",
     "cadence": "weekly",
     "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Each week we offer grief support groups, free of charge, throughout our community.\" | cost: \"Each week we offer grief support groups, free of charge, throughout our community.\""
   },
   {
-    "id": "b57befda-81b2-4a46-aa3d-dbeb9bdff135",
+    "id": "b9fab138-f714-466b-8107-487dd52b8e0c",
+    "slug": "vnacare-grief-support-groups-in-person-apple-valley",
+    "name": "Grief Support Groups (In-Person)",
+    "organization": "VNACARE",
+    "org_type": "hospice",
+    "loss_types": [
+      "general"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "free",
+    "structure": "unknown",
+    "registration_required": "yes",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Each week we offer grief support groups",
+    "city": "APPLE VALLEY",
+    "state": "CA",
+    "metro_id": "riverside-ca",
+    "source_url": "https://www.vnacare.com/grief-support/",
+    "source_type": "org_website",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-18",
+    "last_checked": "2026-08-18",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "extraction_confidence": "low",
+    "phone": "909-447-7241",
+    "phone_normalized": "9094477241",
+    "street": "16147 KAMANA ROAD",
+    "description": "Weekly grief support groups offered in-person throughout the community, led by trained facilitators to offer support, education, and connection for those who have recently lost a loved one.",
+    "facilitator_type": "trained_peer",
+    "cadence": "weekly",
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Each week we offer grief support groups, free of charge, throughout our community.\" | cost: \"Each week we offer grief support groups, free of charge, throughout our community.\""
+  },
+  {
+    "id": "17590bf3-ec4b-4850-9fd1-480eec41dd35",
     "slug": "hospice-of-the-east-bay-understanding-grief-pleasant-hill",
     "name": "Understanding Grief",
     "organization": "HOSPICE OF THE EAST BAY",
@@ -1540,13 +1621,13 @@
     "phone": "925-887-5678",
     "phone_normalized": "9258875678",
     "street": "3470 BUSKIRK AVENUE",
-    "description": "This class discusses grief and its natural process, as well as the broad range of common grief reactions. The information presented is helpful for people who are recently bereaved, experiencing grief years after a death, or wanting to support a bereaved friend.",
+    "description": "This class discusses grief and its natural process, as well as the broad range of common grief reactions.",
     "facilitator_type": "unknown",
     "cadence": "unknown",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"The class is currently available to view online here\" | cost: \"we are committed to providing free bereavement services, not only to the families of our patients but to our entire community.\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"The class is currently available to view online here.\" | cost: \"we are committed to providing free bereavement services, not only to the families of our patients but to our entire community\""
   },
   {
-    "id": "8c8ceb25-64de-4706-983f-1f101a26a73f",
+    "id": "9368ae9f-3e82-44c7-bc77-fe3f82ddbc51",
     "slug": "hospice-of-the-east-bay-spouse-partner-loss-pleasant-hill",
     "name": "Spouse & Partner Loss",
     "organization": "HOSPICE OF THE EAST BAY",
@@ -1582,12 +1663,12 @@
     "street": "3470 BUSKIRK AVENUE",
     "description": "This eight-week support group is for any adult who has experienced the death of a spouse or partner. This group is ideal for those who have already experienced the early stages of their grief journey and is open to those who are at least three months past the death of their spouse.",
     "facilitator_type": "unknown",
-    "cadence": "varies",
+    "cadence": "unknown",
     "series_length_weeks": 8,
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"This group is offered several times throughout the calendar year.\" | cost: \"we are committed to providing free bereavement services, not only to the families of our patients but to our entire community.\" | loss_types: \"This eight-week support group is for any adult who has experienced the death of a spouse or partner.\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"This group is offered several times throughout the calendar year.\" | cost: \"we are committed to providing free bereavement services, not only to the families of our patients but to our entire community\" | loss_types: \"This eight-week support group is for any adult who has experienced the death of a spouse or partner.\""
   },
   {
-    "id": "c3ad024c-aafd-4a3d-95e8-3bbeac85e445",
+    "id": "4050ecd4-71f0-4626-bd11-5825d5904dac",
     "slug": "hospice-of-the-east-bay-parent-loss-pleasant-hill",
     "name": "Parent Loss",
     "organization": "HOSPICE OF THE EAST BAY",
@@ -1623,12 +1704,12 @@
     "street": "3470 BUSKIRK AVENUE",
     "description": "This eight-week support group is for any adult who has experienced the death of one or both parents. This group is ideal for those who have already experienced the early stages of their grief journey and is open to those who are at least three months past the death of their parent(s).",
     "facilitator_type": "unknown",
-    "cadence": "varies",
+    "cadence": "unknown",
     "series_length_weeks": 8,
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"This group is offered several times throughout the calendar year.\" | cost: \"we are committed to providing free bereavement services, not only to the families of our patients but to our entire community.\" | loss_types: \"This eight-week support group is for any adult who has experienced the death of one or both parents.\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"This group is offered several times throughout the calendar year.\" | cost: \"we are committed to providing free bereavement services, not only to the families of our patients but to our entire community\" | loss_types: \"This eight-week support group is for any adult who has experienced the death of one or both parents.\""
   },
   {
-    "id": "517c9d49-a40c-43fe-8acb-696089356475",
+    "id": "e037173f-21bb-486c-bf81-d6953d72e4c6",
     "slug": "hospice-of-the-east-bay-mindfulness-meditation-meaning-pleasant-hill",
     "name": "Mindfulness, Meditation & Meaning",
     "organization": "HOSPICE OF THE EAST BAY",
@@ -1662,14 +1743,14 @@
     "phone": "925-887-5678",
     "phone_normalized": "9258875678",
     "street": "3470 BUSKIRK AVENUE",
-    "description": "This 8-week grief support workshop will focus on cultivating refuge and presence through meditation and journaling exercises, to support us in meeting all that comes up with open-hearted curiosity and care. Open to those new to or familiar with meditation.",
+    "description": "This 8-week grief support workshop will focus on cultivating refuge and presence through meditation and journaling exercises, to support us in meeting all that comes up with open-hearted curiosity and care.",
     "facilitator_type": "unknown",
     "cadence": "unknown",
     "series_length_weeks": 8,
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"we are committed to providing free bereavement services, not only to the families of our patients but to our entire community.\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"we are committed to providing free bereavement services, not only to the families of our patients but to our entire community\""
   },
   {
-    "id": "5be24b4f-6529-420c-a2ab-417bf5ca2889",
+    "id": "c86a036c-6cbd-42f1-9303-79db94099533",
     "slug": "hospice-of-the-east-bay-next-steps-pleasant-hill",
     "name": "Next Steps",
     "organization": "HOSPICE OF THE EAST BAY",
@@ -1707,10 +1788,10 @@
     "facilitator_type": "unknown",
     "cadence": "unknown",
     "series_length_weeks": 6,
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"The group meets in a hybrid format of in-person and virtual meetings.\" | cost: \"we are committed to providing free bereavement services, not only to the families of our patients but to our entire community.\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"The group meets in a hybrid format of in-person and virtual meetings.\" | cost: \"we are committed to providing free bereavement services, not only to the families of our patients but to our entire community\""
   },
   {
-    "id": "6e5bf43e-0261-4e70-b140-db702cfb4f12",
+    "id": "f38371fb-5b06-4347-9561-56897d1741dd",
     "slug": "hospice-of-southern-illinois-inc-coping-with-grief-belleville",
     "name": "Coping With Grief",
     "organization": "HOSPICE OF SOUTHERN ILLINOIS, INC",
@@ -1744,15 +1825,15 @@
     "phone": "800-233-1708",
     "phone_normalized": "8002331708",
     "street": "305 S ILLINOIS ST",
-    "description": "Many times survivors find comfort in learning about their grief in a structured learning environment. These series are presented by the Hospice of Southern Illinois in Marion, IL.",
+    "description": "A free educational series about grief, presented by Hospice of Southern Illinois in Marion, IL, offered at various times each year.",
     "facilitator_type": "unknown",
     "cadence": "varies",
     "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Coping With Grief is a FREE educational series provided to the community at various times each year.\" | cost: \"Coping With Grief is a FREE educational series provided to the community at various times each year.\""
   },
   {
-    "id": "d8340e27-e2f5-4a0b-8f64-8a98f627156a",
-    "slug": "gulfside-hospice-inc-gulfside-hospice-grief-support-groups-land-o-lakes",
-    "name": "Gulfside Hospice Grief Support Groups",
+    "id": "a4c4267d-9118-42b9-a4cc-bdc915911c79",
+    "slug": "gulfside-hospice-inc-grief-support-groups-land-o-lakes",
+    "name": "Grief Support Groups",
     "organization": "GULFSIDE HOSPICE, INC",
     "org_type": "hospice",
     "loss_types": [
@@ -1766,7 +1847,7 @@
     "structure": "unknown",
     "registration_required": "unknown",
     "faith_affiliation": "unknown",
-    "schedule_text": "Group schedules are subject to change.",
+    "schedule_text": "Contact the organization for current meeting times",
     "city": "LAND O LAKES",
     "state": "FL",
     "metro_id": "tampa-fl",
@@ -1784,13 +1865,13 @@
     "phone": "727-845-5707",
     "phone_normalized": "7278455707",
     "street": "2061 COLLIER PKWY",
-    "description": "Gulfside's support groups and workshops are led by professional counselors, available via Zoom, phone and in-person sessions, in limited sized groups, designed for participants ages 18 and older.",
+    "description": "Gulfside Hospice's general bereavement support groups for adults, offered via Zoom, phone, and in-person sessions, led by professional counselors.",
     "facilitator_type": "licensed_clinician",
     "cadence": "unknown",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Group schedules are subject to change.\" | cost: \"Gulfside Hospice offers a variety of bereavement support groups and grief workshops free of charge for anyone ages 18 and older who has lost a loved one.\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"free of charge for anyone ages 18 and older who has lost a loved one\""
   },
   {
-    "id": "5b4f76f5-f1c2-44e1-b85f-c25841dd994c",
+    "id": "5e4067a1-588e-421a-9ff3-02f5c920ca29",
     "slug": "gulfside-hospice-inc-gulfside-days-of-hope-kids-bereavement-camp-land-o-lakes",
     "name": "Gulfside Days of Hope Kids Bereavement Camp",
     "organization": "GULFSIDE HOSPICE, INC",
@@ -1803,7 +1884,7 @@
     ],
     "format": "in_person",
     "cost": "free",
-    "structure": "unknown",
+    "structure": "drop_in",
     "registration_required": "yes",
     "faith_affiliation": "unknown",
     "schedule_text": "Contact the organization for current meeting times",
@@ -1824,175 +1905,13 @@
     "phone": "727-845-5707",
     "phone_normalized": "7278455707",
     "street": "2061 COLLIER PKWY",
-    "description": "Gulfside Days of Hope Kids Bereavement Camp will provide a supportive, safe and engaging environment designed to help children who have experienced the death of a loved one process their feelings and learn strategies for managing their grief.",
+    "description": "A one-day bereavement camp for children who have experienced the death of a loved one.",
     "facilitator_type": "unknown",
     "cadence": "unknown",
     "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Camp is free to attend on Saturday, July 25, 2026.\" | cost: \"Camp is free to attend on Saturday, July 25, 2026.\""
   },
   {
-    "id": "c4d94171-64a2-475a-b010-bba3a3f40db8",
-    "slug": "suncoast-hospice-suncoast-hospice-community-grief-support-groups-palm-harbor",
-    "name": "Suncoast Hospice & Community Grief Support Groups",
-    "organization": "SUNCOAST HOSPICE",
-    "org_type": "hospice",
-    "loss_types": [
-      "general"
-    ],
-    "age_groups": [
-      "adults"
-    ],
-    "format": "in_person",
-    "cost": "unknown",
-    "structure": "closed_series",
-    "registration_required": "yes",
-    "faith_affiliation": "unknown",
-    "schedule_text": "Contact the organization for current meeting times",
-    "city": "PALM HARBOR",
-    "state": "FL",
-    "metro_id": "tampa-fl",
-    "source_url": "https://suncoasthospice.org/grief-support/",
-    "source_type": "org_website",
-    "verification_status": "needs_review",
-    "first_seen": "2026-08-18",
-    "last_checked": "2026-08-18",
-    "source_link_status": "ok",
-    "published": false,
-    "languages": [
-      "en"
-    ],
-    "extraction_confidence": "low",
-    "phone": "727-549-7133",
-    "phone_normalized": "7275497133",
-    "street": "2675 TAMPA RD",
-    "description": "Our grief support groups are designed to provide you support after the loss of someone important to you.",
-    "facilitator_type": "unknown",
-    "cadence": "unknown",
-    "series_length_weeks": 6,
-    "internal_notes": "Extracted from bereavement page. No quotes verified."
-  },
-  {
-    "id": "8d8e3936-3aef-4d9c-8c1a-0a2c2a6222bf",
-    "slug": "suncoast-hospice-perinatal-loss-support-palm-harbor",
-    "name": "Perinatal Loss Support",
-    "organization": "SUNCOAST HOSPICE",
-    "org_type": "hospice",
-    "loss_types": [
-      "pregnancy_infant"
-    ],
-    "age_groups": [
-      "families"
-    ],
-    "format": "in_person",
-    "cost": "unknown",
-    "structure": "unknown",
-    "registration_required": "unknown",
-    "faith_affiliation": "unknown",
-    "schedule_text": "Contact the organization for current meeting times",
-    "city": "PALM HARBOR",
-    "state": "FL",
-    "metro_id": "tampa-fl",
-    "source_url": "https://suncoasthospice.org/grief-support/",
-    "source_type": "org_website",
-    "verification_status": "needs_review",
-    "first_seen": "2026-08-18",
-    "last_checked": "2026-08-18",
-    "source_link_status": "ok",
-    "published": false,
-    "languages": [
-      "en"
-    ],
-    "extraction_confidence": "low",
-    "phone": "727-523-3451",
-    "phone_normalized": "7275233451",
-    "street": "2675 TAMPA RD",
-    "description": "Our trained counselors provide individual or family counseling and support groups.",
-    "facilitator_type": "unknown",
-    "cadence": "unknown",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> loss_types: \"Our perinatal loss program supports any families who are suffering from a pregnancy loss, stillbirth or death of a baby shortly after birth.\""
-  },
-  {
-    "id": "e7cdb316-86d7-42d9-82db-902c6e26734a",
-    "slug": "suncoast-hospice-community-grief-support-groups-palm-harbor",
-    "name": "Community Grief Support Groups",
-    "organization": "SUNCOAST HOSPICE",
-    "org_type": "hospice",
-    "loss_types": [
-      "general"
-    ],
-    "age_groups": [
-      "adults"
-    ],
-    "format": "in_person",
-    "cost": "free",
-    "structure": "closed_series",
-    "registration_required": "unknown",
-    "faith_affiliation": "unknown",
-    "schedule_text": "Contact the organization for current meeting times",
-    "city": "PALM HARBOR",
-    "state": "FL",
-    "metro_id": "tampa-fl",
-    "source_url": "https://suncoasthospice.org/grief-support/",
-    "source_type": "org_website",
-    "verification_status": "needs_review",
-    "first_seen": "2026-08-18",
-    "last_checked": "2026-08-18",
-    "source_link_status": "ok",
-    "published": false,
-    "languages": [
-      "en"
-    ],
-    "extraction_confidence": "low",
-    "phone": "727-523-3451",
-    "phone_normalized": "7275233451",
-    "street": "2675 TAMPA RD",
-    "description": "Our individual and family counseling, support groups, workshops and children's groups and camps are open to anyone who is hurting from the death of a loved one, not just someone in hospice care.",
-    "facilitator_type": "unknown",
-    "cadence": "unknown",
-    "series_length_weeks": 6,
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"are provided free of charge thanks to the generosity of donors.\""
-  },
-  {
-    "id": "e1b31259-0353-4ede-8fc8-2433d4d50072",
-    "slug": "suncoast-hospice-children-s-grief-groups-and-camps-palm-harbor",
-    "name": "Children's Grief Groups and Camps",
-    "organization": "SUNCOAST HOSPICE",
-    "org_type": "hospice",
-    "loss_types": [
-      "general"
-    ],
-    "age_groups": [
-      "children"
-    ],
-    "format": "in_person",
-    "cost": "free",
-    "structure": "unknown",
-    "registration_required": "unknown",
-    "faith_affiliation": "unknown",
-    "schedule_text": "held periodically",
-    "city": "PALM HARBOR",
-    "state": "FL",
-    "metro_id": "tampa-fl",
-    "source_url": "https://suncoasthospice.org/grief-support/",
-    "source_type": "org_website",
-    "verification_status": "needs_review",
-    "first_seen": "2026-08-18",
-    "last_checked": "2026-08-18",
-    "source_link_status": "ok",
-    "published": false,
-    "languages": [
-      "en"
-    ],
-    "extraction_confidence": "low",
-    "phone": "727-523-3451",
-    "phone_normalized": "7275233451",
-    "street": "2675 TAMPA RD",
-    "description": "Children's groups and camps and other specialized presentations are held periodically.",
-    "facilitator_type": "unknown",
-    "cadence": "varies",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Children's groups and camps and other specialized presentations are held periodically.\" | cost: \"are provided free of charge thanks to the generosity of donors.\""
-  },
-  {
-    "id": "ddfc1c37-80b5-4131-8ea8-629d648429ca",
+    "id": "f7142bdf-14e7-45d6-8bd7-8296278c442f",
     "slug": "frederick-health-hospice-general-grief-support-group-day-frederick",
     "name": "General Grief Support Group - DAY",
     "organization": "FREDERICK HEALTH HOSPICE",
@@ -2028,13 +1947,13 @@
     "phone": "240-566-3030",
     "phone_normalized": "2405663030",
     "street": "1 FREDERICK HEALTH WAY",
-    "description": "General grief support group offered by Frederick Health Hospice, open to the community regardless of hospice affiliation.",
+    "description": "General Grief Support Group offered by Frederick Health Hospice, daytime session.",
     "facilitator_type": "unknown",
     "cadence": "unknown",
     "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Aug 20, 2026 @ 2:00pm\" | cost: \"at no charge, to anyone in the community, regardless whether or not they were served by Hospice\" | loss_types: \"General Grief Support Group - DAY\""
   },
   {
-    "id": "87044435-27d5-4f81-a11b-c4ad769940db",
+    "id": "8e8ea4a1-5c87-4267-8424-fc79ff6b4c78",
     "slug": "frederick-health-hospice-general-grief-support-group-eve-frederick",
     "name": "General Grief Support Group - EVE",
     "organization": "FREDERICK HEALTH HOSPICE",
@@ -2070,13 +1989,13 @@
     "phone": "240-566-3030",
     "phone_normalized": "2405663030",
     "street": "1 FREDERICK HEALTH WAY",
-    "description": "Evening general grief support group offered by Frederick Health Hospice, open to the community regardless of hospice affiliation.",
+    "description": "General Grief Support Group offered by Frederick Health Hospice, evening session.",
     "facilitator_type": "unknown",
     "cadence": "unknown",
     "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Aug 27, 2026 @ 5:00pm\" | cost: \"at no charge, to anyone in the community, regardless whether or not they were served by Hospice\" | loss_types: \"General Grief Support Group - EVE\""
   },
   {
-    "id": "0966c661-f0ae-45f2-bd72-f1eb531bb17a",
+    "id": "4635bb50-0f48-40dc-8750-83fbaad5c9af",
     "slug": "hospice-palliative-care-palmetto-region-grief-the-reluctant-journey-fort-mill",
     "name": "Grief: The Reluctant Journey",
     "organization": "HOSPICE & PALLIATIVE CARE PALMETTO REGION",
@@ -2092,7 +2011,7 @@
     "structure": "closed_series",
     "registration_required": "yes",
     "faith_affiliation": "unknown",
-    "schedule_text": "meets for a defined length of time, usually 6 – 8 weeks",
+    "schedule_text": "Meets for a defined length of time, usually 6-8 weeks",
     "city": "FORT MILL",
     "state": "SC",
     "metro_id": "charlotte-nc",
@@ -2110,15 +2029,16 @@
     "phone": "833-839-1113",
     "phone_normalized": "8338391113",
     "street": "1061 RED VENTURE DRIVE SUITE 130",
-    "description": "A structured grief support group requiring a pre-group interview with a grief counselor; may include groups specific to certain loss types.",
+    "cost_notes": "Stated in general community services section, applies to grief support groups broadly.",
+    "description": "A structured grief support group offering a safe environment for empathetic support; groups may be specific to spousal/partner loss, adult parent loss, adult child loss, young widow/widower, mature widower loss, and child loss. A pre-group interview with a grief counselor is required.",
     "facilitator_type": "unknown",
     "cadence": "unknown",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"a structured grief support group that meets for a defined length of time, usually 6 – 8 weeks\" | cost: \"we will offer our services free of charge to anyone who is struggling with loss\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"meets for a defined length of time, usually 6 – 8 weeks\" | cost: \"we will offer our services free of charge to anyone who is struggling with loss\" | loss_types: \"Grief: The Reluctant Journey is a structured grief support group that meets for a defined length of time, usually 6 – 8 weeks.\""
   },
   {
-    "id": "be4bb858-1080-452a-941b-e132d1546220",
-    "slug": "hospice-palliative-care-palmetto-region-in-good-company-fort-mill",
-    "name": "In Good Company",
+    "id": "1a6fd8d3-9236-4861-a854-ea609fe8cdc8",
+    "slug": "hospice-palliative-care-palmetto-region-in-good-company-monthly-drop-ins-fort",
+    "name": "In Good Company Monthly Drop-ins",
     "organization": "HOSPICE & PALLIATIVE CARE PALMETTO REGION",
     "org_type": "hospice",
     "loss_types": [
@@ -2132,7 +2052,7 @@
     "structure": "drop_in",
     "registration_required": "unknown",
     "faith_affiliation": "unknown",
-    "schedule_text": "We have groups that meet monthly throughout our service area.",
+    "schedule_text": "Groups meet monthly throughout the service area",
     "city": "FORT MILL",
     "state": "SC",
     "metro_id": "charlotte-nc",
@@ -2150,13 +2070,14 @@
     "phone": "833-839-1113",
     "phone_normalized": "8338391113",
     "street": "1061 RED VENTURE DRIVE SUITE 130",
-    "description": "A relaxed, informal drop-in support group offering camaraderie and check-ins with a grief counselor.",
+    "cost_notes": "Stated in general community services section, applies to grief support groups broadly.",
+    "description": "A relaxed, informal drop-in support group offering camaraderie and an opportunity to check in with a grief counselor and others.",
     "facilitator_type": "unknown",
     "cadence": "monthly",
     "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"We have groups that meet monthly throughout our service area.\" | cost: \"we will offer our services free of charge to anyone who is struggling with loss\""
   },
   {
-    "id": "d75ad8ec-4990-4c92-a1bd-1bc5e3404527",
+    "id": "908cad61-a026-4087-b5cf-bca99df56d0a",
     "slug": "hospice-palliative-care-palmetto-region-in-school-grief-groups-fort-mill",
     "name": "In School Grief Groups",
     "organization": "HOSPICE & PALLIATIVE CARE PALMETTO REGION",
@@ -2165,14 +2086,14 @@
       "general"
     ],
     "age_groups": [
-      "adults"
+      "children"
     ],
     "format": "in_person",
     "cost": "free",
     "structure": "closed_series",
     "registration_required": "unknown",
     "faith_affiliation": "unknown",
-    "schedule_text": "offered at school during regular school hours over a period of several sessions",
+    "schedule_text": "Offered at school during regular school hours over a period of several sessions",
     "city": "FORT MILL",
     "state": "SC",
     "metro_id": "charlotte-nc",
@@ -2190,378 +2111,14 @@
     "phone": "833-839-1113",
     "phone_normalized": "8338391113",
     "street": "1061 RED VENTURE DRIVE SUITE 130",
-    "description": "Grief support groups offered at schools for students, coordinated with school personnel.",
+    "cost_notes": "Stated in general community services section, applies to grief support groups broadly.",
+    "description": "In-school grief support groups for students, arranged upon request from school personnel.",
     "facilitator_type": "unknown",
     "cadence": "unknown",
     "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Groups are offered at school during regular school hours over a period of several sessions.\" | cost: \"we will offer our services free of charge to anyone who is struggling with loss\""
   },
   {
-    "id": "056c76f1-6dc6-469a-8ab8-ae867ccca067",
-    "slug": "hope-hospice-inc-general-loss-support-group-rolling-meadows",
-    "name": "General Loss Support Group",
-    "organization": "HOPE HOSPICE, INC",
-    "org_type": "hospice",
-    "loss_types": [
-      "general",
-      "parent"
-    ],
-    "age_groups": [
-      "adults"
-    ],
-    "format": "online",
-    "cost": "free",
-    "structure": "closed_series",
-    "registration_required": "yes",
-    "faith_affiliation": "unknown",
-    "schedule_text": "Contact the organization for current meeting times",
-    "city": "ROLLING MEADOWS",
-    "state": "IL",
-    "metro_id": "chicago-il",
-    "source_url": "https://www.hopehospice.com/services/grief/",
-    "source_type": "org_website",
-    "verification_status": "needs_review",
-    "first_seen": "2026-08-18",
-    "last_checked": "2026-08-18",
-    "source_link_status": "ok",
-    "published": false,
-    "languages": [
-      "en"
-    ],
-    "extraction_confidence": "low",
-    "phone": "925-829-8770",
-    "phone_normalized": "9258298770",
-    "street": "3501 W. ALGONQUIN ROAD",
-    "description": "Eight-week virtual support group for adults grieving the loss of a parent, family member, or friend.",
-    "facilitator_type": "unknown",
-    "cadence": "unknown",
-    "series_length_weeks": 8,
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"our grief support programs are offered at no charge\" | loss_types: \"This group is intended for anyone experiencing the loss of a parent, family member, or friend.\""
-  },
-  {
-    "id": "d8a2cee7-3a2f-4808-b75e-7048a904e536",
-    "slug": "hope-hospice-inc-spousal-partner-loss-rolling-meadows",
-    "name": "Spousal/Partner Loss",
-    "organization": "HOPE HOSPICE, INC",
-    "org_type": "hospice",
-    "loss_types": [
-      "spouse_partner"
-    ],
-    "age_groups": [
-      "adults"
-    ],
-    "format": "in_person",
-    "cost": "free",
-    "structure": "closed_series",
-    "registration_required": "yes",
-    "faith_affiliation": "unknown",
-    "schedule_text": "Contact the organization for current meeting times",
-    "city": "ROLLING MEADOWS",
-    "state": "IL",
-    "metro_id": "chicago-il",
-    "source_url": "https://www.hopehospice.com/services/grief/",
-    "source_type": "org_website",
-    "verification_status": "needs_review",
-    "first_seen": "2026-08-18",
-    "last_checked": "2026-08-18",
-    "source_link_status": "ok",
-    "published": false,
-    "languages": [
-      "en"
-    ],
-    "extraction_confidence": "low",
-    "phone": "925-829-8770",
-    "phone_normalized": "9258298770",
-    "street": "3501 W. ALGONQUIN ROAD",
-    "description": "Eight-week support group for adults grieving the loss of a spouse or partner.",
-    "facilitator_type": "unknown",
-    "cadence": "unknown",
-    "series_length_weeks": 8,
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"our grief support programs are offered at no charge\" | loss_types: \"Spousal/Partner Loss\""
-  },
-  {
-    "id": "f78a12ba-a48c-458b-a308-2254a8887ccd",
-    "slug": "hope-hospice-inc-loss-of-a-child-rolling-meadows",
-    "name": "Loss of a Child",
-    "organization": "HOPE HOSPICE, INC",
-    "org_type": "hospice",
-    "loss_types": [
-      "child"
-    ],
-    "age_groups": [
-      "adults"
-    ],
-    "format": "in_person",
-    "cost": "free",
-    "structure": "unknown",
-    "registration_required": "yes",
-    "faith_affiliation": "unknown",
-    "schedule_text": "Contact the organization for current meeting times",
-    "city": "ROLLING MEADOWS",
-    "state": "IL",
-    "metro_id": "chicago-il",
-    "source_url": "https://www.hopehospice.com/services/grief/",
-    "source_type": "org_website",
-    "verification_status": "needs_review",
-    "first_seen": "2026-08-18",
-    "last_checked": "2026-08-18",
-    "source_link_status": "ok",
-    "published": false,
-    "languages": [
-      "en"
-    ],
-    "extraction_confidence": "low",
-    "phone": "925-829-8770",
-    "phone_normalized": "9258298770",
-    "street": "3501 W. ALGONQUIN ROAD",
-    "description": "Support group for parents experiencing the loss of a child.",
-    "facilitator_type": "unknown",
-    "cadence": "unknown",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"our grief support programs are offered at no charge\" | loss_types: \"Loss of a Child\""
-  },
-  {
-    "id": "a0a5b815-9971-424a-b829-8ff6c56f6003",
-    "slug": "hope-hospice-inc-introduction-to-grief-workshop-rolling-meadows",
-    "name": "Introduction to Grief Workshop",
-    "organization": "HOPE HOSPICE, INC",
-    "org_type": "hospice",
-    "loss_types": [
-      "general"
-    ],
-    "age_groups": [
-      "adults"
-    ],
-    "format": "in_person",
-    "cost": "free",
-    "structure": "drop_in",
-    "registration_required": "yes",
-    "faith_affiliation": "unknown",
-    "schedule_text": "Contact the organization for current meeting times",
-    "city": "ROLLING MEADOWS",
-    "state": "IL",
-    "metro_id": "chicago-il",
-    "source_url": "https://www.hopehospice.com/services/grief/",
-    "source_type": "org_website",
-    "verification_status": "needs_review",
-    "first_seen": "2026-08-18",
-    "last_checked": "2026-08-18",
-    "source_link_status": "ok",
-    "published": false,
-    "languages": [
-      "en"
-    ],
-    "extraction_confidence": "low",
-    "phone": "925-829-8770",
-    "phone_normalized": "9258298770",
-    "street": "3501 W. ALGONQUIN ROAD",
-    "description": "One-hour introductory class on grief for adults new to the grief process.",
-    "facilitator_type": "unknown",
-    "cadence": "unknown",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"our grief support programs are offered at no charge\" | loss_types: \"This one-hour class is intended for adults new to the grief process.\""
-  },
-  {
-    "id": "9e9c5127-d8e8-4936-b635-96763962b473",
-    "slug": "hope-hospice-inc-holiday-season-support-handling-the-holidays-rolling-meadows",
-    "name": "Holiday Season Support (Handling the Holidays)",
-    "organization": "HOPE HOSPICE, INC",
-    "org_type": "hospice",
-    "loss_types": [
-      "general"
-    ],
-    "age_groups": [
-      "adults"
-    ],
-    "format": "in_person",
-    "cost": "free",
-    "structure": "drop_in",
-    "registration_required": "unknown",
-    "faith_affiliation": "unknown",
-    "schedule_text": "December 2nd, Tuesday, daytime meeting 12:00 – 1:30 pm, AND evening 6:00 to 7:30 p.m.",
-    "city": "ROLLING MEADOWS",
-    "state": "IL",
-    "metro_id": "chicago-il",
-    "source_url": "https://www.hopehospice.com/services/grief/",
-    "source_type": "org_website",
-    "verification_status": "needs_review",
-    "first_seen": "2026-08-18",
-    "last_checked": "2026-08-18",
-    "source_link_status": "ok",
-    "published": false,
-    "languages": [
-      "en"
-    ],
-    "extraction_confidence": "medium",
-    "schedule_expires": "2026-12-02",
-    "schedule_is_dated_series": true,
-    "phone": "925-829-8770",
-    "phone_normalized": "9258298770",
-    "street": "3501 W. ALGONQUIN ROAD",
-    "description": "A fall workshop called Handling the Holidays discussing healthy coping strategies during the holiday season.",
-    "facilitator_type": "unknown",
-    "cadence": "varies",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"December 2 nd , Tuesday, daytime meeting 12:00 – 1:30 pm, AND evening 6:00 to 7:30 p.m.\" | cost: \"our grief support programs are offered at no charge\" | loss_types: \"For people who have experienced the death of a loved one, the winter holiday season can be painful.\""
-  },
-  {
-    "id": "a76d08ce-24a0-41da-8c63-3fae98f0af5d",
-    "slug": "karen-ann-quinlan-hospice-coping-with-loss-support-group-sussex-county-milford",
-    "name": "Coping with Loss Support Group – Sussex County",
-    "organization": "KAREN ANN QUINLAN HOSPICE",
-    "org_type": "hospice",
-    "loss_types": [
-      "general"
-    ],
-    "age_groups": [
-      "adults"
-    ],
-    "format": "in_person",
-    "cost": "free",
-    "structure": "drop_in",
-    "registration_required": "no",
-    "faith_affiliation": "unknown",
-    "schedule_text": "Third Wednesday of each month, 12:30-2:00 p.m., Joseph T. Quinlan Bereavement Center, Newton NJ",
-    "city": "MILFORD",
-    "state": "PA",
-    "metro_id": "new-york-ny",
-    "source_url": "https://karenannquinlanhospice.org/bereavement-center/",
-    "source_type": "org_website",
-    "verification_status": "source_verified",
-    "first_seen": "2026-08-18",
-    "last_checked": "2026-08-18",
-    "source_link_status": "ok",
-    "published": false,
-    "languages": [
-      "en"
-    ],
-    "extraction_confidence": "high",
-    "phone": "973-948-2283",
-    "phone_normalized": "9739482283",
-    "street": "200 THIRD STREET",
-    "description": "In-person peer support group for adults grieving the loss of a loved one, meeting monthly in Sussex County.",
-    "facilitator_type": "unknown",
-    "cadence": "monthly",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Sussex County Monthly Meeting – Third Wednesday of each month: 12:30-2:00 p.m.\" | cost: \"This program is on-going, free of charge and no pre-registration is required.\" | loss_types: \"Support Groups are open to anyone who is suffering a loss of loved one through death.\""
-  },
-  {
-    "id": "64cc266b-51e6-47b6-aeb8-459db8261301",
-    "slug": "karen-ann-quinlan-hospice-coping-with-loss-support-group-pike-county-milford",
-    "name": "Coping with Loss Support Group – Pike County",
-    "organization": "KAREN ANN QUINLAN HOSPICE",
-    "org_type": "hospice",
-    "loss_types": [
-      "general"
-    ],
-    "age_groups": [
-      "adults"
-    ],
-    "format": "in_person",
-    "cost": "free",
-    "structure": "drop_in",
-    "registration_required": "no",
-    "faith_affiliation": "unknown",
-    "schedule_text": "Fourth Tuesday of each month, 10:00 – 11:30 a.m., Karen Ann Quinlan Hospice (Milford Office), Milford, PA",
-    "city": "MILFORD",
-    "state": "PA",
-    "metro_id": "new-york-ny",
-    "source_url": "https://karenannquinlanhospice.org/bereavement-center/",
-    "source_type": "org_website",
-    "verification_status": "source_verified",
-    "first_seen": "2026-08-18",
-    "last_checked": "2026-08-18",
-    "source_link_status": "ok",
-    "published": false,
-    "languages": [
-      "en"
-    ],
-    "extraction_confidence": "high",
-    "phone": "973-948-2283",
-    "phone_normalized": "9739482283",
-    "street": "200 THIRD STREET",
-    "description": "In-person peer support group for adults grieving the loss of a loved one, meeting monthly in Pike County.",
-    "facilitator_type": "unknown",
-    "cadence": "monthly",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Fourth Tuesday of each month: 10:00 – 11:30 a.m.\" | cost: \"This program is on-going, free of charge and no pre-registration is required.\" | loss_types: \"Support Groups are open to anyone who is suffering a loss of loved one through death.\""
-  },
-  {
-    "id": "dd9c0ea8-84f1-4ffe-bd30-b28e205a8932",
-    "slug": "karen-ann-quinlan-hospice-coping-with-loss-support-group-warren-county",
-    "name": "Coping with Loss Support Group – Warren County/Hackettstown",
-    "organization": "KAREN ANN QUINLAN HOSPICE",
-    "org_type": "hospice",
-    "loss_types": [
-      "general"
-    ],
-    "age_groups": [
-      "adults"
-    ],
-    "format": "in_person",
-    "cost": "free",
-    "structure": "drop_in",
-    "registration_required": "no",
-    "faith_affiliation": "unknown",
-    "schedule_text": "Third Tuesday of every month, 10:00-11:30 a.m., Joseph T. Quinlan Bereavement Center, Hackettstown, NJ",
-    "city": "MILFORD",
-    "state": "PA",
-    "metro_id": "new-york-ny",
-    "source_url": "https://karenannquinlanhospice.org/bereavement-center/",
-    "source_type": "org_website",
-    "verification_status": "source_verified",
-    "first_seen": "2026-08-18",
-    "last_checked": "2026-08-18",
-    "source_link_status": "ok",
-    "published": false,
-    "languages": [
-      "en"
-    ],
-    "extraction_confidence": "high",
-    "phone": "973-948-2283",
-    "phone_normalized": "9739482283",
-    "street": "200 THIRD STREET",
-    "description": "In-person peer support group for adults grieving the loss of a loved one, meeting monthly in Warren County/Hackettstown.",
-    "facilitator_type": "unknown",
-    "cadence": "monthly",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Third Tuesday of every month: 10:00-11:30 a.m.\" | cost: \"This program is on-going, free of charge and no pre-registration is required.\" | loss_types: \"Support Groups are open to anyone who is suffering a loss of loved one through death.\""
-  },
-  {
-    "id": "70653ab6-a457-4dbf-9984-4771dec44a37",
-    "slug": "karen-ann-quinlan-hospice-movie-nights-milford",
-    "name": "Movie Nights",
-    "organization": "KAREN ANN QUINLAN HOSPICE",
-    "org_type": "hospice",
-    "loss_types": [
-      "general"
-    ],
-    "age_groups": [
-      "adults"
-    ],
-    "format": "in_person",
-    "cost": "unknown",
-    "structure": "unknown",
-    "registration_required": "yes",
-    "faith_affiliation": "unknown",
-    "schedule_text": "Contact the organization for current meeting times",
-    "city": "MILFORD",
-    "state": "PA",
-    "metro_id": "new-york-ny",
-    "source_url": "https://karenannquinlanhospice.org/bereavement-center/",
-    "source_type": "org_website",
-    "verification_status": "needs_review",
-    "first_seen": "2026-08-18",
-    "last_checked": "2026-08-18",
-    "source_link_status": "ok",
-    "published": false,
-    "languages": [
-      "en"
-    ],
-    "extraction_confidence": "low",
-    "phone": "973-948-2283",
-    "phone_normalized": "9739482283",
-    "street": "200 THIRD STREET",
-    "description": "Program combining a grief-themed movie screening with a mutual-aid support group discussion afterward.",
-    "facilitator_type": "unknown",
-    "cadence": "unknown",
-    "internal_notes": "Extracted from bereavement page. No quotes verified."
-  },
-  {
-    "id": "8f7a48a7-0922-4499-a0b6-c25d8da38ed0",
+    "id": "7f0bdf89-8e5a-4cc1-a54a-909ee4387b67",
     "slug": "kline-galland-hospice-services-living-with-loss-seattle",
     "name": "Living With Loss",
     "organization": "KLINE GALLAND HOSPICE SERVICES",
@@ -2577,7 +2134,7 @@
     "structure": "drop_in",
     "registration_required": "unknown",
     "faith_affiliation": "unknown",
-    "schedule_text": "every 3rd Monday at 3PM",
+    "schedule_text": "This groups meets every 3rd Monday at 3PM.",
     "city": "SEATTLE",
     "state": "WA",
     "metro_id": "seattle-wa",
@@ -2601,7 +2158,7 @@
     "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"This groups meets every 3rd Monday at 3PM.\""
   },
   {
-    "id": "c04ab3c4-a022-4dee-872e-69746041851c",
+    "id": "1cce4ed3-0ad2-4706-98fc-3e9a5cd5bdf7",
     "slug": "kline-galland-hospice-services-together-in-grief-seattle",
     "name": "Together In Grief",
     "organization": "KLINE GALLAND HOSPICE SERVICES",
@@ -2638,10 +2195,10 @@
     "description": "Gather with others in a supportive space to share thoughts and feelings that accompany the loss of a loved one.",
     "facilitator_type": "unknown",
     "cadence": "monthly",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"2nd Wednesday, 3 PM via Zoom\" | loss_types: \"Gather with others in a supportive space to share thoughts and feelings that accompany the loss of a loved one.\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"2nd Wednesday, 3 PM via Zoom\""
   },
   {
-    "id": "614877bb-5ab0-4cc7-ac96-f79391a3567d",
+    "id": "d6c2c537-3f7b-428a-bda6-77a7bed669a3",
     "slug": "kline-galland-hospice-services-compassionate-support-after-maid-seattle",
     "name": "Compassionate Support After MAiD",
     "organization": "KLINE GALLAND HOSPICE SERVICES",
@@ -2675,13 +2232,13 @@
     "phone": "206-805-1930",
     "phone_normalized": "2068051930",
     "street": "5950 SIXTH AVE S SUITE 100",
-    "description": "An opportunity to process the unique aspects of grief and loss after a loved one chooses Medical Aid in Dying .",
+    "description": "An opportunity to process the unique aspects of grief and loss after a loved one chooses Medical Aid in Dying.",
     "facilitator_type": "unknown",
     "cadence": "monthly",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"4th Tuesday, 3 PM via Zoom\" | loss_types: \"An opportunity to process the unique aspects of grief and loss after a loved one chooses Medical Aid in Dying .\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"4th Tuesday, 3 PM via Zoom\""
   },
   {
-    "id": "d6170238-f1fe-4a6c-b201-90cd52d9a07f",
+    "id": "762a45fd-b16e-4fa9-b9ed-d7cab0fa2561",
     "slug": "kline-galland-hospice-services-grief-before-loss-seattle",
     "name": "Grief Before Loss",
     "organization": "KLINE GALLAND HOSPICE SERVICES",
@@ -2721,9 +2278,52 @@
     "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"4th Friday, 11 AM via Zoom\" | loss_types: \"Support for those navigating the complex landscape of anticipatory grief.\""
   },
   {
-    "id": "3f09d108-c1c5-4466-b8b6-56d3c68c0e91",
-    "slug": "hospice-of-lancaster-coping-with-the-loss-of-a-spouse-or-partner-lancaster",
-    "name": "Coping with the Loss of a Spouse or Partner",
+    "id": "c2be6686-a8b5-4abb-bc96-f8967338dc1d",
+    "slug": "hospice-of-lancaster-coping-with-the-loss-of-a-parent-or-sibling-mt-joy",
+    "name": "Coping with the Loss of a Parent or Sibling (Mt Joy)",
+    "organization": "HOSPICE OF LANCASTER",
+    "org_type": "hospice",
+    "loss_types": [
+      "parent",
+      "sibling"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "hybrid",
+    "cost": "free",
+    "structure": "unknown",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "August 18, 2026",
+    "city": "LANCASTER",
+    "state": "SC",
+    "metro_id": "charlotte-nc",
+    "source_url": "https://www.hospiceandcommunitycare.org/grief-and-loss/",
+    "source_type": "org_website",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-18",
+    "last_checked": "2026-08-18",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "extraction_confidence": "low",
+    "schedule_expires": "2026-08-18",
+    "schedule_is_dated_series": true,
+    "phone": "717-391-2413",
+    "phone_normalized": "7173912413",
+    "street": "901 MEETING STREET, SUITE 201",
+    "description": "A support group event for those grieving the loss of a parent or sibling, held in Mt Joy.",
+    "facilitator_type": "unknown",
+    "cadence": "unknown",
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"August 18, 2026\" | cost: \"Support Groups Available free of charge online or in-person for adults, teens and children.\" | loss_types: \"Coping with the Loss of a Parent or Sibling\""
+  },
+  {
+    "id": "707450bb-aaa6-4da9-b2e7-9fd141bca38a",
+    "slug": "hospice-of-lancaster-coping-with-the-loss-of-a-spouse-or-partner-york-lancaster",
+    "name": "Coping with the Loss of a Spouse or Partner (York)",
     "organization": "HOSPICE OF LANCASTER",
     "org_type": "hospice",
     "loss_types": [
@@ -2737,7 +2337,7 @@
     "structure": "unknown",
     "registration_required": "unknown",
     "faith_affiliation": "unknown",
-    "schedule_text": "Contact the organization for current meeting times",
+    "schedule_text": "August 19, 2026",
     "city": "LANCASTER",
     "state": "SC",
     "metro_id": "charlotte-nc",
@@ -2752,22 +2352,24 @@
       "en"
     ],
     "extraction_confidence": "low",
+    "schedule_expires": "2026-08-19",
+    "schedule_is_dated_series": true,
     "phone": "717-391-2413",
     "phone_normalized": "7173912413",
     "street": "901 MEETING STREET, SUITE 201",
-    "description": "Are you grieving the death of someone you care about? Would you like to talk with others who have experienced...",
+    "description": "A support group event for those grieving the loss of a spouse or partner, held in York.",
     "facilitator_type": "unknown",
     "cadence": "unknown",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"August 11, 2026\" | cost: \"Support Groups Available free of charge online or in-person for adults, teens and children.\" | loss_types: \"Coping with the Loss of a Spouse or Partner (Mount Joy)\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"August 19, 2026\" | cost: \"Support Groups Available free of charge online or in-person for adults, teens and children.\" | loss_types: \"Coping with the Loss of a Spouse or Partner\""
   },
   {
-    "id": "4968dc81-b3dc-4141-a086-ab07ff5da31b",
-    "slug": "hospice-of-lancaster-coping-with-the-loss-of-a-child-of-any-age-lancaster",
-    "name": "Coping with the Loss of a Child (of any age)",
+    "id": "c2ca096a-36fe-4089-bc14-8f0c6d3d1de6",
+    "slug": "hospice-of-lancaster-coping-with-the-loss-of-a-spouse-or-partner-mount-joy",
+    "name": "Coping with the Loss of a Spouse or Partner (Mount Joy)",
     "organization": "HOSPICE OF LANCASTER",
     "org_type": "hospice",
     "loss_types": [
-      "child"
+      "spouse_partner"
     ],
     "age_groups": [
       "adults"
@@ -2777,7 +2379,7 @@
     "structure": "unknown",
     "registration_required": "unknown",
     "faith_affiliation": "unknown",
-    "schedule_text": "Contact the organization for current meeting times",
+    "schedule_text": "August 25, 2026",
     "city": "LANCASTER",
     "state": "SC",
     "metro_id": "charlotte-nc",
@@ -2792,18 +2394,20 @@
       "en"
     ],
     "extraction_confidence": "low",
+    "schedule_expires": "2026-08-25",
+    "schedule_is_dated_series": true,
     "phone": "717-391-2413",
     "phone_normalized": "7173912413",
     "street": "901 MEETING STREET, SUITE 201",
-    "description": "Are you grieving the death of someone you care about? Would you like to talk with others who have experienced...",
+    "description": "A support group event for those grieving the loss of a spouse or partner, held in Mount Joy.",
     "facilitator_type": "unknown",
     "cadence": "unknown",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"August 17, 2026\" | cost: \"Support Groups Available free of charge online or in-person for adults, teens and children.\" | loss_types: \"Coping with the Loss of a Child (of any age)\""
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"August 25, 2026\" | cost: \"Support Groups Available free of charge online or in-person for adults, teens and children.\" | loss_types: \"Coping with the Loss of a Spouse or Partner\""
   },
   {
-    "id": "f0ca964f-d10d-44be-8902-ec46ad8b5eb0",
-    "slug": "hospice-of-the-valley-central-hospice-of-the-valley-grief-support-groups-phoenix",
-    "name": "Hospice of the Valley Grief Support Groups",
+    "id": "19b38197-c633-4f17-9be1-dc0c6e0f708e",
+    "slug": "hospice-of-the-valley-central-hospice-of-the-valley-adult-grief-support-groups",
+    "name": "Hospice of the Valley Adult Grief Support Groups",
     "organization": "HOSPICE OF THE VALLEY - CENTRAL",
     "org_type": "hospice",
     "loss_types": [
@@ -2835,95 +2439,13 @@
     "phone": "602-530-6970",
     "phone_normalized": "6025306970",
     "street": "1510 E FLOWER ST",
-    "description": "In-person and virtual help for adults experiencing grief from the loss of a loved one. No cost.",
+    "description": "In-person and virtual group grief support for adults grieving the death of a loved one, offered by Hospice of the Valley at no charge, with sessions held at locations Valleywide or virtually.",
     "facilitator_type": "unknown",
     "cadence": "unknown",
     "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"Hospice of the Valley also provides group grief support to our community at no charge.\" | loss_types: \"Groups are open to any adult grieving the death of a loved one.\""
   },
   {
-    "id": "d8efce70-5657-4db8-a48c-d8ef2d376011",
-    "slug": "hospice-of-the-valley-central-new-song-center-for-grieving-children-phoenix",
-    "name": "New Song Center for Grieving Children",
-    "organization": "HOSPICE OF THE VALLEY - CENTRAL",
-    "org_type": "hospice",
-    "loss_types": [
-      "general"
-    ],
-    "age_groups": [
-      "children",
-      "families"
-    ],
-    "format": "unknown",
-    "cost": "free",
-    "structure": "unknown",
-    "registration_required": "unknown",
-    "faith_affiliation": "unknown",
-    "schedule_text": "Contact the organization for current meeting times",
-    "city": "PHOENIX",
-    "state": "AZ",
-    "metro_id": "phoenix-az",
-    "source_url": "https://hov.org/our-care/grief-support/",
-    "source_type": "org_website",
-    "verification_status": "needs_review",
-    "first_seen": "2026-08-18",
-    "last_checked": "2026-08-18",
-    "source_link_status": "ok",
-    "published": false,
-    "languages": [
-      "en"
-    ],
-    "extraction_confidence": "low",
-    "phone": "480-951-8985",
-    "phone_normalized": "4809518985",
-    "street": "1510 E FLOWER ST",
-    "description": "Tools to assist families with children who are grieving a death. No cost.",
-    "facilitator_type": "unknown",
-    "cadence": "unknown",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> cost: \"Tools to assist families with children who are grieving a death. No cost.\" | loss_types: \"offers up to 24 months of pediatric and family bereavement support for those grieving the death of a family member\""
-  },
-  {
-    "id": "75453fab-1dda-4a4c-b2cc-bbb7bb9ccf66",
-    "slug": "mt-hood-hospice-inc-caregivers-together-social-hour-sandy",
-    "name": "Caregivers Together Social Hour",
-    "organization": "MT. HOOD HOSPICE, INC.",
-    "org_type": "hospice",
-    "loss_types": [
-      "caregiver_anticipatory"
-    ],
-    "age_groups": [
-      "adults"
-    ],
-    "format": "online",
-    "cost": "free",
-    "structure": "unknown",
-    "registration_required": "yes",
-    "faith_affiliation": "unknown",
-    "schedule_text": "Caregivers Together Social Hour (Online) August 18 @ 10:30 am - 11:30 am PDT",
-    "city": "SANDY",
-    "state": "OR",
-    "metro_id": "portland-or",
-    "source_url": "https://mthoodhospice.org/community-services/community-grief-education/",
-    "source_type": "org_website",
-    "verification_status": "needs_review",
-    "first_seen": "2026-08-18",
-    "last_checked": "2026-08-18",
-    "source_link_status": "ok",
-    "published": false,
-    "languages": [
-      "en"
-    ],
-    "extraction_confidence": "low",
-    "schedule_expires": "2026-08-18",
-    "schedule_is_dated_series": true,
-    "phone": "503-668-5545",
-    "phone_normalized": "5036685545",
-    "street": "39085 PIONEER BOULEVARD, SUITE 1018",
-    "facilitator_type": "unknown",
-    "cadence": "unknown",
-    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Caregivers Together Social Hour (Online) August 18 @ 10:30 am - 11:30 am PDT\" | cost: \"Grief support is free of charge for phone calls and community groups.\" | loss_types: \"Groups are also available for those who are taking care of someone with a serious illness to address the grief that comes with witnessing someone’s health decli\""
-  },
-  {
-    "id": "f50c3912-f5da-4816-962c-ce8d7932cc15",
+    "id": "a4a5aa23-69d5-4936-a337-532a9a48cf78",
     "slug": "mt-hood-hospice-inc-grief-conversations-social-hour-sandy",
     "name": "Grief Conversations & Social Hour",
     "organization": "MT. HOOD HOSPICE, INC.",
@@ -2939,7 +2461,7 @@
     "structure": "unknown",
     "registration_required": "yes",
     "faith_affiliation": "unknown",
-    "schedule_text": "Grief Conversations & Social Hour (In Person) August 19 @ 10:00 am - 11:30 am PDT",
+    "schedule_text": "August 19 @ 10:00 am - 11:30 am PDT; August 25 @ 2:00 pm - 3:30 pm PDT",
     "city": "SANDY",
     "state": "OR",
     "metro_id": "portland-or",
@@ -2954,17 +2476,18 @@
       "en"
     ],
     "extraction_confidence": "low",
-    "schedule_expires": "2026-08-19",
+    "schedule_expires": "2026-08-25",
     "schedule_is_dated_series": true,
     "phone": "503-668-5545",
     "phone_normalized": "5036685545",
     "street": "39085 PIONEER BOULEVARD, SUITE 1018",
+    "description": "In-person grief support social hour offered by Mt. Hood Hospice.",
     "facilitator_type": "unknown",
-    "cadence": "unknown",
+    "cadence": "varies",
     "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Grief Conversations & Social Hour (In Person) August 19 @ 10:00 am - 11:30 am PDT\" | cost: \"Grief support is free of charge for phone calls and community groups.\""
   },
   {
-    "id": "db3d7f12-6049-48ec-bedc-d63a297b9397",
+    "id": "55f35385-43a9-4a47-964d-9161e984bc5b",
     "slug": "mt-hood-hospice-inc-grief-and-complicated-circumstances-social-hour-sandy",
     "name": "Grief and Complicated Circumstances Social Hour",
     "organization": "MT. HOOD HOSPICE, INC.",
@@ -2980,7 +2503,7 @@
     "structure": "unknown",
     "registration_required": "yes",
     "faith_affiliation": "unknown",
-    "schedule_text": "Grief and Complicated Circumstances Social Hour (Online) August 20 @ 11:30 am - 12:30 pm PDT",
+    "schedule_text": "August 20 @ 11:30 am - 12:30 pm PDT; August 27 @ 11:30 am - 12:30 pm PDT",
     "city": "SANDY",
     "state": "OR",
     "metro_id": "portland-or",
@@ -2995,17 +2518,18 @@
       "en"
     ],
     "extraction_confidence": "low",
-    "schedule_expires": "2026-08-20",
+    "schedule_expires": "2026-08-27",
     "schedule_is_dated_series": true,
     "phone": "503-668-5545",
     "phone_normalized": "5036685545",
     "street": "39085 PIONEER BOULEVARD, SUITE 1018",
+    "description": "Online support group for those experiencing complicated grief circumstances.",
     "facilitator_type": "unknown",
-    "cadence": "unknown",
+    "cadence": "varies",
     "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Grief and Complicated Circumstances Social Hour (Online) August 20 @ 11:30 am - 12:30 pm PDT\" | cost: \"Grief support is free of charge for phone calls and community groups.\""
   },
   {
-    "id": "ab2b62b0-dd31-48ee-bf7e-e888e78629d2",
+    "id": "d5033114-28b9-4717-b1dc-94090949ad47",
     "slug": "mt-hood-hospice-inc-living-with-grief-social-hour-sandy",
     "name": "Living with Grief Social Hour",
     "organization": "MT. HOOD HOSPICE, INC.",
@@ -3021,7 +2545,7 @@
     "structure": "unknown",
     "registration_required": "yes",
     "faith_affiliation": "unknown",
-    "schedule_text": "Living with Grief Social Hour (Online) August 24 @ 12:00 pm - 1:00 pm PDT",
+    "schedule_text": "August 24 @ 12:00 pm - 1:00 pm PDT",
     "city": "SANDY",
     "state": "OR",
     "metro_id": "portland-or",
@@ -3041,8 +2565,51 @@
     "phone": "503-668-5545",
     "phone_normalized": "5036685545",
     "street": "39085 PIONEER BOULEVARD, SUITE 1018",
+    "description": "Online grief support social hour.",
     "facilitator_type": "unknown",
-    "cadence": "unknown",
+    "cadence": "varies",
     "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Living with Grief Social Hour (Online) August 24 @ 12:00 pm - 1:00 pm PDT\" | cost: \"Grief support is free of charge for phone calls and community groups.\""
+  },
+  {
+    "id": "0e07bd36-fb98-4b5c-bd7e-ca060cd40445",
+    "slug": "mt-hood-hospice-inc-caregivers-together-social-hour-sandy",
+    "name": "Caregivers Together Social Hour",
+    "organization": "MT. HOOD HOSPICE, INC.",
+    "org_type": "hospice",
+    "loss_types": [
+      "caregiver_anticipatory"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "online",
+    "cost": "free",
+    "structure": "unknown",
+    "registration_required": "yes",
+    "faith_affiliation": "unknown",
+    "schedule_text": "August 25 @ 10:30 am - 11:30 am PDT",
+    "city": "SANDY",
+    "state": "OR",
+    "metro_id": "portland-or",
+    "source_url": "https://mthoodhospice.org/community-services/community-grief-education/",
+    "source_type": "org_website",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-18",
+    "last_checked": "2026-08-18",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "extraction_confidence": "low",
+    "schedule_expires": "2026-08-25",
+    "schedule_is_dated_series": true,
+    "phone": "503-668-5545",
+    "phone_normalized": "5036685545",
+    "street": "39085 PIONEER BOULEVARD, SUITE 1018",
+    "description": "Online support group for caregivers of those with serious illness, addressing anticipatory grief.",
+    "facilitator_type": "unknown",
+    "cadence": "varies",
+    "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Caregivers Together Social Hour (Online) August 25 @ 10:30 am - 11:30 am PDT\" | cost: \"Grief support is free of charge for phone calls and community groups.\" | loss_types: \"Groups are also available for those who are taking care of someone with a serious illness to address the grief that comes with witnessing someone’s health decli\""
   }
 ]
