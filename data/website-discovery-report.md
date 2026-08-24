@@ -1,6 +1,6 @@
 # Website Discovery Report
 
-_Generated 2026-08-23 21:27 UTC_
+_Generated 2026-08-24 19:55 UTC_
 
 Every website below was **proved** to belong to its organization, either by 
 finding the CMS-registered phone number in the page text or by matching every 
@@ -11,16 +11,16 @@ Unproven matches are recorded as `mismatch` and never published.
 
 | Outcome | Count |
 |---|---|
-| `not_found` | 82 |
-| `verified_name` | 32 |
-| `verified_phone` | 21 |
-| `robots_disallowed` | 15 |
+| `not_found` | 145 |
+| `verified_name` | 46 |
+| `verified_phone` | 33 |
+| `robots_disallowed` | 19 |
 
 ## Cumulative
 
 - Organizations checked: **243**
-- Website verified: **90** (37%)
-- Bereavement page found: **63**
+- Website verified: **79** (33%)
+- Bereavement page found: **57**
 
 **Organizations with a bereavement page are the ones that become listings.**
 
@@ -36,18 +36,14 @@ Unproven matches are recorded as `mismatch` and never published.
 | CAROLINA CARING | charlotte-nc | `verified_name` | https://www.carolinacaring.org/grief-and-healing/ |
 | HOSPICE & PALLIATIVE CARE CHARLOTTE REGI | charlotte-nc | `verified_phone` | https://www.hpccr.org/grief-counseling |
 | HOSPICE & PALLIATIVE CARE PALMETTO REGIO | charlotte-nc | `verified_phone` | https://www.viahp.org/grief-support |
-| HOSPICE OF LANCASTER | charlotte-nc | `verified_name` | https://www.hospiceandcommunitycare.org/grief-and-loss/ |
-| HOPE HOSPICE, INC | chicago-il | `verified_name` | https://www.hopehospice.com/services/grief/ |
 | HOSPICE ALLIANCE | chicago-il | `verified_phone` | https://www.hospicealliance.org/grief-support |
 | JOURNEYCARE - BARRINGTON | chicago-il | `verified_name` | https://journeycare.org/grief-support/ |
 | PROVIDENCE HOSPICE | chicago-il | `verified_phone` | https://www.providencelifeservices.com/resources/blog/hospic |
 | RESIDENTIAL HOSPICE | chicago-il | `verified_name` | https://residentialhealthcaregroup.com/services/bereavement/ |
-| MOUNT EVANS HOSPICE, INC | denver-co | `verified_phone` | https://mtevans.org/services/emotional-support/ |
 | COMPASSUS-NORTHERN DETROIT | detroit-mi | `verified_name` | https://www.compassus.com/for-caregivers/hospice-grief-suppo |
 | HOUSTON HOSPICE | houston-tx | `verified_phone` | https://www.houstonhospice.org/what-we-do/services/bereaveme |
 | SKIRBALL HOSPICE | los-angeles-ca | `verified_name` | https://www.vnacare.com/grief-support/ |
 | CATHOLIC HOSPICE INC | miami-fl | `verified_name` | https://www.catholichealthservices.org/hospice/grief-support |
-| HOSPICE BY THE SEA INC | miami-fl | `verified_name` | https://hospicebythesea.org/bereavement-support-death-and-dy |
 | ADORAY HOME HEALTH AND HOSPICE | minneapolis-mn | `verified_phone` | https://adoray.org/caregiver-grief-support |
 | ALLINA HEALTH HOSPICE & PALLIATIVE CARE | minneapolis-mn | `verified_name` | https://www.allinahealth.org/health-conditions-and-treatment |
 | ECUMEN HOSPICE | minneapolis-mn | `verified_name` | https://ecumen.org/hospice/hospice-care/#1771442872-1-34 |
@@ -58,3 +54,7 @@ Unproven matches are recorded as `mismatch` and never published.
 | KAREN ANN QUINLAN HOSPICE | new-york-ny | `verified_name` | https://karenannquinlanhospice.org/bereavement-center/ |
 | KAREN ANN QUINLAN HOSPICE | new-york-ny | `verified_name` | https://karenannquinlanhospice.org/bereavement-center/ |
 | ROBERT WOOD JOHNSON VISITING NURSE, INC | new-york-ny | `verified_name` | https://vnahg.org/bereavement-support-for-loved-ones/ |
+| DELAWARE HOSPICE - NORTH DIVISION | philadelphia-pa | `verified_name` | https://delawarehospice.org/events/ |
+| DELAWARE HOSPICE, INC. | philadelphia-pa | `verified_name` | https://delawarehospice.org/events/ |
+| HOSPICE OF THE VALLEY - CENTRAL | phoenix-az | `verified_name` | https://hov.org/our-care/grief-support/ |
+| HOSPICE OF THE VALLEY - WEST (031515) | phoenix-az | `verified_name` | https://hov.org/our-care/grief-support/ |
