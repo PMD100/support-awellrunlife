@@ -35,12 +35,22 @@ import argparse
 import html
 import json
 import os
+import sys
 from collections import defaultdict
 from datetime import date, datetime
 
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 LISTINGS_PATH = os.path.join(REPO_ROOT, "data", "listings.json")
 OUT_PATH = os.path.join(REPO_ROOT, "site", "page-body.html")
+
+# Read from the discovery script rather than duplicated here, so that raising the rule
+# there automatically withholds everything checked under the old one. A copy of this
+# number would drift, and the drift would be silent and would favour publishing.
+sys.path.insert(0, os.path.join(REPO_ROOT, "scripts", "ingest"))
+try:
+    from discover_websites import VERIFICATION_RULE_VERSION
+except Exception:                                              # pragma: no cover
+    VERIFICATION_RULE_VERSION = 2
 
 LOSS = {
     "general": "General grief", "spouse_partner": "Loss of a spouse or partner",
@@ -194,11 +204,32 @@ def load_verified_sources():
     # "Hope Hospice, Pittsburgh PA" onto the page, because a *different* Hope Hospice
     # (Rolling Meadows, IL) was still verified against that same California website.
     # The listing has to be traceable to a verified organization in its own city.
+    #
+    # AND verified under the CURRENT rule. This is the harder lesson.
+    #
+    # "Verified" is not a permanent property of an organization; it is a claim made by a
+    # particular version of the matching logic. When the state-match requirement landed,
+    # every record checked before it became an unproven claim wearing a verified badge.
+    # The re-check is meant to settle them, but it is a long crawl and it does not always
+    # finish - and while it hasn't, those records keep asserting a verification that the
+    # code no longer stands behind.
+    #
+    # That is not hypothetical. Hope Hospice of Rolling Meadows, Illinois sat at rule 0,
+    # still pointing at a California hospice's website. Its three same-named siblings in
+    # Pennsylvania, Texas and New Jersey were re-checked and correctly invalidated; this
+    # one was missed, so extraction read the California page again and published six
+    # Illinois listings carrying a 925 area code.
+    #
+    # So the page now refuses to publish anything whose verification predates the current
+    # rule. The listings are not deleted - they return automatically the moment the
+    # re-check confirms them. An unproven listing is withheld by default, and proving it
+    # is the pipeline's job, not the reader's.
     return {(o["name"].strip().upper(), (o.get("city") or "").strip().upper(),
              o["bereavement_page"])
             for o in orgs
             if o.get("bereavement_page")
-            and str(o.get("website_status", "")).startswith("verified")}
+            and str(o.get("website_status", "")).startswith("verified")
+            and (o.get("verification_rule") or 0) >= VERIFICATION_RULE_VERSION}
 
 
 def build(listings):
