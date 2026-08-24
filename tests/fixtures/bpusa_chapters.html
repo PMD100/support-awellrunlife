@@ -1,0 +1,179 @@
+<!--
+  Test fixture: Bereaved Parents of the USA chapter directory
+  ==========================================================
+
+  A trimmed, sanitised copy of the markup at bereavedparentsusa.org/find-a-chapter/
+  (captured 2026-08-23). The real page is ~150 KB of WPBakery output; this keeps the
+  structure that matters and one example of every shape the parser has to survive.
+
+  Chapter names, leader names, phone numbers and addresses below are INVENTED. Using
+  real volunteers' home addresses and personal email addresses as test data - committed
+  to a public repository, forever - would be precisely the harm the parser exists to
+  prevent. The shapes are faithful; the people are not real.
+
+  Cases covered, in order:
+    1. Minimal        - leader, one phone, one email. No address, no schedule.
+    2. Home address   - a bare street address straight after the leader's name. This is
+                        the leader's house. It must NOT reach a listing.
+    3. Two phones     - "phone" and "cell" labels, two tel: links.
+    4. Labelled venue - <strong>Meeting location:</strong> plus a separate Date/Time line.
+                        This address IS publishable; it is a public venue.
+    5. Inline venue   - "Meet the second Saturday ... at <venue> <address>" in one
+                        sentence, with no label. Publishable, but only because the
+                        sentence itself says it is where the group meets.
+    6. Home + website - home address AND a real chapter website AND a Facebook group.
+                        The website may be used; Facebook may not; the address may not.
+    7. City in name   - "Chicagoland Chapter" carries its city only in its own name.
+    8. Empty panel    - a chapter with a heading and nothing else. Must not crash.
+-->
+<div class="entry-content">
+<h2>Our BPUSA National Chapters</h2>
+<p>Please contact chapter leaders for meeting information.</p>
+
+<h2>Alabama</h2>
+<div class="vc_tta-container" data-vc-action="collapse">
+ <div class="vc_tta vc_general vc_tta-accordion">
+  <div class="vc_tta-panels-container"><div class="vc_tta-panels">
+
+   <div class="vc_tta-panel" id="panel-1">
+    <div class="vc_tta-panel-heading">
+     <h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left">
+      <a href="#panel-1"><span class="vc_tta-title-text">Northern Alabama Chapter</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a>
+     </h4>
+    </div>
+    <div class="vc_tta-panel-body">
+     <div class="wpb_text_column wpb_content_element"><div class="wpb_wrapper">
+      <p><strong>Chapter Leader</strong> Susan Fink</p>
+      <p><a href="tel:2565806011">(256) 580-6011</a> | <a href="mailto:northalabama@example.org">Email</a></p>
+     </div></div>
+    </div>
+   </div>
+
+  </div></div>
+ </div>
+</div>
+
+<h2>Arkansas</h2>
+<div class="vc_tta-container" data-vc-action="collapse">
+ <div class="vc_tta vc_general vc_tta-accordion">
+  <div class="vc_tta-panels-container"><div class="vc_tta-panels">
+
+   <div class="vc_tta-panel" id="panel-2">
+    <div class="vc_tta-panel-heading">
+     <h4 class="vc_tta-panel-title"><a href="#panel-2"><span class="vc_tta-title-text">The North of The River Chapter</span></a></h4>
+    </div>
+    <div class="vc_tta-panel-body">
+     <div class="wpb_text_column"><div class="wpb_wrapper">
+      <p><strong>Chapter Leader</strong> Becky Russell</p>
+      <p>4821 Centennial Rd. Jacksonville, AR 72076-9650,</p>
+      <p><a href="tel:5018315200">(501) 831-5200</a> | <a href="mailto:becky.example@example.com">Email</a> | <a href="https://www.facebook.com/groups/000000">Facebook</a></p>
+     </div></div>
+    </div>
+   </div>
+
+   <div class="vc_tta-panel" id="panel-3">
+    <div class="vc_tta-panel-heading">
+     <h4 class="vc_tta-panel-title"><a href="#panel-3"><span class="vc_tta-title-text">Western Arkansas Chapter</span></a></h4>
+    </div>
+    <div class="vc_tta-panel-body">
+     <div class="wpb_text_column"><div class="wpb_wrapper">
+      <p><strong>Chapter Leader</strong> Toni Holohan</p>
+      <p>1110 North 9th Street Van Buren AR 72956</p>
+      <p><a href="tel:4794749773">(479) 474-9773</a> phone | <a href="tel:4794209634">(479) 420-9634</a> cell | <a href="mailto:toni.example@example.org">Email</a></p>
+     </div></div>
+    </div>
+   </div>
+
+  </div></div>
+ </div>
+</div>
+
+<h2>California</h2>
+<div class="vc_tta-container" data-vc-action="collapse">
+ <div class="vc_tta vc_general vc_tta-accordion">
+  <div class="vc_tta-panels-container"><div class="vc_tta-panels">
+
+   <div class="vc_tta-panel" id="panel-4">
+    <div class="vc_tta-panel-heading">
+     <h4 class="vc_tta-panel-title"><a href="#panel-4"><span class="vc_tta-title-text">El Dorado County</span></a></h4>
+    </div>
+    <div class="vc_tta-panel-body">
+     <div class="wpb_text_column"><div class="wpb_wrapper">
+      <p><strong>Chapter Leader</strong> Genny Lou-Barton</p>
+      <p><a href="tel:9164209790">(916) 420-9790</a> | <a href="mailto:eldorado@example.org">Chapter Email</a></p>
+      <p><strong>Meeting location:</strong> Raley&#8217;s &#8211; Gather Room 3935 Park Drive Eldorado Hills, CA 95762</p>
+      <p>Date: 2nd Sunday of each month Time: 1:00pm &#8211; 3:00pm</p>
+     </div></div>
+    </div>
+   </div>
+
+  </div></div>
+ </div>
+</div>
+
+<h2>Florida</h2>
+<div class="vc_tta-container" data-vc-action="collapse">
+ <div class="vc_tta vc_general vc_tta-accordion">
+  <div class="vc_tta-panels-container"><div class="vc_tta-panels">
+
+   <div class="vc_tta-panel" id="panel-5">
+    <div class="vc_tta-panel-heading">
+     <h4 class="vc_tta-panel-title"><a href="#panel-5"><span class="vc_tta-title-text">South Florida Chapter</span></a></h4>
+    </div>
+    <div class="vc_tta-panel-body">
+     <div class="wpb_text_column"><div class="wpb_wrapper">
+      <p><strong>Chapter Leader</strong> Laura Boone</p>
+      <p>Meet the second Saturday of the month at 11:00 am Art Serve (in the board room) 1350 E Sunrise Bl Ft Lauderdale, FL 33304</p>
+      <p><a href="mailto:laura.example@example.com">Email</a> | <a href="tel:7867439459">Phone</a></p>
+     </div></div>
+    </div>
+   </div>
+
+   <div class="vc_tta-panel" id="panel-6">
+    <div class="vc_tta-panel-heading">
+     <h4 class="vc_tta-panel-title"><a href="#panel-6"><span class="vc_tta-title-text">Tampa Bay Chapter</span></a></h4>
+    </div>
+    <div class="vc_tta-panel-body">
+     <div class="wpb_text_column"><div class="wpb_wrapper">
+      <p><strong>Chapter Leader</strong> Debbie Nemitz &amp; Lori Scragg</p>
+      <p>1406 Stephens Oak Ct Plant City, FL 33567 Debbie <a href="tel:8135019567">(813) 501-9567</a> | Lori <a href="tel:8133612946">(813) 361-2946</a> | <a href="mailto:info@example.com">Email</a> | <a href="http://www.example-tampabay.org/">Website</a></p>
+     </div></div>
+    </div>
+   </div>
+
+  </div></div>
+ </div>
+</div>
+
+<h2>Illinois</h2>
+<div class="vc_tta-container" data-vc-action="collapse">
+ <div class="vc_tta vc_general vc_tta-accordion">
+  <div class="vc_tta-panels-container"><div class="vc_tta-panels">
+
+   <div class="vc_tta-panel" id="panel-7">
+    <div class="vc_tta-panel-heading">
+     <h4 class="vc_tta-panel-title"><a href="#panel-7"><span class="vc_tta-title-text">Chicagoland Chapter</span></a></h4>
+    </div>
+    <div class="vc_tta-panel-body">
+     <div class="wpb_text_column"><div class="wpb_wrapper">
+      <p><strong>Chapter Leader</strong> Sally Yarberry</p>
+      <p>PO Box 320 Western Springs, IL 60558</p>
+      <p><a href="tel:7087380396">(708) 738-0396</a> | <a href="mailto:chicago.example@example.com">Email</a></p>
+     </div></div>
+    </div>
+   </div>
+
+   <div class="vc_tta-panel" id="panel-8">
+    <div class="vc_tta-panel-heading">
+     <h4 class="vc_tta-panel-title"><a href="#panel-8"><span class="vc_tta-title-text">Placeholder Chapter</span></a></h4>
+    </div>
+    <div class="vc_tta-panel-body">
+     <div class="wpb_text_column"><div class="wpb_wrapper"></div></div>
+    </div>
+   </div>
+
+  </div></div>
+ </div>
+</div>
+
+</div>

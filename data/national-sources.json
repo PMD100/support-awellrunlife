@@ -105,7 +105,10 @@
       "sitemap": "https://bereavedparentsusa.org/wp-sitemap.xml",
       "robots_note": "BEST AUTOMATABLE SOURCE FOUND. Verified 2026-08-23. The path recorded here previously (/chapters) 404s; the real one is /find-a-chapter/. That single static HTML page carries EVERY chapter, grouped under state headings, with chapter name, leader, phone, email, and sometimes a street address and meeting schedule. One request, no pagination, no JavaScript.",
       "render": "html",
-      "privacy_note": "Publishes volunteers' PERSONAL home addresses and personal email addresses (e.g. a leader's home street address in Jacksonville AR). Take chapter name, city, state and phone; link back to bereavedparentsusa.org for contact. Do NOT republish a volunteer's home address or personal email on a page we are actively driving search traffic to."
+      "privacy_note": "Publishes volunteers' PERSONAL home addresses and personal email addresses (e.g. a leader's home street address in Jacksonville AR). Take chapter name, city, state and phone; link back to bereavedparentsusa.org for contact. Do NOT republish a volunteer's home address or personal email on a page we are actively driving search traffic to.",
+      "adapter": "scripts/ingest/national_orgs/bpusa.py",
+      "workflow": ".github/workflows/ingest-bpusa.yml",
+      "adapter_built": "2026-08-23"
     },
     {
       "id": "grasp",

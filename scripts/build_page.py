@@ -46,6 +46,7 @@ LOSS = {
     "general": "General grief", "spouse_partner": "Loss of a spouse or partner",
     "child": "Loss of a child", "pregnancy_infant": "Pregnancy or infant loss",
     "parent": "Loss of a parent", "sibling": "Loss of a sibling",
+    "grandparent": "Loss of a grandchild or grandparent",
     "suicide": "Suicide loss", "overdose_substance": "Overdose loss",
     "homicide": "Homicide loss", "accident_sudden": "Sudden loss",
     "illness_long": "Loss after illness", "military_service": "Military loss",
@@ -206,13 +207,27 @@ def build(listings):
             if l.get("name") and l.get("organization") and not is_expired(l, today)]
 
     # Drop listings whose organization no longer has a verified website.
+    #
+    # SCOPE: this test applies ONLY to listings built by website discovery
+    # (source_type "org_website"). That is the pipeline it was written to police - we
+    # guessed a hospice's website, and if the guess is later withdrawn every listing
+    # built from it is void.
+    #
+    # A listing from a national organisation's own directory has different provenance:
+    # we fetched one authoritative page at a known URL and read it. There is no guess to
+    # withdraw, and no organizations.json record to check against. Running those through
+    # a hospice-verification test is a category error - it silently deleted every BPUSA
+    # chapter on the first run, because of course none of them were in organizations.json.
     allowed = load_verified_sources()
     if allowed is not None:
-        before = len(live)
-        live = [l for l in live
-                if ((l.get("organization") or "").strip().upper(),
+        def survives(l):
+            if l.get("source_type") != "org_website":
+                return True
+            return ((l.get("organization") or "").strip().upper(),
                     (l.get("city") or "").strip().upper(),
-                    l.get("source_url")) in allowed]
+                    l.get("source_url")) in allowed
+        before = len(live)
+        live = [l for l in live if survives(l)]
         if before != len(live):
             print(f"  withheld {before - len(live)} listing(s): "
                   f"organization's website is no longer verified")

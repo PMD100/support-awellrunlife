@@ -71,6 +71,15 @@ Ingest CMS Hospices  ->  Discover Websites  ->  Extract Groups  ->  page rebuild
 Each reads what the one before it merged. Running them out of order isn't destructive —
 the later one just works from stale input, and you re-run it afterwards.
 
+**Ingest BPUSA Chapters sits outside that chain.** It reads one page from Bereaved
+Parents of the USA and rebuilds the directory page itself, so it can be run at any time,
+on its own, in about ten seconds. No API key, no cost.
+
+Before merging its pull request, open `data/bpusa-report.md` and check the
+**"Personal data discarded"** table. It should show a non-zero count of email addresses
+and of addresses presumed personal. Zero doesn't mean the page got cleaner — it means
+the filter stopped recognising them, and that's the one failure worth catching by eye.
+
 ---
 
 ## When something looks wrong

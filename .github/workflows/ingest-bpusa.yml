@@ -1,0 +1,103 @@
+# Ingest BPUSA Chapters
+#
+# Reads the Bereaved Parents of the USA chapter directory - one page, one request - and
+# turns it into listings for child, sibling and grandparent loss. Those are the
+# categories hospice bereavement programmes serve worst, so this is the source that
+# widens the directory rather than deepening it.
+#
+# PRIVACY IS THE POINT OF THIS JOB
+# BPUSA publishes chapter leaders' personal email addresses and, for many chapters,
+# their home addresses. Those people are volunteers, most of them bereaved parents. The
+# adapter discards every email address and every address that the page does not itself
+# label as a meeting location, and the run FAILS rather than opening a pull request if
+# any of it slips through. The report in the pull request lists exactly what was
+# discarded, so the refusal is visible and not merely claimed.
+#
+# No API key. No cost. Roughly ten seconds.
+
+name: Ingest BPUSA Chapters
+
+on:
+  workflow_dispatch:
+    inputs:
+      inspect_only:
+        description: "Fetch and report, but change nothing"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      # Runs against the committed fixture before anything touches the network. If the
+      # privacy filter has regressed we find out here, for free, instead of in a diff.
+      - name: Verify the parser and the privacy filter
+        run: python3 scripts/ingest/national_orgs/bpusa.py --offline-test
+
+      - name: Read the chapter directory
+        run: |
+          if [ "${{ inputs.inspect_only }}" = "true" ]; then
+            python3 scripts/ingest/national_orgs/bpusa.py --inspect
+          else
+            python3 scripts/ingest/national_orgs/bpusa.py
+          fi
+
+      - name: Rebuild the directory page
+        if: inputs.inspect_only != true
+        run: python3 scripts/build_page.py
+
+      - name: Summarize
+        if: always()
+        run: |
+          {
+            echo "## BPUSA ingest"
+            echo ""
+            cat data/bpusa-report.md 2>/dev/null || echo "_No report written._"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Open a pull request with the results
+        if: inputs.inspect_only != true
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: data/bpusa-chapters
+          delete-branch: true
+          commit-message: "BPUSA chapter listings"
+          title: "Data: Bereaved Parents of the USA chapters"
+          body: |
+            Chapter listings read from
+            <https://bereavedparentsusa.org/find-a-chapter/>.
+
+            **Check the "Personal data discarded" table in `data/bpusa-report.md`
+            before merging.** It should show a non-zero count of email addresses and
+            of addresses presumed personal. Zero would mean the filter stopped
+            matching the page rather than that the page stopped carrying them.
+
+            Also worth a look:
+
+            * No listing should carry an email address anywhere.
+            * `description` should only ever read "Meets at ...".
+            * Chapters with a published meeting time are `source_verified`;
+              the rest are `needs_review` and say "call ahead" on the page.
+
+            `site/page-body.html` is rebuilt in this same diff, so the page is ready
+            to paste once this merges.
+          labels: |
+            data
+            automated
