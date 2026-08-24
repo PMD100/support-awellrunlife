@@ -36,7 +36,7 @@
       "id": "afsp",
       "name": "American Foundation for Suicide Prevention",
       "domain": "afsp.org",
-      "directory_path": "/find-a-support-group",
+      "directory_path": "/find-a-support-group/",
       "loss_types": [
         "suicide"
       ],
@@ -44,12 +44,17 @@
       "est_us_chapters": 400,
       "est_in_our_metros": 90,
       "priority": 1,
-      "access_status": "automate",
+      "access_status": "contact_first",
       "sensitivity": "high",
       "notes": "Well-maintained finder. Suicide loss is high-intent and almost unserved by hospices. Requires the crisis banner and careful copy - see the sensitivity rules in the verification policy.",
-      "robots_checked": "2026-08-06",
-      "robots_note": "robots.txt says 'Allow: /' explicitly, and publishes a sitemap index at https://afsp.org/sitemap-index.xml. Use the sitemap to enumerate group pages rather than crawling navigation - far fewer requests and more reliable.",
-      "sitemap": "https://afsp.org/sitemap-index.xml"
+      "robots_checked": "2026-08-23",
+      "robots_note": "NO CRAWLABLE GROUP PAGES. Re-verified 2026-08-23. robots.txt does say 'Allow: /' and the sitemap index is real, but sitemap-0.xml contains exactly FOUR urls matching 'support-group', all of them informational: /find-a-support-group/, /information-for-support-group-facilitators/, /facilitating-a-suicide-bereavement-support-group/ and /chapter/find-a-support-group. There is no page per group. The finder is an Astro widget - the served HTML reads 'Select an option above to show support groups' and the ~400 groups are returned by an internal API only. The earlier note here ('use the sitemap to enumerate group pages') was written when this source was catalogued and was never verified; it was wrong. Same category as TCF and NACG: reachable by asking, not by crawling.",
+      "sitemap": "https://afsp.org/sitemap-index.xml",
+      "render": "javascript",
+      "contact": {
+        "phone": "888-333-2377",
+        "url": "https://afsp.org/about-afsp/#contact-our-national-office"
+      }
     },
     {
       "id": "nacg",
@@ -86,19 +91,21 @@
       "id": "bereaved-parents-usa",
       "name": "Bereaved Parents of the USA",
       "domain": "bereavedparentsusa.org",
-      "directory_path": "/chapters",
+      "directory_path": "/find-a-chapter/",
       "loss_types": [
         "child"
       ],
-      "structure": "chapter",
+      "structure": "single_page",
       "est_us_chapters": 60,
       "est_in_our_metros": 20,
       "priority": 2,
       "access_status": "automate",
       "notes": "Complements Compassionate Friends. Expect overlap - dedupe on address and meeting time.",
-      "robots_checked": "2026-08-06",
+      "robots_checked": "2026-08-23",
       "sitemap": "https://bereavedparentsusa.org/wp-sitemap.xml",
-      "robots_note": "Only shop and wp-admin paths disallowed; chapter directory permitted. Sitemap available - use it instead of crawling navigation."
+      "robots_note": "BEST AUTOMATABLE SOURCE FOUND. Verified 2026-08-23. The path recorded here previously (/chapters) 404s; the real one is /find-a-chapter/. That single static HTML page carries EVERY chapter, grouped under state headings, with chapter name, leader, phone, email, and sometimes a street address and meeting schedule. One request, no pagination, no JavaScript.",
+      "render": "html",
+      "privacy_note": "Publishes volunteers' PERSONAL home addresses and personal email addresses (e.g. a leader's home street address in Jacksonville AR). Take chapter name, city, state and phone; link back to bereavedparentsusa.org for contact. Do NOT republish a volunteer's home address or personal email on a page we are actively driving search traffic to."
     },
     {
       "id": "grasp",
@@ -122,20 +129,21 @@
       "id": "share-pregnancy-infant-loss",
       "name": "Share Pregnancy & Infant Loss Support",
       "domain": "nationalshare.org",
-      "directory_path": "/find-support",
+      "directory_path": "/find-a-share-chapter-near-you",
       "loss_types": [
         "pregnancy_infant"
       ],
       "structure": "chapter",
-      "est_us_chapters": 75,
+      "est_us_chapters": 65,
       "est_in_our_metros": 25,
       "priority": 2,
       "access_status": "automate",
       "sensitivity": "high",
       "notes": "Often hospital-affiliated, so cross-reference with health system pages.",
-      "robots_checked": "2026-08-06",
+      "robots_checked": "2026-08-23",
       "sitemap": "https://www.nationalshare.org/sitemap.xml",
-      "robots_note": "No Disallow rules at all. Notably publishes 'Content-Signal: search=yes, ai-input=yes, ai-train=yes' - an explicit opt-in to AI and search use. About as clear a permission as a site can give."
+      "robots_note": "Verified 2026-08-23. Real HTML, no bot blocking, and the site publishes 'Content-Signal: search=yes, ai-input=yes, ai-train=yes' - an explicit opt-in. The chapter data sits behind 50 per-state expanders on /find-a-share-chapter-near-you; a click did not expand the section in the accessibility tree, so the expander target still needs identifying before an adapter is written. Site says 'over 65 Chapters in 29 states'.",
+      "render": "html_with_client_side_expand"
     },
     {
       "id": "miss-foundation",
@@ -211,5 +219,6 @@
       "sitemap": "https://www.griefshare.org/sitemap.xml.gz",
       "robots_note": "robots.txt has an empty 'User-agent: *' block with no rules, which technically permits crawling. Status deliberately stays contact_first - 900 groups in our metros would swamp every page, and an organization this size deserves to be asked."
     }
-  ]
+  ],
+  "_finding_2026_08_23": "The large national directories gate their group data behind JavaScript; the small ones publish plain HTML. TCF (500), NACG (652), AFSP (400) and GriefShare (8000) are all JS-gated - about 1,550 US groups that no amount of crawling will reach. BPUSA (60), Share (65), MISS (40) and Soaring Spirits (50) are plausibly crawlable, roughly 215 groups. Engineering buys the small half; the large half has to be asked for. Send the outreach email."
 }
