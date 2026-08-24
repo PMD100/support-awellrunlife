@@ -2484,5 +2484,1828 @@
     "facilitator_type": "unknown",
     "cadence": "varies",
     "internal_notes": "Extracted from bereavement page. Verified quotes -> schedule: \"Caregivers Together Social Hour (Online) August 25 @ 10:30 am - 11:30 am PDT\" | cost: \"Grief support is free of charge for phone calls and community groups.\" | loss_types: \"Groups are also available for those who are taking care of someone with a serious illness to address the grief that comes with witnessing someone’s health decli\""
+  },
+  {
+    "id": "feb17f8a-0348-498e-abd8-7fd97b53efcb",
+    "slug": "bpusa-northern-alabama-chapter-al",
+    "name": "Northern Alabama Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "AL",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "256-580-6011",
+    "phone_normalized": "2565806011"
+  },
+  {
+    "id": "ef666df6-d6d9-466d-89f4-0c631a6a7482",
+    "slug": "bpusa-baxter-county-outreach-chapter-ar",
+    "name": "Baxter County Outreach Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "AR",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "870-405-5763",
+    "phone_normalized": "8704055763"
+  },
+  {
+    "id": "e2467d96-c193-4198-84f1-74d50fa5e8f4",
+    "slug": "bpusa-central-arkansas-outreach-chapter-ar",
+    "name": "Central Arkansas Outreach Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "AR",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "501-681-1464",
+    "phone_normalized": "5016811464"
+  },
+  {
+    "id": "24f93f77-0272-4392-9676-d62d76561d24",
+    "slug": "bpusa-conway-chapter-ar",
+    "name": "Conway Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "AR",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "501-908-4824",
+    "phone_normalized": "5019084824"
+  },
+  {
+    "id": "36feabcf-277c-42ab-872f-ddbefca24742",
+    "slug": "bpusa-the-north-of-the-arkansas-river-chapter-ar",
+    "name": "The North of The Arkansas River Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "AR",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "501-831-5200",
+    "phone_normalized": "5018315200"
+  },
+  {
+    "id": "8270be4c-d9bc-49f0-8d3d-3c346b561ecc",
+    "slug": "bpusa-northwest-ar-chapter-ar",
+    "name": "Northwest AR Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "AR",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "479-721-1837",
+    "phone_normalized": "4797211837"
+  },
+  {
+    "id": "47d3654c-5530-4152-a019-62c94f1c9aef",
+    "slug": "bpusa-south-central-arkansas-chapter-ar",
+    "name": "South Central Arkansas Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "AR",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "501-226-8265",
+    "phone_normalized": "5012268265"
+  },
+  {
+    "id": "1b8c1bb6-c69b-4e2e-a43f-dfe04d918b87",
+    "slug": "bpusa-western-arkansas-chapter-ar",
+    "name": "Western Arkansas Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "AR",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "479-474-9773",
+    "phone_normalized": "4794749773"
+  },
+  {
+    "id": "b4145361-21b2-4301-8fa8-da0e4b2972b9",
+    "slug": "bpusa-aguanga-anza-outreach-chapter-ca",
+    "name": "Aguanga/Anza Outreach Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "CA",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "951-551-2826",
+    "phone_normalized": "9515512826"
+  },
+  {
+    "id": "0aaa6af4-e6df-432c-ae33-5a6de12f41ff",
+    "slug": "bpusa-el-dorado-county-park-drive-eldorado-hills",
+    "name": "El Dorado County",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Date: 2nd Sunday of each month Time: 1:00pm – 3:00pm",
+    "state": "CA",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "source_verified",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "city": "Park Drive Eldorado Hills",
+    "phone": "916-420-9790",
+    "phone_normalized": "9164209790",
+    "description": "Meets at Raley’s – Gather Room 3935 Park Drive Eldorado Hills, CA 95762."
+  },
+  {
+    "id": "23f0c26b-9a5c-4d6e-a0d8-5b94ca1ae253",
+    "slug": "bpusa-lake-almanor-basin-chapter-ca",
+    "name": "Lake Almanor Basin Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "CA",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "530-931-8726",
+    "phone_normalized": "5309318726"
+  },
+  {
+    "id": "c82c024d-d16f-4576-b1b7-94cb7ff85cc7",
+    "slug": "bpusa-sacramento-south-placer-county-chapter-ca",
+    "name": "Sacramento-South Placer County Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "CA",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "916-755-2202",
+    "phone_normalized": "9167552202",
+    "url": "https://bereavedparentstogether.org/"
+  },
+  {
+    "id": "06e2d48a-0589-487b-897f-abea2417461c",
+    "slug": "bpusa-san-diego-north-inland-chapter-san-diego",
+    "name": "San Diego North Inland Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "CA",
+    "metro_id": "san-diego-ca",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "city": "San Diego",
+    "phone": "619-994-3010",
+    "phone_normalized": "6199943010"
+  },
+  {
+    "id": "e780ebcd-5d3c-4bc5-b070-d88204a80043",
+    "slug": "bpusa-connecticut-shoreline-chapter-ct",
+    "name": "Connecticut Shoreline Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "CT",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "203-645-7777",
+    "phone_normalized": "2036457777"
+  },
+  {
+    "id": "61a8f18f-1e18-4186-8595-7fd54c645218",
+    "slug": "bpusa-southeastern-ct-chapter-ct",
+    "name": "Southeastern CT Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "CT",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "860-451-8354",
+    "phone_normalized": "8604518354"
+  },
+  {
+    "id": "d4998efd-6662-4c45-a27e-c243b1030af7",
+    "slug": "bpusa-santa-rosa-chapter-santa-rosa",
+    "name": "Santa Rosa Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "FL",
+    "metro_id": "san-francisco-ca",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "city": "Santa Rosa",
+    "phone": "850-313-3129",
+    "phone_normalized": "8503133129"
+  },
+  {
+    "id": "e44c5925-e0b2-4306-8989-dd541ab3e022",
+    "slug": "bpusa-south-florida-chapter-sunrise-bl-ft-lauderdale",
+    "name": "South Florida Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "FL",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "city": "Sunrise Bl Ft Lauderdale",
+    "phone": "786-743-9459",
+    "phone_normalized": "7867439459",
+    "description": "Meets at Meet the second Saturday of the month at 11:00 am Art Serve (in the board room) 1350 E Sunrise Bl Ft Lauderdale, FL 33304."
+  },
+  {
+    "id": "856a704b-95ee-4f8d-8981-250b1c6207d2",
+    "slug": "bpusa-tampa-bay-chapter-tampa",
+    "name": "Tampa Bay Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "FL",
+    "metro_id": "tampa-fl",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "city": "Tampa",
+    "url": "http://www.bpusatampabay.com/"
+  },
+  {
+    "id": "eb896ead-c2fc-4e1c-9b87-0b7cf660947f",
+    "slug": "bpusa-north-east-georgia-chapter-ga",
+    "name": "North East Georgia Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "GA",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "706-255-7643",
+    "phone_normalized": "7062557643"
+  },
+  {
+    "id": "2c236b11-587e-4bd8-8977-ec2e24b5d69c",
+    "slug": "bpusa-chicagoland-chapter-chicago",
+    "name": "Chicagoland Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "IL",
+    "metro_id": "chicago-il",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "city": "Chicago",
+    "phone": "708-738-0396",
+    "phone_normalized": "7087380396",
+    "url": "http://www.bpusachicagoland.org/"
+  },
+  {
+    "id": "4c71ca27-64de-4e81-812b-36f484fa6e11",
+    "slug": "bpusa-mt-vernon-southern-illinois-chapter-il",
+    "name": "Mt. Vernon - Southern Illinois Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "IL",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "618-315-9702",
+    "phone_normalized": "6183159702"
+  },
+  {
+    "id": "07bacd99-3808-4622-9caf-4233657199d6",
+    "slug": "bpusa-springfield-chapter-il",
+    "name": "Springfield Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "IL",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "217-891-5007",
+    "phone_normalized": "2178915007"
+  },
+  {
+    "id": "74a349e0-485b-414e-abfe-1a3b1b97c3dc",
+    "slug": "bpusa-will-county-joliet-chapter-il",
+    "name": "Will County-Joliet Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "IL",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "630-921-5437",
+    "phone_normalized": "6309215437"
+  },
+  {
+    "id": "de0aa089-9639-4269-991c-7af515d52f51",
+    "slug": "bpusa-cenla-chapter-la",
+    "name": "Cenla Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "LA",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "318-730-6780",
+    "phone_normalized": "3187306780"
+  },
+  {
+    "id": "7b0cedcb-c194-4500-8071-f690f68e7331",
+    "slug": "bpusa-anne-arundel-county-chapter-md",
+    "name": "Anne Arundel County Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "MD",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "410-794-6688",
+    "phone_normalized": "4107946688",
+    "url": "http://www.aacounty-md-bereavedparents.org/"
+  },
+  {
+    "id": "b070374a-813d-4c5a-b315-270720c22927",
+    "slug": "bpusa-baltimore-metropolitan-area-chapter-baltimore",
+    "name": "Baltimore Metropolitan Area Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "MD",
+    "metro_id": "baltimore-md",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "city": "Baltimore",
+    "phone": "410-274-9932",
+    "phone_normalized": "4102749932"
+  },
+  {
+    "id": "41701cce-e1f0-4245-afdd-557f18c5cdd2",
+    "slug": "bpusa-macomb-county-chapter-mi",
+    "name": "Macomb County Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "MI",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "586-899-1009",
+    "phone_normalized": "5868991009"
+  },
+  {
+    "id": "4dcc632b-143b-4a0b-b8c8-12a4b567ab8b",
+    "slug": "bpusa-central-detroit-mi-chapter-of-bpusa-detroit",
+    "name": "Central Detroit, MI Chapter of BPUSA",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "MI",
+    "metro_id": "detroit-mi",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "city": "Detroit",
+    "phone": "313-412-3341",
+    "phone_normalized": "3134123341"
+  },
+  {
+    "id": "7a570e21-47ee-481d-acc8-4cda9ffe175f",
+    "slug": "bpusa-four-states-chapter-mo",
+    "name": "Four States Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "MO",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "417-214-2683",
+    "phone_normalized": "4172142683"
+  },
+  {
+    "id": "314b014c-15e6-4ad7-8a31-494e640bc4b8",
+    "slug": "bpusa-st-louis-chapter-st-louis",
+    "name": "St. Louis Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "MO",
+    "metro_id": "st-louis-mo",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "city": "St. Louis",
+    "phone": "636-233-8490",
+    "phone_normalized": "6362338490",
+    "url": "http://www.bpusastl.org/"
+  },
+  {
+    "id": "00d21790-22f6-421e-bfe1-4651728dffd1",
+    "slug": "bpusa-yellowstone-county-mt",
+    "name": "Yellowstone County",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "MT",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "406-671-2041",
+    "phone_normalized": "4066712041"
+  },
+  {
+    "id": "cf50cc25-92cd-44be-ab6a-654975803009",
+    "slug": "bpusa-rockingham-essex-county-nh",
+    "name": "Rockingham-Essex County",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "NH",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "603-887-4302",
+    "phone_normalized": "6038874302"
+  },
+  {
+    "id": "2cce91ff-43b6-4606-9d0c-f793a12e26cf",
+    "slug": "bpusa-adirondack-chapter-ny",
+    "name": "Adirondack Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "NY",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "518-637-3004",
+    "phone_normalized": "5186373004"
+  },
+  {
+    "id": "ac4c804b-f509-456f-8ba3-29d539f65cbb",
+    "slug": "bpusa-mid-hudson-chapter-ny",
+    "name": "Mid Hudson Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "NY",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "845-462-2825",
+    "phone_normalized": "8454622825",
+    "url": "https://www.mhbpusa.com/"
+  },
+  {
+    "id": "5355b832-7a3c-49a5-a433-9d3ecd54a9f7",
+    "slug": "bpusa-suffolk-county-chapter-ny",
+    "name": "Suffolk County Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "NY",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "516-445-7726",
+    "phone_normalized": "5164457726"
+  },
+  {
+    "id": "e42921fa-785a-4bf6-ba61-4076d0ea2c76",
+    "slug": "bpusa-western-new-york-chapter-new-york",
+    "name": "Western New York Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "NY",
+    "metro_id": "new-york-ny",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "city": "New York",
+    "phone": "716-675-3844",
+    "phone_normalized": "7166753844"
+  },
+  {
+    "id": "0beee0db-a3d2-404a-a979-6ff9f5c39c61",
+    "slug": "bpusa-central-nc-chapter-nc",
+    "name": "Central NC Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "NC",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "828-384-8889",
+    "phone_normalized": "8283848889"
+  },
+  {
+    "id": "dc22bdee-6110-4ad4-b510-c2ebd428804e",
+    "slug": "bpusa-springfield-eugene-chapter-or",
+    "name": "Springfield/Eugene Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "OR",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "541-517-5710",
+    "phone_normalized": "5415175710"
+  },
+  {
+    "id": "5c3b4d33-e978-45e6-865c-a584e47671ea",
+    "slug": "bpusa-butler-county-chapter-pa",
+    "name": "Butler County Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "PA",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "724-622-1531",
+    "phone_normalized": "7246221531",
+    "url": "https://butlercountybpusa.wixsite.com/bcbpusa"
+  },
+  {
+    "id": "35a118f9-b907-49df-9e99-ab1af20f0ddb",
+    "slug": "bpusa-texas-panhandle-chapter-tx",
+    "name": "Texas Panhandle Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "TX",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "806-341-8641",
+    "phone_normalized": "8063418641"
+  },
+  {
+    "id": "2336c8cb-ee35-4144-9152-ee285f81fcaf",
+    "slug": "bpusa-texarkana-chapter-tx",
+    "name": "Texarkana Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "TX",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "903-826-8665",
+    "phone_normalized": "9038268665"
+  },
+  {
+    "id": "6e7cbcd8-82ad-4634-adb2-a167e5624f54",
+    "slug": "bpusa-northern-virginia-chapter-va",
+    "name": "Northern Virginia Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "VA",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "703-656-6999",
+    "phone_normalized": "7036566999",
+    "url": "http://www.bpusanova.com/"
+  },
+  {
+    "id": "db3f78ee-4d77-4cc7-9157-df2176789c5b",
+    "slug": "bpusa-eastern-panhandle-chapter-wv",
+    "name": "Eastern Panhandle Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "WV",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "304-754-4936",
+    "phone_normalized": "3047544936"
+  },
+  {
+    "id": "17980332-f842-4388-8bd4-03683097a3e3",
+    "slug": "bpusa-new-jersey-essex-county-siblings-wv",
+    "name": "New Jersey - Essex County Siblings",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "WV",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "973-946-2588",
+    "phone_normalized": "9739462588"
+  },
+  {
+    "id": "cb1d0a4a-a945-4391-9b76-6d93e57dba44",
+    "slug": "bpusa-il-chicagoland-chapter-chicago",
+    "name": "IL - Chicagoland Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "WV",
+    "metro_id": "chicago-il",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "city": "Chicago",
+    "phone": "708-738-0396",
+    "phone_normalized": "7087380396",
+    "url": "http://www.bpusachicagoland.org/"
+  },
+  {
+    "id": "7722ee14-bdaf-41b0-86b6-4be5b93a167b",
+    "slug": "bpusa-mi-macomb-michigan-chapter-wv",
+    "name": "MI - Macomb Michigan Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "WV",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "586-899-1009",
+    "phone_normalized": "5868991009"
+  },
+  {
+    "id": "ed8daeab-9a1e-481f-b995-3fbc8039ecbe",
+    "slug": "bpusa-md-anne-arundel-county-chapter-wv",
+    "name": "MD - Anne Arundel County Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "WV",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "410-794-6688",
+    "phone_normalized": "4107946688",
+    "url": "http://www.aacounty-md-bereavedparents.org/"
+  },
+  {
+    "id": "d96e2f64-b412-4b75-90af-d154d541b7e9",
+    "slug": "bpusa-nj-bereaved-sibling-chapter-wv",
+    "name": "NJ - Bereaved Sibling Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "WV",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "973-946-2588",
+    "phone_normalized": "9739462588"
+  },
+  {
+    "id": "d7246eee-9a49-4a5d-91e0-0940a442ad20",
+    "slug": "bpusa-pa-butler-county-chapter-wv",
+    "name": "PA - Butler County Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "WV",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "724-622-1531",
+    "phone_normalized": "7246221531",
+    "url": "https://butlercountybpusa.wixsite.com/bcbpusa"
+  },
+  {
+    "id": "04fd1d92-a4c7-443c-97ef-284e0611b7ea",
+    "slug": "bpusa-va-northern-va-chapter-wv",
+    "name": "VA - Northern VA Chapter",
+    "organization": "Bereaved Parents of the USA",
+    "org_type": "peer_network_chapter",
+    "loss_types": [
+      "child",
+      "sibling",
+      "grandparent"
+    ],
+    "age_groups": [
+      "adults"
+    ],
+    "format": "in_person",
+    "cost": "unknown",
+    "structure": "drop_in",
+    "registration_required": "unknown",
+    "faith_affiliation": "unknown",
+    "schedule_text": "Contact the chapter for current meeting times",
+    "state": "WV",
+    "metro_id": "national-chapter-network",
+    "source_url": "https://bereavedparentsusa.org/find-a-chapter/",
+    "source_type": "national_org_directory",
+    "verification_status": "needs_review",
+    "first_seen": "2026-08-24",
+    "last_checked": "2026-08-24",
+    "source_link_status": "ok",
+    "published": false,
+    "languages": [
+      "en"
+    ],
+    "internal_notes": "From the BPUSA chapter directory. Phone is the chapter contact BPUSA publishes. Email addresses and any address not labelled as a meeting location were deliberately discarded - see drop_personal_data().",
+    "phone": "703-656-6999",
+    "phone_normalized": "7036566999",
+    "url": "http://www.bpusanova.com/"
   }
 ]
