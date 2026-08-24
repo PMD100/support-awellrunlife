@@ -1,6 +1,6 @@
 # Website Discovery Report
 
-_Generated 2026-08-24 19:55 UTC_
+_Generated 2026-08-24 21:40 UTC_
 
 Every website below was **proved** to belong to its organization, either by 
 finding the CMS-registered phone number in the page text or by matching every 
@@ -12,15 +12,15 @@ Unproven matches are recorded as `mismatch` and never published.
 | Outcome | Count |
 |---|---|
 | `not_found` | 145 |
-| `verified_name` | 46 |
-| `verified_phone` | 33 |
-| `robots_disallowed` | 19 |
+| `verified_name` | 47 |
+| `verified_phone` | 34 |
+| `robots_disallowed` | 17 |
 
 ## Cumulative
 
 - Organizations checked: **243**
-- Website verified: **79** (33%)
-- Bereavement page found: **57**
+- Website verified: **81** (33%)
+- Bereavement page found: **59**
 
 **Organizations with a bereavement page are the ones that become listings.**
 
@@ -40,6 +40,7 @@ Unproven matches are recorded as `mismatch` and never published.
 | JOURNEYCARE - BARRINGTON | chicago-il | `verified_name` | https://journeycare.org/grief-support/ |
 | PROVIDENCE HOSPICE | chicago-il | `verified_phone` | https://www.providencelifeservices.com/resources/blog/hospic |
 | RESIDENTIAL HOSPICE | chicago-il | `verified_name` | https://residentialhealthcaregroup.com/services/bereavement/ |
+| MOUNT EVANS HOSPICE, INC | denver-co | `verified_phone` | https://mtevans.org/services/emotional-support/ |
 | COMPASSUS-NORTHERN DETROIT | detroit-mi | `verified_name` | https://www.compassus.com/for-caregivers/hospice-grief-suppo |
 | HOUSTON HOSPICE | houston-tx | `verified_phone` | https://www.houstonhospice.org/what-we-do/services/bereaveme |
 | SKIRBALL HOSPICE | los-angeles-ca | `verified_name` | https://www.vnacare.com/grief-support/ |
@@ -57,4 +58,3 @@ Unproven matches are recorded as `mismatch` and never published.
 | DELAWARE HOSPICE - NORTH DIVISION | philadelphia-pa | `verified_name` | https://delawarehospice.org/events/ |
 | DELAWARE HOSPICE, INC. | philadelphia-pa | `verified_name` | https://delawarehospice.org/events/ |
 | HOSPICE OF THE VALLEY - CENTRAL | phoenix-az | `verified_name` | https://hov.org/our-care/grief-support/ |
-| HOSPICE OF THE VALLEY - WEST (031515) | phoenix-az | `verified_name` | https://hov.org/our-care/grief-support/ |

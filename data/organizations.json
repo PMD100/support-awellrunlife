@@ -2440,6 +2440,7 @@
       "hospiceatlanta.net: only matched 0/1 distinctive words",
       "atlanta.org: name matched 1/1 but page is not about hospice or grief care",
       "hospiceatlanta.net: only matched 0/1 distinctive words",
+      "atlanta.org: name matched 1/1 but page is not about hospice or grief care",
       "atlanta.org: name matched 1/1 but page is not about hospice or grief care"
     ],
     "website_evidence": "matched 1/1 in page text: ATLANTA; location confirmed by GA",
@@ -4374,7 +4375,7 @@
       "certified 1993, long-established (+20)"
     ],
     "website_checked_at": "2026-08-24",
-    "website_evidence": "bethisraellahey.net: only matched 0/3 distinctive words",
+    "website_evidence": "no candidate domain resolved",
     "verification_rule": 2
   },
   {
@@ -4406,7 +4407,7 @@
       "certified 1993, long-established (+20)"
     ],
     "website_checked_at": "2026-08-24",
-    "website_evidence": "bethisraellahey.net: only matched 0/3 distinctive words",
+    "website_evidence": "bethisraellahey.org: only matched 0/3 distinctive words",
     "verification_rule": 2
   },
   {
@@ -4726,7 +4727,7 @@
       "certified 2011 (+10)"
     ],
     "website_checked_at": "2026-08-24",
-    "website_evidence": "no candidate domain resolved",
+    "website_evidence": "cornerstonevna.com: name matched 2/2 but page is not about hospice or grief care",
     "verification_rule": 2
   },
   {
@@ -4758,7 +4759,7 @@
       "certified 1988, long-established (+20)"
     ],
     "website_checked_at": "2026-08-24",
-    "website_evidence": "cranberryhospice.org: only matched 0/1 distinctive words; cranberryhospice.com: only matched 0/1 distinctive words; cranberry.com: only matched 0/1 distinctive words",
+    "website_evidence": "cranberryhospice.org: only matched 0/1 distinctive words; cranberryhospice.com: only matched 0/1 distinctive words; cranberry.org: only matched 0/1 distinctive words",
     "verification_rule": 2
   },
   {
@@ -5640,6 +5641,7 @@
     "_rejected": [
       "charlotteregion.com: only matched 2/2 distinctive words",
       "charlotteregion.com: name matched 2/2 but page is not about hospice or grief care",
+      "charlotteregion.com: name matched 2/2 but page is not about hospice or grief care",
       "charlotteregion.com: name matched 2/2 but page is not about hospice or grief care"
     ],
     "website_evidence": "phone 704-375-0100 found on page",
@@ -6098,7 +6100,7 @@
       "certified 1988, long-established (+20)"
     ],
     "website_checked_at": "2026-08-24",
-    "website_evidence": "advocate.org: name matched 1/1 but page is not about hospice or grief care; advocate.com: name matched 1/1 but page is not about hospice or grief care; advocate.health: name matched 1/1 but page is not about hospice or grief care",
+    "website_evidence": "advocatehospice.com: name matched (ADVOCATE) but neither the city (OAK BROOK) nor the state (IL) appears on the page - probably a different organization with a similar name; advocate.org: name matched 1/1 but page is not about hospice or grief care; advocate.com: name matched 1/1 but page is not about hospice or grief care",
     "verification_rule": 2
   },
   {
@@ -6390,6 +6392,7 @@
     ],
     "website_checked_at": "2026-08-24",
     "_rejected": [
+      "covenantcarehospice.com: only matched 0/1 distinctive words",
       "covenantcarehospice.com: only matched 0/1 distinctive words",
       "covenantcarehospice.com: only matched 0/1 distinctive words"
     ],
@@ -6916,7 +6919,7 @@
       "certified 2007 (+10)"
     ],
     "website_checked_at": "2026-08-24",
-    "website_evidence": "hopehospice.org: name matched (HOPE) but neither the city (ROLLING MEADOWS) nor the state (IL) appears on the page - probably a different organization with a similar name; hopehospice.com: name matched (HOPE) but neither the city (ROLLING MEADOWS) nor the state (IL) appears on the page - probably a different organization with a similar name; hopehospice.net: only matched 0/1 distinctive words",
+    "website_evidence": "hopehospice.org: name matched (HOPE) but neither the city (ROLLING MEADOWS) nor the state (IL) appears on the page - probably a different organization with a similar name; hopehospice.com: name matched (HOPE) but neither the city (ROLLING MEADOWS) nor the state (IL) appears on the page - probably a different organization with a similar name; hopehospice.net: name matched (HOPE) but neither the city (ROLLING MEADOWS) nor the state (IL) appears on the page - probably a different organization with a similar name",
     "verification_rule": 2
   },
   {
@@ -7519,6 +7522,7 @@
     "_rejected": [
       "pchh.org: only matched 1/3 distinctive words",
       "pchh.org: only matched 1/3 distinctive words",
+      "pchh.org: only matched 1/3 distinctive words",
       "pchh.org: only matched 1/3 distinctive words"
     ],
     "website_evidence": "pchh.com disallows crawling",
@@ -8022,6 +8026,7 @@
     ],
     "website_checked_at": "2026-08-24",
     "_rejected": [
+      "traditionshealth.org: only matched 0/1 distinctive words",
       "traditionshealth.org: only matched 0/1 distinctive words",
       "traditionshealth.org: only matched 0/1 distinctive words",
       "traditionshealth.org: only matched 0/1 distinctive words"
@@ -11113,6 +11118,7 @@
       "cht.org: only matched 0/2 distinctive words",
       "cht.com: only matched 0/2 distinctive words",
       "cht.org: only matched 0/2 distinctive words",
+      "cht.com: only matched 0/2 distinctive words",
       "cht.com: only matched 0/2 distinctive words",
       "cht.com: only matched 0/2 distinctive words"
     ],
@@ -16758,6 +16764,9 @@
       "hhd.com: only matched 0/1 distinctive words",
       "denver.org: name matched 1/1 but page is not about hospice or grief care",
       "denver.com: name matched 1/1 but page is not about hospice or grief care",
+      "hhd.com: only matched 0/1 distinctive words",
+      "denver.org: name matched 1/1 but page is not about hospice or grief care",
+      "denver.com: name matched 1/1 but page is not about hospice or grief care",
       "hhd.com: only matched 0/1 distinctive words"
     ],
     "website_evidence": "hhd.net disallows crawling",
@@ -16898,8 +16907,8 @@
     "phone_normalized": "3036746400",
     "ownership_type": "Non-Profit",
     "certification_date": "06/06/1985",
-    "website": null,
-    "website_status": "robots_disallowed",
+    "website": "https://mtevans.org/",
+    "website_status": "verified_phone",
     "bereavement_page": "https://mtevans.org/services/emotional-support/",
     "source": "CMS Hospice - General Information",
     "source_dataset_id": "yc9t-dgbk",
@@ -16919,7 +16928,7 @@
       "mountevans.com: name matched 2/2 but page is not about hospice or grief care",
       "meh.com: only matched 0/2 distinctive words"
     ],
-    "website_evidence": "meh.net disallows crawling",
+    "website_evidence": "phone 303-674-6400 found on page",
     "verification_rule": 2
   },
   {
@@ -17568,6 +17577,9 @@
       "bluewater.net: only matched 0/2 distinctive words",
       "bluewater.health: only matched 0/2 distinctive words",
       "bluewater.org: name matched 2/2 but page is not about hospice or grief care",
+      "bluewater.health: only matched 0/2 distinctive words",
+      "bluewater.org: name matched 2/2 but page is not about hospice or grief care",
+      "bluewater.com: only matched 0/2 distinctive words",
       "bluewater.health: only matched 0/2 distinctive words",
       "bluewater.org: name matched 2/2 but page is not about hospice or grief care",
       "bluewater.com: only matched 0/2 distinctive words",
@@ -22101,7 +22113,7 @@
       "certified 2014 (+10)"
     ],
     "website_checked_at": "2026-08-24",
-    "website_evidence": "devinity.org: only matched 0/1 distinctive words; devinity.org: only matched 0/1 distinctive words",
+    "website_evidence": "devinity.org: only matched 0/1 distinctive words",
     "verification_rule": 2
   },
   {
@@ -60594,7 +60606,7 @@
       "certified 2014 (+10)"
     ],
     "website_checked_at": "2026-08-24",
-    "website_evidence": "sanctuaryhospice.org: only matched 0/1 distinctive words; sanctuaryhospice.org: name matched (SANCTUARY) but neither the city (COSTA MESA) nor the state (CA) appears on the page - probably a different organization with a similar name; sanctuary.org: name matched 1/1 but page is not about hospice or grief care",
+    "website_evidence": "sanctuaryhospice.org: name matched (SANCTUARY) but neither the city (COSTA MESA) nor the state (CA) appears on the page - probably a different organization with a similar name; sanctuaryhospice.com: name matched (SANCTUARY) but neither the city (COSTA MESA) nor the state (CA) appears on the page - probably a different organization with a similar name; sanctuary.org: name matched 1/1 but page is not about hospice or grief care",
     "verification_rule": 2
   },
   {
@@ -69405,6 +69417,7 @@
     "_rejected": [
       "hospiceofpalmbeachcounty.com: only matched 0/3 distinctive words",
       "hospiceofpalmbeachcounty.com: only matched 0/3 distinctive words",
+      "hospiceofpalmbeachcounty.com: only matched 0/3 distinctive words",
       "hospiceofpalmbeachcounty.com: only matched 0/3 distinctive words"
     ],
     "website_evidence": "palmbeachcounty.org disallows crawling",
@@ -69948,6 +69961,10 @@
       "healthpartners.com: name matched 1/1 but page is not about hospice or grief care",
       "healthpartners.net: name matched 1/1 but page is not about hospice or grief care",
       "hhpc.org: only matched 0/1 distinctive words",
+      "hhpc.com: only matched 0/1 distinctive words",
+      "healthpartners.com: name matched 1/1 but page is not about hospice or grief care",
+      "healthpartners.net: name matched 1/1 but page is not about hospice or grief care",
+      "hhpc.org: only matched 0/1 distinctive words",
       "hhpc.com: only matched 0/1 distinctive words"
     ],
     "website_evidence": "hhpc.net disallows crawling",
@@ -70435,6 +70452,7 @@
     "_rejected": [
       "ridgeview.org: only matched 0/1 distinctive words",
       "ridgeview.org: only matched 0/1 distinctive words",
+      "ridgeview.org: only matched 0/1 distinctive words",
       "ridgeview.org: only matched 0/1 distinctive words"
     ],
     "verification_rule": 2
@@ -70851,6 +70869,7 @@
     "website_evidence": "matched 1/1 in page text: BAYADA; location confirmed by NJ",
     "verification_rule": 2,
     "_rejected": [
+      "bayadahospice.com: name matched (BAYADA) but neither the city (NORTH BERGEN) nor the state (NJ) appears on the page - probably a different organization with a similar name",
       "bayadahospice.com: name matched (BAYADA) but neither the city (NORTH BERGEN) nor the state (NJ) appears on the page - probably a different organization with a similar name"
     ]
   },
@@ -71965,7 +71984,7 @@
     "ownership_type": "Other",
     "certification_date": "07/04/1988",
     "website": null,
-    "website_status": "robots_disallowed",
+    "website_status": "not_found",
     "bereavement_page": null,
     "source": "CMS Hospice - General Information",
     "source_dataset_id": "yc9t-dgbk",
@@ -71977,13 +71996,7 @@
       "certified 1988, long-established (+20)"
     ],
     "website_checked_at": "2026-08-24",
-    "_rejected": [
-      "hospiceandpalliativecare.com: organization name has no distinctive words to match on",
-      "hpc.org: organization name has no distinctive words to match on",
-      "hospiceandpalliativecare.com: organization name has no distinctive words to match on",
-      "hpc.org: organization name has no distinctive words to match on"
-    ],
-    "website_evidence": "hpc.com disallows crawling",
+    "website_evidence": "hospiceandpalliativecare.com: organization name has no distinctive words to match on; hpc.org: organization name has no distinctive words to match on; hospiceandpalliativecare.com: organization name has no distinctive words to match on",
     "verification_rule": 2
   },
   {
@@ -72016,6 +72029,7 @@
     ],
     "website_checked_at": "2026-08-24",
     "_rejected": [
+      "mesh.net: only matched 0/3 distinctive words",
       "mesh.net: only matched 0/3 distinctive words",
       "mesh.net: only matched 0/3 distinctive words",
       "mesh.net: only matched 0/3 distinctive words"
@@ -73131,7 +73145,7 @@
       "certified 1997, long-established (+20)"
     ],
     "website_checked_at": "2026-08-24",
-    "website_evidence": "chsj.com: only matched 0/3 distinctive words",
+    "website_evidence": "chsj.org: only matched 1/3 distinctive words; chsj.com: only matched 0/3 distinctive words",
     "verification_rule": 2
   },
   {
@@ -73461,7 +73475,7 @@
       "hospital/health system affiliated (+10)"
     ],
     "website_checked_at": "2026-08-24",
-    "website_evidence": "doylestownhospital.org: only matched 0/2 distinctive words; dhh.com: only matched 0/2 distinctive words",
+    "website_evidence": "dhh.com: only matched 0/2 distinctive words",
     "verification_rule": 2
   },
   {
@@ -73584,6 +73598,7 @@
     ],
     "website_checked_at": "2026-08-24",
     "_rejected": [
+      "grandview.com: only matched 0/2 distinctive words",
       "grandview.com: only matched 0/2 distinctive words",
       "grandview.com: only matched 0/2 distinctive words",
       "grandview.com: only matched 0/2 distinctive words"
@@ -78827,7 +78842,7 @@
       "certified 2011 (+10)"
     ],
     "website_checked_at": "2026-08-24",
-    "website_evidence": "traditionshealth.org: only matched 0/1 distinctive words; traditionshealth.org: only matched 0/1 distinctive words; traditionshealth.com: name matched (TRADITIONS) but neither the city (CHANDLER) nor the state (AZ) appears on the page - probably a different organization with a similar name",
+    "website_evidence": "traditionshealth.com: name matched (TRADITIONS) but neither the city (CHANDLER) nor the state (AZ) appears on the page - probably a different organization with a similar name; traditions.org: only matched 0/1 distinctive words; traditions.com: name matched 1/1 but page is not about hospice or grief care",
     "verification_rule": 2
   },
   {
@@ -79934,7 +79949,7 @@
       "certified 1996, long-established (+20)"
     ],
     "website_checked_at": "2026-08-24",
-    "website_evidence": "hopehospice.org: name matched (HOPE) but neither the city (PITTSBURGH) nor the state (PA) appears on the page - probably a different organization with a similar name; hopehospice.com: name matched (HOPE) but neither the city (PITTSBURGH) nor the state (PA) appears on the page - probably a different organization with a similar name; hopehospice.net: only matched 0/1 distinctive words",
+    "website_evidence": "hopehospice.org: name matched (HOPE) but neither the city (PITTSBURGH) nor the state (PA) appears on the page - probably a different organization with a similar name; hopehospice.com: name matched (HOPE) but neither the city (PITTSBURGH) nor the state (PA) appears on the page - probably a different organization with a similar name; hopehospice.net: name matched (HOPE) but neither the city (PITTSBURGH) nor the state (PA) appears on the page - probably a different organization with a similar name",
     "verification_rule": 2
   },
   {
@@ -87781,6 +87796,7 @@
     "_rejected": [
       "vnacare.org: only matched 0/1 distinctive words",
       "vnacare.org: only matched 0/1 distinctive words",
+      "vnacare.org: only matched 0/1 distinctive words",
       "vnacare.org: only matched 0/1 distinctive words"
     ],
     "website_evidence": "matched 1/1 in page text: VNACARE; location confirmed by CA",
@@ -87818,6 +87834,7 @@
     "_rejected": [
       "vnacare.org: only matched 0/1 distinctive words",
       "vnacare.org: only matched 0/1 distinctive words",
+      "vnacare.org: only matched 0/1 distinctive words",
       "vnacare.org: only matched 0/1 distinctive words"
     ],
     "website_evidence": "matched 1/1 in page text: VNACARE; location confirmed by CA",
@@ -87853,6 +87870,7 @@
     ],
     "website_checked_at": "2026-08-24",
     "_rejected": [
+      "vnacare.org: only matched 0/1 distinctive words",
       "vnacare.org: only matched 0/1 distinctive words",
       "vnacare.org: only matched 0/1 distinctive words",
       "vnacare.org: only matched 0/1 distinctive words"
@@ -88905,6 +88923,8 @@
     "website_evidence": "blueskies.net disallows crawling",
     "verification_rule": 2,
     "_rejected": [
+      "blueskieshospice.com: name matched (BLUE, SKIES) but neither the city (SAN ANTONIO) nor the state (TX) appears on the page - probably a different organization with a similar name",
+      "blueskies.com: name matched 2/2 but page is not about hospice or grief care",
       "blueskieshospice.com: name matched (BLUE, SKIES) but neither the city (SAN ANTONIO) nor the state (TX) appears on the page - probably a different organization with a similar name",
       "blueskies.com: name matched 2/2 but page is not about hospice or grief care"
     ]
@@ -90262,9 +90282,9 @@
     "phone_normalized": "8306257500",
     "ownership_type": "Non-Profit",
     "certification_date": "05/24/1988",
-    "website": null,
-    "website_status": "not_found",
-    "bereavement_page": "https://www.hopehospice.com/services/grief/",
+    "website": "https://www.hopehospice.net/",
+    "website_status": "verified_name",
+    "bereavement_page": "https://www.hopehospice.net/grief",
     "source": "CMS Hospice - General Information",
     "source_dataset_id": "yc9t-dgbk",
     "first_seen": "2026-08-06",
@@ -90276,8 +90296,12 @@
       "certified 1988, long-established (+20)"
     ],
     "website_checked_at": "2026-08-24",
-    "website_evidence": "hopehospice.org: name matched (HOPE) but neither the city (NEW BRAUNFELS) nor the state (TX) appears on the page - probably a different organization with a similar name; hopehospice.com: name matched (HOPE) but neither the city (NEW BRAUNFELS) nor the state (TX) appears on the page - probably a different organization with a similar name; hopehospice.net: only matched 0/1 distinctive words",
-    "verification_rule": 2
+    "website_evidence": "matched 1/1 in page text: HOPE; location confirmed by TX",
+    "verification_rule": 2,
+    "_rejected": [
+      "hopehospice.org: name matched (HOPE) but neither the city (NEW BRAUNFELS) nor the state (TX) appears on the page - probably a different organization with a similar name",
+      "hopehospice.com: name matched (HOPE) but neither the city (NEW BRAUNFELS) nor the state (TX) appears on the page - probably a different organization with a similar name"
+    ]
   },
   {
     "org_id": "cms-971689",
@@ -95386,6 +95410,7 @@
     "verification_rule": 2,
     "_rejected": [
       "hopehospice.org: name matched (HOPE) but neither the city (PLEASANTON) nor the state (CA) appears on the page - probably a different organization with a similar name",
+      "hopehospice.org: name matched (HOPE) but neither the city (PLEASANTON) nor the state (CA) appears on the page - probably a different organization with a similar name",
       "hopehospice.org: name matched (HOPE) but neither the city (PLEASANTON) nor the state (CA) appears on the page - probably a different organization with a similar name"
     ]
   },
@@ -96264,6 +96289,10 @@
       "pathways.org: name matched 1/1 but page is not about hospice or grief care",
       "pathways.com: only matched 0/1 distinctive words",
       "pathways.net: only matched 0/1 distinctive words",
+      "phhh.org: only matched 0/1 distinctive words",
+      "pathways.org: name matched 1/1 but page is not about hospice or grief care",
+      "pathways.com: only matched 0/1 distinctive words",
+      "pathways.net: only matched 0/1 distinctive words",
       "phhh.org: only matched 0/1 distinctive words"
     ],
     "website_evidence": "phhh.com disallows crawling",
@@ -96300,6 +96329,10 @@
     "website_checked_at": "2026-08-24",
     "_rejected": [
       "pathways.org: only matched 1/1 distinctive words",
+      "pathways.com: only matched 0/1 distinctive words",
+      "pathways.net: only matched 0/1 distinctive words",
+      "phhh.org: only matched 0/1 distinctive words",
+      "pathways.org: name matched 1/1 but page is not about hospice or grief care",
       "pathways.com: only matched 0/1 distinctive words",
       "pathways.net: only matched 0/1 distinctive words",
       "phhh.org: only matched 0/1 distinctive words",
@@ -98169,7 +98202,7 @@
       "address shared with 1 other(s) (-12)"
     ],
     "website_checked_at": "2026-08-24",
-    "website_evidence": "bethesda.org: name matched 1/1 but page is not about hospice or grief care; bethesda.net: name matched 1/1 but page is not about hospice or grief care; bhc.org: only matched 0/1 distinctive words",
+    "website_evidence": "bethesda.org: name matched 1/1 but page is not about hospice or grief care; bethesda.com: name matched 1/1 but page is not about hospice or grief care; bethesda.net: name matched 1/1 but page is not about hospice or grief care",
     "verification_rule": 2
   },
   {
@@ -100025,6 +100058,7 @@
     ],
     "website_checked_at": "2026-08-24",
     "_rejected": [
+      "jewishsocial.org: only matched 0/2 distinctive words",
       "jewishsocial.org: only matched 0/2 distinctive words",
       "jewishsocial.org: only matched 0/2 distinctive words",
       "jewishsocial.org: only matched 0/2 distinctive words"
