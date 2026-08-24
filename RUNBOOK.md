@@ -44,6 +44,28 @@ a run number, you're one level too deep — click the workflow name at the top l
 
 ---
 
+## Merging a pull request
+
+A workflow never changes anything by itself. It opens a pull request and waits. Merging
+is how you say yes.
+
+**Go straight to:** <https://github.com/PMD100/support-awellrunlife/pulls>
+
+1. Click the pull request's title.
+2. **Files changed** tab — glance at the report file (`data/*-report.md`). That is the
+   run explaining itself.
+3. Back to the **Conversation** tab. Scroll to the bottom.
+4. Green **Merge pull request** → then **Confirm merge**.
+5. GitHub Desktop → **Fetch origin** → **Pull origin**.
+
+Step 5 is the one people skip. Until you pull, your computer still has the old data and
+so does anything you run locally.
+
+**Nothing there?** Either the run is still going, or it finished and found no changes to
+propose — check the Actions tab. A workflow with nothing to say opens no pull request.
+
+---
+
 ## Discover Websites: which checkbox
 
 This is the one that has genuinely caught us out.
