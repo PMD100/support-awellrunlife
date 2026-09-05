@@ -30,7 +30,9 @@
       "contact": {
         "phone": "877-969-0010",
         "email": "nationaloffice@compassionatefriends.org"
-      }
+      },
+      "access_checked": "2026-09-05",
+      "terms_url": "https://www.compassionatefriends.org/privacy-policy/"
     },
     {
       "id": "afsp",
@@ -54,7 +56,9 @@
       "contact": {
         "phone": "888-333-2377",
         "url": "https://afsp.org/about-afsp/#contact-our-national-office"
-      }
+      },
+      "access_checked": "2026-09-05",
+      "terms_url": "https://afsp.org/privacy-notice/"
     },
     {
       "id": "nacg",
@@ -85,7 +89,9 @@
       "contact": {
         "phone": "866-432-1542",
         "email": "info@nacg.org"
-      }
+      },
+      "access_checked": "2026-09-05",
+      "terms_url": "https://nacg.org/terms-of-use/"
     },
     {
       "id": "bereaved-parents-usa",
@@ -108,7 +114,8 @@
       "privacy_note": "Publishes volunteers' PERSONAL home addresses and personal email addresses (e.g. a leader's home street address in Jacksonville AR). Take chapter name, city, state and phone; link back to bereavedparentsusa.org for contact. Do NOT republish a volunteer's home address or personal email on a page we are actively driving search traffic to.",
       "adapter": "scripts/ingest/national_orgs/bpusa.py",
       "workflow": ".github/workflows/ingest-bpusa.yml",
-      "adapter_built": "2026-08-23"
+      "adapter_built": "2026-08-23",
+      "access_checked": "2026-09-05"
     },
     {
       "id": "grasp",
@@ -122,11 +129,12 @@
       "est_us_chapters": 130,
       "est_in_our_metros": 40,
       "priority": 1,
-      "access_status": "manual_only",
+      "access_status": "automate",
       "sensitivity": "high",
       "notes": "Overdose loss is badly underserved and carries heavy stigma, so people search privately rather than ask. High-intent, near-zero competition.",
       "robots_checked": "2026-08-06",
-      "robots_note": "robots.txt returned empty twice. Rather than assume, treat as manual_only and use the CSV import path. ~40 groups is a couple of hours of hand-curation, and overdose loss is too valuable a category to skip on a technicality."
+      "robots_note": "robots.txt returned empty twice. Rather than assume, treat as manual_only and use the CSV import path. ~40 groups is a couple of hours of hand-curation, and overdose loss is too valuable a category to skip on a technicality.",
+      "access_checked": "2026-09-05"
     },
     {
       "id": "share-pregnancy-infant-loss",
@@ -146,7 +154,8 @@
       "robots_checked": "2026-08-23",
       "sitemap": "https://www.nationalshare.org/sitemap.xml",
       "robots_note": "Verified 2026-08-23. Real HTML, no bot blocking, and the site publishes 'Content-Signal: search=yes, ai-input=yes, ai-train=yes' - an explicit opt-in. The chapter data sits behind 50 per-state expanders on /find-a-share-chapter-near-you; a click did not expand the section in the accessibility tree, so the expander target still needs identifying before an adapter is written. Site says 'over 65 Chapters in 29 states'.",
-      "render": "html_with_client_side_expand"
+      "render": "html_with_client_side_expand",
+      "access_checked": "2026-09-05"
     },
     {
       "id": "miss-foundation",
@@ -165,7 +174,8 @@
       "notes": "Founded in Arizona. Natural first outreach call - a local relationship is worth more than a scraped page, and they may share data directly.",
       "robots_checked": "2026-08-06",
       "sitemap": "https://www.missfoundation.org/content-list.xml",
-      "robots_note": "Only wp-admin disallowed; support directory permitted. Still worth a phone call first - they are Arizona-founded and a local relationship beats a scrape."
+      "robots_note": "Only wp-admin disallowed; support directory permitted. Still worth a phone call first - they are Arizona-founded and a local relationship beats a scrape.",
+      "access_checked": "2026-09-05"
     },
     {
       "id": "soaring-spirits",
@@ -184,7 +194,8 @@
       "robots_checked": "2026-08-06",
       "required_crawl_delay": 5.0,
       "sitemap": "https://soaringspirits.org/sitemap.xml",
-      "robots_note": "MUST honor Crawl-delay: 5 - five times slower than our 1s default. Also disallows ALL query strings (/*?*), so any adapter must use clean sitemap URLs, never search parameters."
+      "robots_note": "MUST honor Crawl-delay: 5 - five times slower than our 1s default. Also disallows ALL query strings (/*?*), so any adapter must use clean sitemap URLs, never search parameters.",
+      "access_checked": "2026-09-05"
     },
     {
       "id": "taps",
@@ -198,9 +209,11 @@
       "est_us_chapters": 30,
       "est_in_our_metros": 15,
       "priority": 3,
-      "access_status": "unchecked",
+      "access_status": "human_review",
       "notes": "Mostly national rather than local, but matters for San Diego and San Antonio.",
-      "robots_note": "Not yet checked - lowest priority, mostly national rather than local programs."
+      "robots_note": "Not yet checked - lowest priority, mostly national rather than local programs.",
+      "access_checked": "2026-09-05",
+      "terms_url": "https://www.taps.org/terms"
     },
     {
       "id": "griefshare",
@@ -220,7 +233,8 @@
       "notes": "By far the largest network, but three cautions. (1) Volume would swamp everything else and unbalance our metro pages. (2) Christian and curriculum-based - must be tagged accurately so people who want secular support aren't misled. (3) Large enough that we should ask before taking anything. Deliberately last.",
       "robots_checked": "2026-08-06",
       "sitemap": "https://www.griefshare.org/sitemap.xml.gz",
-      "robots_note": "robots.txt has an empty 'User-agent: *' block with no rules, which technically permits crawling. Status deliberately stays contact_first - 900 groups in our metros would swamp every page, and an organization this size deserves to be asked."
+      "robots_note": "robots.txt has an empty 'User-agent: *' block with no rules, which technically permits crawling. Status deliberately stays contact_first - 900 groups in our metros would swamp every page, and an organization this size deserves to be asked.",
+      "access_checked": "2026-09-05"
     }
   ],
   "_finding_2026_08_23": "The large national directories gate their group data behind JavaScript; the small ones publish plain HTML. TCF (500), NACG (652), AFSP (400) and GriefShare (8000) are all JS-gated - about 1,550 US groups that no amount of crawling will reach. BPUSA (60), Share (65), MISS (40) and Soaring Spirits (50) are plausibly crawlable, roughly 215 groups. Engineering buys the small half; the large half has to be asked for. Send the outreach email."
